@@ -2,7 +2,7 @@
 
 Left:   file list (every .TEX/.PVR under patches/, with protected atlases dimmed).
 Center: side-by-side Original vs Translated previews.
-Right:  per-sub-tex info + actions [Export PNG] [Import & Auto-Convert] [Restore Original].
+Right:  per-sub-tex info + actions [Export Original/Modified PNG] [Import & Auto-Convert] [Restore Original].
 """
 from __future__ import annotations
 import tkinter as tk
@@ -116,7 +116,15 @@ class TexturesTab(ttk.Frame):
         self.info_lbl.pack(anchor='w', padx=6, pady=4)
 
         ttk.Separator(right).pack(fill='x', pady=4)
-        ttk.Button(right, text='Export PNG…', command=self._on_export_png).pack(fill='x', padx=6, pady=2)
+        ttk.Label(right, text='Export to PNG', font=('TkDefaultFont', 9, 'bold')
+                  ).pack(anchor='w', padx=6, pady=(2, 0))
+        ttk.Button(right, text='Export Original (JP baseline)…',
+                   command=lambda: self._on_export_png(source='baseline')
+                   ).pack(fill='x', padx=6, pady=2)
+        ttk.Button(right, text='Export Modified (current patches/)…',
+                   command=lambda: self._on_export_png(source='modified')
+                   ).pack(fill='x', padx=6, pady=2)
+        ttk.Separator(right).pack(fill='x', pady=4)
         ttk.Button(right, text='Import & Auto-Convert…', command=self._on_import_png,
                    style='Accent.TButton').pack(fill='x', padx=6, pady=2)
         ttk.Button(right, text='Restore Original', command=self._on_restore).pack(fill='x', padx=6, pady=2)
@@ -354,38 +362,78 @@ class TexturesTab(ttk.Frame):
             return self._current_records[0]
         return None
 
-    def _on_export_png(self):
+    def _on_export_png(self, source: str = 'modified'):
+        """Export the selected sub-texture to PNG.
+
+        `source='modified'` → patches/ (the EN/current version).
+        `source='baseline'` → extracted/ (the JP/original version).
+        """
         rec = self._selected_rec()
         if not rec:
             messagebox.showinfo('Pick a sub-tex', 'Pick a sub-texture first.', parent=self.app)
             return
-        if rec.image is None:
+
+        # Resolve which record to actually export. For 'baseline' we
+        # re-decode the matching sub-tex from extracted/ rather than reusing
+        # the patches/ record.
+        export_rec = rec
+        suffix_label = 'modified'
+        if source == 'baseline':
+            try:
+                rel = rec.file_path.relative_to(self.app.disc.patches_dir)
+                baseline_path = self.app.disc.extracted_dir / rel
+                baseline_recs = tex_core.load(baseline_path)
+                export_rec = next(
+                    (r for r in baseline_recs if r.sub_index == rec.sub_index), None
+                )
+            except Exception as e:
+                messagebox.showerror(
+                    'No baseline copy',
+                    f"Couldn't load the JP baseline for {rec.file_path.name}: {e}",
+                    parent=self.app,
+                )
+                return
+            if export_rec is None:
+                messagebox.showwarning(
+                    'No baseline sub-tex',
+                    f"The baseline copy of {rec.file_path.name} has no sub_{rec.sub_index}.",
+                    parent=self.app,
+                )
+                return
+            suffix_label = 'original'
+
+        if export_rec.image is None:
             hint = ''
-            if rec.is_paletted:
-                sibling = rec.file_path.with_suffix('.PVP')
+            if export_rec.is_paletted:
+                sibling = export_rec.file_path.with_suffix('.PVP')
                 hint = (
-                    f"\n\nThis is a paletted PVR (pixfmt 0x{rec.pixfmt:02x}). "
+                    f"\n\nThis is a paletted PVR (pixfmt 0x{export_rec.pixfmt:02x}). "
                     f"It needs a sibling .PVP palette file to decode. Looked for:\n"
                     f"  {sibling}\n"
                     f"DPTEX entries usually want BANK01.PVP (NOT BANK00 — that renders rainbow)."
                 )
-            elif rec.datafmt == 0x12:
+            elif export_rec.datafmt == 0x12:
                 hint = '\n\ndatafmt 0x12 is not yet fully implemented in the bundled decoder.'
             messagebox.showwarning(
                 'Sub-tex undecodable',
-                f'sub_{rec.sub_index} ({rec.width}x{rec.height}, pf=0x{rec.pixfmt:02x} '
-                f'df=0x{rec.datafmt:02x}) failed to decode — nothing to export.{hint}',
+                f'sub_{export_rec.sub_index} ({export_rec.width}x{export_rec.height}, '
+                f'pf=0x{export_rec.pixfmt:02x} df=0x{export_rec.datafmt:02x}) failed to '
+                f'decode — nothing to export.{hint}',
                 parent=self.app,
             )
             return
-        default_name = f'{rec.file_path.stem}_sub{rec.sub_index:02d}.png'
+
+        default_name = (
+            f'{export_rec.file_path.stem}_sub{export_rec.sub_index:02d}_{suffix_label}.png'
+        )
         out = filedialog.asksaveasfilename(
-            title='Export PNG', defaultextension='.png',
+            title=f'Export {suffix_label.title()} PNG',
+            defaultextension='.png',
             initialfile=default_name, parent=self.app,
             filetypes=[('PNG', '*.png')],
         )
         if not out: return
-        tex_core.export_png(rec, Path(out))
+        tex_core.export_png(export_rec, Path(out))
         messagebox.showinfo('Exported', f'Wrote {out}', parent=self.app)
 
     def _on_import_png(self):
