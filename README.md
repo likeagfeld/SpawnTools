@@ -1,6 +1,6 @@
 # SpawnTools
 
-**A production-grade Spawn — In the Demon's Hand translation suite, built on the proven codec library that took Spawn from raw JP to A+ English.**
+**A GUI for translating Spawn — In the Demon's Hand into English, built on the codec library used to make the existing Spawn patch.**
 
 ```
    Windows:  double-click spawntools.bat
@@ -25,7 +25,7 @@ A four-tab Tkinter IDE pre-loaded with the entire Spawn translation campaign as 
 
   ![Text & Pointer Grid — 3,603 rows scanned, 1,575 EN translations pre-filled, per-row byte budget meter](assets/screenshots/tab3_text_pointer_grid.jpg)
 
-- **Tab 4 · Master Build** — Pre-flight integrity check → in-place track03 patch via `process_game.patch_iso` → md5-verified disc-vs-patches sync → sidecar `.gdi`. The exact pipeline that produced the A+ Spawn build.
+- **Tab 4 · Master Build** — Pre-flight integrity check → in-place track03 patch via `process_game.patch_iso` → md5-verified disc-vs-patches sync → sidecar `.gdi`. The same pipeline used to build the existing Spawn patch.
 
 ## Picking up where the campaign left off
 

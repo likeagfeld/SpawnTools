@@ -106,9 +106,7 @@ def main():
         'CFGJP.TEX': {
             'description': 'Config screen — controller diagram + key configuration labels',
             'subtex_notes': {
-                '3': 'Three views of the Dreamcast gamepad (front, top, side). '
-                      'Phase 6 of the twinstick project will conditionally swap in '
-                      'a Twin Stick render here when one is detected per port.',
+                '3': 'Three views of the Dreamcast gamepad (front, top, side).',
             },
         },
         'CFGUS.TEX': {
@@ -139,9 +137,7 @@ def main():
     binary_notes = {
         '1ST_READ.BIN': {
             'description': 'Main game executable. ~347 safe null-bounded JP->EN binary '
-                            'replacements. cp932 strings only, shrink-or-equal byte budget. '
-                            'Plus 42 bytes of phase-3 twinstick trampoline (no-op detection '
-                            'scaffolding at file 0x000E3964).',
+                            'replacements. cp932 strings only, shrink-or-equal byte budget.',
         },
         '2_DP.BIN': {
             'description': 'Dream Passport 3 framework binary + JP IME word dictionary. '
@@ -162,7 +158,7 @@ def main():
     # ---------- manifest ----------
     manifest = {
         'name': "Spawn - In the Demon's Hand (campaign baseline)",
-        'tier': 'A+',
+        'tier': 'done',
         'modified_files': modified,
         'modified_count': len(modified),
         'identical_count': identical_count,

@@ -22,7 +22,7 @@
   "CFGJP.TEX": {
     "description": "Config screen — controller diagram + key configuration labels",
     "subtex_notes": {
-      "3": "Three views of the Dreamcast gamepad (front, top, side). Phase 6 of the twinstick project will conditionally swap in a Twin Stick render here when one is detected per port."
+      "3": "Three views of the Dreamcast gamepad (front, top, side)."
     }
   },
   "CFGUS.TEX": {

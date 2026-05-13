@@ -42,7 +42,7 @@ The spec asks for these as subprocess dependencies. We use the proven Python imp
 - **Disc patch** — `process_game.patch_iso` (in-place track03 writer that preserves LBA layout)
 - **GDI sidecar** — `gdi_builder.generate_gdi` (mirrors source GDI track entries, swaps track03 filename)
 
-mkisofs **would destroy Dreamcast LBA layout** (it rebuilds ISO9660 from scratch with new extents). The mandate is in-place patching: every file rewritten at its original LBA so track03.iso byte size stays identical. `process_game.patch_iso` does exactly that — it's the proven pipeline that produced the A+ Spawn build.
+mkisofs **would destroy Dreamcast LBA layout** (it rebuilds ISO9660 from scratch with new extents). The mandate is in-place patching: every file rewritten at its original LBA so track03.iso byte size stays identical. `process_game.patch_iso` does exactly that — it's the pipeline that built the existing Spawn patch.
 
 ### 4. Encoding engine is cp932 + Capcom helpers, not generic .tbl
 

@@ -1,6 +1,6 @@
 {
   "1ST_READ.BIN": {
-    "description": "Main game executable. ~347 safe null-bounded JP->EN binary replacements. cp932 strings only, shrink-or-equal byte budget. Plus 42 bytes of phase-3 twinstick trampoline (no-op detection scaffolding at file 0x000E3964)."
+    "description": "Main game executable. ~347 safe null-bounded JP->EN binary replacements. cp932 strings only, shrink-or-equal byte budget."
   },
   "2_DP.BIN": {
     "description": "Dream Passport 3 framework binary + JP IME word dictionary. Personal Status format-string fixes only (時間 -> Hr at offset 0x15bc78 and 5 more copies). Most of this file is the IME word dictionary — DO NOT BULK-EDIT it."

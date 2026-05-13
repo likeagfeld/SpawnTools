@@ -1,11 +1,11 @@
 {
   "name": "Spawn - In the Demon's Hand (campaign baseline)",
-  "tier": "A+",
+  "tier": "done",
   "modified_files": [
     {
       "rel": "1ST_READ.BIN",
       "baseline_md5": "75a90aff53a5317ceac59cfb62b030f1",
-      "patched_md5": "518b844988d37fd795f994ca9f079c05",
+      "patched_md5": "688928d2fbf9ef2ac75e2fee4b0ed30f",
       "size": 1220196,
       "patched_size": 1220196
     },
