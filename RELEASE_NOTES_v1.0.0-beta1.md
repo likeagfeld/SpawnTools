@@ -4,6 +4,14 @@ The first public Beta of SpawnTools — a GUI for translating **Spawn: In the De
 
 Built on the codec library used to make the existing Spawn patch. The Spawn baseline ships with the tool: open the disc, click **Load Spawn Baseline**, and the spreadsheet fills with 1,575 pre-translated English strings derived directly from the existing patches.
 
+## Just want the Spawn patch?
+
+If you don't need the tool — just the English patch itself — download:
+
+- **`Spawn-T-En-Farkus-V0.2.dcp`** (~588 KB) — Dreamcast patch file (zip-format). Apply with any DCP-compatible tool against the original JP Spawn disc. T-En patch by **Farkus**, version **V0.2**, KDDI Online (Japan) build.
+
+Otherwise download `SpawnTools-v1.0.0-beta1.zip` below for the GUI.
+
 ## How to run
 
 - **Windows:** double-click `spawntools.bat`

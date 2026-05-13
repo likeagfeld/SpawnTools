@@ -10,6 +10,15 @@
 
 The launcher checks for Python 3.10+, installs Pillow + numpy on first run if missing, then starts the GUI. All codec logic, the JP→EN dictionary, and the Spawn baseline preset are bundled inside the package — no external path config required.
 
+## Just want the Spawn patch?
+
+If you don't want the tool — just the existing English patch for Spawn — grab it directly:
+
+- **Repo:** [`patches/Spawn-T-En-Farkus-V0.2.dcp`](patches/Spawn-T-En-Farkus-V0.2.dcp) (~588 KB)
+- **Release asset:** [SpawnTools Beta 1.0 release page](https://github.com/likeagfeld/SpawnTools/releases/tag/v1.0.0-beta1)
+
+The `.dcp` is a Dreamcast patch file (zip-format). Apply with any DCP-compatible tool against the original JP Spawn disc. T-En patch by **Farkus**, version **V0.2** — KDDI Online (Japan) build.
+
 ![Workspace tab — preset loaded with 1,575 EN translations pre-filled](assets/screenshots/tab1_workspace_qa.jpg)
 
 ## What you get on first launch
