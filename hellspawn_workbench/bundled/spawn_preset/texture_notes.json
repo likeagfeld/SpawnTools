@@ -1,0 +1,44 @@
+{
+  "LOBBY37.TEX": {
+    "description": "Top banners + KDD legal text + Terms of Use paragraphs",
+    "subtex_notes": {
+      "0": "Top banner — \"FIND PLAYER\" (was JP banner). Re-rendered with rotate(-90, expand=True) for the vertical-strip atlas layout the DC sampler expects.",
+      "1": "KDD legal text + Terms paragraphs as multi-line vertical strips. All vertical strips get the same text (game samples one strip at multiple screen X positions — observed empirically)."
+    }
+  },
+  "LOBBY38.TEX": {
+    "description": "Lobby/menu HUD strips (PERSONAL STATUS, descriptions, L-trigger help)",
+    "subtex_notes": {
+      "2": "Yellow headers — PERSONAL STATUS, Save IDs, etc.",
+      "4": "Random Match / Beginner Only button labels. v23 redraw used mode=clean to erase old upside-down pixels from the v18 rotate(+90) bug.",
+      "7": "Current Players label — bumped font size to fix fuzziness.",
+      "12": "Lトリガーでログ閲覧 -> \"L Trigger: view log\""
+    }
+  },
+  "LOBBY40.TEX": {
+    "description": "AUTO MATCH popup descriptions + footer",
+    "subtex_notes": {}
+  },
+  "CFGJP.TEX": {
+    "description": "Config screen — controller diagram + key configuration labels",
+    "subtex_notes": {
+      "3": "Three views of the Dreamcast gamepad (front, top, side). Phase 6 of the twinstick project will conditionally swap in a Twin Stick render here when one is detected per port."
+    }
+  },
+  "CFGUS.TEX": {
+    "description": "US controller-config TEX — sibling of CFGJP.TEX",
+    "subtex_notes": {}
+  },
+  "COCKPITJP.TEX": {
+    "description": "In-game HUD overlay sprites (BOSS, TOP, character poses, kanji headers)",
+    "subtex_notes": {}
+  },
+  "DPTEX/TAG_SU.PVR": {
+    "description": "Paletted PVR — popup-button atlas. 512x512 PAL_8BPP TWIDDLED_MIPMAP, uses BANK01.PVP palette (NOT BANK00 — that renders rainbow).",
+    "subtex_notes": {
+      "0_strip0": "対戦待機 -> Wait",
+      "0_strip1": "キャンセル -> Cancel",
+      "note": "Byte-identical across 5 DP3 games (Spawn, JoJo, Net de Tennis, Project Justice, Vampire Chronicle) — translate once, ship 5x."
+    }
+  }
+}

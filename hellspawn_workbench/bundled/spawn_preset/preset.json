@@ -1,0 +1,205 @@
+{
+  "name": "Spawn - In the Demon's Hand (campaign baseline)",
+  "tier": "A+",
+  "modified_files": [
+    {
+      "rel": "1ST_READ.BIN",
+      "baseline_md5": "75a90aff53a5317ceac59cfb62b030f1",
+      "patched_md5": "518b844988d37fd795f994ca9f079c05",
+      "size": 1220196,
+      "patched_size": 1220196
+    },
+    {
+      "rel": "2_DP.BIN",
+      "baseline_md5": "eb7e591e56bda10228d82575b001fbfa",
+      "patched_md5": "5785b819eda4961df74c7c8fea766a05",
+      "size": 3508634,
+      "patched_size": 3508634
+    },
+    {
+      "rel": "CFGJP.TEX",
+      "baseline_md5": "04df1892ae17bc893d817824c14499bf",
+      "patched_md5": "d140196bb38e9676b6affb13b9c9320b",
+      "size": 1460352,
+      "patched_size": 1460352
+    },
+    {
+      "rel": "CFGUS.TEX",
+      "baseline_md5": "c8edf26ce15f9a2de313e4a4159b29e1",
+      "patched_md5": "d140196bb38e9676b6affb13b9c9320b",
+      "size": 1460352,
+      "patched_size": 1460352
+    },
+    {
+      "rel": "COCKPITJP.TEX",
+      "baseline_md5": "a61e453202b767daae7cd9dd0c2ad782",
+      "patched_md5": "3c6d17e720db6186eee415cb4986b95d",
+      "size": 135376,
+      "patched_size": 135376
+    },
+    {
+      "rel": "GAME.BIN",
+      "baseline_md5": "be33c79db63e3b33ea4a38426317bb57",
+      "patched_md5": "bf3da5e22f9b515363fc6a847674263f",
+      "size": 93710472,
+      "patched_size": 93710472
+    },
+    {
+      "rel": "GGAM.BIN",
+      "baseline_md5": "e7afea02c15e776770096ef495ef14e8",
+      "patched_md5": "66695f70b78056d2783fe953766f847f",
+      "size": 662992,
+      "patched_size": 662992
+    },
+    {
+      "rel": "LOBBY37.TEX",
+      "baseline_md5": "e9e29a82e904102c09e4f35fb7e0a676",
+      "patched_md5": "34319780e2d7a084ec92bb8f3ac5863c",
+      "size": 917648,
+      "patched_size": 917648
+    },
+    {
+      "rel": "LOBBY38.TEX",
+      "baseline_md5": "3eb83dd22dff179fc23ca5e301ac35aa",
+      "patched_md5": "7ac655368f3df6e288aa4a9e660ce62f",
+      "size": 956672,
+      "patched_size": 956672
+    },
+    {
+      "rel": "LOBBY40.TEX",
+      "baseline_md5": "2217db9ff55b2f9306cb1e2eaba97cba",
+      "patched_md5": "f43f88b429363f16e786f7c30da1d606",
+      "size": 524384,
+      "patched_size": 524384
+    },
+    {
+      "rel": "MEMDEF.BIN",
+      "baseline_md5": "24bca26a8b2b1b2a2c3c3ea26a797b60",
+      "patched_md5": "d9921b202564af36be0a12a424649a77",
+      "size": 3382544,
+      "patched_size": 3382544
+    },
+    {
+      "rel": "SELSPR2JP.TEX",
+      "baseline_md5": "93c93d40e1230bc7ed830b7dea2a7671",
+      "patched_md5": "7d43bf544c939f0d63f5059c075288b1",
+      "size": 258304,
+      "patched_size": 258304
+    },
+    {
+      "rel": "VMTEXJP.TEX",
+      "baseline_md5": "e9574f335d64440c9cb39abdeceec195",
+      "patched_md5": "325180c43f19e7457f546e24d5b71c5b",
+      "size": 153680,
+      "patched_size": 153680
+    },
+    {
+      "rel": "VSJP.TEX",
+      "baseline_md5": "1705efb6394ac59caf3a39ffd2c9463e",
+      "patched_md5": "81a2ae93afe362d70ed918c907f92b27",
+      "size": 18480,
+      "patched_size": 18480
+    },
+    {
+      "rel": "WARNING.TEX",
+      "baseline_md5": "06b36751c340f964a8aa79f66b5704a8",
+      "patched_md5": "f6489d417510a7f3ca1c499b7b5d6b42",
+      "size": 524336,
+      "patched_size": 524336
+    },
+    {
+      "rel": "DPETC/MESSAGE.INI",
+      "baseline_md5": "c8a66ca131294350258f23d500630885",
+      "patched_md5": "f522edc0d1c5468f348f6cebd83afbde",
+      "size": 71040,
+      "patched_size": 71040
+    },
+    {
+      "rel": "DPTEX/C_M_S.PVR",
+      "baseline_md5": "d8bd6d9c0a77da50ee83a58636d94799",
+      "patched_md5": "4cc47ad6e226ae91c76f01930930fb1e",
+      "size": 262176,
+      "patched_size": 262176
+    },
+    {
+      "rel": "DPTEX/JYOUCYU0.PVR",
+      "baseline_md5": "5e570a4f2209f7cf63e8c6025f0e07b0",
+      "patched_md5": "e9a5d50b4c9b1c26d98ed3cfb579cfad",
+      "size": 262176,
+      "patched_size": 262176
+    },
+    {
+      "rel": "DPTEX/JYOUCYU2.PVR",
+      "baseline_md5": "41ea843513debb5fef25541ec94972d2",
+      "patched_md5": "a224913c22308253fe1b8c625d148971",
+      "size": 262176,
+      "patched_size": 262176
+    },
+    {
+      "rel": "DPTEX/OPTION01.PVR",
+      "baseline_md5": "1531905e9ad37caa4fea94d1969d9a64",
+      "patched_md5": "c159f176bfbb537e15cf91aec3619187",
+      "size": 262176,
+      "patched_size": 262176
+    },
+    {
+      "rel": "DPTEX/OPTION02.PVR",
+      "baseline_md5": "012904c5dc59dad64aff22ac18b5fef8",
+      "patched_md5": "0d8701d8a86a1a2682644cfcbdaf23b6",
+      "size": 262176,
+      "patched_size": 262176
+    },
+    {
+      "rel": "DPTEX/OPTION03.PVR",
+      "baseline_md5": "5792152ae9bf42e147ed11a29e6d9aa1",
+      "patched_md5": "f5a471fe19c17485e47fad0553acb8d3",
+      "size": 262176,
+      "patched_size": 262176
+    },
+    {
+      "rel": "DPTEX/SKB_BASE.PVR",
+      "baseline_md5": "7590d8e064673ec17171d907bcc0094a",
+      "patched_md5": "2d465c1db32a0bf60ffd146798bd5710",
+      "size": 67616,
+      "patched_size": 67616
+    },
+    {
+      "rel": "DPTEX/SKB_EISU.PVR",
+      "baseline_md5": "4fc71ff59c7415ebe3401e27f9f65c04",
+      "patched_md5": "22c57ba92d476adef465495f4325b20d",
+      "size": 67616,
+      "patched_size": 67616
+    },
+    {
+      "rel": "DPTEX/SKB_KANA.PVR",
+      "baseline_md5": "a4df3c2d3c62fca6e18aba846aab06ed",
+      "patched_md5": "e2cbeb4e4f47c71b5254417341c45a05",
+      "size": 67616,
+      "patched_size": 67616
+    },
+    {
+      "rel": "DPTEX/SKB_V102.PVR",
+      "baseline_md5": "ebde3bc3a1a4a42895011439e6f50c6e",
+      "patched_md5": "1554dbf6cbbc0699de5dad86b686b0fc",
+      "size": 67616,
+      "patched_size": 67616
+    },
+    {
+      "rel": "DPTEX/TAG_SU.PVR",
+      "baseline_md5": "08da833ad4be89f0219d6d9fb9b3af28",
+      "patched_md5": "31c0a37c5afbfdf72c2843d90de59534",
+      "size": 262176,
+      "patched_size": 262176
+    }
+  ],
+  "modified_count": 27,
+  "identical_count": 4,
+  "dict_entries": 796,
+  "texture_files_with_notes": 7,
+  "binary_files_with_notes": 3,
+  "description": "Built from the canonical Spawn translation campaign. Loads every existing English string + every redrawn texture as the baseline. You can revert any row / file / everything to stock JP - or continue from here with new edits.",
+  "expected_paths_hint": {
+    "spawn_dir": "D:\\Capcom Dreamcast  Games - Joe Patched\\RC2 Translated\\Spawn - In the Demon's Hand (JP)",
+    "shared_tools": "D:\\Capcom Dreamcast  Games - Joe Patched\\RC2 Translated\\_shared_tools"
+  }
+}

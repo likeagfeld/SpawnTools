@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# User runtime state
+.hellspawn_workbench/
+*.bak
+*.tmp
+
+# Project-local outputs from the Workbench
+output/
+backups/
+*.spawnproj
+*.dctranslate
+
+# Local research / RE artifacts — not part of the published tool
+spawn_re_phase*/
+sprite_work/
+docs/
+
+# Old experimental directories from earlier iterations
+dctranslate_gui*/
+spawntools_old*/
