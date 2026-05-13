@@ -44,6 +44,73 @@ def main():
         encoding='utf-8',
     )
 
+    # ---------- per-string translations (NEW) ----------
+    # Dump every JP→EN translation we can DERIVE by diffing
+    # extracted/ (JP baseline) vs patches/ (campaign output). Ships as
+    # `translations.json` so users can browse / edit the campaign's actual
+    # English text WITHOUT needing the disc on hand. The runtime loader
+    # uses this as a fallback when patches/ isn't available.
+    ext_dir = SPAWN_DIR / 'extracted'
+    patches_dir = SPAWN_DIR / 'patches'
+    translations: list[dict] = []
+    if ext_dir.is_dir() and patches_dir.is_dir():
+        sys.path.insert(0, str(SHARED_TOOLS))
+        # Lazy import — re-uses the codec scan logic the Workbench's
+        # core/encoding.py uses. We inline a copy so this script has no
+        # dependency on the Workbench package.
+        def find_cp932_runs(data, min_chars=4):
+            out = []
+            i, L = 0, len(data)
+            while i < L - 1:
+                start, run = i, 0
+                while i < L - 1:
+                    b1, b2 = data[i], data[i + 1]
+                    if ((0x81 <= b1 <= 0x9f or 0xe0 <= b1 <= 0xfc)
+                            and (0x40 <= b2 <= 0xfc and b2 != 0x7f)):
+                        run += 1
+                        i += 2
+                    else:
+                        break
+                if run >= min_chars:
+                    txt = data[start:start + run * 2].decode('cp932', errors='replace')
+                    out.append((start, run, txt))
+                else:
+                    i = max(start + 1, i + 1)
+            return out
+
+        scan_targets = ['1ST_READ.BIN', 'DPETC/MESSAGE.INI']
+        for rel in scan_targets:
+            base_path = ext_dir / rel
+            pat_path = patches_dir / rel
+            if not (base_path.is_file() and pat_path.is_file()):
+                continue
+            base = base_path.read_bytes()
+            pat = pat_path.read_bytes()
+            for offset, char_count, jp in find_cp932_runs(base, min_chars=4):
+                budget = char_count * 2
+                pat_bytes = pat[offset:offset + budget]
+                if pat_bytes == base[offset:offset + budget]:
+                    continue   # not modified — leave it as a 'todo' row at runtime
+                # Decode the EN replacement
+                try:
+                    en = pat_bytes.rstrip(b'\x00').decode('ascii')
+                except UnicodeDecodeError:
+                    try:
+                        en = pat_bytes.rstrip(b'\x00').decode('cp932')
+                    except UnicodeDecodeError:
+                        en = '<binary diff — review manually>'
+                translations.append({
+                    'source_file': rel,
+                    'byte_offset': offset,
+                    'byte_budget': budget,
+                    'jp': jp,
+                    'en': en,
+                })
+    (BUNDLE / 'translations.json').write_text(
+        json.dumps(translations, indent=2, ensure_ascii=False), encoding='utf-8',
+    )
+    print(f'translations: {len(translations)} JP->EN pairs derived from campaign patches')
+
     # ---------- file inventory ----------
     ext_dir = SPAWN_DIR / 'extracted'
     patches_dir = SPAWN_DIR / 'patches'

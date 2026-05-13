@@ -42,6 +42,10 @@ class Preset:
     binary_notes: dict[str, dict]
     modified_files: list[dict]
     modified_count: int = 0
+    # Every JP→EN translation pre-derived from the campaign's patches/ at
+    # build time. Lets users see + edit the existing translations even
+    # before they extract a disc.
+    translations: list[dict] | None = None
 
     @classmethod
     def load_bundled(cls) -> 'Preset':
@@ -54,6 +58,13 @@ class Preset:
                 f'to generate it.'
             )
         manifest = json.loads((root / 'preset.json').read_text(encoding='utf-8'))
+        translations = None
+        translations_path = root / 'translations.json'
+        if translations_path.is_file():
+            try:
+                translations = json.loads(translations_path.read_text(encoding='utf-8'))
+            except json.JSONDecodeError:
+                translations = None
         return cls(
             name=manifest['name'],
             tier=manifest.get('tier', '?'),
@@ -63,6 +74,7 @@ class Preset:
             binary_notes=json.loads((root / 'binary_notes.json').read_text(encoding='utf-8')),
             modified_files=manifest.get('modified_files', []),
             modified_count=manifest.get('modified_count', 0),
+            translations=translations,
         )
 
 
@@ -164,17 +176,32 @@ def scan_with_baseline(extracted: Path, patches: Path, source_rel: str,
 
 def apply_preset(disc, db: strings_core.StringDB, preset: Preset,
                   progress: Optional[Callable[[str], None]] = None) -> dict:
-    """Run scan_with_baseline for every BIN/INI file we have notes for.
-    Skips DENY_LIST (2_DP.BIN, GAME.BIN, etc — they contain CJK data bytes
-    that aren't real strings)."""
+    """Populate `db` with the campaign's known translations.
+
+    Strategy (in order — each step tries to add what the previous didn't):
+
+      1. **Diff scan** (preferred): if `disc` has both `extracted/` and
+         `patches/`, diff every BIN/INI file and pre-fill rows where
+         patches differ from baseline. This always reflects the user's
+         CURRENT patches/ — the truest source of truth.
+
+      2. **Bundled-translations fallback**: if the diff scan didn't run
+         OR produced zero rows (e.g., patches/ is identical to extracted/
+         because the user hasn't applied the .dcp yet), seed from
+         `translations.json` so they can still see + edit the campaign's
+         translations.
+
+    Skips DENY_LIST (2_DP.BIN, GAME.BIN, etc.) because those contain CJK
+    data bytes that aren't real strings.
+    """
     log = progress or (lambda _m: None)
     summary = {
         'files_scanned': 0, 'jp_runs': 0,
         'pre_filled': 0, 'identical': 0, 'dict_hints': 0,
+        'from_bundle': 0,
     }
-    # Scope: 1ST_READ.BIN + any *.INI under DPETC/ + any other small *.INI
-    # We DO NOT scan GAME.BIN / 2_DP.BIN / etc. because they contain CJK
-    # data bytes that aren't real strings (campaign rule from skill).
+
+    # === Step 1: live diff scan of the user's extracted/ vs patches/ ===
     candidates: list[str] = []
     for p in disc.extracted_dir.rglob('*'):
         if not p.is_file(): continue
@@ -182,7 +209,6 @@ def apply_preset(disc, db: strings_core.StringDB, preset: Preset,
         name = p.name.upper()
         if name in strings_core.DENY_LIST: continue
         if not (name.endswith('.BIN') or name.endswith('.INI')): continue
-        # MESSAGE.INI ranks as a "string table" — include
         if name == '1ST_READ.BIN' or 'MESSAGE.INI' in name:
             candidates.append(rel)
 
@@ -196,8 +222,33 @@ def apply_preset(disc, db: strings_core.StringDB, preset: Preset,
         for key in ('jp_runs', 'pre_filled', 'identical', 'dict_hints'):
             summary[key] += result[key]
 
-    log(f'preset apply complete: {summary["pre_filled"]:,} EN translations '
-        f'pre-filled from {summary["files_scanned"]} file(s); '
+    # === Step 2: bundled-translations fallback ===
+    # If the diff found nothing (or very little) AND the bundle has translations,
+    # seed those. Users without the .dcp applied see Gary's translations anyway.
+    if preset.translations and summary['pre_filled'] < len(preset.translations) // 2:
+        log(f'  diff found {summary["pre_filled"]:,} translations; '
+            f'seeding {len(preset.translations):,} more from bundled translations.json')
+        import sqlite3, time
+        now = int(time.time())
+        for entry in preset.translations:
+            try:
+                db._conn.execute(
+                    """INSERT INTO strings
+                       (source_file, byte_offset, byte_budget, jp_text, en_text,
+                        status, notes, updated_at)
+                       VALUES (?,?,?,?,?,'done','from bundled translations.json',?)""",
+                    (entry['source_file'], entry['byte_offset'], entry['byte_budget'],
+                     entry['jp'], entry['en'], now)
+                )
+                summary['from_bundle'] += 1
+            except sqlite3.IntegrityError:
+                # Row already filled by diff scan — don't override
+                pass
+        db._conn.commit()
+
+    log(f'preset apply complete: {summary["pre_filled"]:,} from diff + '
+        f'{summary["from_bundle"]:,} from bundle = '
+        f'{summary["pre_filled"] + summary["from_bundle"]:,} EN translations; '
         f'{summary["dict_hints"]:,} dictionary hints attached')
     return summary
 
