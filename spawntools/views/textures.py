@@ -347,8 +347,27 @@ class TexturesTab(ttk.Frame):
 
     def _on_export_png(self):
         rec = self._selected_rec()
-        if not rec or rec.image is None:
+        if not rec:
             messagebox.showinfo('Pick a sub-tex', 'Pick a sub-texture first.', parent=self.app)
+            return
+        if rec.image is None:
+            hint = ''
+            if rec.is_paletted:
+                sibling = rec.file_path.with_suffix('.PVP')
+                hint = (
+                    f"\n\nThis is a paletted PVR (pixfmt 0x{rec.pixfmt:02x}). "
+                    f"It needs a sibling .PVP palette file to decode. Looked for:\n"
+                    f"  {sibling}\n"
+                    f"DPTEX entries usually want BANK01.PVP (NOT BANK00 — that renders rainbow)."
+                )
+            elif rec.datafmt == 0x12:
+                hint = '\n\ndatafmt 0x12 is not yet fully implemented in the bundled decoder.'
+            messagebox.showwarning(
+                'Sub-tex undecodable',
+                f'sub_{rec.sub_index} ({rec.width}x{rec.height}, pf=0x{rec.pixfmt:02x} '
+                f'df=0x{rec.datafmt:02x}) failed to decode — nothing to export.{hint}',
+                parent=self.app,
+            )
             return
         default_name = f'{rec.file_path.stem}_sub{rec.sub_index:02d}.png'
         out = filedialog.asksaveasfilename(
@@ -364,6 +383,17 @@ class TexturesTab(ttk.Frame):
         rec = self._selected_rec()
         if not rec:
             messagebox.showinfo('Pick a sub-tex', 'Pick a sub-texture first.', parent=self.app)
+            return
+        if rec.image is None and rec.is_paletted:
+            sibling = rec.file_path.with_suffix('.PVP')
+            messagebox.showwarning(
+                'Sub-tex undecodable',
+                f'sub_{rec.sub_index} is paletted (pixfmt 0x{rec.pixfmt:02x}) and the '
+                f'sibling palette did not load. Looked for:\n  {sibling}\n'
+                f'DPTEX entries usually want BANK01.PVP (NOT BANK00 — that renders rainbow). '
+                f'Drop the palette next to the PVR and reload.',
+                parent=self.app,
+            )
             return
         if tex_core.is_protected(rec.file_path):
             messagebox.showwarning(
