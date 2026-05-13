@@ -62,7 +62,7 @@ Once you have the disc, three options:
 
 ### Option B — start from the bundled translations.json (no patched disc needed)
 
-If you don't want to apply the .dcp first, SpawnTools will still pre-fill the Text Grid from `translations.json`. You'll see + edit Gary's 1,575 EN translations directly. You'll need the JP disc when you eventually click Build (the in-place patch pipeline writes new files into your local `patches/` mirror and bakes them into a new track03).
+If you don't want to apply the .dcp first, SpawnTools will still pre-fill the Text Grid from `translations.json`. You'll see + edit Farkus's 1,575 EN translations directly. You'll need the JP disc when you eventually click Build (the in-place patch pipeline writes new files into your local `patches/` mirror and bakes them into a new track03).
 
 ### Option C — start from scratch from the JP disc
 
@@ -105,4 +105,4 @@ These come straight from the campaign's lessons-learned. Don't fight them.
 
 ## Reach me
 
-I'm Gary (likeagfeld on GitHub). The Spawn EN patch is by **Farkus** — V0.2 is what ships here.
+Reach me at [likeagfeld on GitHub](https://github.com/likeagfeld). The Spawn EN patch is by **Farkus** — V0.2 is what ships here.

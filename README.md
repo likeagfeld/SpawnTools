@@ -38,7 +38,7 @@ A four-tab Tkinter IDE pre-loaded with the entire Spawn translation campaign as 
 
 ## Picking up where the campaign left off
 
-SpawnTools is designed so that someone landing here for the first time can **continue Gary's work without reinventing the wheel**:
+SpawnTools is designed so that someone landing here for the first time can **continue the translation without reinventing the wheel**:
 
 1. Open the GDI — the project dir auto-detects your existing campaign workspace
 2. Log says: *"Detected 27 pre-existing modifications in patches/."*
@@ -51,7 +51,7 @@ From there:
 - **Revert one whole file** — Tab 2 → pick file → `Revert this file → JP baseline`
 - **Start completely fresh** — Tab 1 → `Reset Patches → Stock JP`
 - **Use the dictionary** — Tab 3 → pick a row with a dict hint → `Use dict suggestion`
-- **Continue from baseline** — just edit on top. Anything you don't touch stays Gary's
+- **Continue from baseline** — just edit on top. Anything you don't touch stays as Farkus shipped it
 
 ## Bundled assets
 

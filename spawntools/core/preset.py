@@ -14,12 +14,12 @@ Why diff-derived instead of bundling actual EN strings:
   • Avoids re-encoding lossy cp932 round-trips on bundle/unbundle.
 
 User flows the preset supports:
-  1. "Show me everything Gary changed" — Text Grid filtered to 'done';
+  1. "Show me everything the campaign changed" — Text Grid filtered to 'done';
      Texture tab highlights modified files; sidebar shows the notes.
   2. "Revert this one row to JP" — copy the JP bytes back at that offset.
   3. "Revert this whole file to JP" — copy extracted/ over patches/.
   4. "Start fresh from JP" — Reset Patches (Tab 1 button).
-  5. "Continue from Gary's baseline" — just don't revert; edit on top.
+  5. "Continue from Farkus's baseline" — just don't revert; edit on top.
 """
 from __future__ import annotations
 import json
@@ -224,7 +224,7 @@ def apply_preset(disc, db: strings_core.StringDB, preset: Preset,
 
     # === Step 2: bundled-translations fallback ===
     # If the diff found nothing (or very little) AND the bundle has translations,
-    # seed those. Users without the .dcp applied see Gary's translations anyway.
+    # seed those. Users without the .dcp applied see the campaign translations anyway.
     if preset.translations and summary['pre_filled'] < len(preset.translations) // 2:
         log(f'  diff found {summary["pre_filled"]:,} translations; '
             f'seeding {len(preset.translations):,} more from bundled translations.json')
