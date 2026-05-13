@@ -1,7 +1,7 @@
 """Workbench configuration.
 
 A single Config dataclass holds every external-path setting the suite
-needs at runtime. Persisted to ~/.hellspawn_workbench/config.json so
+needs at runtime. Persisted to ~/.spawntools/config.json so
 the user only points at _shared_tools once.
 
 Capcom-specific note: we DO NOT shell out to mkisofs/texconv/vqenc.
@@ -18,11 +18,11 @@ from pathlib import Path
 from typing import Optional
 
 
-CONFIG_DIR = Path.home() / '.hellspawn_workbench'
+CONFIG_DIR = Path.home() / '.spawntools'
 CONFIG_PATH = CONFIG_DIR / 'config.json'
 
-# The Workbench ships its own copy of the codec library at
-# `hellspawn_workbench/codecs/`. This is the default sys.path entry.
+# SpawnTools ships its own copy of the codec library at
+# `spawntools/codecs/`. This is the default sys.path entry.
 # Users on a clean install get the codecs out of the box.
 BUNDLED_CODECS = Path(__file__).resolve().parent / 'codecs'
 
@@ -35,15 +35,15 @@ DEFAULT_SHARED_TOOLS = Path(
 
 @dataclass
 class Config:
-    """Single source of truth for every path the Workbench needs."""
+    """Single source of truth for every path SpawnTools needs."""
 
     # Optional override for the codec library. Empty string means "use
-    # the bundled `hellspawn_workbench/codecs/` directory" (the default).
+    # the bundled `spawntools/codecs/` directory" (the default).
     # Users who want to point at an external _shared_tools/ copy (e.g.,
     # a newer dev version) can set this from Settings.
     shared_tools_path: str = ''
 
-    # Optional: external tools. The Workbench does NOT require these —
+    # Optional: external tools. SpawnTools does NOT require these —
     # the spec asked for them but every core operation has a Python equivalent.
     # Kept here for future use cases (e.g., generating .xdelta patches for distribution).
     xdelta_path: str = ''
@@ -101,7 +101,7 @@ class Config:
 
         Tries, in order:
           1. User-configured `shared_tools_path` (if set in Settings)
-          2. Bundled `hellspawn_workbench/codecs/` (always works on a clean install)
+          2. Bundled `spawntools/codecs/` (always works on a clean install)
           3. The legacy default path (for old dev machines)
 
         Returns True if process_game / pvr_codec / tex_decode all import.

@@ -45,12 +45,12 @@ class Preset:
 
     @classmethod
     def load_bundled(cls) -> 'Preset':
-        """Load the preset shipped in `hellspawn_workbench/bundled/spawn_preset/`."""
+        """Load the preset shipped in `spawntools/bundled/spawn_preset/`."""
         root = Path(__file__).resolve().parent.parent / 'bundled' / 'spawn_preset'
         if not root.is_dir():
             raise RuntimeError(
                 f'Bundled Spawn preset not found at {root}. Run\n'
-                f'  python -m hellspawn_workbench.bundled.build_spawn_preset\n'
+                f'  python -m spawntools.bundled.build_spawn_preset\n'
                 f'to generate it.'
             )
         manifest = json.loads((root / 'preset.json').read_text(encoding='utf-8'))

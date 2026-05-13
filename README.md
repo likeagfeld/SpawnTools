@@ -1,11 +1,11 @@
-# The Hellspawn Workbench
+# SpawnTools
 
-**A production-grade Spawn — In the Demon's Hand translation suite, built on the proven `_shared_tools/` codec library that shipped the 15-game Capcom Dreamcast translation campaign.**
+**A production-grade Spawn — In the Demon's Hand translation suite, built on the proven codec library that took Spawn from raw JP to A+ English.**
 
 ```
-   Windows:  double-click hellspawn.bat
-   Linux:    ./hellspawn.sh
-   macOS:    ./hellspawn.sh
+   Windows:  double-click spawntools.bat
+   Linux:    ./spawntools.sh
+   macOS:    ./spawntools.sh
 ```
 
 The launcher checks for Python 3.10+, installs Pillow + numpy on first run if missing, then starts the GUI. All codec logic, the JP→EN dictionary, and the Spawn baseline preset are bundled inside the package — no external path config required.
@@ -16,20 +16,20 @@ The launcher checks for Python 3.10+, installs Pillow + numpy on first run if mi
 
 A four-tab Tkinter IDE pre-loaded with the entire Spawn translation campaign as a baseline:
 
-- **Tab 1 · Workspace & QA** — Open a Dreamcast `.gdi` / `.iso`. The Workbench auto-detects when the GDI sits inside an existing campaign workspace and uses your existing `patches/` as the editing baseline (so you don't re-translate from scratch). Integrity audit, backups, reset-to-stock.
+- **Tab 1 · Workspace & QA** — Open a Dreamcast `.gdi` / `.iso`. SpawnTools auto-detects when the GDI sits inside an existing campaign workspace and uses your existing `patches/` as the editing baseline (so you don't re-translate from scratch). Integrity audit, backups, reset-to-stock.
 - **Tab 2 · Texture Workbench** — Side-by-side Original-vs-Translated preview for every `.TEX` / `.PVR`. Color-coded list shows `●` modified vs `○` stock at a glance, with a filter for All / Modified / Stock. Per-file campaign notes. Export PNG, Import & Auto-Convert (re-encodes with the original pixfmt/datafmt header), Restore Original, Revert to JP.
 
-  ![Texture Workbench — side-by-side original vs translated, color-coded modified/stock list, per-sub-tex campaign notes](assets/screenshots/tab2_texture_workbench.jpg)
+  ![Texture tool — side-by-side original vs translated, color-coded modified/stock list, per-sub-tex campaign notes](assets/screenshots/tab2_texture_workbench.jpg)
 
 - **Tab 3 · Text & Pointer Grid** — Spreadsheet of every Japanese string in `1ST_READ.BIN` and `MESSAGE.INI`. **Click "Load Spawn Baseline" once** and the grid fills with 1,500+ pre-translated EN strings derived directly from the campaign's `patches/` dir. Edit any row, revert any row to JP, accept dictionary suggestions one-click. Byte-budget meter prevents oversize commits.
 
   ![Text & Pointer Grid — 3,603 rows scanned, 1,575 EN translations pre-filled, per-row byte budget meter](assets/screenshots/tab3_text_pointer_grid.jpg)
 
-- **Tab 4 · Master Build** — Pre-flight integrity check → in-place track03 patch via `process_game.patch_iso` → md5-verified disc-vs-patches sync → sidecar `.gdi`. The exact pipeline the campaign used to ship A+ across 15 games.
+- **Tab 4 · Master Build** — Pre-flight integrity check → in-place track03 patch via `process_game.patch_iso` → md5-verified disc-vs-patches sync → sidecar `.gdi`. The exact pipeline that produced the A+ Spawn build.
 
 ## Picking up where the campaign left off
 
-The Workbench is designed so that someone landing here for the first time can **continue Gary's work without reinventing the wheel**:
+SpawnTools is designed so that someone landing here for the first time can **continue Gary's work without reinventing the wheel**:
 
 1. Open the GDI — the project dir auto-detects your existing campaign workspace
 2. Log says: *"Detected 27 pre-existing modifications in patches/."*
@@ -47,7 +47,7 @@ From there:
 ## Bundled assets
 
 ```
-hellspawn_workbench/
+spawntools/
 ├── codecs/                          # vendored _shared_tools/ — 10 modules, ~145 KB
 │   ├── process_game.py
 │   ├── pvr_codec.py                 # ARGB1555 / RGB565 / ARGB4444 / paletted / VQ / mipmap / datafmt 0x12
@@ -62,7 +62,7 @@ hellspawn_workbench/
 │   ├── jp_en_dict.json              # 796 entries as JSON
 │   ├── texture_notes.json           # per-modified-texture campaign notes
 │   └── binary_notes.json            # per-modified-binary file notes
-└── core, views, widgets             # the Workbench itself
+└── core, views, widgets             # SpawnTools itself
 ```
 
 ## Hard rules enforced (from the campaign)
@@ -77,8 +77,8 @@ hellspawn_workbench/
 ## Architecture
 
 ```
-hellspawn_workbench/
-├── __init__.py / __main__.py        # python -m hellspawn_workbench
+spawntools/
+├── __init__.py / __main__.py        # python -m spawntools
 ├── app.py                           # 4-tab Tk root + Settings dialog
 ├── config.py                        # bundled-codecs-first auto-bootstrap
 ├── core/
@@ -98,7 +98,7 @@ hellspawn_workbench/
 
 ## Spec deviations (documented)
 
-This tool replaces an earlier `dctranslate_gui` / `spawntools` build. The original spec asked for a generic-Dreamcast translator with an AFS engine, an external `mkisofs.exe` / `texconv.exe` / `vqenc.exe` subprocess pipeline, a `.tbl` table-based encoder, and a pointer-relocation engine. The Hellspawn Workbench corrects each of those where they're wrong for Spawn specifically (Spawn has no AFS files; mkisofs would destroy DC LBA layout; Spawn's text is native cp932; aggressive pointer growth bricked v20). The full reconciliation is in `hellspawn_workbench/README.md`.
+This tool replaces an earlier `dctranslate_gui` / `spawntools` build. The original spec asked for a generic-Dreamcast translator with an AFS engine, an external `mkisofs.exe` / `texconv.exe` / `vqenc.exe` subprocess pipeline, a `.tbl` table-based encoder, and a pointer-relocation engine. SpawnTools corrects each of those where they're wrong for Spawn specifically (Spawn has no AFS files; mkisofs would destroy DC LBA layout; Spawn's text is native cp932; aggressive pointer growth bricked v20). The full reconciliation is in `spawntools/README.md`.
 
 ## License
 

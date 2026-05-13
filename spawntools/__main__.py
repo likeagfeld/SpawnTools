@@ -1,4 +1,4 @@
-"""Run with `python -m hellspawn_workbench`."""
+"""Run with `python -m spawntools`."""
 from .app import App
 
 

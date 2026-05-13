@@ -83,12 +83,12 @@ class WorkspaceTab(ttk.Frame):
              `disc/`, use that — it's a campaign workspace and the user's
              existing modifications must NOT be ignored.
           2. Else if the GDI's parent has `patches/` next to it, use parent.
-          3. Else default to a fresh `<gdi_parent>/hellspawn_project`.
+          3. Else default to a fresh `<gdi_parent>/spawntools_project`.
         """
         for candidate in (gdi.parent.parent, gdi.parent):
             if (candidate / 'patches').is_dir() and (candidate / 'extracted').is_dir():
                 return str(candidate)
-        return str(gdi.parent / 'hellspawn_project')
+        return str(gdi.parent / 'spawntools_project')
 
     def _browse_project(self):
         d = filedialog.askdirectory(

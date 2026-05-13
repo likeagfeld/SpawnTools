@@ -1,4 +1,4 @@
-"""Hellspawn Workbench — main App (4-tab Tk root).
+"""SpawnTools — main App (4-tab Tk root).
 
 Wires together:
   • config.Config        — persistent paths & flags
@@ -6,7 +6,7 @@ Wires together:
   • Four view tabs       — workspace, textures, text_grid, master_build
 
 On launch:
-  1. Load Config from ~/.hellspawn_workbench/config.json
+  1. Load Config from ~/.spawntools/config.json
   2. Verify _shared_tools/ is importable — if not, prompt the user once
   3. Build the 4-tab notebook
   4. If a last-used disc path is in config, optionally pre-populate
@@ -26,7 +26,7 @@ from .views.master_build import MasterBuildTab
 class App(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title('The Hellspawn Workbench — Spawn translation suite')
+        self.title('SpawnTools — Spawn translation suite')
         self.cfg = Config.load()
         self.geometry(self.cfg.window_geometry)
         self.minsize(1100, 700)
@@ -108,7 +108,7 @@ class App(tk.Tk):
     def _prompt_for_shared_tools(self):
         messagebox.showinfo(
             'Locate _shared_tools',
-            'The Workbench needs to know where the canonical codec library '
+            'SpawnTools needs to know where the canonical codec library '
             'lives (the folder with process_game.py, pvr_codec.py, tex_decode.py, '
             'tex_repack.py).\n\n'
             "Click OK and pick that folder.",
@@ -135,7 +135,7 @@ class App(tk.Tk):
         from . import __version__
         messagebox.showinfo(
             'About',
-            f'The Hellspawn Workbench v{__version__}\n\n'
+            f'SpawnTools v{__version__}\n\n'
             f'Spawn — In the Demon\'s Hand translation suite.\n'
             f'Built on the proven _shared_tools/ codec library.\n\n'
             f'See README.md for the spec-vs-Spawn-reality reconciliation '

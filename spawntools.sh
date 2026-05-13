@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # ============================================================
-#  The Hellspawn Workbench — Linux/macOS launcher
+#  SpawnTools — Linux/macOS launcher
 #
-#  Make it executable once:  chmod +x hellspawn.sh
-#  Then run:                 ./hellspawn.sh
+#  Make it executable once:  chmod +x spawntools.sh
+#  Then run:                 ./spawntools.sh
 #  • Finds Python 3.10+ automatically
 #  • Installs Pillow + numpy on first run if they're missing
-#  • Launches `python -m hellspawn_workbench`
+#  • Launches `python -m spawntools`
 # ============================================================
 set -u
 cd "$(dirname "$0")"
@@ -43,7 +43,7 @@ if ! "$PY" -c 'import tkinter' >/dev/null 2>&1; then
 
 ============================================================
  tkinter is missing from your Python install.
- The Workbench's GUI cannot start without it.
+ SpawnTools's GUI cannot start without it.
 
  Debian/Ubuntu:  sudo apt install python3-tk
  Fedora:         sudo dnf install python3-tkinter
@@ -66,4 +66,4 @@ if ! "$PY" -c 'import PIL, numpy' >/dev/null 2>&1; then
 fi
 
 # --- 4. Launch the GUI ---
-exec "$PY" -m hellspawn_workbench
+exec "$PY" -m spawntools

@@ -10,14 +10,14 @@ Writes:
   - `bundled/spawn_preset/texture_notes.json`
   - `bundled/spawn_preset/binary_notes.json`
 
-The Workbench's `core/preset.py` loads these at runtime when the user
+SpawnTools's `core/preset.py` loads these at runtime when the user
 clicks "Load Spawn Baseline" on Tab 1. We do NOT bundle the actual
 patches/ binaries here — those live alongside the user's disc copy.
 The preset is JUST METADATA + DICT — the EN translations come from
 diffing extracted/ vs patches/ at scan time.
 
 Run once when the patches dir or dict changes:
-    python -m hellspawn_workbench.bundled.build_spawn_preset
+    python -m spawntools.bundled.build_spawn_preset
 """
 from __future__ import annotations
 import sys

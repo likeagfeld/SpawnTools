@@ -1,9 +1,9 @@
-# The Hellspawn Workbench
+# SpawnTools
 
 Production translation suite for **Spawn — In the Demon's Hand (JP, Capcom 2000)**, built on the proven `_shared_tools/` codecs used to translate.
 
 ```
-   python -m hellspawn_workbench
+   python -m spawntools
 ```
 
 ## What this is
@@ -17,7 +17,7 @@ A four-tab Tkinter IDE that wraps the canonical translation pipeline:
 
 ## Deviations from the original spec — and why
 
-The user-supplied spec contained four assumptions that are **wrong for Spawn specifically** and are flagged as hard rules in the `dreamcast-translator` skill. The Workbench corrects each rather than implementing them as requested:
+The user-supplied spec contained four assumptions that are **wrong for Spawn specifically** and are flagged as hard rules in the `dreamcast-translator` skill. SpawnTools corrects each rather than implementing them as requested:
 
 ### 1. No AFS engine for Spawn (Project Justice uses AFS, Spawn does not)
 
@@ -42,7 +42,7 @@ The spec asks for these as subprocess dependencies. We use the proven Python imp
 - **Disc patch** — `process_game.patch_iso` (in-place track03 writer that preserves LBA layout)
 - **GDI sidecar** — `gdi_builder.generate_gdi` (mirrors source GDI track entries, swaps track03 filename)
 
-mkisofs **would destroy Dreamcast LBA layout** (it rebuilds ISO9660 from scratch with new extents). The campaign mandate is in-place patching: every file rewritten at its original LBA so track03.iso byte size stays identical. `process_game.patch_iso` does exactly that and has been validated across all 15 games.
+mkisofs **would destroy Dreamcast LBA layout** (it rebuilds ISO9660 from scratch with new extents). The mandate is in-place patching: every file rewritten at its original LBA so track03.iso byte size stays identical. `process_game.patch_iso` does exactly that — it's the proven pipeline that produced the A+ Spawn build.
 
 ### 4. Encoding engine is cp932 + Capcom helpers, not generic .tbl
 
@@ -65,9 +65,9 @@ Spawn's text is **already cp932 (Shift-JIS)**. There's no game-specific custom e
 ## Project layout
 
 ```
-hellspawn_workbench/
+spawntools/
 ├── __init__.py
-├── __main__.py            # python -m hellspawn_workbench
+├── __main__.py            # python -m spawntools
 ├── app.py                 # 4-tab Tk root
 ├── config.py              # Config class (shared_tools path, optional ext-tool paths)
 ├── core/

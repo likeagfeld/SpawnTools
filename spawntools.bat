@@ -1,11 +1,11 @@
 @echo off
 REM ============================================================
-REM  The Hellspawn Workbench — Windows launcher
+REM  SpawnTools — Windows launcher
 REM
 REM  Double-click this file to start the GUI.
 REM  • Finds Python automatically (tries 'py' then 'python')
 REM  • Installs Pillow + numpy on first run if they're missing
-REM  • Launches `python -m hellspawn_workbench`
+REM  • Launches `python -m spawntools`
 REM
 REM  No path config needed — the codec library and Spawn preset
 REM  ship inside the package.
@@ -55,11 +55,11 @@ if !errorlevel! neq 0 (
 )
 
 REM --- 3. Launch the GUI ---
-!PY! -m hellspawn_workbench
+!PY! -m spawntools
 set "RC=!errorlevel!"
 if !RC! neq 0 (
     echo.
-    echo The Workbench exited with code !RC!.
+    echo SpawnTools exited with code !RC!.
     pause
 )
 endlocal
