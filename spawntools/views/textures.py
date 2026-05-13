@@ -86,7 +86,7 @@ class TexturesTab(ttk.Frame):
         # Sub-tex picker
         sub_label = ttk.Label(left, text='Sub-textures')
         sub_label.pack(anchor='w', padx=4)
-        self.subtex_list = tk.Listbox(left, height=10)
+        self.subtex_list = tk.Listbox(left, height=10, exportselection=False)
         self.subtex_list.pack(fill='x', padx=4, pady=2)
         self.subtex_list.bind('<<ListboxSelect>>', self._on_pick_subtex)
 
@@ -343,7 +343,16 @@ class TexturesTab(ttk.Frame):
 
     def _selected_rec(self):
         sel = self.subtex_list.curselection()
-        return self._current_records[sel[0]] if sel else None
+        if sel:
+            return self._current_records[sel[0]]
+        # Tk can silently drop the listbox selection when another widget steals
+        # the X11 selection (notes Text, etc.). If there's exactly one sub-tex
+        # — or if we already picked one and the records haven't changed —
+        # fall back to it instead of bouncing the user.
+        if len(self._current_records) == 1:
+            self.subtex_list.selection_set(0)
+            return self._current_records[0]
+        return None
 
     def _on_export_png(self):
         rec = self._selected_rec()
