@@ -118,6 +118,34 @@ class TexturesTab(ttk.Frame):
         self.info_lbl.pack(anchor='w', padx=6, pady=4)
 
         ttk.Separator(right).pack(fill='x', pady=4)
+        # --- Format override (POWER-USER): only visible when current
+        # selection is a RAW archive member. Default format is auto-set
+        # per game via raw_format_profiles.json; this lets you flip it if
+        # the auto-pick is wrong for an unusual chunk.
+        self.raw_fmt_frame = ttk.LabelFrame(right,
+                                             text='Format override (auto-set per game)', padding=4)
+        ttk.Label(self.raw_fmt_frame, text='pixfmt:').grid(row=0, column=0, sticky='w')
+        self.raw_pixfmt_var = tk.StringVar(value='RGB565 (0x01)')
+        self.raw_pixfmt_combo = ttk.Combobox(
+            self.raw_fmt_frame, textvariable=self.raw_pixfmt_var,
+            values=['ARGB1555 (0x00)', 'RGB565 (0x01)', 'ARGB4444 (0x02)'],
+            state='readonly', width=20,
+        )
+        self.raw_pixfmt_combo.grid(row=0, column=1, padx=2, pady=1)
+        self.raw_pixfmt_combo.bind('<<ComboboxSelected>>', self._on_raw_fmt_change)
+
+        ttk.Label(self.raw_fmt_frame, text='datafmt:').grid(row=1, column=0, sticky='w')
+        self.raw_datafmt_var = tk.StringVar(value='SQUARE_TWIDDLED (0x01)')
+        self.raw_datafmt_combo = ttk.Combobox(
+            self.raw_fmt_frame, textvariable=self.raw_datafmt_var,
+            values=['SQUARE_TWIDDLED (0x01)', 'RECTANGLE (0x09)',
+                    'RECTANGLE_TWIDDLED (0x0d)', 'SQUARE_TWIDDLED_MIPMAP (0x02)'],
+            state='readonly', width=22,
+        )
+        self.raw_datafmt_combo.grid(row=1, column=1, padx=2, pady=1)
+        self.raw_datafmt_combo.bind('<<ComboboxSelected>>', self._on_raw_fmt_change)
+        # Pack/forget done in _on_pick_subtex when the current rec is/isn't RAW
+
         ttk.Label(right, text='Export to PNG', font=('TkDefaultFont', 9, 'bold')
                   ).pack(anchor='w', padx=6, pady=(2, 0))
         ttk.Button(right, text='Export Original (JP baseline)…',
@@ -347,6 +375,7 @@ class TexturesTab(ttk.Frame):
         if rec.is_paletted: flags.append('PALETTED')
         if rec.is_vq:       flags.append('VQ')
         if rec.is_mipmap:   flags.append('MIPMAP')
+        is_raw = self._current_member is not None and self._current_member.archive_kind == 'RAW'
         info_lines = [
             f'File: {rec.file_path.name}',
             f'Sub-tex index: {rec.sub_index}',
@@ -356,7 +385,21 @@ class TexturesTab(ttk.Frame):
         ]
         if flags:
             info_lines.append('Flags: ' + ', '.join(flags))
+        if is_raw:
+            info_lines.append('(RAW blob: dims/format are best-guess; use the cycler below)')
         self.info_lbl.config(text='\n'.join(info_lines))
+
+        # Show/hide the raw-blob format cycler based on current member kind
+        if is_raw:
+            self.raw_fmt_frame.pack(fill='x', padx=6, pady=4)
+            pf_map = {0x00: 'ARGB1555 (0x00)', 0x01: 'RGB565 (0x01)', 0x02: 'ARGB4444 (0x02)'}
+            df_map = {0x01: 'SQUARE_TWIDDLED (0x01)', 0x09: 'RECTANGLE (0x09)',
+                      0x0d: 'RECTANGLE_TWIDDLED (0x0d)', 0x02: 'SQUARE_TWIDDLED_MIPMAP (0x02)'}
+            self.raw_pixfmt_var.set(pf_map.get(rec.pixfmt, f'? (0x{rec.pixfmt:02x})'))
+            self.raw_datafmt_var.set(df_map.get(rec.datafmt, f'? (0x{rec.datafmt:02x})'))
+        else:
+            try: self.raw_fmt_frame.pack_forget()
+            except Exception: pass
 
         # Modified-vs-baseline detection
         rel = rec.file_path.relative_to(self.app.disc.patches_dir).as_posix()
@@ -422,6 +465,36 @@ class TexturesTab(ttk.Frame):
                              ch // 2 - new_size[1] // 2, image=photo, anchor='nw')
 
     # ---------- actions ----------
+
+    def _on_raw_fmt_change(self, _evt=None):
+        """User changed the raw-blob pixfmt/datafmt cycler. Re-decode the
+        current member with the new format and re-render the preview."""
+        if self._current_member is None or self._current_member.archive_kind != 'RAW':
+            return
+        def parse_hex(s):
+            try: return int(s[s.rindex('(0x') + 3:s.rindex(')')], 16)
+            except (ValueError, IndexError): return 0
+        new_pf = parse_hex(self.raw_pixfmt_var.get())
+        new_df = parse_hex(self.raw_datafmt_var.get())
+        m = self._current_member
+        m.raw_pixfmt = new_pf
+        m.raw_datafmt = new_df
+        recs = tex_core.load_archive_member(m)
+        self._current_records = recs
+        # Refresh the listbox label and preview
+        if recs:
+            r = recs[0]
+            self.subtex_list.delete(0)
+            self.subtex_list.insert(0,
+                f'{m.label}  {r.width}x{r.height}  '
+                f'pf=0x{r.pixfmt:02x} df=0x{r.datafmt:02x}'
+            )
+            self.subtex_list.selection_set(0)
+        # Re-render the preview canvas with the new decode
+        if recs and recs[0].image is not None:
+            self._show_on(self.canvas_new, recs[0].image, attr='_photo_new')
+        else:
+            self._show_on(self.canvas_new, None, attr='_photo_new')
 
     def _selected_rec(self):
         sel = self.subtex_list.curselection()

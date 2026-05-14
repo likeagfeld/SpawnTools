@@ -1,0 +1,18 @@
+{
+  "_comment": "Per-game raw-blob pixfmt/datafmt defaults. Derived from Ghidra+FIDB attribution (PER_GAME_RE_NOTES.md) + manual verification on representative chunks. raw_blob.list_members consults this on a per-game basis so the user never needs to pick a format manually.",
+  "spawn":                { "pixfmt": "0x01", "datafmt": "0x01", "framework": "Kamui",  "confidence": "verified" },
+  "heavy_metal":          { "pixfmt": "0x01", "datafmt": "0x01", "framework": "Kamui",  "confidence": "verified" },
+  "cvs_pro":              { "pixfmt": "0x02", "datafmt": "0x01", "framework": "Capcom proprietary", "confidence": "best-guess" },
+  "marvel_vs_capcom_2":   { "pixfmt": "0x01", "datafmt": "0x01", "framework": "Capcom proprietary", "confidence": "verified-STG0CTEX 3x512x512" },
+  "power_stone_2":        { "pixfmt": "0x02", "datafmt": "0x01", "framework": "Capcom proprietary", "confidence": "best-guess" },
+  "jojo":                 { "pixfmt": "0x02", "datafmt": "0x01", "framework": "Ninja",  "confidence": "best-guess" },
+  "net_de_tennis":        { "pixfmt": "0x02", "datafmt": "0x01", "framework": "NLSPRITE","confidence": "best-guess" },
+  "project_justice":      { "pixfmt": "0x02", "datafmt": "0x01", "framework": "Capcom NL", "confidence": "best-guess" },
+  "sf3_3rd_strike":       { "pixfmt": "0x02", "datafmt": "0x01", "framework": "Ninja",  "confidence": "best-guess" },
+  "sfz3_ms":              { "pixfmt": "0x02", "datafmt": "0x01", "framework": "Ninja",  "confidence": "best-guess" },
+  "spfii_ms":             { "pixfmt": "0x02", "datafmt": "0x01", "framework": "Ninja",  "confidence": "best-guess" },
+  "ssfiix_ms":            { "pixfmt": "0x02", "datafmt": "0x01", "framework": "Ninja",  "confidence": "best-guess" },
+  "taisen_net_gimmick":   { "pixfmt": "0x01", "datafmt": "0x01", "framework": "Ninja",  "confidence": "verified-RESOURCE.BIN 256x256" },
+  "tech_romancer_ms":     { "pixfmt": "0x02", "datafmt": "0x01", "framework": "Ninja",  "confidence": "best-guess" },
+  "vampire_chronicle_ms": { "pixfmt": "0x02", "datafmt": "0x01", "framework": "Ninja",  "confidence": "best-guess" }
+}

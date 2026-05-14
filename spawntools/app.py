@@ -157,7 +157,7 @@ class SettingsDialog(tk.Toplevel):
     def __init__(self, parent: App, cfg: Config):
         super().__init__(parent)
         self.title('Settings')
-        self.geometry('700x340')
+        self.geometry('560x180')
         self.transient(parent)
         self.cfg = cfg
 
@@ -173,21 +173,16 @@ class SettingsDialog(tk.Toplevel):
                 if p: var.set(p)
             ttk.Button(self, text='Browse…', command=browse).grid(row=row, column=2, padx=4)
 
-        self.shared_var = tk.StringVar(value=cfg.shared_tools_path)
-        self.xdelta_var = tk.StringVar(value=cfg.xdelta_path)
+        # Codec library is now bundled at spawntools/codecs/ — no setting needed.
+        # xdelta3 path is unused by the in-place patch pipeline — removed.
+        # Only the pointer-growth toggle survives.
         self.allow_growth_var = tk.BooleanVar(value=cfg.allow_pointer_growth)
-
-        add_path(0, '_shared_tools dir:', self.shared_var, 'dir')
-        add_path(1, 'xdelta3 (optional):', self.xdelta_var, 'exe')
-
-        ttk.Separator(self, orient='horizontal').grid(row=2, column=0, columnspan=3,
-                                                       sticky='ew', pady=8)
 
         ttk.Checkbutton(
             self,
             text='Allow pointer growth (UNSAFE — disabled by default; see README §2)',
             variable=self.allow_growth_var,
-        ).grid(row=3, column=1, sticky='w', padx=4)
+        ).grid(row=0, column=1, sticky='w', padx=4, pady=8)
 
         ttk.Label(
             self,
@@ -196,17 +191,15 @@ class SettingsDialog(tk.Toplevel):
                   'oversize strings into null padding. Spawn v20 bricked the disc '
                   'doing this without strict context checks. Use at your own risk.'),
             foreground='#666', wraplength=560, justify='left',
-        ).grid(row=4, column=1, sticky='w', padx=4, pady=4)
+        ).grid(row=1, column=1, sticky='w', padx=4, pady=4)
 
-        btns = ttk.Frame(self); btns.grid(row=5, column=0, columnspan=3, pady=12)
+        btns = ttk.Frame(self); btns.grid(row=2, column=0, columnspan=3, pady=12)
         ttk.Button(btns, text='Save', command=self._save, style='Accent.TButton').pack(side='left', padx=4)
         ttk.Button(btns, text='Cancel', command=self.destroy).pack(side='left')
 
         self.columnconfigure(1, weight=1)
 
     def _save(self):
-        self.cfg.shared_tools_path = self.shared_var.get()
-        self.cfg.xdelta_path = self.xdelta_var.get()
         self.cfg.allow_pointer_growth = self.allow_growth_var.get()
         self.cfg.save()
         self.destroy()

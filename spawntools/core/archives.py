@@ -21,12 +21,52 @@ no temp dirs, nothing extracted to disk. Lets us reuse the existing
 TextureRecord pipeline.
 """
 from __future__ import annotations
+import json
 import os
 import struct
 import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Optional
+
+
+_RAW_PROFILES_CACHE: dict | None = None
+
+
+def _load_raw_profiles() -> dict:
+    """Lazy-load bundled/raw_format_profiles.json — per-game (pixfmt, datafmt)
+    defaults baked in from Ghidra+FIDB attribution + manual verification.
+
+    Returns {slug: {'pixfmt': int, 'datafmt': int}}. Slugs not present fall
+    back to RGB565 SQUARE_TWIDDLED.
+    """
+    global _RAW_PROFILES_CACHE
+    if _RAW_PROFILES_CACHE is not None:
+        return _RAW_PROFILES_CACHE
+    path = Path(__file__).resolve().parent.parent / 'bundled' / 'raw_format_profiles.json'
+    out: dict = {}
+    if path.is_file():
+        try:
+            raw = json.loads(path.read_text(encoding='utf-8'))
+        except Exception:
+            raw = {}
+        for slug, info in raw.items():
+            if not isinstance(info, dict): continue
+            try:
+                pf = int(info['pixfmt'], 16) if isinstance(info['pixfmt'], str) else int(info['pixfmt'])
+                df = int(info['datafmt'], 16) if isinstance(info['datafmt'], str) else int(info['datafmt'])
+                out[slug] = {'pixfmt': pf, 'datafmt': df}
+            except Exception:
+                continue
+    _RAW_PROFILES_CACHE = out
+    return out
+
+
+def _profile_for(slug: str | None) -> tuple[int, int]:
+    """Return (pixfmt, datafmt) for slug, or (RGB565, SQUARE_TWIDDLED) default."""
+    if not slug: return (0x01, 0x01)
+    prof = _load_raw_profiles().get(slug)
+    return (prof['pixfmt'], prof['datafmt']) if prof else (0x01, 0x01)
 
 
 
@@ -85,6 +125,39 @@ def _import_codecs():
     import archive_unpackers  # noqa
     import naomi_lzss  # noqa
     return archive_unpackers, naomi_lzss
+
+
+def _detect_slug_for_path(path: Path) -> str | None:
+    """Walk up from path looking for a track03 to fingerprint via IP.BIN.
+    Used by list_members to pick the right per-game raw-blob defaults."""
+    for ancestor in [path] + list(path.parents)[:6]:
+        for cand in (ancestor / 'disc' / 'track03.bin',
+                     ancestor / 'disc' / 'track03.iso',
+                     ancestor / 'track03.bin',
+                     ancestor / 'track03.iso'):
+            if not cand.is_file(): continue
+            try:
+                with open(cand, 'rb') as fh:
+                    head = fh.read(0x200)
+            except OSError:
+                continue
+            is_bin = cand.suffix.lower() == '.bin'
+            data_off = 16 if is_bin else 0
+            ip = head[data_off:data_off + 0x100]
+            if b'SEGA' not in ip[:0x10]: continue
+            code = ip[0x40:0x4A].decode('ascii', errors='replace').strip()
+            # Match against bundled games.json
+            idx_path = Path(__file__).resolve().parent.parent / 'bundled' / 'games.json'
+            if not idx_path.is_file(): return None
+            try:
+                idx = json.loads(idx_path.read_text(encoding='utf-8'))
+                for g in idx.get('games', []):
+                    if g.get('product_code') == code:
+                        return g['slug']
+            except Exception:
+                pass
+            return None
+    return None
 
 
 def list_members(path: Path) -> tuple[str, list[ArchiveMember]]:
@@ -188,11 +261,13 @@ def list_members(path: Path) -> tuple[str, list[ArchiveMember]]:
 
     # Capcom proprietary raw-pixel containers (MvC2 STG*TEX.BIN, EFKYTEX.BIN,
     # PL*_DAT.BIN; Net de Tennis SLW; Power Stone 2 stage BINs). No PVR magic,
-    # just concatenated raw twiddled pixel data with dimensions hardcoded in
-    # game code. Surface every plausible (offset, w, h, pixfmt) hypothesis as
-    # a member so the user can pick the right interpretation visually.
+    # just concatenated raw twiddled pixel data. The pixfmt/datafmt defaults
+    # come from the per-game profile baked at bundled/raw_format_profiles.json
+    # (auto-attributed via Ghidra+FIDB + verified on representative chunks).
     if ext == '.bin':
-        members = _surface_raw_blobs(data, path)
+        slug = _detect_slug_for_path(path)
+        default_pf, default_df = _profile_for(slug)
+        members = _surface_raw_blobs(data, path, default_pf, default_df)
         if members:
             return 'RAW', members
 
@@ -246,7 +321,8 @@ def _looks_like_pzz_loose(data: bytes) -> bool:
     return saw > 0
 
 
-def _surface_raw_blobs(data: bytes, path: Path) -> list[ArchiveMember]:
+def _surface_raw_blobs(data: bytes, path: Path,
+                       default_pf: int = 0x01, default_df: int = 0x01) -> list[ArchiveMember]:
     """Try the well-known Capcom raw-pixel container shapes:
 
       1. STG*TEX.BIN: file_size is N × (sq*sq*2) for some power-of-two sq —
@@ -338,7 +414,8 @@ def _surface_raw_blobs(data: bytes, path: Path) -> list[ArchiveMember]:
             # Find a (w, h) where w*h*2 == chunk
             for (w, h) in DIM_PAIRS:
                 if w * h * 2 != chunk: continue
-                df = 0x01 if w == h else 0x0d
+                # Use per-game pixfmt; force RECTANGLE_TWIDDLED for non-square.
+                df = default_df if w == h else 0x0d
                 for i in range(n):
                     off = hdr + i * chunk
                     members.append(ArchiveMember(
@@ -349,7 +426,7 @@ def _surface_raw_blobs(data: bytes, path: Path) -> list[ArchiveMember]:
                         pvr_bytes=data[off:off + chunk],
                         is_compressed=False,
                         raw_width=w, raw_height=h,
-                        raw_pixfmt=0x01, raw_datafmt=df,
+                        raw_pixfmt=default_pf, raw_datafmt=df,
                     ))
                 return members
             if members: return members
@@ -361,7 +438,7 @@ def _surface_raw_blobs(data: bytes, path: Path) -> list[ArchiveMember]:
         for w in (1024, 512, 256, 128):
             for h in (1024, 512, 256, 128, 64):
                 if w * h * 2 == body_len:
-                    df = 0x01 if w == h else 0x0d
+                    df = default_df if w == h else 0x0d
                     members.append(ArchiveMember(
                         archive_path=path, archive_kind='RAW',
                         member_id=0,
@@ -370,7 +447,7 @@ def _surface_raw_blobs(data: bytes, path: Path) -> list[ArchiveMember]:
                         pvr_bytes=data[8:],
                         is_compressed=False,
                         raw_width=w, raw_height=h,
-                        raw_pixfmt=0x01, raw_datafmt=df,
+                        raw_pixfmt=default_pf, raw_datafmt=df,
                     ))
                     return members
 
