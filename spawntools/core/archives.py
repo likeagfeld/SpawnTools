@@ -33,13 +33,19 @@ from typing import Optional
 @dataclass
 class ArchiveMember:
     archive_path: Path     # absolute path to the .afs/.pac/.pzz/.slw/.pvz/.pvs
-    archive_kind: str      # 'AFS' | 'PAC' | 'PVS' | 'PZZ' | 'SLW' | 'PVZ'
+    archive_kind: str      # 'AFS' | 'PAC' | 'PVS' | 'PZZ' | 'SLW' | 'PVZ' | 'RAW' | 'BIN'
     member_id: int         # index within the archive (0-based)
     label: str             # display label
     raw_offset: int        # byte offset where this member's blob lives in the archive
     raw_size: int          # raw blob size in archive (compressed size for LZSS members)
-    pvr_bytes: bytes       # decoded PVR bytes (decompressed if LZSS, raw if direct)
+    pvr_bytes: bytes       # decoded PVR bytes (or raw pixel bytes for RAW members)
     is_compressed: bool    # True for PZZ entries, SLW slots, PVZ whole-file
+    # Optional decode hints for RAW members (no PVR header — dims/format must
+    # be supplied externally). Left as 0 for normal PVR-bearing members.
+    raw_width: int = 0
+    raw_height: int = 0
+    raw_pixfmt: int = 0
+    raw_datafmt: int = 0
 
 
 ARCHIVE_EXTS = {'.afs', '.pac', '.pvs', '.pzz', '.slw', '.pvz'}
@@ -180,6 +186,16 @@ def list_members(path: Path) -> tuple[str, list[ArchiveMember]]:
         if members:
             return 'BIN', members
 
+    # Capcom proprietary raw-pixel containers (MvC2 STG*TEX.BIN, EFKYTEX.BIN,
+    # PL*_DAT.BIN; Net de Tennis SLW; Power Stone 2 stage BINs). No PVR magic,
+    # just concatenated raw twiddled pixel data with dimensions hardcoded in
+    # game code. Surface every plausible (offset, w, h, pixfmt) hypothesis as
+    # a member so the user can pick the right interpretation visually.
+    if ext == '.bin':
+        members = _surface_raw_blobs(data, path)
+        if members:
+            return 'RAW', members
+
     # Final fallback for unknown extensions: pure PVRT/GBIX signature scan
     # (covers .PAC variants we didn't structurally recognise, plus stray
     # texture containers under weird extensions).
@@ -228,6 +244,137 @@ def _looks_like_pzz_loose(data: bytes) -> bool:
         last_end = off + sz
         saw += 1
     return saw > 0
+
+
+def _surface_raw_blobs(data: bytes, path: Path) -> list[ArchiveMember]:
+    """Try the well-known Capcom raw-pixel container shapes:
+
+      1. STG*TEX.BIN: file_size is N × (sq*sq*2) for some power-of-two sq —
+         N concatenated square-twiddled textures (3× 512×512 RGB565 for MvC2).
+      2. EFKYTEX.BIN-style: 8-byte zero header + one raw blob.
+      3. PL*_DAT.BIN: top-level offset table (u32 LE) → entries with their own
+         sub-blobs.
+
+    For each detected blob, emit ONE ArchiveMember preset to the most likely
+    decode (RGB565 SQUARE_TWIDDLED for square dims, RECTANGLE for non-square).
+    The GUI exposes alternate hypotheses via Tab 2's hypothesis-cycle button.
+    """
+    from . import raw_blob
+    sz = len(data)
+    members: list[ArchiveMember] = []
+    name_up = path.name.upper()
+
+    # Pattern A: PL*_DAT-style header table.
+    # u32 LE offsets, monotonic across non-zero runs. 0x00000000 acts as a
+    # section separator inside the table — we collect non-zero values
+    # MONOTONICALLY, then STOP at the first non-zero that's less than the
+    # previous max (= we've crossed into the first entry's body bytes).
+    if sz >= 256 and not data.startswith(b'\x00\x00\x00\x00'):
+        try:
+            table = struct.unpack('<32I', data[:128])
+        except struct.error:
+            table = ()
+        # Walk the table, accumulating only monotonic-or-zero
+        nonzero: list[int] = []
+        last_max = 0
+        for v in table:
+            if v == 0: continue
+            if v < last_max: break       # body bytes — stop reading the table
+            nonzero.append(v)
+            last_max = v
+        # First entry must be small (an offset into the file, not a magic value)
+        if (nonzero and nonzero[0] < 0x1000 and
+                all(0 < v < sz for v in nonzero) and
+                len(set(nonzero)) == len(nonzero)):
+            boundaries = nonzero + [sz]
+            for i, off in enumerate(nonzero):
+                blob_len = boundaries[i + 1] - off
+                if blob_len < 0x40: continue   # too small for anything useful
+                # Pick best dim hypothesis IF body size fits power-of-two dims
+                hyps = raw_blob.hypotheses_for_file(path, offset=off, length=blob_len)
+                if hyps:
+                    pick = next((h for h in hyps if h.pixfmt == 0x01 and h.datafmt == 0x01),
+                                next((h for h in hyps if h.pixfmt == 0x01), hyps[0]))
+                    label = f'entry_{i:02d}@0x{off:x}  {pick.width}x{pick.height} pf0x{pick.pixfmt:02x}'
+                    members.append(ArchiveMember(
+                        archive_path=path, archive_kind='RAW',
+                        member_id=i, label=label,
+                        raw_offset=off, raw_size=blob_len,
+                        pvr_bytes=data[off:off + blob_len],
+                        is_compressed=False,
+                        raw_width=pick.width, raw_height=pick.height,
+                        raw_pixfmt=pick.pixfmt, raw_datafmt=pick.datafmt,
+                    ))
+                else:
+                    # Likely a sub-container (its own offset table inside).
+                    # Surface anyway so the user can export the raw bytes.
+                    members.append(ArchiveMember(
+                        archive_path=path, archive_kind='RAW',
+                        member_id=i,
+                        label=f'entry_{i:02d}@0x{off:x}  {blob_len:,}B  sub-container',
+                        raw_offset=off, raw_size=blob_len,
+                        pvr_bytes=data[off:off + blob_len],
+                        is_compressed=False,
+                    ))
+            if members:
+                return members
+
+    # Pattern B: STG*TEX-style — N evenly-sized blobs (square OR non-square),
+    # optionally after a small header. Capcom uses 0x8000-sized atlas-list
+    # headers in MvC2 STG*TEX.BIN; smaller offsets in other games.
+    HDR_OFFSETS = (0, 0x8, 0x10, 0x40, 0x80, 0x100, 0x200, 0x400,
+                   0x800, 0x1000, 0x2000, 0x4000, 0x8000)
+    CHUNK_SIZES = (0x100000, 0x80000, 0x40000, 0x20000, 0x10000, 0x8000, 0x4000)
+    DIM_PAIRS = [(d, d) for d in (1024, 512, 256, 128, 64)] + [
+        (512, 256), (256, 512), (1024, 512), (512, 1024),
+        (256, 128), (128, 256), (1024, 256), (256, 1024),
+    ]
+    for chunk in CHUNK_SIZES:
+        for hdr in HDR_OFFSETS:
+            rest = sz - hdr
+            if rest <= 0 or rest % chunk: continue
+            n = rest // chunk
+            if n not in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 16, 18, 20, 22, 24, 32): continue
+            # Find a (w, h) where w*h*2 == chunk
+            for (w, h) in DIM_PAIRS:
+                if w * h * 2 != chunk: continue
+                df = 0x01 if w == h else 0x0d
+                for i in range(n):
+                    off = hdr + i * chunk
+                    members.append(ArchiveMember(
+                        archive_path=path, archive_kind='RAW',
+                        member_id=i,
+                        label=f'chunk_{i}@0x{off:x}  {w}x{h}',
+                        raw_offset=off, raw_size=chunk,
+                        pvr_bytes=data[off:off + chunk],
+                        is_compressed=False,
+                        raw_width=w, raw_height=h,
+                        raw_pixfmt=0x01, raw_datafmt=df,
+                    ))
+                return members
+            if members: return members
+        if members: return members
+
+    # Pattern C: EFKYTEX-style — small zero header + one blob with rectangle dims.
+    if sz > 0x1000 and data[:8] == b'\x00' * 8:
+        body_len = sz - 8
+        for w in (1024, 512, 256, 128):
+            for h in (1024, 512, 256, 128, 64):
+                if w * h * 2 == body_len:
+                    df = 0x01 if w == h else 0x0d
+                    members.append(ArchiveMember(
+                        archive_path=path, archive_kind='RAW',
+                        member_id=0,
+                        label=f'blob@0x8  {w}x{h}',
+                        raw_offset=8, raw_size=body_len,
+                        pvr_bytes=data[8:],
+                        is_compressed=False,
+                        raw_width=w, raw_height=h,
+                        raw_pixfmt=0x01, raw_datafmt=df,
+                    ))
+                    return members
+
+    return []
 
 
 def _scan_pvr_signatures(data: bytes, path: Path, archive_kind: str) -> list[ArchiveMember]:

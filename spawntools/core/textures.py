@@ -105,14 +105,39 @@ def load(path: Path) -> list[TextureRecord]:
 
 
 def load_archive_member(member) -> list[TextureRecord]:
-    """Decode the PVR bytes inside an archive member into TextureRecords.
+    """Decode the bytes inside an archive member into TextureRecords.
 
-    `member` is an `archives.ArchiveMember` instance. SLW raw-VRAM blobs are
-    not standard PVRs and are skipped (returned empty) since their dimensions
-    live in game code, not the file.
+    Handles three shapes:
+      - PVRT/GBIX-headered bytes (regular PVR member from AFS/PAC/PVS/PZZ/PVZ)
+      - RAW raw-pixel bytes (Capcom proprietary BINs — STG*TEX, EFKYTEX,
+        PL*_DAT, etc.) decoded via the stored raw_* hints.
+      - SLW raw VRAM blob with no dims — returned empty.
     """
     if member.archive_kind == 'SLW':
         return []  # raw VRAM blob — no usable PVR header
+
+    # RAW: dims/format were determined heuristically at list_members time.
+    if member.archive_kind == 'RAW' and member.raw_width and member.raw_height:
+        import sys
+        codecs_dir = Path(__file__).resolve().parent.parent / 'codecs'
+        if str(codecs_dir) not in sys.path:
+            sys.path.insert(0, str(codecs_dir))
+        import tex_decode
+        try:
+            img = tex_decode.decode_texture(
+                member.pvr_bytes, 0,
+                member.raw_width, member.raw_height,
+                member.raw_pixfmt, member.raw_datafmt,
+            )
+        except Exception:
+            img = None
+        return [TextureRecord(
+            file_path=member.archive_path, sub_index=member.member_id,
+            width=member.raw_width, height=member.raw_height,
+            pixfmt=member.raw_pixfmt, datafmt=member.raw_datafmt,
+            image=img,
+        )]
+
     pvr_bytes = member.pvr_bytes
     if pvr_bytes[:4] not in (b'PVRT', b'GBIX'):
         return []
