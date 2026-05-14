@@ -137,9 +137,16 @@ def integrity_check(dctx: DiscContext,
     n_identical = 0
     n_files = 0
 
+    # Names we generate ourselves and that aren't part of the disc — skip them
+    # so the orphan check doesn't false-positive on our safety backups / logs.
+    SKIP_SUFFIXES = ('.bak', '.pre_twinstick_revert', '.tmp', '.new', '.swp')
+    SKIP_NAMES = {'.DS_Store', 'Thumbs.db'}
+
     # For every file in patches/, compare against the same file in extracted/
     for p in dctx.patches_dir.rglob('*'):
         if not p.is_file(): continue
+        if p.name in SKIP_NAMES: continue
+        if any(p.name.endswith(s) for s in SKIP_SUFFIXES): continue
         n_files += 1
         rel = p.relative_to(dctx.patches_dir)
         baseline = dctx.extracted_dir / rel
