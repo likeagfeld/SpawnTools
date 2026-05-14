@@ -25,7 +25,7 @@
     {
       "rel": "1ST_READ.BIN",
       "baseline_md5": "6c17bf8fc14a75048cf0db067e4e2e38",
-      "patched_md5": "2e62ad8edfbe65f62c1fc67b94fa6941",
+      "patched_md5": "c9bbc59ada810b66c2588c0783c1b8ec",
       "size": 2359937,
       "patched_size": 2359937,
       "kind": "code",
@@ -35,7 +35,7 @@
     {
       "rel": "2_DP.BIN",
       "baseline_md5": "9dbc5a725dd1b4624b86eb55a95c37bd",
-      "patched_md5": "662baf907dc78a564033f222d4a951a5",
+      "patched_md5": "91a95d2d498335c3899e55ba3948a859",
       "size": 3480282,
       "patched_size": 3480282,
       "kind": "code",
@@ -50,6 +50,86 @@
       "patched_size": 104857600,
       "kind": "text",
       "jp_runs": 8198,
+      "pvrt_count": 0
+    },
+    {
+      "rel": "DC01TEX.BIN",
+      "baseline_md5": "a7af436651c7c4994f3a720f4051c18c",
+      "patched_md5": "9a81f4086406b0aa7b2fc845561c3351",
+      "size": 304130,
+      "patched_size": 304160,
+      "kind": "text",
+      "jp_runs": 1556,
+      "pvrt_count": 0
+    },
+    {
+      "rel": "DC02TEX.BIN",
+      "baseline_md5": "6c95380ff6f268509c91db1fb0b088bf",
+      "patched_md5": "7eb70d51b7f2bd1bedbbf4051e693be3",
+      "size": 306812,
+      "patched_size": 306842,
+      "kind": "text",
+      "jp_runs": 1586,
+      "pvrt_count": 0
+    },
+    {
+      "rel": "DC05TEX.BIN",
+      "baseline_md5": "f224669825f684812ff7e51ab14e32ff",
+      "patched_md5": "19334ad08118981cbe9e59e1ae0f9686",
+      "size": 204650,
+      "patched_size": 204680,
+      "kind": "code",
+      "jp_runs": 668,
+      "pvrt_count": 0
+    },
+    {
+      "rel": "DC06TEX.BIN",
+      "baseline_md5": "c81bf15ad20722b9e37bb0895a698e96",
+      "patched_md5": "e43f632429d5b38f15c78416875fca8b",
+      "size": 163318,
+      "patched_size": 163318,
+      "kind": "code",
+      "jp_runs": 64,
+      "pvrt_count": 0
+    },
+    {
+      "rel": "DC09TEX.BIN",
+      "baseline_md5": "33914333cab571f53bb2cd741455bfc0",
+      "patched_md5": "51dcea0db9193d4b04265d79d79408e5",
+      "size": 231442,
+      "patched_size": 231442,
+      "kind": "text",
+      "jp_runs": 131,
+      "pvrt_count": 0
+    },
+    {
+      "rel": "DC12TEX.BIN",
+      "baseline_md5": "bd371c9c4236d709480380afd831d75e",
+      "patched_md5": "3c5ade7ea5e03082100513073578dc13",
+      "size": 29774,
+      "patched_size": 29774,
+      "kind": "text",
+      "jp_runs": 35,
+      "pvrt_count": 0
+    },
+    {
+      "rel": "DC13TEX.BIN",
+      "baseline_md5": "a00d289078561d37f70920e65f7b0668",
+      "patched_md5": "0a15dd929e0e0585b3d03c1a0d8e820e",
+      "size": 308574,
+      "patched_size": 308602,
+      "kind": "text",
+      "jp_runs": 1588,
+      "pvrt_count": 0
+    },
+    {
+      "rel": "DC14TEX.BIN",
+      "baseline_md5": "0ce9c19d918c18ffc9d6c3bc5ccbbfc2",
+      "patched_md5": "47aad8459ffc861a0e867f7f54df9315",
+      "size": 308642,
+      "patched_size": 308672,
+      "kind": "text",
+      "jp_runs": 1572,
       "pvrt_count": 0
     },
     {
@@ -73,6 +153,36 @@
       "pvrt_count": 0
     },
     {
+      "rel": "DM00TEX.BIN",
+      "baseline_md5": "df9f8464f3d4b377d4578a258659cac2",
+      "patched_md5": "ec7cccb8db6cf007092c8feff023bd8d",
+      "size": 455446,
+      "patched_size": 455446,
+      "kind": "text",
+      "jp_runs": 1224,
+      "pvrt_count": 0
+    },
+    {
+      "rel": "DM01TEX.BIN",
+      "baseline_md5": "cb881dba352a94f302ff03c8acef1ac8",
+      "patched_md5": "b636cb91295d4b30ed538a5655460a76",
+      "size": 704538,
+      "patched_size": 704538,
+      "kind": "text",
+      "jp_runs": 2651,
+      "pvrt_count": 0
+    },
+    {
+      "rel": "DM09TEX.BIN",
+      "baseline_md5": "9e69c4da73f2221fbc926ce71bc0dc84",
+      "patched_md5": "248c65e152f5c117bd94d5884882ff3c",
+      "size": 77842,
+      "patched_size": 78526,
+      "kind": "text",
+      "jp_runs": 152,
+      "pvrt_count": 0
+    },
+    {
       "rel": "EST07TEX.BIN",
       "baseline_md5": "625ef2bdcab103a58f5ab368f8dccc1e",
       "patched_md5": "c06c51a8fa04a56ddae06306b4a93027",
@@ -90,6 +200,46 @@
       "patched_size": 652322,
       "kind": "text",
       "jp_runs": 3464,
+      "pvrt_count": 0
+    },
+    {
+      "rel": "MESE_BOS.BIN",
+      "baseline_md5": "ca4394bebba5d183e352af5f1ef2d4cc",
+      "patched_md5": "45994877902b91bffdce11bba60207f8",
+      "size": 2116,
+      "patched_size": 2116,
+      "kind": "data",
+      "jp_runs": 0,
+      "pvrt_count": 0
+    },
+    {
+      "rel": "MESE_WIN.BIN",
+      "baseline_md5": "eaae167d1b19d1093bd25c1f0f7d948a",
+      "patched_md5": "519106d51aa0591b6148ee96ba587209",
+      "size": 18276,
+      "patched_size": 18276,
+      "kind": "data",
+      "jp_runs": 0,
+      "pvrt_count": 0
+    },
+    {
+      "rel": "MESJ_END.BIN",
+      "baseline_md5": "8a036f3069b9eaa25cd1fe66d11ca3f0",
+      "patched_md5": "466e24a0b714c704690b48e020cb806b",
+      "size": 5236,
+      "patched_size": 5492,
+      "kind": "text",
+      "jp_runs": 154,
+      "pvrt_count": 0
+    },
+    {
+      "rel": "MESJ_WIN.BIN",
+      "baseline_md5": "8686930799816f362c1f8eda478e60ac",
+      "patched_md5": "a332a37de5e9bfd8f286f65f959eb04a",
+      "size": 198276,
+      "patched_size": 198276,
+      "kind": "text",
+      "jp_runs": 5413,
       "pvrt_count": 0
     },
     {
@@ -185,7 +335,7 @@
     {
       "rel": "S20RM04.BIN",
       "baseline_md5": "f537f34c23255a3f0ea9f6ad2166c51e",
-      "patched_md5": "ee70a212eaf1a2c0a92d52f5f6b0c273",
+      "patched_md5": "cb2a5b973b7ad0654deb826956ea098d",
       "size": 905728,
       "patched_size": 905728,
       "kind": "text",
@@ -233,9 +383,29 @@
       "pvrt_count": 0
     },
     {
+      "rel": "SPR_FSH.BIN",
+      "baseline_md5": "93bc049fd5abf1997611479b3fa817eb",
+      "patched_md5": "5d00e62ca81c6a293ab23aabbaf9eccd",
+      "size": 21576,
+      "patched_size": 21576,
+      "kind": "text",
+      "jp_runs": 9,
+      "pvrt_count": 0
+    },
+    {
+      "rel": "SPR_LEV.BIN",
+      "baseline_md5": "b7b100a7e5f28ffad66a9962334b7658",
+      "patched_md5": "32b43f9dd48f790d03237b21e6635339",
+      "size": 4958,
+      "patched_size": 5064,
+      "kind": "data",
+      "jp_runs": 1,
+      "pvrt_count": 0
+    },
+    {
       "rel": "ST07TEX.BIN",
       "baseline_md5": "12db0f3fcb3decbff41bf773d6f0f352",
-      "patched_md5": "44a8752541ceb04132ad612e7a715aaf",
+      "patched_md5": "844ef03a856a9d2b3c980d70de31e44f",
       "size": 619862,
       "patched_size": 619862,
       "kind": "text",
@@ -253,24 +423,185 @@
       "pvrt_count": 0
     },
     {
+      "rel": "STG04TEX.BIN",
+      "baseline_md5": "d339162a5fbd8ca4175d4176a8dc36fc",
+      "patched_md5": "eb788b3a065aeba97928e08ef5f62069",
+      "size": 718490,
+      "patched_size": 719282,
+      "kind": "text",
+      "jp_runs": 1715,
+      "pvrt_count": 0
+    },
+    {
       "rel": "DPETC/MESSAGE.INI",
       "baseline_md5": "c6603bc568955a9dd5b7590bcc231d27",
-      "patched_md5": "24fcc8d14598937f2b5e4a79225f55cf",
+      "patched_md5": "891c16035bdff45f3fbe6b519d16a94a",
       "size": 71413,
-      "patched_size": 71413,
+      "patched_size": 72877,
       "kind": "text",
       "jp_runs": 1855,
       "pvrt_count": 0
+    },
+    {
+      "rel": "DPTEX/C_M_S.PVR",
+      "baseline_md5": "7706b3c567d217ce9a57001681585c05",
+      "patched_md5": "b8032637576572c8ceef3167d2ffbe16",
+      "size": 67616,
+      "patched_size": 67616,
+      "kind": "texture",
+      "jp_runs": 87,
+      "pvrt_count": 2
+    },
+    {
+      "rel": "DPTEX/JYOUCYU0.PVR",
+      "baseline_md5": "b1cd50ed0ae83c9898c475eef9cc694b",
+      "patched_md5": "45b73addc071cecf1ed7eb07e5fbed46",
+      "size": 67616,
+      "patched_size": 67616,
+      "kind": "texture",
+      "jp_runs": 195,
+      "pvrt_count": 2
+    },
+    {
+      "rel": "DPTEX/JYOUCYU1.PVR",
+      "baseline_md5": "8e153e44aa816a2d42d70b98c5cbc06c",
+      "patched_md5": "5f46dfe738ab3a025333dfe3cc8c2dcc",
+      "size": 67616,
+      "patched_size": 67616,
+      "kind": "texture",
+      "jp_runs": 27,
+      "pvrt_count": 2
+    },
+    {
+      "rel": "DPTEX/OPTION01.PVR",
+      "baseline_md5": "4241d1ca6ece0ccd4a63139407f236f5",
+      "patched_md5": "7a9efab325ed866bf0758a7f0223d5d3",
+      "size": 67616,
+      "patched_size": 67616,
+      "kind": "texture",
+      "jp_runs": 164,
+      "pvrt_count": 2
+    },
+    {
+      "rel": "DPTEX/OPTION02.PVR",
+      "baseline_md5": "16bcfcfeb5251af3c341ad7dd6348650",
+      "patched_md5": "69a03523e4a1d4548a0c00b991abdf9a",
+      "size": 67616,
+      "patched_size": 67616,
+      "kind": "texture",
+      "jp_runs": 123,
+      "pvrt_count": 2
+    },
+    {
+      "rel": "DPTEX/OPTION03.PVR",
+      "baseline_md5": "06fd3318a1f793674afb9b9f8deb962b",
+      "patched_md5": "af5eb00e1aeb5bc40416cfea5d3df0b7",
+      "size": 67616,
+      "patched_size": 67616,
+      "kind": "texture",
+      "jp_runs": 134,
+      "pvrt_count": 2
+    },
+    {
+      "rel": "DPTEX/SKB_EISU.PVR",
+      "baseline_md5": "a9b710bcef7d8bb2c03737f73643d98e",
+      "patched_md5": "22c57ba92d476adef465495f4325b20d",
+      "size": 67616,
+      "patched_size": 67616,
+      "kind": "texture",
+      "jp_runs": 24,
+      "pvrt_count": 2
+    },
+    {
+      "rel": "DPTEX/SKB_KANA.PVR",
+      "baseline_md5": "5934eea3a63669f2c694c07c17a6e58a",
+      "patched_md5": "e2cbeb4e4f47c71b5254417341c45a05",
+      "size": 67616,
+      "patched_size": 67616,
+      "kind": "texture",
+      "jp_runs": 9,
+      "pvrt_count": 2
+    },
+    {
+      "rel": "DPTEX/SU_ICO2.PVR",
+      "baseline_md5": "34ef6f0db82489b67a2d1f61e642deff",
+      "patched_md5": "95cf238d067162d8b6d465705f78c572",
+      "size": 67616,
+      "patched_size": 67616,
+      "kind": "texture",
+      "jp_runs": 53,
+      "pvrt_count": 2
+    },
+    {
+      "rel": "DPTEX/SU_ICON.PVR",
+      "baseline_md5": "df0628d211b9aecfe8047e144438084a",
+      "patched_md5": "ddc96490f37007f49213894f794339e6",
+      "size": 67616,
+      "patched_size": 67616,
+      "kind": "texture",
+      "jp_runs": 227,
+      "pvrt_count": 2
+    },
+    {
+      "rel": "DPTEX/TAG_SU.PVR",
+      "baseline_md5": "d372d017b83d6f2c7cb3fb407d95849a",
+      "patched_md5": "657e9327566f31f5f463b76ef86405d5",
+      "size": 67616,
+      "patched_size": 67616,
+      "kind": "texture",
+      "jp_runs": 131,
+      "pvrt_count": 2
+    },
+    {
+      "rel": "DPTEX/VMSPART2.PVR",
+      "baseline_md5": "69604e57ec6b154acb78c1b8a081dc22",
+      "patched_md5": "aa8f397dc89395f428c89fce89b6c113",
+      "size": 67616,
+      "patched_size": 67616,
+      "kind": "texture",
+      "jp_runs": 327,
+      "pvrt_count": 2
+    },
+    {
+      "rel": "DPTEX/VMSPARTS.PVR",
+      "baseline_md5": "50c57120efa03e562ea2c044f01505af",
+      "patched_md5": "f3fe5e3e43556d20ee2056f10f08af87",
+      "size": 67616,
+      "patched_size": 67616,
+      "kind": "texture",
+      "jp_runs": 249,
+      "pvrt_count": 2
+    },
+    {
+      "rel": "DPWWW/INDEX.HTML",
+      "baseline_md5": "c81ca56a4528bfce93fde55669b58891",
+      "patched_md5": "d13c5f99c08ecc8e7c5b07c544c4ee35",
+      "size": 1612,
+      "patched_size": 1612,
+      "kind": "data",
+      "jp_runs": 7,
+      "pvrt_count": 0
+    },
+    {
+      "rel": "DPWWW/HELP/INDEX.HTML",
+      "baseline_md5": "8d03aac6fbdb1ffdde110038460b2153",
+      "patched_md5": "9ae757e8e5bce48b56fa633eb5a6a553",
+      "size": 607,
+      "patched_size": 607,
+      "kind": "data",
+      "jp_runs": 2,
+      "pvrt_count": 0
     }
   ],
-  "modified_count": 24,
+  "modified_count": 57,
   "modified_by_kind": {
-    "code": 6,
-    "text": 17,
-    "data": 1
+    "code": 8,
+    "text": 30,
+    "data": 6,
+    "texture": 13
   },
   "identical_count": 0,
-  "translations_count": 1391,
+  "translations_count": 2359,
   "dict_entries": 796,
   "description": "Bundled baseline for Capcom vs. SNK — Millennium Fight 2000 Pro. EN translations are diff-derived from extracted/ vs patches/. Edit them in Tab 3 or revert per-row / per-file / all to stock JP."
 }
