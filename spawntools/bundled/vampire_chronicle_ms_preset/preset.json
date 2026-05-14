@@ -15,6 +15,7 @@
   "scan_targets": [
     "1ST_READ.BIN",
     "DPETC/MESSAGE.INI",
+    "ASK.BIN",
     "PL0C.BIN",
     "PL08.BIN"
   ],

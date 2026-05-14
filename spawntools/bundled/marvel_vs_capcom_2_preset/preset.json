@@ -5,7 +5,7 @@
   "tier": "done",
   "product_code": "T1215M",
   "detect_label": "MARVEL VS. CAPCOM 2",
-  "notes_kind": "std",
+  "notes_kind": "dp3",
   "deny_list": [
     "2_DP.BIN",
     "GAME.BIN",
@@ -14,10 +14,25 @@
   ],
   "scan_targets": [
     "1ST_READ.BIN",
-    "PL31_DAT.BIN",
+    "DPETC/MESSAGE.INI",
+    "ASK.BIN",
+    "EFKYTEX.BIN",
+    "PL01_DAT.BIN",
     "PL04_DAT.BIN",
+    "PL0B_DAT.BIN",
+    "PL0E_DAT.BIN",
+    "PL12_DAT.BIN",
     "PL17_DAT.BIN",
-    "EFKYTEX.BIN"
+    "PL1C_DAT.BIN",
+    "PL1D_DAT.BIN",
+    "PL20_DAT.BIN",
+    "PL22_DAT.BIN",
+    "PL2D_DAT.BIN",
+    "PL31_DAT.BIN",
+    "PL33_DAT.BIN",
+    "PL38_DAT.BIN",
+    "PL39_DAT.BIN",
+    "PL3A_DAT.BIN"
   ],
   "modified_files": [
     {
@@ -439,7 +454,7 @@
     "texture": 11
   },
   "identical_count": 1,
-  "translations_count": 1,
+  "translations_count": 720,
   "dict_entries": 796,
   "description": "Bundled baseline for Marvel vs. Capcom 2 — New Age of Heroes. EN translations are diff-derived from extracted/ vs patches/. Edit them in Tab 3 or revert per-row / per-file / all to stock JP."
 }

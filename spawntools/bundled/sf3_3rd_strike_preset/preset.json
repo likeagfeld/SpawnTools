@@ -15,6 +15,7 @@
   "scan_targets": [
     "1ST_READ.BIN",
     "DPETC/MESSAGE.INI",
+    "KANJI/ASKLIBS.BIN",
     "PLAYER/PL00.BIN",
     "PLAYER/PL02.BIN",
     "PLAYER/PL09.BIN",
@@ -23,7 +24,11 @@
     "PLAYER/PL18.BIN",
     "PLAYER/PL19.BIN",
     "PLAYER/PL20.BIN",
-    "OPENING/BG20.BIN"
+    "OPENING/BG20.BIN",
+    "STAGE/BG00.BIN",
+    "STAGE/BG11.BIN",
+    "STAGE/BG19.BIN",
+    "ENDING/BG39.BIN"
   ],
   "modified_files": [
     {

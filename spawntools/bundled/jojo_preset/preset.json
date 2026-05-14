@@ -5,7 +5,7 @@
   "tier": "done",
   "product_code": "T1231M",
   "detect_label": "JOJO",
-  "notes_kind": "std",
+  "notes_kind": "dp3",
   "deny_list": [
     "2_DP.BIN",
     "GAME.BIN",
@@ -14,7 +14,17 @@
   ],
   "scan_targets": [
     "97_DASH.BIN",
-    "95_JOJO.BIN"
+    "95_JOJO.BIN",
+    "93_LOBBY.BIN",
+    "91_MENU.BIN",
+    "JOJO/PL01_TRN.BIN",
+    "DASH/PL0F_TRN.BIN",
+    "DASH/PL10_TRN.BIN",
+    "DASH/PS13_TRN.BIN",
+    "DASH/PL16_TRN.BIN",
+    "DASH/PS03_TRN.BIN",
+    "DASH/STF00_TRN.BIN",
+    "DPETC/MESSAGE.INI"
   ],
   "modified_files": [
     {
@@ -256,7 +266,7 @@
     "archive": 1
   },
   "identical_count": 6,
-  "translations_count": 24,
+  "translations_count": 1489,
   "dict_entries": 796,
   "description": "Bundled baseline for JoJo's Bizarre Adventure. EN translations are diff-derived from extracted/ vs patches/. Edit them in Tab 3 or revert per-row / per-file / all to stock JP."
 }

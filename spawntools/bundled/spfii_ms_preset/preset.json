@@ -14,7 +14,10 @@
   ],
   "scan_targets": [
     "1ST_READ.BIN",
-    "DPETC/MESSAGE.INI"
+    "DPETC/MESSAGE.INI",
+    "ASK.BIN",
+    "PL06_FEL.OSB",
+    "PL00_MOR.OSB"
   ],
   "modified_files": [
     {

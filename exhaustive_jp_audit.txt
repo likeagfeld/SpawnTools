@@ -1,0 +1,315 @@
+
+=== Capcom vs. SNK - Millennium Fight 2000 Pro (JP) ===
+  files: 841   skipped: {'too-large': 3, 'audio/video': 74, 'audio-dtpk': 54}
+  by-ext jp-runs (top 8): [('.bin', 159022), ('.pvr', 12651), ('.ini', 1896), ('.dps', 188), ('.dat', 41), ('.drv', 17), ('.html', 9), ('.pvp', 1)]
+  by-ext tex-files (top 8): [('.pvr', 23), ('.bin', 1)]
+  top 15 JP-bearing files (cp932 raw + LZSS):
+    [bin           ] jp= 8825 fw= 18 lzss_jp=   0 pvrt=  8   3,480,282  2_DP.BIN MODIFIED
+    [bin           ] jp= 6360 fw=  1 lzss_jp=   0 pvrt=  0     886,886  ST0DTEX.BIN
+    [pvr           ] jp= 5974 fw=  0 lzss_jp=   0 pvrt=  1     699,072  DPTEX/WALLPAPER.PVR
+    [bin           ] jp= 5413 fw=  7 lzss_jp=   0 pvrt=  0     198,276  MESJ_WIN.BIN MODIFIED
+    [bin           ] jp= 4673 fw=  6 lzss_jp=   0 pvrt=  0     637,876  ASK.BIN
+    [bin           ] jp= 4364 fw=  4 lzss_jp=   0 pvrt=  0     728,146  ST06TEX.BIN
+    [bin           ] jp= 4289 fw=  0 lzss_jp=   0 pvrt=  0   1,291,392  DC04BST.BIN
+    [bin           ] jp= 4110 fw=  1 lzss_jp=   0 pvrt=  0     728,518  ST09TEX.BIN
+    [bin           ] jp= 3689 fw=  0 lzss_jp=   0 pvrt=  0     619,862  ST07TEX.BIN MODIFIED
+    [bin           ] jp= 3629 fw=  0 lzss_jp=   0 pvrt=  0     617,880  EST07TEX.BIN MODIFIED
+    [bin           ] jp= 3601 fw=  0 lzss_jp=   0 pvrt=  0     729,528  ST08TEX.BIN
+    [bin           ] jp= 3553 fw=  2 lzss_jp=   0 pvrt=  0     657,166  ST0ATEX.BIN MODIFIED
+    [bin           ] jp= 3464 fw=  2 lzss_jp=   0 pvrt=  0     652,322  EST0ATEX.BIN MODIFIED
+    [bin           ] jp= 3213 fw=  3 lzss_jp=   0 pvrt=  0     644,478  E100TEX.BIN
+    [bin           ] jp= 3139 fw= 38 lzss_jp=   0 pvrt=  0   2,359,937  1ST_READ.BIN MODIFIED
+
+=== Heavy Metal - Geomatrix (JP) ===
+  files: 592   skipped: {'audio-dtpk': 17, 'audio/video': 108, 'too-large': 9}
+  by-ext jp-runs (top 8): [('.tex', 169837), ('.bin', 12821), ('.bix', 7121), ('.pvr', 5432), ('.ini', 1897), ('.mot', 1297), ('.mdl', 362), ('.dps', 188)]
+  by-ext tex-files (top 8): [('.tex', 158), ('.pvr', 27), ('.bin', 1)]
+  top 15 JP-bearing files (cp932 raw + LZSS):
+    [bin           ] jp= 8825 fw= 18 lzss_jp=   0 pvrt=  8   3,480,282  2_DP.BIN MODIFIED
+    [tex-container ] jp= 8039 fw=  0 lzss_jp=   0 pvrt=  0   1,572,944  MODE_SEL.TEX
+    [tex-container ] jp= 5721 fw=  0 lzss_jp=   0 pvrt=  0   1,343,600  CHAOS_SEL.TEX
+    [bix           ] jp= 4654 fw=  6 lzss_jp=   0 pvrt=  0     637,872  ASKLIBS.BIX
+    [tex-container ] jp= 3972 fw= 13 lzss_jp=   0 pvrt=  0     745,824  ST01.TEX
+    [tex-container ] jp= 3966 fw=  5 lzss_jp=   0 pvrt=  0     753,360  ST01B.TEX
+    [tex-container ] jp= 3839 fw=  0 lzss_jp=   0 pvrt=  0     860,304  VS.TEX
+    [tex-container ] jp= 3802 fw=  0 lzss_jp=   0 pvrt=  0     785,792  ST06.TEX
+    [tex-container ] jp= 3704 fw=  0 lzss_jp=   0 pvrt=  0     785,792  ST06B.TEX
+    [tex-container ] jp= 3457 fw=  0 lzss_jp=   0 pvrt=  0   1,048,640  HM_VM_MES_E.TEX
+    [tex-container ] jp= 3406 fw=  2 lzss_jp=   0 pvrt=  0     706,160  ST02.TEX
+    [tex-container ] jp= 3228 fw=  0 lzss_jp=   0 pvrt=  0     706,160  ST02B.TEX
+    [tex-container ] jp= 3202 fw=  1 lzss_jp=   0 pvrt=  0     742,864  ST05B.TEX
+    [tex-container ] jp= 2839 fw=  0 lzss_jp=   0 pvrt=  0     421,056  CHAOSOBJ2.TEX
+    [tex-container ] jp= 2702 fw=  0 lzss_jp=   0 pvrt=  0     694,864  ST04B.TEX
+
+=== JoJo_s Bizarre Adventure[ (JP) ===
+  files: 667   skipped: {'too-large': 1, 'audio/video': 60}
+  by-ext jp-runs (top 8): [('.pvs', 745638), ('.bin', 215950), ('.pvr', 43774), ('.mpb', 9068), ('.osb', 3673), ('.ini', 1859), ('.dps', 188), ('.dat', 41)]
+  by-ext tex-files (top 8): [('.pvs', 150), ('.pvr', 95), ('.bin', 7)]
+  top 15 JP-bearing files (cp932 raw + LZSS):
+    [pvs           ] jp=26980 fw=  0 lzss_jp=   0 pvrt= 30   3,932,644  JOJO/SF.PVS
+    [pvs           ] jp=17813 fw=774 lzss_jp=   0 pvrt= 16   2,097,412  DASH/SJ_160.PVS
+    [pvs           ] jp=17755 fw=774 lzss_jp=   0 pvrt= 16   2,097,412  JOJO/SJ_160.PVS
+    [pvs           ] jp=15984 fw=  9 lzss_jp=   0 pvrt= 11   1,441,972  DASH/SJ_120.PVS
+    [pvs           ] jp=15984 fw=  9 lzss_jp=   0 pvrt= 11   1,441,972  JOJO/SJ_120.PVS
+    [bin           ] jp=15697 fw=477 lzss_jp=   0 pvrt=  0   6,076,784  97_DASH.BIN MODIFIED
+    [pvs           ] jp=14802 fw=  0 lzss_jp=   0 pvrt= 13   1,704,148  DASH/SJ_1C0.PVS
+    [pvs           ] jp=14762 fw=  0 lzss_jp=   0 pvrt= 13   1,704,148  JOJO/SJ_1C0.PVS
+    [pvs           ] jp=14590 fw=  0 lzss_jp=   0 pvrt= 11   1,441,972  DASH/SJ_1A0.PVS
+    [pvs           ] jp=14590 fw=  0 lzss_jp=   0 pvrt= 11   1,441,972  JOJO/SJ_1A0.PVS
+    [pvs           ] jp=14229 fw=  0 lzss_jp=   0 pvrt= 13   1,704,148  DASH/SJ_1D0.PVS
+    [pvs           ] jp=14226 fw=  0 lzss_jp=   0 pvrt= 13   1,704,148  JOJO/SJ_1D0.PVS
+    [pvs           ] jp=13001 fw=  0 lzss_jp=   0 pvrt= 12   1,573,060  DASH/SJ_240.PVS
+    [pvs           ] jp=12871 fw=  0 lzss_jp=   0 pvrt= 13   1,704,148  JOJO/SJ_100.PVS
+    [pvs           ] jp=12823 fw=  0 lzss_jp=   0 pvrt= 13   1,704,148  DASH/SJ_100.PVS
+
+=== Marvel vs. Capcom 2 - New Age of Heroes (JP) ===
+  files: 760   skipped: {'audio/video': 9, 'too-large': 1, 'audio-dtpk': 62}
+  by-ext jp-runs (top 8): [('.bin', 315205), ('.pvr', 20150), ('.ini', 1041), ('.dps', 125), ('.dat', 41), ('.drv', 17), ('.htm', 11)]
+  by-ext tex-files (top 8): [('.pvr', 20), ('.bin', 1)]
+  top 15 JP-bearing files (cp932 raw + LZSS):
+    [bin           ] jp=13777 fw=600 lzss_jp=   0 pvrt=  0   1,558,528  STG0ETEX.BIN
+    [bin           ] jp=12943 fw=  0 lzss_jp=   0 pvrt=  0   1,638,400  STG07TEX.BIN
+    [bin           ] jp=12768 fw=169 lzss_jp=   0 pvrt=  0   1,605,632  STG0CTEX.BIN
+    [bin           ] jp=12266 fw=  2 lzss_jp=   0 pvrt=  0   1,507,328  STG0DTEX.BIN
+    [text-or-ini   ] jp=12191 fw=  0 lzss_jp=   0 pvrt=  0   1,441,792  STG10TEX.BIN
+    [bin           ] jp=11565 fw= 27 lzss_jp=   0 pvrt=  0   1,605,632  STG03TEX.BIN
+    [bin           ] jp=11371 fw=  0 lzss_jp=   0 pvrt=  0   2,031,456  DM08CHR.BIN
+    [bin           ] jp=10737 fw=  0 lzss_jp=   0 pvrt=  0   1,671,168  STG06TEX.BIN
+    [bin           ] jp=10261 fw=  0 lzss_jp=   0 pvrt=  0   1,654,784  STG04TEX.BIN
+    [bin           ] jp=10020 fw= 55 lzss_jp=   0 pvrt=  8   3,623,364  2_DP.BIN MODIFIED
+    [bin           ] jp= 9869 fw= 16 lzss_jp=   0 pvrt=  0   1,671,168  STG01TEX.BIN
+    [bin           ] jp= 9127 fw= 19 lzss_jp=   0 pvrt=  0   1,671,168  STG00TEX.BIN
+    [bin           ] jp= 8859 fw= 27 lzss_jp=   0 pvrt=  0   1,671,168  STG0ATEX.BIN
+    [bin           ] jp= 8593 fw=  0 lzss_jp=   0 pvrt=  0   1,671,168  STG0FTEX.BIN
+    [bin           ] jp= 8350 fw= 11 lzss_jp=   0 pvrt=  0   1,813,504  DM0DTEX.BIN
+
+=== Net de Tennis (JP) ===
+  files: 500   skipped: {'audio/video': 353, 'too-large': 1, 'audio-dtpk': 1}
+  by-ext jp-runs (top 8): [('.raw', 35128), ('.bin', 16142), ('.slw', 2698), ('.pvr', 2096), ('.ini', 1856), ('.dps', 188), ('.dat', 41), ('.drv', 17)]
+  by-ext tex-files (top 8): [('.pvr', 22), ('.bin', 1)]
+  top 15 JP-bearing files (cp932 raw + LZSS):
+    [bin           ] jp= 8635 fw= 18 lzss_jp=   0 pvrt=  8   3,508,634  2_DP.BIN MODIFIED
+    [raw           ] jp= 6446 fw=  0 lzss_jp=   0 pvrt=  0     524,288  _slw_unpacked/T_3/T_3.raw
+    [raw           ] jp= 5199 fw= 23 lzss_jp=   0 pvrt=  0     917,504  _slw_unpacked/KAO/KAO.raw
+    [bin           ] jp= 4653 fw=  6 lzss_jp=   0 pvrt=  0     637,872  ASKLIBS.BIN
+    [bin           ] jp= 2790 fw= 30 lzss_jp=   0 pvrt=  0   1,717,937  1ST_READ.BIN MODIFIED
+    [raw           ] jp= 2438 fw=  8 lzss_jp=   0 pvrt=  0   1,048,576  _slw_unpacked/NETWK_B/NETWK_B.raw
+    [raw           ] jp= 2224 fw=129 lzss_jp=   0 pvrt=  0     655,360  _slw_unpacked/TITLE/TITLE.raw
+    [ini           ] jp= 1850 fw= 38 lzss_jp=   0 pvrt=  0      71,040  DPETC/MESSAGE.INI MODIFIED
+    [raw           ] jp= 1554 fw=  0 lzss_jp=   0 pvrt=  0     612,352  _slw_unpacked/GAME/GAME.raw
+    [raw           ] jp= 1431 fw=  1 lzss_jp=   0 pvrt=  0     524,288  _slw_unpacked/T_4/T_4.raw
+    [raw           ] jp= 1326 fw=  0 lzss_jp=   0 pvrt=  0     688,128  _slw_unpacked/FLAG/FLAG.raw
+    [raw           ] jp= 1307 fw=  0 lzss_jp=   0 pvrt=  0     262,144  _slw_unpacked/SOFTKEY/SOFTKEY.raw
+    [raw           ] jp= 1142 fw=  0 lzss_jp=   0 pvrt=  0     917,504  _slw_unpacked/NETWK_A/NETWK_A.raw
+    [raw           ] jp= 1104 fw=  0 lzss_jp=   0 pvrt=  0     524,288  _slw_unpacked/KABEGAMI/KABEGAMI.raw
+    [raw           ] jp= 1012 fw=  0 lzss_jp=   0 pvrt=  0     262,144  _slw_unpacked/KABE2/KABE2.raw
+
+=== Power Stone 2 (JP) ===
+  files: 497   skipped: {'audio/video': 231, 'audio-dtpk': 145, 'too-large': 2}
+  by-ext jp-runs (top 8): [('.bin', 153908), ('.pvr', 21655), ('.pac', 4836), ('.ini', 1041), ('.mdl', 143), ('.dps', 125), ('.dat', 41), ('.drv', 17)]
+  by-ext tex-files (top 8): [('.pvr', 19), ('.bin', 2)]
+  top 15 JP-bearing files (cp932 raw + LZSS):
+    [bin           ] jp=10020 fw= 55 lzss_jp=   0 pvrt=  8   3,623,364  2_DP.BIN MODIFIED
+    [bin           ] jp= 8714 fw=  1 lzss_jp=   0 pvrt=  0   2,001,280  DM03_CONNECT.BIN
+    [bin           ] jp= 8391 fw=  1 lzss_jp=   0 pvrt=  0   1,998,784  DM04_CONNECT.BIN MODIFIED
+    [bin           ] jp= 6480 fw=  8 lzss_jp=   0 pvrt=  0   1,084,962  STG10_CONNECT.BIN
+    [pvr           ] jp= 6090 fw=  7 lzss_jp=   0 pvrt=  1     524,320  DPTEX/SU_ICON.PVR MODIFIED
+    [bin           ] jp= 4813 fw= 13 lzss_jp=   0 pvrt=  0     966,070  STG00_CONNECT.BIN
+    [bin           ] jp= 4742 fw=  5 lzss_jp=   0 pvrt=  0     853,102  DM02_CONNECT.BIN
+    [bin           ] jp= 4653 fw=  6 lzss_jp=   0 pvrt=  0     637,876  ASKLIBS.BIN
+    [bin           ] jp= 4582 fw= 31 lzss_jp=   0 pvrt=  0   2,971,385  1ST_READ.BIN MODIFIED
+    [bin           ] jp= 4363 fw=  1 lzss_jp=   0 pvrt=  0     986,220  STG20_CONNECT.BIN
+    [bin           ] jp= 4342 fw=  1 lzss_jp=   0 pvrt=  0     683,430  DM16_CONNECT.BIN
+    [bin           ] jp= 3980 fw= 20 lzss_jp=   0 pvrt=  0     885,168  STG80_CONNECT.BIN
+    [bin           ] jp= 3746 fw=  0 lzss_jp=   0 pvrt=  0   1,381,568  DM31_CONNECT.BIN
+    [bin           ] jp= 3746 fw=  0 lzss_jp=   0 pvrt=  0   1,381,568  DM32_CONNECT.BIN
+    [bin           ] jp= 3706 fw=  5 lzss_jp=   0 pvrt=  0   1,034,448  STG70_CONNECT.BIN
+
+=== Project Justice (JP) ===
+  files: 97   skipped: {'too-large': 11, 'audio/video': 33, 'audio-dtpk': 1}
+  by-ext jp-runs (top 8): [('.bin', 18149), ('.pvr', 3113), ('.ini', 1884), ('.dps', 188), ('.dat', 41), ('.drv', 17), ('.html', 16), ('.pvp', 1)]
+  by-ext tex-files (top 8): [('.pvr', 27), ('.bin', 1)]
+  top 15 JP-bearing files (cp932 raw + LZSS):
+    [bin           ] jp= 8825 fw= 18 lzss_jp=   0 pvrt=  8   3,480,282  2_DP.BIN MODIFIED
+    [bin           ] jp= 4661 fw=  6 lzss_jp=   0 pvrt=  0     637,872  ASKLIB.BIN
+    [bin           ] jp= 4599 fw= 91 lzss_jp=   0 pvrt=  0   3,946,129  1ST_READ.BIN MODIFIED
+    [ini           ] jp= 1853 fw= 38 lzss_jp=   0 pvrt=  0      71,111  DPETC/MESSAGE.INI MODIFIED
+    [pvr           ] jp= 1251 fw=  0 lzss_jp=   0 pvrt=  1     174,780  0GDTEX.PVR
+    [pvr           ] jp=  456 fw=  0 lzss_jp=   0 pvrt=  1     262,176  DPTEX/WALLPAPER.PVR
+    [pvr           ] jp=  205 fw=  0 lzss_jp=   0 pvrt=  1     262,176  DPTEX/JYOUCYU2.PVR
+    [pvr           ] jp=  205 fw=  0 lzss_jp=   0 pvrt=  1      67,616  DPTEX/OPFILE.PVR
+    [pvr           ] jp=  181 fw=  1 lzss_jp=   0 pvrt=  1     262,176  DPTEX/JYOUCYU0.PVR MODIFIED
+    [pvr           ] jp=  152 fw=  5 lzss_jp=   0 pvrt=  1     262,176  DPTEX/VMSPART2.PVR
+    [pvr           ] jp=  129 fw=  0 lzss_jp=   0 pvrt=  1      67,616  DPTEX/OP_BACK1.PVR
+    [pvr           ] jp=  127 fw=  0 lzss_jp=   0 pvrt=  1     524,320  DPTEX/CRI_ADX1.PVR
+    [text-or-ini   ] jp=  102 fw=  4 lzss_jp=   0 pvrt=  0     248,221  DPETC/SOFTKEY.DPS
+    [pvr           ] jp=   95 fw=  0 lzss_jp=   0 pvrt=  1     262,176  DPTEX/VMSPARTS.PVR
+    [pvr           ] jp=   67 fw=  0 lzss_jp=   0 pvrt=  1     262,176  DPTEX/SU_ICON.PVR
+
+=== Spawn - In the Demon's Hand (JP) ===
+  files: 812   skipped: {'audio/video': 43, 'audio-dtpk': 17, 'too-large': 15}
+  by-ext jp-runs (top 8): [('.tex', 527859), ('.bin', 23071), ('.bix', 7119), ('.pvr', 4314), ('.ini', 1878), ('.mdl', 1161), ('.mob', 324), ('.dps', 188)]
+  by-ext tex-files (top 8): [('.tex', 275), ('.pvr', 25), ('.bin', 1)]
+  top 15 JP-bearing files (cp932 raw + LZSS):
+    [tex-container ] jp=23695 fw= 31 lzss_jp=   0 pvrt=  0   3,506,864  SELSPR.TEX
+    [tex-container ] jp=15096 fw=  0 lzss_jp=   0 pvrt=  0   1,572,944  GALTRE.TEX
+    [tex-container ] jp=14582 fw=  3 lzss_jp=   0 pvrt=  0   1,572,944  GALSP3.TEX
+    [tex-container ] jp=14271 fw= 10 lzss_jp=   0 pvrt=  0   1,572,944  GALRED.TEX
+    [tex-container ] jp=12940 fw=  9 lzss_jp=   0 pvrt=  0   1,572,944  GALSP2.TEX
+    [tex-container ] jp=12843 fw= 14 lzss_jp=   0 pvrt=  0   1,572,944  GALDAS.TEX
+    [tex-container ] jp=12013 fw= 63 lzss_jp=   0 pvrt=  0   1,572,944  GALPRI.TEX
+    [tex-container ] jp=11973 fw=  0 lzss_jp=   0 pvrt=  0   1,572,944  GALGRA.TEX
+    [tex-container ] jp=11638 fw=  0 lzss_jp=   0 pvrt=  0   1,572,944  GALADM.TEX
+    [tex-container ] jp=11568 fw=  1 lzss_jp=   0 pvrt=  0   1,572,944  GALBRI.TEX
+    [bin           ] jp=10431 fw= 12 lzss_jp=   0 pvrt=  0   3,382,544  MEMDEF.BIN MODIFIED
+    [tex-container ] jp=10301 fw=  0 lzss_jp=   0 pvrt=  0   1,572,944  GALSP4.TEX
+    [tex-container ] jp= 9898 fw= 48 lzss_jp=   0 pvrt=  0   1,572,944  GALCLO.TEX
+    [tex-container ] jp= 9518 fw= 85 lzss_jp=   0 pvrt=  0   1,572,944  GALTWI.TEX
+    [tex-container ] jp= 9307 fw=  0 lzss_jp=   0 pvrt=  0   1,572,944  GALTIF.TEX
+
+=== Street Fighter III 3rd Strike - Fight for the Future (JP) ===
+  files: 481   skipped: {'too-large': 2, 'audio/video': 95}
+  by-ext jp-runs (top 8): [('.bin', 115122), ('.pvr', 22462), ('.pzz', 15514), ('.osb', 2805), ('.ini', 1041), ('.dps', 125), ('.dat', 41), ('.drv', 34)]
+  by-ext tex-files (top 8): [('.pzz', 54), ('.pvr', 19), ('.bin', 1)]
+  top 15 JP-bearing files (cp932 raw + LZSS):
+    [bin           ] jp=10020 fw= 55 lzss_jp=   0 pvrt=  8   3,623,364  2_DP.BIN MODIFIED
+    [bin           ] jp= 7437 fw=  0 lzss_jp=   0 pvrt=  0   3,040,072  PLAYER/PL00.BIN
+    [bin           ] jp= 6148 fw=  0 lzss_jp=   0 pvrt=  0   3,792,908  PLAYER/PL18.BIN MODIFIED
+    [pvr           ] jp= 6090 fw=  7 lzss_jp=   0 pvrt=  1     524,320  DPTEX/SU_ICON.PVR
+    [bin           ] jp= 4674 fw=  6 lzss_jp=   0 pvrt=  0     637,876  KANJI/ASKLIBS.BIN
+    [bin           ] jp= 4481 fw=  0 lzss_jp=   0 pvrt=  0   3,342,276  PLAYER/PL06.BIN
+    [bin           ] jp= 4130 fw=  0 lzss_jp=   0 pvrt=  0   2,552,860  PLAYER/PL01.BIN
+    [bin           ] jp= 4039 fw=  0 lzss_jp=   0 pvrt=  0   2,649,420  PLAYER/PL14.BIN
+    [bin           ] jp= 4012 fw=  0 lzss_jp=   0 pvrt=  0   1,830,216  PLAYER/PL20.BIN MODIFIED
+    [bin           ] jp= 3919 fw=  0 lzss_jp=   0 pvrt=  0   2,093,456  PLAYER/PL04.BIN
+    [bin           ] jp= 3902 fw=  0 lzss_jp=   0 pvrt=  0   2,286,852  PLAYER/PL13.BIN
+    [bin           ] jp= 3662 fw=  0 lzss_jp=   0 pvrt=  0   2,770,372  PLAYER/PL17.BIN MODIFIED
+    [bin           ] jp= 3659 fw=  0 lzss_jp=   0 pvrt=  0   2,241,340  PLAYER/PL09.BIN MODIFIED
+    [bin           ] jp= 3630 fw=  0 lzss_jp=   0 pvrt=  0   2,337,716  PLAYER/PL10.BIN
+    [bin           ] jp= 3583 fw=  0 lzss_jp=   0 pvrt=  0   2,700,876  PLAYER/PL07.BIN
+
+=== Street Fighter Zero 3  for Matching Service (JP) ===
+  files: 588   skipped: {'audio/video': 47, 'too-large': 36}
+  by-ext jp-runs (top 8): [('.pac', 735920), ('.bin', 733704), ('.pvr', 7061), ('.pvm', 5813), ('.ini', 1885), ('.dps', 188), ('.dat', 41), ('.drv', 36)]
+  by-ext tex-files (top 8): [('.pac', 230), ('.pvr', 27), ('.bin', 2), ('.pvm', 1)]
+  top 15 JP-bearing files (cp932 raw + LZSS):
+    [bin           ] jp=93950 fw=  0 lzss_jp=   0 pvrt=  0   8,142,848  P0180.BIN
+    [bin           ] jp=92153 fw=  0 lzss_jp=   0 pvrt=  0   8,273,920  P0110.BIN
+    [bin           ] jp=81601 fw=  0 lzss_jp=   0 pvrt=  0   7,684,096  P0150.BIN
+    [bin           ] jp=77162 fw=  0 lzss_jp=   0 pvrt=  0   6,553,600  P0140.BIN
+    [bin           ] jp=50722 fw=  0 lzss_jp=   0 pvrt=  0   3,866,624  P00B0.BIN
+    [bin           ] jp=49691 fw=  0 lzss_jp=   0 pvrt=  0   4,857,856  P0050.BIN
+    [bin           ] jp=49349 fw=  0 lzss_jp=   0 pvrt=  0   4,407,296  P0320.BIN
+    [bin           ] jp=37411 fw=  0 lzss_jp=   0 pvrt=  0   3,145,728  P0070.BIN
+    [bin           ] jp=33569 fw=  0 lzss_jp=   0 pvrt=  0   2,818,048  P0090.BIN
+    [bin           ] jp=33254 fw=  0 lzss_jp=   0 pvrt=  0   2,850,816  P00A0.BIN
+    [bin           ] jp=29498 fw=  0 lzss_jp=   0 pvrt=  0   2,670,592  P0000.BIN
+    [bin           ] jp=27949 fw=  0 lzss_jp=   0 pvrt=  0   2,670,592  P0080.BIN
+    [bin           ] jp=24075 fw=  0 lzss_jp=   0 pvrt=  0   1,949,696  P0010.BIN
+    [pac           ] jp=13807 fw= 69 lzss_jp=   0 pvrt= 34   2,682,880  END06.PAC
+    [pac           ] jp=12767 fw= 41 lzss_jp=   0 pvrt= 34   2,609,152  END0F.PAC
+
+=== Super Puzzle Fighter IIX for Matching Service (JP) ===
+  files: 213   skipped: {'audio/video': 65, 'too-large': 2}
+  by-ext jp-runs (top 8): [('.pvr', 233807), ('.bin', 17168), ('.ini', 1885), ('.osb', 1345), ('.dps', 188), ('.dat', 41), ('.drv', 17), ('.htm', 11)]
+  by-ext tex-files (top 8): [('.pvr', 90), ('.bin', 2)]
+  top 15 JP-bearing files (cp932 raw + LZSS):
+    [bin           ] jp= 8825 fw= 18 lzss_jp=   0 pvrt=  8   3,480,282  2_DP.BIN MODIFIED
+    [pvr           ] jp= 7648 fw=  0 lzss_jp=   0 pvrt=  1     524,320  P03D.PVR
+    [pvr           ] jp= 7273 fw=  0 lzss_jp=   0 pvrt=  1     524,320  P04D.PVR
+    [pvr           ] jp= 6875 fw=  0 lzss_jp=   0 pvrt=  1     524,320  P03C.PVR
+    [pvr           ] jp= 6725 fw=  0 lzss_jp=   0 pvrt=  1     524,320  P04B.PVR
+    [pvr           ] jp= 6647 fw=  0 lzss_jp=   0 pvrt=  1     524,320  P04C.PVR
+    [pvr           ] jp= 6472 fw=  0 lzss_jp=   0 pvrt=  1     524,320  P03A.PVR
+    [pvr           ] jp= 6352 fw=  0 lzss_jp=   0 pvrt=  1     524,320  P04A.PVR
+    [pvr           ] jp= 6177 fw=  0 lzss_jp=   0 pvrt=  1     524,320  P02B.PVR
+    [pvr           ] jp= 6124 fw=  0 lzss_jp=   0 pvrt=  1     524,320  P02A.PVR
+    [pvr           ] jp= 5927 fw=  0 lzss_jp=   0 pvrt=  1     524,320  P11D.PVR
+    [pvr           ] jp= 5920 fw=  0 lzss_jp=   0 pvrt=  1     524,320  P09D.PVR
+    [pvr           ] jp= 5837 fw=  0 lzss_jp=   0 pvrt=  1     524,320  P07B.PVR
+    [pvr           ] jp= 5778 fw=  0 lzss_jp=   0 pvrt=  1     524,320  P05B.PVR
+    [pvr           ] jp= 5769 fw=  0 lzss_jp=   0 pvrt=  1     524,320  P05D.PVR
+
+=== Super Street Fighter IIX for Matching Service - Grand Master Challenge (JP) ===
+  files: 567   skipped: {'audio/video': 95}
+  by-ext jp-runs (top 8): [('.bin', 23451), ('.pvr', 9752), ('.ini', 1889), ('.dps', 188), ('.dat', 41), ('.drv', 17), ('.htm', 11), ('.pvp', 1)]
+  by-ext tex-files (top 8): [('.pvr', 49), ('.bin', 2)]
+  top 15 JP-bearing files (cp932 raw + LZSS):
+    [bin           ] jp= 8620 fw= 18 lzss_jp=   0 pvrt=  8   3,506,362  2_DP.BIN MODIFIED
+    [bin           ] jp= 4674 fw=  6 lzss_jp=   0 pvrt=  0     637,872  ASK.BIN
+    [bin           ] jp= 4522 fw= 39 lzss_jp=   0 pvrt=  6   5,184,244  1ST_READ.BIN MODIFIED
+    [ini           ] jp= 1855 fw= 38 lzss_jp=   0 pvrt=  0      71,408  DPETC/MESSAGE.INI MODIFIED
+    [pvr           ] jp= 1267 fw=  0 lzss_jp=   0 pvrt=  1     131,104  SOFTKEY.PVR
+    [pvr           ] jp=  918 fw=  0 lzss_jp=   0 pvrt=  1     131,104  B7.PVR
+    [pvr           ] jp=  721 fw=  0 lzss_jp=   0 pvrt=  1     174,796  0GDTEX.PVR
+    [pvr           ] jp=  599 fw=  0 lzss_jp=   0 pvrt=  1     131,104  B1.PVR MODIFIED
+    [pvr           ] jp=  565 fw=  0 lzss_jp=   0 pvrt=  1      67,600  DPTEX/WALLPAPER.PVR
+    [bin           ] jp=  532 fw=  0 lzss_jp=   0 pvrt=  0     597,100  EDOOTBL.BIN
+    [pvr           ] jp=  525 fw=  0 lzss_jp=   0 pvrt=  1     524,320  A2.PVR MODIFIED
+    [pvr           ] jp=  389 fw=  0 lzss_jp=   0 pvrt=  1     131,104  B8.PVR MODIFIED
+    [bin           ] jp=  377 fw=  0 lzss_jp=   0 pvrt=  0     532,864  PL03.BIN
+    [pvr           ] jp=  369 fw=  0 lzss_jp=   0 pvrt=  1     131,104  COMN.PVR MODIFIED
+    [pvr           ] jp=  351 fw=  0 lzss_jp=   0 pvrt=  1     131,104  MEMO1.PVR
+
+=== Taisen Net Gimmick - Capcom & Psikyo All Stars (JP) ===
+  files: 1179   skipped: {'too-large': 3, 'audio/video': 37}
+  by-ext jp-runs (top 8): [('.pvr', 1411449), ('.bin', 15752), ('.cmp', 9506), ('.ini', 2243), ('.bnd', 438), ('.dps', 191), ('.dat', 41), ('.fon', 31)]
+  by-ext tex-files (top 8): [('.pvr', 1085), ('.cmp', 14), ('.bin', 3), ('.bnd', 1)]
+  top 15 JP-bearing files (cp932 raw + LZSS):
+    [bin           ] jp= 8551 fw= 27 lzss_jp=   0 pvrt=  8   3,601,882  2_DP.BIN MODIFIED
+    [pvr           ] jp= 6365 fw=  0 lzss_jp=   0 pvrt=  1   1,048,592  GALLERY_PSI/GALLERY_P02_A_0.PVR
+    [pvr           ] jp= 6345 fw=  0 lzss_jp=   0 pvrt=  1   1,048,592  GALLERY_PSI/GALLERY_P02_C_0.PVR
+    [pvr           ] jp= 6320 fw= 85 lzss_jp=   0 pvrt=  1   1,048,592  GALLERY_PSI/GALLERY_P13_A_0.PVR
+    [pvr           ] jp= 6233 fw=  0 lzss_jp=   0 pvrt=  1   1,048,592  GALLERY_PSI/GALLERY_P31_B_0.PVR
+    [pvr           ] jp= 6183 fw=  0 lzss_jp=   0 pvrt=  1     524,304  I_C01R_G_B.PVR
+    [pvr           ] jp= 6132 fw=  0 lzss_jp=   0 pvrt=  1     524,304  I_C03R_G_B.PVR
+    [pvr           ] jp= 5990 fw= 36 lzss_jp=   0 pvrt=  1   1,048,592  GALLERY_PSI/GALLERY_P10_A_0.PVR
+    [pvr           ] jp= 5980 fw=  5 lzss_jp=   0 pvrt=  1   1,048,592  GALLERY_PSI/GALLERY_P28_C_0.PVR
+    [pvr           ] jp= 5979 fw=  0 lzss_jp=   0 pvrt=  1   1,048,592  GALLERY_PSI/GALLERY_P00_B_0.PVR
+    [pvr           ] jp= 5947 fw=  1 lzss_jp=   0 pvrt=  1   1,048,592  GALLERY_PSI/GALLERY_P29_C_0.PVR
+    [pvr           ] jp= 5947 fw=  1 lzss_jp=   0 pvrt=  1   1,048,592  GALLERY_PSI/GALLERY_P30_C_0.PVR
+    [pvr           ] jp= 5701 fw=  0 lzss_jp=   0 pvrt=  1   1,048,592  GALLERY_PSI/GALLERY_P02_B_0.PVR
+    [pvr           ] jp= 5577 fw=  1 lzss_jp=   0 pvrt=  1   1,048,592  GALLERY_PSI/GALLERY_P10_C_0.PVR
+    [pvr           ] jp= 5423 fw=118 lzss_jp=   0 pvrt=  1   1,048,592  GALLERY_PSI/GALLERY_P26_B_0.PVR
+
+=== Tech Romancer for Matching Service (JP) ===
+  files: 2023   skipped: {'too-large': 14, 'audio/video': 583}
+  by-ext jp-runs (top 8): [('.pzz', 277414), ('.pvz', 80763), ('.mpb', 72941), ('.pvr', 55690), ('.bin', 21441), ('.p04', 7298), ('.osb', 5145), ('.ini', 1895)]
+  by-ext tex-files (top 8): [('.pzz', 356), ('.pvr', 101), ('.pvz', 99), ('.bin', 2)]
+  top 15 JP-bearing files (cp932 raw + LZSS):
+    [pzz           ] jp=26091 fw=107 lzss_jp=   0 pvrt=160   5,305,196  DEMO/OP_DEMO.PZZ MODIFIED
+    [pzz           ] jp=10056 fw=  5 lzss_jp=   0 pvrt= 41   6,729,728  DEMO/TTD_ILL_O.PZZ MODIFIED
+    [bin           ] jp= 9997 fw= 32 lzss_jp=   0 pvrt= 10   3,797,604  1ST_READ.BIN MODIFIED
+    [pzz           ] jp= 9224 fw=  0 lzss_jp=   0 pvrt= 45   3,045,374  DEMO/F_STAFF.PZZ
+    [bin           ] jp= 8634 fw= 18 lzss_jp=   0 pvrt=  8   3,506,074  2_DP.BIN MODIFIED
+    [mpb           ] jp= 6039 fw=  0 lzss_jp=   0 pvrt=  0     724,320  SOUND/02E_STAF.MPB
+    [pvz+lzss      ] jp=  233 fw=  1 lzss_jp=5539 pvrt=  1     197,538  SDEMO/EC03B.PVZ
+    [pzz           ] jp= 4709 fw=  1 lzss_jp=   0 pvrt= 20     796,772  GAME/S07.PZZ
+    [pzz           ] jp= 4519 fw=  0 lzss_jp=   0 pvrt= 15   1,763,328  DEMO/TTD_D2_09.PZZ
+    [pzz           ] jp= 4504 fw=  2 lzss_jp=   0 pvrt=128     869,206  SEL/SELECT.PZZ
+    [pzz           ] jp= 4310 fw=  0 lzss_jp=   0 pvrt= 22   2,535,424  DEMO/TTD_D1_07.PZZ
+    [pvr           ] jp= 4052 fw=  0 lzss_jp=   0 pvrt=  1     524,320  SDEMO/IED0011.PVR
+    [pvz+lzss      ] jp=  302 fw=  0 lzss_jp=3685 pvrt=  1     183,564  SDEMO/EC08A.PVZ
+    [pvz+lzss      ] jp=  203 fw=  0 lzss_jp=3781 pvrt=  1     240,714  SDEMO/EC07A.PVZ
+    [mpb           ] jp= 3950 fw=  0 lzss_jp=   0 pvrt=  0     355,104  SOUND/021_DEMO.MPB
+
+=== Vampire Chronicle for Matching Service (JP) ===
+  files: 646   skipped: {'audio/video': 143, 'too-large': 28}
+  by-ext jp-runs (top 8): [('.bin', 28442), ('.pvr', 10886), ('.osb', 3414), ('.ini', 1856), ('.mpb', 672), ('.dps', 188), ('.dat', 41), ('.drv', 17)]
+  by-ext tex-files (top 8): [('.pvr', 42), ('.bin', 2)]
+  top 15 JP-bearing files (cp932 raw + LZSS):
+    [bin           ] jp= 8635 fw= 18 lzss_jp=   0 pvrt=  8   3,508,634  2_DP.BIN MODIFIED
+    [bin           ] jp= 8316 fw= 42 lzss_jp=   0 pvrt=  7   5,692,088  1ST_READ.BIN MODIFIED
+    [bin           ] jp= 4662 fw=  6 lzss_jp=   0 pvrt=  0     637,872  ASK.BIN
+    [ini           ] jp= 1849 fw= 38 lzss_jp=   0 pvrt=  0      71,010  DPETC/MESSAGE.INI MODIFIED
+    [pvr           ] jp= 1545 fw=  0 lzss_jp=   0 pvrt=  1     262,176  DPTEX/WALLPAPER.PVR
+    [pvr           ] jp= 1279 fw=  0 lzss_jp=   0 pvrt=  1     174,796  0GDTEX.PVR
+    [pvr           ] jp= 1267 fw=  0 lzss_jp=   0 pvrt=  1     131,104  SOFTKEY.PVR
+    [pvr           ] jp= 1042 fw=  0 lzss_jp=   0 pvrt=  1     131,104  FONT.PVR
+    [osb           ] jp=  863 fw=  0 lzss_jp=   0 pvrt=  0     303,840  PL06_ANA.OSB
+    [bin           ] jp=  618 fw=  0 lzss_jp=   0 pvrt=  0     684,032  DM00.BIN
+    [pvr           ] jp=  555 fw=  0 lzss_jp=   0 pvrt=  1     131,104  STGSEL01.PVR
+    [pvr           ] jp=  530 fw=  0 lzss_jp=   0 pvrt=  1     131,104  B7.PVR MODIFIED
+    [pvr           ] jp=  528 fw=  0 lzss_jp=   0 pvrt=  1     524,320  A2.PVR MODIFIED
+    [bin           ] jp=  511 fw=  0 lzss_jp=   0 pvrt=  0   1,016,000  PL00PAK.BIN
+    [bin           ] jp=  480 fw=  5 lzss_jp=   0 pvrt=  0      45,956  V10B0.BIN

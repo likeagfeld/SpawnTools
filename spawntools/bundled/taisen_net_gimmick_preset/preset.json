@@ -13,8 +13,11 @@
     "MEMDEF.BIN"
   ],
   "scan_targets": [
+    "1ST_READ.BIN",
+    "DPETC/MESSAGE.INI",
     "RESOURCE.BIN",
-    "DPETC/MESSAGE.INI"
+    "ASK.BIN",
+    "WAZAALL.BIN"
   ],
   "modified_files": [
     {
@@ -376,7 +379,7 @@
     "text": 2
   },
   "identical_count": 0,
-  "translations_count": 1262,
+  "translations_count": 1401,
   "dict_entries": 796,
   "description": "Bundled baseline for Taisen Net Gimmick — Capcom & Psikyo All Stars. EN translations are diff-derived from extracted/ vs patches/. Edit them in Tab 3 or revert per-row / per-file / all to stock JP."
 }

@@ -5,7 +5,7 @@
   "tier": "done",
   "product_code": "T1218M",
   "detect_label": "POWER STONE 2",
-  "notes_kind": "std",
+  "notes_kind": "dp3",
   "deny_list": [
     "2_DP.BIN",
     "GAME.BIN",
@@ -14,7 +14,10 @@
   ],
   "scan_targets": [
     "1ST_READ.BIN",
-    "DM04_CONNECT.BIN"
+    "DPETC/MESSAGE.INI",
+    "ASKLIBS.BIN",
+    "DM04_CONNECT.BIN",
+    "CMN_MOT.BIN"
   ],
   "modified_files": [
     {
@@ -296,7 +299,7 @@
     "texture": 12
   },
   "identical_count": 0,
-  "translations_count": 130,
+  "translations_count": 849,
   "dict_entries": 796,
   "description": "Bundled baseline for Power Stone 2. EN translations are diff-derived from extracted/ vs patches/. Edit them in Tab 3 or revert per-row / per-file / all to stock JP."
 }

@@ -15,11 +15,22 @@
   "scan_targets": [
     "1ST_READ.BIN",
     "DPETC/MESSAGE.INI",
+    "ASK.BIN",
+    "MESJ_WIN.BIN",
     "ST07TEX.BIN",
     "EST07TEX.BIN",
     "ST0ATEX.BIN",
     "EST0ATEX.BIN",
-    "PL1EPAK.BIN"
+    "DM01TEX.BIN",
+    "DM00TEX.BIN",
+    "STG04TEX.BIN",
+    "DC13TEX.BIN",
+    "DC02TEX.BIN",
+    "DC14TEX.BIN",
+    "DC01TEX.BIN",
+    "DC05TEX.BIN",
+    "PL1EPAK.BIN",
+    "PL10PAK.BIN"
   ],
   "modified_files": [
     {
@@ -601,7 +612,7 @@
     "texture": 13
   },
   "identical_count": 0,
-  "translations_count": 2359,
+  "translations_count": 10093,
   "dict_entries": 796,
   "description": "Bundled baseline for Capcom vs. SNK — Millennium Fight 2000 Pro. EN translations are diff-derived from extracted/ vs patches/. Edit them in Tab 3 or revert per-row / per-file / all to stock JP."
 }
