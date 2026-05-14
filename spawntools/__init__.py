@@ -1,2 +1,2 @@
-"""SpawnTools — Spawn translation suite."""
-__version__ = '1.0.0-beta1'
+"""SpawnTools — Capcom Dreamcast translation suite."""
+__version__ = '1.1.0'

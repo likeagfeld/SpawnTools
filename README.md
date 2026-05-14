@@ -1,6 +1,6 @@
-# SpawnTools
+# SpawnTools — v1.1.0
 
-**A GUI for translating Spawn — In the Demon's Hand into English, built on the codec library used to make the existing Spawn patch.**
+**GUI for translating all 15 Capcom Dreamcast titles, built on the codec library used to ship the existing Spawn EN patch.**
 
 ```
    Windows:  double-click spawntools.bat
@@ -8,16 +8,41 @@
    macOS:    ./spawntools.sh
 ```
 
-The launcher checks for Python 3.10+, installs Pillow + numpy on first run if missing, then starts the GUI. All codec logic, the JP→EN dictionary, and the Spawn baseline preset are bundled inside the package — no external path config required.
+The launcher checks for Python 3.10+, installs Pillow + numpy on first run if missing, then starts the GUI. All codec logic, the JP→EN dictionary, and **all 15 game baselines** are bundled inside the package — no external path config required.
+
+## What's in v1.1.0
+
+Open any of the 15 supported discs — the tool auto-detects the game via the Sega IP.BIN product code and pre-fills the right scan targets + translation baseline:
+
+| Game | Bundled EN pairs |
+|---|---:|
+| Capcom vs. SNK Pro (`T1247M`) | **10,093** |
+| Spawn (`T1216M`) | 1,575 |
+| Heavy Metal (`T1246M`) | 1,542 |
+| JoJo's Bizarre Adventure (`T1231M`) | 1,489 |
+| Taisen Net Gimmick (`T1248M`) | 1,401 |
+| SSFIIX MS (`T1236M`) | 1,393 |
+| SPFII MS (`T1250M`) | 1,390 |
+| Project Justice (`T1221M`) | 1,388 |
+| SFZ3 MS (`T1230M`) | 1,386 |
+| Tech Romancer MS (`T1232M`) | 1,382 |
+| Vampire Chronicle MS (`T1235M`) | 1,379 |
+| Net de Tennis (`T1234M`) | 1,322 |
+| SF III 3rd Strike (`T1209M`) | 867 |
+| Power Stone 2 (`T1218M`) | 849 |
+| Marvel vs. Capcom 2 (`T1215M`) | 720 |
+| **Total** | **~26,786** |
+
+Total bundle size: ~2.5 MB.
 
 ## Just want the Spawn patch?
 
-If you don't want the tool — just the existing English patch for Spawn — grab it directly:
+If you don't want the tool — just the standalone English patch for Spawn — grab it directly:
 
 - **Repo:** [`patches/Spawn-T-En-Farkus-V0.2.dcp`](patches/Spawn-T-En-Farkus-V0.2.dcp) (~588 KB)
-- **Release asset:** [SpawnTools Beta 1.0 release page](https://github.com/likeagfeld/SpawnTools/releases/tag/v1.0.0-beta1)
+- **Latest release:** https://github.com/likeagfeld/SpawnTools/releases/latest
 
-The `.dcp` is a Dreamcast patch file (zip-format). Apply with any DCP-compatible tool against the original JP Spawn disc. T-En patch by **Farkus**, version **V0.2** — KDDI Online (Japan) build.
+The `.dcp` is a Dreamcast patch file. Apply with any DCP-compatible tool against the original JP Spawn disc. T-En patch by **Farkus**, version **V0.2** — KDDI Online (Japan) build.
 
 ![Workspace tab — preset loaded with 1,575 EN translations pre-filled](assets/screenshots/tab1_workspace_qa.jpg)
 
@@ -30,7 +55,7 @@ A four-tab Tkinter IDE pre-loaded with the entire Spawn translation campaign as 
 
   ![Texture tool — side-by-side original vs translated, color-coded modified/stock list, per-sub-tex campaign notes](assets/screenshots/tab2_texture_workbench.jpg)
 
-- **Tab 3 · Text & Pointer Grid** — Spreadsheet of every Japanese string in `1ST_READ.BIN` and `MESSAGE.INI`. **Click "Load Spawn Baseline" once** and the grid fills with 1,500+ pre-translated EN strings derived directly from the campaign's `patches/` dir. Edit any row, revert any row to JP, accept dictionary suggestions one-click. Byte-budget meter prevents oversize commits.
+- **Tab 3 · Text & Pointer Grid** — Spreadsheet of every Japanese string in the loaded game's per-preset scan targets (CvS Pro adds 18 files, MvC2 adds 20, JoJo adds 12, etc. — see `bundled/game_registry.py`). **Click "Load Baseline" once** and the grid fills with the pre-translated EN strings derived directly from the campaign's `patches/` dir. Edit any row, revert any row to JP, accept dictionary suggestions one-click. Byte-budget meter prevents oversize commits.
 
   ![Text & Pointer Grid — 3,603 rows scanned, 1,575 EN translations pre-filled, per-row byte budget meter](assets/screenshots/tab3_text_pointer_grid.jpg)
 
