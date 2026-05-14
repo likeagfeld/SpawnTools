@@ -104,6 +104,13 @@ def load(path: Path) -> list[TextureRecord]:
     return out
 
 
+def _ensure_codecs_on_path():
+    import sys
+    codecs_dir = Path(__file__).resolve().parent.parent / 'codecs'
+    if str(codecs_dir) not in sys.path:
+        sys.path.insert(0, str(codecs_dir))
+
+
 def load_archive_member(member) -> list[TextureRecord]:
     """Decode the bytes inside an archive member into TextureRecords.
 
@@ -116,12 +123,9 @@ def load_archive_member(member) -> list[TextureRecord]:
     if member.archive_kind == 'SLW':
         return []  # raw VRAM blob — no usable PVR header
 
+    _ensure_codecs_on_path()
     # RAW: dims/format were determined heuristically at list_members time.
     if member.archive_kind == 'RAW' and member.raw_width and member.raw_height:
-        import sys
-        codecs_dir = Path(__file__).resolve().parent.parent / 'codecs'
-        if str(codecs_dir) not in sys.path:
-            sys.path.insert(0, str(codecs_dir))
         import tex_decode
         try:
             img = tex_decode.decode_texture(

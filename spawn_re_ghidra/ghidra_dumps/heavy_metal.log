@@ -1,0 +1,143 @@
+== STDOUT ==
+Module manifest file error on line 2 of file: C:\Users\gary\AppData\Roaming\ghidra\ghidra_12.0.4_PUBLIC\Extensions\GhidraMCP\Module.manifest
+	-> Invalid line encountered: GHIDRA_MODULE_NAME=GhidraMCP
+Module manifest file error on line 3 of file: C:\Users\gary\AppData\Roaming\ghidra\ghidra_12.0.4_PUBLIC\Extensions\GhidraMCP\Module.manifest
+	-> Invalid line encountered: GHIDRA_MODULE_DESC=An HTTP server plugin for Ghidra
+Module manifest file error on line 2 of file: C:\Users\gary\AppData\Roaming\ghidra\ghidra_12.0.4_PUBLIC\Extensions\GhidraMCP\Module.manifest
+	-> Invalid line encountered: GHIDRA_MODULE_NAME=GhidraMCP
+Module manifest file error on line 3 of file: C:\Users\gary\AppData\Roaming\ghidra\ghidra_12.0.4_PUBLIC\Extensions\GhidraMCP\Module.manifest
+	-> Invalid line encountered: GHIDRA_MODULE_DESC=An HTTP server plugin for Ghidra
+INFO  Using log config file: jar:file:/D:/ghidra/ghidra_12.0.4_PUBLIC_20260303/ghidra_12.0.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: C:\Users\gary\AppData\Roaming\ghidra\ghidra_12.0.4_PUBLIC\application.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\gary\AppData\Roaming\ghidra\ghidra_12.0.4_PUBLIC\preferences (Preferences)  
+INFO  Loading previous preferences: C:\Users\gary\AppData\Roaming\ghidra\ghidra_11.4.2_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (1310 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (7372 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 89 extension points (43 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    D:\ghidra\ghidra_12.0.4_PUBLIC_20260303\ghidra_12.0.4_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    D:\ghidra\ghidra_12.0.4_PUBLIC_20260303\ghidra_12.0.4_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    D:\ghidra\ghidra_12.0.4_PUBLIC_20260303\ghidra_12.0.4_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    D:\ghidra\ghidra_12.0.4_PUBLIC_20260303\ghidra_12.0.4_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    D:\ghidra\ghidra_12.0.4_PUBLIC_20260303\ghidra_12.0.4_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    D:\ghidra\ghidra_12.0.4_PUBLIC_20260303\ghidra_12.0.4_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    D:\ghidra\ghidra_12.0.4_PUBLIC_20260303\ghidra_12.0.4_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    D:\ghidra\ghidra_12.0.4_PUBLIC_20260303\ghidra_12.0.4_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    D:\ghidra\ghidra_12.0.4_PUBLIC_20260303\ghidra_12.0.4_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    D:\ghidra\ghidra_12.0.4_PUBLIC_20260303\ghidra_12.0.4_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    C:\Users\gary\ghidra_scripts
+    D:\ghidra\ghidra_12.0.4_PUBLIC_20260303\ghidra_12.0.4_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    D:\ghidra\ghidra_12.0.4_PUBLIC_20260303\ghidra_12.0.4_PUBLIC\Ghidra\Features\Jython\ghidra_scripts
+    D:\DC_CapcomTranslationTools\spawn_re_ghidra
+    D:\ghidra\ghidra_12.0.4_PUBLIC_20260303\ghidra_12.0.4_PUBLIC\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    D:\ghidra\ghidra_12.0.4_PUBLIC_20260303\ghidra_12.0.4_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    D:\ghidra\ghidra_12.0.4_PUBLIC_20260303\ghidra_12.0.4_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    D:\ghidra\ghidra_12.0.4_PUBLIC_20260303\ghidra_12.0.4_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    D:\ghidra\ghidra_12.0.4_PUBLIC_20260303\ghidra_12.0.4_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    D:\ghidra\ghidra_12.0.4_PUBLIC_20260303\ghidra_12.0.4_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    D:\ghidra\ghidra_12.0.4_PUBLIC_20260303\ghidra_12.0.4_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    D:\ghidra\ghidra_12.0.4_PUBLIC_20260303\ghidra_12.0.4_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    D:\ghidra\ghidra_12.0.4_PUBLIC_20260303\ghidra_12.0.4_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    D:\ghidra\ghidra_12.0.4_PUBLIC_20260303\ghidra_12.0.4_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    D:\ghidra\ghidra_12.0.4_PUBLIC_20260303\ghidra_12.0.4_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Creating project: D:\DC_CapcomTranslationTools\spawn_re_ghidra\ghidra_project\heavy_metal (HeadlessAnalyzer)  
+INFO  Creating project: D:\DC_CapcomTranslationTools\spawn_re_ghidra\ghidra_project\heavy_metal (DefaultProject)  
+INFO  REPORT: Processing input files:  (HeadlessAnalyzer)  
+INFO       project: D:\DC_CapcomTranslationTools\spawn_re_ghidra\ghidra_project\heavy_metal (HeadlessAnalyzer)  
+INFO  IMPORTING: file:///C:/re_stage/heavy_metal_1ST_READ.bin (HeadlessAnalyzer)  
+WARN  Skipping unsupported -loader-image-base argument (ProgramLoader)  
+INFO  Using Loader: Raw Binary (ProgramLoader)  
+INFO  Using Language/Compiler: SuperH4:LE:32:default:default (ProgramLoader)  
+INFO  Using Library Search Path: [., C:\WINDOWS\SysWOW64, D:\Ghidra\OpenJDK21U-jdk_x64_windows_hotspot_21.0.10_7\jdk-21.0.10+7\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\gary\bin, C:\Program Files\Git\mingw64\bin, C:\Program Files\Git\usr\local\bin, C:\Program Files\Git\usr\bin, C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\bin, C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\libnvvp, C:\Program Files\Oculus\Support\oculus-runtime, C:\Program Files (x86)\Common Files\Oracle\Java\javapath, C:\Windows\system32, C:\Windows, C:\Windows\System32\Wbem, C:\Windows\System32\WindowsPowerShell\v1.0, C:\Windows\System32\OpenSSH, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\PuTTY, C:\Users\gary\AppData\Local\Microsoft\WindowsApps, C:\adb, C:\Program Files (x86)\Bluetooth Command Line Tools\bin, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0, C:\WINDOWS\System32\OpenSSH, C:\Program Files (x86)\Boxcryptor\bin, C:\Program Files\Git\cmd, C:\Program Files\dotnet, C:\Program Files\Microsoft Network Monitor 3, C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR, C:\Program Files (x86)\dotnet, C:\Program Files\nodejs, C:\ProgramData\chocolatey\bin, C:\x265\bin, C:\Program Files\NVIDIA Corporation\Nsight Compute 2025.2.0, C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR, C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9\lib\x64, C:\Program Files\Docker\Docker\resources\bin, C:\Program Files\GitHub CLI, C:\Users\gary\.cargo\bin, C:\Users\gary\AppData\Local\Programs\Python\Python310\Scripts, C:\Users\gary\AppData\Local\Programs\Python\Python310, C:\Users\gary\AppData\Local\Microsoft\WinGet\Packages\JernejSimoncic.Wget_Microsoft.Winget.Source_8wekyb3d8bbwe, C:\Users\gary\AppData\Local\Programs\Microsoft VS Code\bin, C:\Users\gary\AppData\Roaming\npm, C:\Program Files\GPAC, C:\msys64\usr\bin, C:\Users\gary\.dotnet\tools, C:\Users\gary\AppData\Local\Programs\Ollama, C:\Program Files\Git\usr\bin\vendor_perl, C:\Program Files\Git\usr\bin\core_perl] (ProgramLoader)  
+INFO  IMPORTING: Loaded 0 additional files (HeadlessAnalyzer)  
+INFO  ANALYZING all memory and code: file:///C:/re_stage/heavy_metal_1ST_READ.bin (HeadlessAnalyzer)  
+INFO  Packed database cache: C:\Users\gary\AppData\Local\ghidra\packed-db-cache (PackedDatabaseCache)  
+INFO  Applied data type archive: generic_clib (ApplyDataArchiveAnalyzer)  
+INFO  -----------------------------------------------------
+    ASCII Strings                              0.761 secs
+    Apply Data Archives                        1.130 secs
+    Call-Fixup Installer                       0.011 secs
+    Create Address Tables                      0.035 secs
+    Create Address Tables - One Time           0.906 secs
+    Create Function                            0.438 secs
+    Data Reference                             0.334 secs
+    Decompiler Switch Analysis                 1.840 secs
+    Demangler GNU                              0.118 secs
+    Disassemble                                0.798 secs
+    Disassemble Entry Points                   0.002 secs
+    Embedded Media                             0.062 secs
+    External Entry References                  0.001 secs
+    Function ID                                3.930 secs
+    Function Start Search                      0.042 secs
+    Non-Returning Functions - Discovered       0.070 secs
+    Reference                                  0.598 secs
+    Shared Return Calls                        0.107 secs
+    Stack                                      1.448 secs
+    Subroutine References                      0.311 secs
+    Subroutine References - One Time           0.026 secs
+    SuperH4 Constant Reference Analyzer        4.446 secs
+-----------------------------------------------------
+     Total Time   17 secs
+-----------------------------------------------------
+ (AutoAnalysisManager)  
+INFO  REPORT: Analysis succeeded for file: file:///C:/re_stage/heavy_metal_1ST_READ.bin (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: AttachAllFidbs.java  (HeadlessAnalyzer)  
+INFO  SCRIPT: D:\DC_CapcomTranslationTools\spawn_re_ghidra\AttachAllFidbs.java (HeadlessAnalyzer)  
+INFO  AttachAllFidbs.java> attached FIDB: katana_r9-SuperH4.LE.32.default.fidb (GhidraScript)  
+INFO  AttachAllFidbs.java> attached FIDB: Katana_SDK_1.20J.fidb (GhidraScript)  
+INFO  AttachAllFidbs.java> attached FIDB: Katana_SDK_1.30J.fidb (GhidraScript)  
+INFO  AttachAllFidbs.java> attached FIDB: Katana_SDK_1.42J.fidb (GhidraScript)  
+INFO  AttachAllFidbs.java> attached FIDB: Katana_SDK_1.43J.fidb (GhidraScript)  
+INFO  AttachAllFidbs.java> attached FIDB: Katana_SDK_1.55J.fidb (GhidraScript)  
+INFO  AttachAllFidbs.java> attached FIDB: Katana_SDK_2.00J.fidb (GhidraScript)  
+INFO  AttachAllFidbs.java> attached FIDB: Katana_SDK_R10.1.fidb (GhidraScript)  
+INFO  AttachAllFidbs.java> attached FIDB: Katana_SDK_R4.fidb (GhidraScript)  
+INFO  AttachAllFidbs.java> attached FIDB: Kunoichi202.fidb (GhidraScript)  
+INFO  AttachAllFidbs.java> attached FIDB: NAOMI_SDK_001002_1.fidb (GhidraScript)  
+INFO  AttachAllFidbs.java> FIDBs attached: 11 (GhidraScript)  
+INFO  Applied data type archive: generic_clib (ApplyDataArchiveAnalyzer)  
+INFO  -----------------------------------------------------
+    ASCII Strings                              0.260 secs
+    Apply Data Archives                        0.017 secs
+    Call Convention ID                         0.010 secs
+    Call-Fixup Installer                       0.004 secs
+    Create Address Tables                      0.206 secs
+    Create Address Tables - One Time           0.182 secs
+    Create Function                            0.059 secs
+    Data Reference                             0.249 secs
+    Decompiler Switch Analysis                 0.457 secs
+    Demangler GNU                              0.054 secs
+    Disassemble Entry Points                   0.022 secs
+    Embedded Media                             0.020 secs
+    External Entry References                  0.000 secs
+    Function ID                                1.497 secs
+    Function Start Search                      0.023 secs
+    Non-Returning Functions - Discovered       0.059 secs
+    Reference                                  0.261 secs
+    Shared Return Calls                        0.053 secs
+    Stack                                      0.112 secs
+    Subroutine References                      0.046 secs
+    Subroutine References - One Time           0.027 secs
+    SuperH4 Constant Reference Analyzer        2.479 secs
+-----------------------------------------------------
+     Total Time   6 secs
+-----------------------------------------------------
+ (AutoAnalysisManager)  
+INFO  AttachAllFidbs.java> re-analysis complete (GhidraScript)  
+INFO  REPORT: Execute script: DumpSymbolsAndStrings.java '-Ddump.outDir' 'D:\DC_CapcomTranslationTools\spawn_re_ghidra\ghidra_dumps'  (HeadlessAnalyzer)  
+INFO  SCRIPT: D:\DC_CapcomTranslationTools\spawn_re_ghidra\DumpSymbolsAndStrings.java (HeadlessAnalyzer)  
+INFO  DumpSymbolsAndStrings.java> wrote D:\DC_CapcomTranslationTools\spawn_re_ghidra\ghidra_dumps\heavy_metal_1ST_READ.bin.json (GhidraScript)  
+INFO  ANALYZING changes made by post scripts: file:///C:/re_stage/heavy_metal_1ST_READ.bin (HeadlessAnalyzer)  
+INFO  REPORT: Post-analysis succeeded for file: file:///C:/re_stage/heavy_metal_1ST_READ.bin (HeadlessAnalyzer)  
+INFO  /heavy_metal_1ST_READ.bin: file created (gary) (LocalFileSystem)  
+INFO  REPORT: Save succeeded for: /heavy_metal_1ST_READ.bin (heavy_metal:/heavy_metal_1ST_READ.bin) (HeadlessAnalyzer)  
+INFO  REPORT: Import succeeded (HeadlessAnalyzer)  
+
+
+== STDERR ==
