@@ -1,0 +1,347 @@
+{
+  "name": "Tech Romancer (Matching Service) (campaign baseline)",
+  "slug": "tech_romancer_ms",
+  "display_name": "Tech Romancer (Matching Service)",
+  "tier": "done",
+  "detect_label": "TECH ROMANCER",
+  "notes_kind": "dp3",
+  "deny_list": [
+    "2_DP.BIN",
+    "GAME.BIN",
+    "GGAM.BIN",
+    "MEMDEF.BIN"
+  ],
+  "scan_targets": [
+    "1ST_READ.BIN",
+    "DPETC/MESSAGE.INI"
+  ],
+  "modified_files": [
+    {
+      "rel": "1ST_READ.BIN",
+      "baseline_md5": "356de35255c148f6d8f0a434f5215ae8",
+      "patched_md5": "36af94a67a86e798ddf17815baf0d5a3",
+      "size": 3797604,
+      "patched_size": 3797604
+    },
+    {
+      "rel": "2_DP.BIN",
+      "baseline_md5": "4ebedfc7b6878f684a65a437f48cf17f",
+      "patched_md5": "6fb33e4624067f40a17f2a950fe8ed26",
+      "size": 3506074,
+      "patched_size": 3506074
+    },
+    {
+      "rel": "DEMO/HC_TIT00.PVZ",
+      "baseline_md5": "2a68af5d364bee1a4a98afbfe6cd71e2",
+      "patched_md5": "27f4d6223738bde46ef45574a88e08f1",
+      "size": 9918,
+      "patched_size": 9918
+    },
+    {
+      "rel": "DEMO/HC_TIT01.PVZ",
+      "baseline_md5": "80f16a241d869fb05718e98a9f41c30e",
+      "patched_md5": "5b2d7254e4b44035426b5101357cb6c4",
+      "size": 9260,
+      "patched_size": 9260
+    },
+    {
+      "rel": "DEMO/HC_TIT02.PVZ",
+      "baseline_md5": "27889dfe58569c21c3becd61dbfc5963",
+      "patched_md5": "082556d84a6dce116df96fd94eda1c9a",
+      "size": 8662,
+      "patched_size": 8662
+    },
+    {
+      "rel": "DEMO/HC_TIT03.PVZ",
+      "baseline_md5": "f69801ba979b8a41ff5364cd2e212d5d",
+      "patched_md5": "6bcd3cbe646de8fce3d01e1efad4ad43",
+      "size": 8780,
+      "patched_size": 8780
+    },
+    {
+      "rel": "DEMO/HC_TIT04.PVZ",
+      "baseline_md5": "c1d83bcc2d77507138d13b95215bb7de",
+      "patched_md5": "f911fb7d8df3afcc0bd9824387c4140b",
+      "size": 9052,
+      "patched_size": 9052
+    },
+    {
+      "rel": "DEMO/HC_TIT05.PVZ",
+      "baseline_md5": "6cd7cff32116cce2ab32ea8e54ce4500",
+      "patched_md5": "7e69ca10ad4fe4517d085575226e88b4",
+      "size": 8944,
+      "patched_size": 8944
+    },
+    {
+      "rel": "DEMO/HC_TIT06.PVZ",
+      "baseline_md5": "9886a4d62b0189ec2123aa3c45a5a3dd",
+      "patched_md5": "3cc4822ece96ea8a376c6e2f8e8a060d",
+      "size": 8952,
+      "patched_size": 8952
+    },
+    {
+      "rel": "DEMO/HC_TIT07.PVZ",
+      "baseline_md5": "322e4994fdb3059322b6d7926ff64fca",
+      "patched_md5": "15d4bee094be089f1d1b7568c86ffc95",
+      "size": 8960,
+      "patched_size": 8960
+    },
+    {
+      "rel": "DEMO/HC_TIT08.PVZ",
+      "baseline_md5": "ff8879fd6c7c0ed2eadb9ba5c322b2e8",
+      "patched_md5": "0e86a5839ace54644e2996b64e6ea81f",
+      "size": 9010,
+      "patched_size": 9010
+    },
+    {
+      "rel": "DEMO/HC_TIT09.PVZ",
+      "baseline_md5": "888f765b599ec52c7bca71685c5074fa",
+      "patched_md5": "1c31b4f511bf806852e81638e29955ab",
+      "size": 8602,
+      "patched_size": 8602
+    },
+    {
+      "rel": "DEMO/HC_TIT10.PVZ",
+      "baseline_md5": "cd0ed2857204b1fb07566f254cac0a8d",
+      "patched_md5": "61f022cc227cbb8447b6cc5bd0bb5b6b",
+      "size": 8610,
+      "patched_size": 8610
+    },
+    {
+      "rel": "DEMO/HC_TIT11.PVZ",
+      "baseline_md5": "5b8dfc123020ce4ee2521649794969ae",
+      "patched_md5": "befcd2a1a0216d11adc82b6296770c73",
+      "size": 8762,
+      "patched_size": 8762
+    },
+    {
+      "rel": "DEMO/HC_TIT12.PVZ",
+      "baseline_md5": "9bbc1115d88e2bf563b87dcbed89a59b",
+      "patched_md5": "c3fd12646d38947bd21b89ef7d9df629",
+      "size": 9070,
+      "patched_size": 9070
+    },
+    {
+      "rel": "DEMO/HC_TIT13.PVZ",
+      "baseline_md5": "b3c56263f2f8a5b24a9cf52c6ee6e758",
+      "patched_md5": "de745eae62d64200816f1d557989b2c8",
+      "size": 9156,
+      "patched_size": 9156
+    },
+    {
+      "rel": "DEMO/HC_TIT14.PVZ",
+      "baseline_md5": "abd74d4866c9768b2b6402c5c3995d47",
+      "patched_md5": "62353c9b8484dc0ddfe76f327ffa6c0c",
+      "size": 8594,
+      "patched_size": 8594
+    },
+    {
+      "rel": "DEMO/HC_TIT15.PVZ",
+      "baseline_md5": "5e7b08faa4730850c6c3998f0f9a809f",
+      "patched_md5": "d5221b0422422d163af2aea16265f2c4",
+      "size": 9034,
+      "patched_size": 9034
+    },
+    {
+      "rel": "DEMO/NOW_L01.PVZ",
+      "baseline_md5": "973f75bcac85c6d3a66fcfedfe595714",
+      "patched_md5": "84ec9b2739eba5f6d6cf0c73c339da0e",
+      "size": 180592,
+      "patched_size": 180592
+    },
+    {
+      "rel": "DEMO/OP_DEMO.PZZ",
+      "baseline_md5": "8867e58011d2787cb78674c780636f90",
+      "patched_md5": "9d2f344f1e1115445bf60b93511fb739",
+      "size": 5305196,
+      "patched_size": 5305196
+    },
+    {
+      "rel": "DEMO/STAFF.PZZ",
+      "baseline_md5": "e62f2af34fc3f1bc75000fa127d84ea8",
+      "patched_md5": "af08e4aa0856be0223bb74e3985f704b",
+      "size": 257804,
+      "patched_size": 257804
+    },
+    {
+      "rel": "DEMO/TITLE.PZZ",
+      "baseline_md5": "3b1bbed66b77d27e375b948aaa7ce8db",
+      "patched_md5": "71a6201d12126898b224019316b6dd3f",
+      "size": 540102,
+      "patched_size": 540102
+    },
+    {
+      "rel": "DEMO/TTD_COM.PZZ",
+      "baseline_md5": "00af1688682bdc50aa2775a2fc09b664",
+      "patched_md5": "d21a14595916fbe214836e02a080cbb4",
+      "size": 148090,
+      "patched_size": 148090
+    },
+    {
+      "rel": "DEMO/TTD_ILL.PVZ",
+      "baseline_md5": "d654e4750d0e0f585b810f6033e26d14",
+      "patched_md5": "6db26f60f6582b11b3ed81736ed76736",
+      "size": 76450,
+      "patched_size": 76450
+    },
+    {
+      "rel": "DEMO/TTD_ILL_O.PZZ",
+      "baseline_md5": "c0b96cc08e2e94a0159310eaa0f9686d",
+      "patched_md5": "a2b739e042a87651bd29593602c5d4e7",
+      "size": 6729728,
+      "patched_size": 6729728
+    },
+    {
+      "rel": "DEMO/TTD_INST_A.PVZ",
+      "baseline_md5": "9ac59bba2d9f2a3626d9fd8f1f987d5c",
+      "patched_md5": "00a7bc2c327aafb011bc9a70d865da14",
+      "size": 20784,
+      "patched_size": 20784
+    },
+    {
+      "rel": "DEMO/TTD_INST_B.PVZ",
+      "baseline_md5": "605fdcd35834056d1f280bf01a7c7206",
+      "patched_md5": "e430e7bed634ac2fedee75f1c4a46db2",
+      "size": 21704,
+      "patched_size": 21704
+    },
+    {
+      "rel": "DEMO/TTD_PUZZLE.PVZ",
+      "baseline_md5": "7b503ab89e92b8478d9c85fe0cef6f4f",
+      "patched_md5": "b4e4269adb98a5d106419d061dbb3934",
+      "size": 80476,
+      "patched_size": 80476
+    },
+    {
+      "rel": "DEMO/WARNNING.PVZ",
+      "baseline_md5": "e0afc73d0f2df034e7296756b6ad567a",
+      "patched_md5": "992575a09e6a58b57a6cb648b5daa96d",
+      "size": 94940,
+      "patched_size": 94940
+    },
+    {
+      "rel": "DPETC/MESSAGE.INI",
+      "baseline_md5": "c6603bc568955a9dd5b7590bcc231d27",
+      "patched_md5": "24fcc8d14598937f2b5e4a79225f55cf",
+      "size": 71413,
+      "patched_size": 71413
+    },
+    {
+      "rel": "GAME/DIA8NG.BIN",
+      "baseline_md5": "69e7d86bb976ca2e120b8446cbb949fd",
+      "patched_md5": "7ea4038f54b2d9ceb7d39aa563cd27ad",
+      "size": 38368,
+      "patched_size": 38368
+    },
+    {
+      "rel": "GAME/FONT24SL.BIN",
+      "baseline_md5": "66bbc3ee802453707a3a1530f9778bba",
+      "patched_md5": "0954515b7bd42a4131cb9305db5792f4",
+      "size": 1249280,
+      "patched_size": 1249280
+    },
+    {
+      "rel": "GAME/KIO1NG.BIN",
+      "baseline_md5": "79de6f52beeeca3b67a4e8729575ae18",
+      "patched_md5": "6d0dc24fd47dbabe699737a5ac430620",
+      "size": 31896,
+      "patched_size": 31896
+    },
+    {
+      "rel": "GAME/KIO5NG.BIN",
+      "baseline_md5": "7b1f2fc9a25397af357b9a1b4c0c6410",
+      "patched_md5": "a9e60dae574b96aed85c9eccd73a5602",
+      "size": 28116,
+      "patched_size": 28116
+    },
+    {
+      "rel": "GAME/KIO6NG.BIN",
+      "baseline_md5": "fc2c5c1cb096ac50d4bae356805550b8",
+      "patched_md5": "75961fa162ceb0704d9d7cba6bc1d75a",
+      "size": 29212,
+      "patched_size": 29212
+    },
+    {
+      "rel": "GAME/PE1101.PZZ",
+      "baseline_md5": "3a09d06c81a8460e4a059e5315b32027",
+      "patched_md5": "783539a1e3a1037378ed1813edbb595f",
+      "size": 218676,
+      "patched_size": 218676
+    },
+    {
+      "rel": "GAME/RAF12NG.BIN",
+      "baseline_md5": "b488e1469518a1331d57b7de7832a5af",
+      "patched_md5": "2e548773249f2af105c900c8e0d9f659",
+      "size": 45820,
+      "patched_size": 45820
+    },
+    {
+      "rel": "GAME/WIS7NG.BIN",
+      "baseline_md5": "fe7f5114e04f012a7c85b4dfdc951a64",
+      "patched_md5": "bb58ccc5b389054beaf99e4b949ee569",
+      "size": 33204,
+      "patched_size": 33204
+    },
+    {
+      "rel": "GAME/WZ_GOU2.PVZ",
+      "baseline_md5": "47e182cea6e0adf8fa2c91ad3f27bbd5",
+      "patched_md5": "f81bbb10053ab15da4c32fe0c56a3dbc",
+      "size": 4588,
+      "patched_size": 4588
+    },
+    {
+      "rel": "GAME/WZ_PUL1.PVZ",
+      "baseline_md5": "7e16bf407939d38d7bb2cb345a8a1ad4",
+      "patched_md5": "1c2ace6a2987ffdfffa76ecfa1a40a1f",
+      "size": 8166,
+      "patched_size": 8166
+    },
+    {
+      "rel": "GAME/WZ_RAF1.PVZ",
+      "baseline_md5": "d8866f25fb3f05a6ffef68b546e55789",
+      "patched_md5": "6c30f04ac5cf2449c201aa4bf6fee7c9",
+      "size": 9156,
+      "patched_size": 9156
+    },
+    {
+      "rel": "PCM/PUA1AB.PCM",
+      "baseline_md5": "da2324a5e971a8b412274219f202ca74",
+      "patched_md5": "b9e80a26d9b53a488af3e02831158ecb",
+      "size": 391168,
+      "patched_size": 391168
+    },
+    {
+      "rel": "PCM/PUA3AA.PCM",
+      "baseline_md5": "360d0878df9ad883685ec5910786116f",
+      "patched_md5": "8cd3d836563fb25b1ca22cd10fb5b65c",
+      "size": 444416,
+      "patched_size": 444416
+    },
+    {
+      "rel": "PCM/RAF4BA.PCM",
+      "baseline_md5": "55b6dc1f5bce6643bf4a6d8ab9854916",
+      "patched_md5": "a9f87b6140846541530494549978c0e9",
+      "size": 665600,
+      "patched_size": 665600
+    },
+    {
+      "rel": "PCM/TTD_MB_04.PCM",
+      "baseline_md5": "56e2a3756715808f71ec6772109b10c2",
+      "patched_md5": "caea3dd6d473aec03513e02a66e256ab",
+      "size": 1849344,
+      "patched_size": 1849344
+    },
+    {
+      "rel": "SOUND/WIS.OSB",
+      "baseline_md5": "d9de58a0e3f6736a7bf7fbfed61b3ce8",
+      "patched_md5": "8fb0f576212c2f728ab3b6ca0efe4ab5",
+      "size": 573696,
+      "patched_size": 573696
+    }
+  ],
+  "modified_count": 46,
+  "identical_count": 0,
+  "translations_count": 1382,
+  "dict_entries": 796,
+  "description": "Bundled baseline for Tech Romancer (Matching Service). EN translations are diff-derived from extracted/ vs patches/. Edit them in Tab 3 or revert per-row / per-file / all to stock JP."
+}

@@ -1,0 +1,186 @@
+{
+  "name": "JoJo's Bizarre Adventure (campaign baseline)",
+  "slug": "jojo",
+  "display_name": "JoJo's Bizarre Adventure",
+  "tier": "done",
+  "detect_label": "JOJO",
+  "notes_kind": "dp3",
+  "deny_list": [
+    "2_DP.BIN",
+    "GAME.BIN",
+    "GGAM.BIN",
+    "MEMDEF.BIN"
+  ],
+  "scan_targets": [
+    "1ST_READ.BIN",
+    "DPETC/MESSAGE.INI"
+  ],
+  "modified_files": [
+    {
+      "rel": "2_DP.BIN",
+      "baseline_md5": "eb7e591e56bda10228d82575b001fbfa",
+      "patched_md5": "ee4d92db3d4807744ff2d340c0c806ab",
+      "size": 3508634,
+      "patched_size": 3508634
+    },
+    {
+      "rel": "91_MENU.BIN",
+      "baseline_md5": "0e92da81c3038ef591bfd1fc8fc92251",
+      "patched_md5": "0cc1016a913034d341e2b7cbd00bad1a",
+      "size": 51500,
+      "patched_size": 51500
+    },
+    {
+      "rel": "93_LOBBY.BIN",
+      "baseline_md5": "4cd2d620e83f30952587b27fa9f874b0",
+      "patched_md5": "a7915c85619101228f4172302c5f0c02",
+      "size": 935468,
+      "patched_size": 935468
+    },
+    {
+      "rel": "95_JOJO.BIN",
+      "baseline_md5": "b6498bee02d8a1de2cc8e84073e58de7",
+      "patched_md5": "352f803e727944b5c7e3c453276f9947",
+      "size": 4067432,
+      "patched_size": 4067432
+    },
+    {
+      "rel": "97_DASH.BIN",
+      "baseline_md5": "6da0527c20562b4a62d419b135885372",
+      "patched_md5": "6b2a3bee1a371e3be2b0e2eec9b6fcbb",
+      "size": 6076784,
+      "patched_size": 6076784
+    },
+    {
+      "rel": "DASH/ALLESSY.PVR",
+      "baseline_md5": "903537085165c1392bb8be9450a3127f",
+      "patched_md5": "6981a3077137943bff1f5490c07237e8",
+      "size": 65568,
+      "patched_size": 65568
+    },
+    {
+      "rel": "DASH/FUKIDASHI.PVR",
+      "baseline_md5": "ad6c82abbcfd0bbcfc90340c74b42094",
+      "patched_md5": "d18aa31868786fccc968dc07d2502c5d",
+      "size": 65568,
+      "patched_size": 65568
+    },
+    {
+      "rel": "DASH/MINI_LOGO.PVR",
+      "baseline_md5": "c30205f3d0495b295a6711dc0bd3b7dc",
+      "patched_md5": "d4d47ec02dc0a7306fff4faaa403ea8f",
+      "size": 32800,
+      "patched_size": 32800
+    },
+    {
+      "rel": "DASH/PL0F_TRN.BIN",
+      "baseline_md5": "857ff436115fb4deb31fd48b2a3b61c2",
+      "patched_md5": "94e19624303f6be7d03aff0c23f0e367",
+      "size": 675977,
+      "patched_size": 675977
+    },
+    {
+      "rel": "DASH/PL10_TRN.BIN",
+      "baseline_md5": "d7396b69e012a47e24640ba341398c6f",
+      "patched_md5": "bc049225ad4ebd7f530928c0c8f49bda",
+      "size": 1044610,
+      "patched_size": 1044610
+    },
+    {
+      "rel": "DASH/PL16_TRN.BIN",
+      "baseline_md5": "ef07297cc987339bf2d444c460607451",
+      "patched_md5": "4cebf8b85a7912f520fc772d9e97f3a8",
+      "size": 534317,
+      "patched_size": 534317
+    },
+    {
+      "rel": "DASH/PS03_TRN.BIN",
+      "baseline_md5": "a233a6f1e2332cf521b8778efb0d10f2",
+      "patched_md5": "4bdbcea994c016773de5c9a97ad643ff",
+      "size": 703766,
+      "patched_size": 703766
+    },
+    {
+      "rel": "DASH/PS13_TRN.BIN",
+      "baseline_md5": "b931d9e2baad34a9605d7bc044d3cd45",
+      "patched_md5": "a5f4a0bd2e128d848d922a5d5149659b",
+      "size": 742404,
+      "patched_size": 742404
+    },
+    {
+      "rel": "DASH/STF00_TRN.BIN",
+      "baseline_md5": "dd2e8d4a3f707517ca88d1cdee1baa4b",
+      "patched_md5": "965ea68590cee9c6951c3d7c0dd412d6",
+      "size": 96319,
+      "patched_size": 96319
+    },
+    {
+      "rel": "DPETC/MESSAGE.INI",
+      "baseline_md5": "73c1b3b43832fd7d537a4a3faacf4b2d",
+      "patched_md5": "83059a25601604eab1d4359eeb930151",
+      "size": 71096,
+      "patched_size": 71096
+    },
+    {
+      "rel": "DPTEX/JYOUCYU0.PVR",
+      "baseline_md5": "5e570a4f2209f7cf63e8c6025f0e07b0",
+      "patched_md5": "5e3b6764cb5c3b6aa3ddc708195d90e0",
+      "size": 262176,
+      "patched_size": 262176
+    },
+    {
+      "rel": "JOJO/ALLESSY.PVR",
+      "baseline_md5": "903537085165c1392bb8be9450a3127f",
+      "patched_md5": "6981a3077137943bff1f5490c07237e8",
+      "size": 65568,
+      "patched_size": 65568
+    },
+    {
+      "rel": "JOJO/BW_110.PVS",
+      "baseline_md5": "73a93ebe2f329a0f879392a7b5113797",
+      "patched_md5": "2d31a0a2d2fd23ba3c738ccba2f462f0",
+      "size": 461204,
+      "patched_size": 461204
+    },
+    {
+      "rel": "JOJO/FUKIDASHI.PVR",
+      "baseline_md5": "ad6c82abbcfd0bbcfc90340c74b42094",
+      "patched_md5": "d18aa31868786fccc968dc07d2502c5d",
+      "size": 65568,
+      "patched_size": 65568
+    },
+    {
+      "rel": "JOJO/MINI_LOGO.PVR",
+      "baseline_md5": "c30205f3d0495b295a6711dc0bd3b7dc",
+      "patched_md5": "d4d47ec02dc0a7306fff4faaa403ea8f",
+      "size": 32800,
+      "patched_size": 32800
+    },
+    {
+      "rel": "JOJO/PL01_TRN.BIN",
+      "baseline_md5": "2b12444fbbd0e6a9a472cd3be3a1ab5f",
+      "patched_md5": "899f4001cc910f4da9b1f15f77f98a5c",
+      "size": 526213,
+      "patched_size": 526213
+    },
+    {
+      "rel": "LOBBY/S24RM04.BIN",
+      "baseline_md5": "66bbc3ee802453707a3a1530f9778bba",
+      "patched_md5": "0954515b7bd42a4131cb9305db5792f4",
+      "size": 1249280,
+      "patched_size": 1249280
+    },
+    {
+      "rel": "MENU/NETWORK.PVR",
+      "baseline_md5": "354a24636be202cec6a659817872e66d",
+      "patched_md5": "852a7715a4c4673de6b93e387dbcdb64",
+      "size": 174800,
+      "patched_size": 174800
+    }
+  ],
+  "modified_count": 23,
+  "identical_count": 6,
+  "translations_count": 1243,
+  "dict_entries": 796,
+  "description": "Bundled baseline for JoJo's Bizarre Adventure. EN translations are diff-derived from extracted/ vs patches/. Edit them in Tab 3 or revert per-row / per-file / all to stock JP."
+}

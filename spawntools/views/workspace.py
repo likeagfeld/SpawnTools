@@ -43,11 +43,24 @@ class WorkspaceTab(ttk.Frame):
                    command=self._on_open, style='Accent.TButton').pack(side='left', padx=2)
         ttk.Button(btn, text='Validate Integrity',
                    command=self._on_validate).pack(side='left', padx=2)
-        ttk.Button(btn, text='Load Spawn Baseline →',
+        ttk.Button(btn, text='Load Baseline →',
                    command=self._on_load_preset,
                    style='Accent.TButton').pack(side='left', padx=8)
         ttk.Button(btn, text='Reset Patches → Stock JP',
                    command=self._on_reset_patches).pack(side='left', padx=2)
+
+        # --- Game / preset picker ---
+        pk = ttk.Frame(self); pk.pack(fill='x', pady=2)
+        ttk.Label(pk, text='Preset:', width=14).pack(side='left')
+        self.preset_slug_var = tk.StringVar(value='spawn')
+        self._preset_options = []  # populated in _populate_preset_dropdown
+        self.preset_combo = ttk.Combobox(
+            pk, textvariable=self.preset_slug_var, state='readonly', width=48,
+        )
+        self.preset_combo.pack(side='left', fill='x', expand=True, padx=4)
+        ttk.Button(pk, text='Auto-detect from disc',
+                   command=self._on_autodetect_preset).pack(side='left')
+        self._populate_preset_dropdown()
 
         # --- Status panel ---
         st = ttk.LabelFrame(self, text='Status', padding=8)
@@ -179,13 +192,55 @@ class WorkspaceTab(ttk.Frame):
             f"orphans: {len(result['orphans'])}"
         )
 
+    def _populate_preset_dropdown(self):
+        from ..core import preset as preset_core
+        games = preset_core.Preset.list_available()
+        self._preset_options = games
+        labels = [f"{g['display_name']}  [{g['slug']}]" for g in games]
+        self.preset_combo['values'] = labels
+        # Default current selection
+        current = self.preset_slug_var.get() or 'spawn'
+        match = next((i for i, g in enumerate(games) if g['slug'] == current), 0)
+        if labels:
+            self.preset_combo.current(match)
+            self.preset_slug_var.set(games[match]['slug'])
+        self.preset_combo.bind('<<ComboboxSelected>>', self._on_preset_pick)
+
+    def _on_preset_pick(self, _evt=None):
+        idx = self.preset_combo.current()
+        if 0 <= idx < len(self._preset_options):
+            self.preset_slug_var.set(self._preset_options[idx]['slug'])
+
+    def _on_autodetect_preset(self):
+        if not self.app.disc:
+            messagebox.showinfo(
+                'Open disc first',
+                'Open a disc before auto-detecting — fingerprint needs the loaded track.',
+                parent=self.app)
+            return
+        from ..core import preset as preset_core
+        slug = preset_core.Preset.detect_for_disc(self.app.disc)
+        if not slug:
+            messagebox.showinfo(
+                'No match',
+                'Disc fingerprint did not match any bundled preset. Pick one manually.',
+                parent=self.app)
+            return
+        for i, g in enumerate(self._preset_options):
+            if g['slug'] == slug:
+                self.preset_combo.current(i)
+                self.preset_slug_var.set(slug)
+                self.log.append(f"auto-detected preset: {g['display_name']}", tag='ok')
+                return
+
     def _on_load_preset(self):
         if not self.app.disc:
             messagebox.showinfo('Open disc first', 'Open a disc before loading the baseline.', parent=self.app)
             return
+        slug = self.preset_slug_var.get() or 'spawn'
         from ..core import preset as preset_core
         try:
-            preset = preset_core.Preset.load_bundled()
+            preset = preset_core.Preset.load_bundled(slug)
         except RuntimeError as e:
             messagebox.showerror('Preset missing', str(e), parent=self.app)
             return

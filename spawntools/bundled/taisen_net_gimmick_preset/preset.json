@@ -1,0 +1,270 @@
+{
+  "name": "Taisen Net Gimmick — Capcom & Psikyo All Stars (campaign baseline)",
+  "slug": "taisen_net_gimmick",
+  "display_name": "Taisen Net Gimmick — Capcom & Psikyo All Stars",
+  "tier": "done",
+  "detect_label": "NET GIMMICK",
+  "notes_kind": "dp3",
+  "deny_list": [
+    "2_DP.BIN",
+    "GAME.BIN",
+    "GGAM.BIN",
+    "MEMDEF.BIN"
+  ],
+  "scan_targets": [
+    "1ST_READ.BIN",
+    "DPETC/MESSAGE.INI"
+  ],
+  "modified_files": [
+    {
+      "rel": "1ST_READ.BIN",
+      "baseline_md5": "015722c08f2130dcc13023f25d8e9d8b",
+      "patched_md5": "fd768c586a99b61feba7f393cd52ea2c",
+      "size": 1689416,
+      "patched_size": 1689416
+    },
+    {
+      "rel": "2_DP.BIN",
+      "baseline_md5": "8065b03216d4fccfd56d48a889130177",
+      "patched_md5": "a30777a82bb362485cf803e8f9e9f0d0",
+      "size": 3601882,
+      "patched_size": 3601882
+    },
+    {
+      "rel": "ADX_BGM.AFS",
+      "baseline_md5": "46acedbdd23808f3b1dd56334ea6ab25",
+      "patched_md5": "cb13ffa0d1a3abf3640510ee8ec65253",
+      "size": 218075136,
+      "patched_size": 218075136
+    },
+    {
+      "rel": "ASK.BIN",
+      "baseline_md5": "db71f9b138772a7a7cf08ea18557cbf7",
+      "patched_md5": "d69bd184cb1eec9500f184dfff910763",
+      "size": 435200,
+      "patched_size": 435200
+    },
+    {
+      "rel": "GP01.CMP",
+      "baseline_md5": "aee515e204634edc02155e0b389dc01c",
+      "patched_md5": "615034dbdb6e9de20fbb57eaf9a03f6e",
+      "size": 2662400,
+      "patched_size": 2662400
+    },
+    {
+      "rel": "KOUZA01.PVR",
+      "baseline_md5": "67bc6f761172611a15f6c49936c759f0",
+      "patched_md5": "c44a2ee6114f96d3035b1aad74eb922d",
+      "size": 524304,
+      "patched_size": 524304
+    },
+    {
+      "rel": "KOUZA02.PVR",
+      "baseline_md5": "3cffd19b42d5b95477a0e74edb7833d7",
+      "patched_md5": "fee6acf9030fc73780b1391497e60bbf",
+      "size": 524304,
+      "patched_size": 524304
+    },
+    {
+      "rel": "KOUZA03.PVR",
+      "baseline_md5": "b0262f3c57253e1b3d459c26a571c0a2",
+      "patched_md5": "739e81bfb3ce782c2b75c70da5f5d770",
+      "size": 524304,
+      "patched_size": 524304
+    },
+    {
+      "rel": "KOUZA04.PVR",
+      "baseline_md5": "edf9dadd09cab628edcacb8092989ccd",
+      "patched_md5": "889281139c910ebea674acd8b2181949",
+      "size": 524304,
+      "patched_size": 524304
+    },
+    {
+      "rel": "KOUZA05.PVR",
+      "baseline_md5": "c78ba0fee26c4c6cc3ca9877de0d4110",
+      "patched_md5": "0e020572a7ca1132d21b51f5287c8d15",
+      "size": 524304,
+      "patched_size": 524304
+    },
+    {
+      "rel": "KOUZA06.PVR",
+      "baseline_md5": "1e37f332cba81239ecac20c4dfe181b0",
+      "patched_md5": "6bc600a8f76db72346a0791d7b0725c3",
+      "size": 524304,
+      "patched_size": 524304
+    },
+    {
+      "rel": "KOUZA07.PVR",
+      "baseline_md5": "bc75bbbe9a2deb1542f3cf134c573e0c",
+      "patched_md5": "e5f96a3a70adb0c0c1a9b7a84e7d90f0",
+      "size": 524304,
+      "patched_size": 524304
+    },
+    {
+      "rel": "KOUZA08.PVR",
+      "baseline_md5": "30f70deee63ead8fae17ccbac58124b2",
+      "patched_md5": "fe100c770fa006e1026c642d7b6b10ef",
+      "size": 524304,
+      "patched_size": 524304
+    },
+    {
+      "rel": "KOUZA09.PVR",
+      "baseline_md5": "b97521eae55c28264ea1b0f15c8ddffb",
+      "patched_md5": "762279dbebffd35877a07adb10ccebdf",
+      "size": 524304,
+      "patched_size": 524304
+    },
+    {
+      "rel": "KOUZA10.PVR",
+      "baseline_md5": "e22fd7db51db29360fab6f0da1b27cfd",
+      "patched_md5": "4c0cd9c565580bd857464b4cbbd43b47",
+      "size": 524304,
+      "patched_size": 524304
+    },
+    {
+      "rel": "KOUZA11.PVR",
+      "baseline_md5": "62131436124216b92d18cc05119a621a",
+      "patched_md5": "6335e00459c7e8a2e7183fa0963a3d22",
+      "size": 524304,
+      "patched_size": 524304
+    },
+    {
+      "rel": "KOUZA12.PVR",
+      "baseline_md5": "2d888ddf7a5c12e7bd2d4f4de34defd7",
+      "patched_md5": "8b7380cd95bd2be8701dba98367c251a",
+      "size": 524304,
+      "patched_size": 524304
+    },
+    {
+      "rel": "KOUZA13.PVR",
+      "baseline_md5": "538db80a8ef379c15b3cd57513503109",
+      "patched_md5": "c4a0064adb362727ad7790c52523fb18",
+      "size": 524304,
+      "patched_size": 524304
+    },
+    {
+      "rel": "KOUZA14.PVR",
+      "baseline_md5": "8fc2a831e4502bf781913b638ed60006",
+      "patched_md5": "aeb61a5aee386772eb8de05cf2e9c661",
+      "size": 524304,
+      "patched_size": 524304
+    },
+    {
+      "rel": "KOUZA15.PVR",
+      "baseline_md5": "fcbb5b0d88e62553a1ed2ac1122f028f",
+      "patched_md5": "adb039686eeaf741b3b46ebb50b9e518",
+      "size": 524304,
+      "patched_size": 524304
+    },
+    {
+      "rel": "KOUZA16.PVR",
+      "baseline_md5": "2e1e9af1734d4889ef7ba861bdd282fc",
+      "patched_md5": "2f5741270b07c3055f969e0f3886395f",
+      "size": 524304,
+      "patched_size": 524304
+    },
+    {
+      "rel": "KOUZA17.PVR",
+      "baseline_md5": "7e8976bc617b1db7d146e10cdf6bf418",
+      "patched_md5": "b84217ebeb4ebb525f0ba79d5c660298",
+      "size": 524304,
+      "patched_size": 524304
+    },
+    {
+      "rel": "KOUZA18.PVR",
+      "baseline_md5": "61d04302d3d0c2cc0573c8075855b630",
+      "patched_md5": "5c99d8518f9e85b30999a9e657f36167",
+      "size": 524304,
+      "patched_size": 524304
+    },
+    {
+      "rel": "KOUZA19.PVR",
+      "baseline_md5": "334a1eb2e5b677a05f0da3e13f0dcdf1",
+      "patched_md5": "df3abab624065282b43b7261207d5be5",
+      "size": 524304,
+      "patched_size": 524304
+    },
+    {
+      "rel": "KOUZA20.PVR",
+      "baseline_md5": "d51bd8e2119246f6bbd56fd26dd60218",
+      "patched_md5": "54c9bc34dfee9998a30f3a1e56fc9dcd",
+      "size": 524304,
+      "patched_size": 524304
+    },
+    {
+      "rel": "KOUZA21.PVR",
+      "baseline_md5": "c2485a7703634f80b8ef2b6430461399",
+      "patched_md5": "d0596be942d88cf12a88616ac4140552",
+      "size": 524304,
+      "patched_size": 524304
+    },
+    {
+      "rel": "KOUZA22.PVR",
+      "baseline_md5": "c66ee9969caa851d7d87d68fcf02486b",
+      "patched_md5": "23255871e546dd242049496b7f3c37e9",
+      "size": 524304,
+      "patched_size": 524304
+    },
+    {
+      "rel": "KOUZA23.PVR",
+      "baseline_md5": "242e16c23b4104bf21e5b81cd0a20b9e",
+      "patched_md5": "4241d5c2f117081a9c15b57266bfc280",
+      "size": 524304,
+      "patched_size": 524304
+    },
+    {
+      "rel": "KOUZA24.PVR",
+      "baseline_md5": "4b58fb4b6e36f6c1c44d0f6d443a40a5",
+      "patched_md5": "1b7f5ff36652902cdabefaa325f01d5b",
+      "size": 524304,
+      "patched_size": 524304
+    },
+    {
+      "rel": "OP_TITLEDEMO_01.PVR",
+      "baseline_md5": "411c86512a55fc7b940829188e558b0f",
+      "patched_md5": "8c01f563f561ceb185d8b1294c11e120",
+      "size": 524304,
+      "patched_size": 524304
+    },
+    {
+      "rel": "OP_TITLE_01.PVR",
+      "baseline_md5": "45ff8febd3e7d7789f36fa745b7cbab1",
+      "patched_md5": "534bfa1f1d384bb12579726664486116",
+      "size": 262160,
+      "patched_size": 262160
+    },
+    {
+      "rel": "RESOURCE.BIN",
+      "baseline_md5": "da65f42432992c6eb1956474e9b4a7b0",
+      "patched_md5": "c3b0f989ed7d588b07fa3d76b8707552",
+      "size": 8933376,
+      "patched_size": 8933376
+    },
+    {
+      "rel": "TITLEL.PVR",
+      "baseline_md5": "be228557812ee4395dd803655a8e9803",
+      "patched_md5": "8c01f563f561ceb185d8b1294c11e120",
+      "size": 524304,
+      "patched_size": 524304
+    },
+    {
+      "rel": "WAZAALL.BIN",
+      "baseline_md5": "dbbe0268f6e546bf2e6d2ead59763a1e",
+      "patched_md5": "a7d68d95fd0c284956d81e72ab30bff7",
+      "size": 4509696,
+      "patched_size": 4509696
+    },
+    {
+      "rel": "DPETC/MESSAGE.INI",
+      "baseline_md5": "2687be8fe5c13575c2137f9c209cc16a",
+      "patched_md5": "4fd9b359ef9fc2194caf95d96c24c069",
+      "size": 83458,
+      "patched_size": 83458
+    }
+  ],
+  "modified_count": 35,
+  "identical_count": 0,
+  "translations_count": 1400,
+  "dict_entries": 796,
+  "description": "Bundled baseline for Taisen Net Gimmick — Capcom & Psikyo All Stars. EN translations are diff-derived from extracted/ vs patches/. Edit them in Tab 3 or revert per-row / per-file / all to stock JP."
+}

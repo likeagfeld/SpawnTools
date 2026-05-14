@@ -1,0 +1,158 @@
+{
+  "name": "Vampire Chronicle (Matching Service) (campaign baseline)",
+  "slug": "vampire_chronicle_ms",
+  "display_name": "Vampire Chronicle (Matching Service)",
+  "tier": "done",
+  "detect_label": "VAMPIRE",
+  "notes_kind": "dp3",
+  "deny_list": [
+    "2_DP.BIN",
+    "GAME.BIN",
+    "GGAM.BIN",
+    "MEMDEF.BIN"
+  ],
+  "scan_targets": [
+    "1ST_READ.BIN",
+    "DPETC/MESSAGE.INI"
+  ],
+  "modified_files": [
+    {
+      "rel": "1ST_READ.BIN",
+      "baseline_md5": "e67e6daec26808d5910452f854d06dd9",
+      "patched_md5": "a23b90dc4435ace5a1194d724c2af86a",
+      "size": 5692088,
+      "patched_size": 5692088
+    },
+    {
+      "rel": "2_DP.BIN",
+      "baseline_md5": "eb7e591e56bda10228d82575b001fbfa",
+      "patched_md5": "ee4d92db3d4807744ff2d340c0c806ab",
+      "size": 3508634,
+      "patched_size": 3508634
+    },
+    {
+      "rel": "A1.PVR",
+      "baseline_md5": "42d89a4cc06ad455e12b4ea33b783e2d",
+      "patched_md5": "baf3d6dd02b53bf508b9e97e8fa8ac4e",
+      "size": 131104,
+      "patched_size": 131104
+    },
+    {
+      "rel": "A2.PVR",
+      "baseline_md5": "c95ad664273e5a0b0700281ae9485273",
+      "patched_md5": "438af14d41408e68cac31564660b87a3",
+      "size": 524320,
+      "patched_size": 524320
+    },
+    {
+      "rel": "A3.PVR",
+      "baseline_md5": "e45cbcc1127e1dc97c2c1a404706a488",
+      "patched_md5": "6ee4fa4857a94243835ab1b2adb2a363",
+      "size": 131104,
+      "patched_size": 131104
+    },
+    {
+      "rel": "A4.PVR",
+      "baseline_md5": "9b6931da01b2d9f80d454de947e0140a",
+      "patched_md5": "b1bc42550a7c1e0bbc586c8fc9d47b10",
+      "size": 131104,
+      "patched_size": 131104
+    },
+    {
+      "rel": "B1.PVR",
+      "baseline_md5": "eb075f8df9e9d57cbdb3dcc0d3ab796f",
+      "patched_md5": "2e7e395bf4ead6eb6256d75a76c7e4c0",
+      "size": 131104,
+      "patched_size": 131104
+    },
+    {
+      "rel": "B2.PVR",
+      "baseline_md5": "1cd1723e795f61cd1b84d74c213cb93f",
+      "patched_md5": "891537c11f3ac03ed4e4d706cda7a1a3",
+      "size": 131104,
+      "patched_size": 131104
+    },
+    {
+      "rel": "B3.PVR",
+      "baseline_md5": "d202c4911244322af75b755ff740aea6",
+      "patched_md5": "eb7f3d4eb700d131c50d330f142c8066",
+      "size": 131104,
+      "patched_size": 131104
+    },
+    {
+      "rel": "B4.PVR",
+      "baseline_md5": "3959f54b33f3b8773e0bb56e71a29d28",
+      "patched_md5": "748a34376dc56e19bfdd7885b16d0c68",
+      "size": 131104,
+      "patched_size": 131104
+    },
+    {
+      "rel": "B5.PVR",
+      "baseline_md5": "d0a2cc5006d8c16718e00f170bbb7519",
+      "patched_md5": "f95a1547930adaef8a26d3af605657bd",
+      "size": 131104,
+      "patched_size": 131104
+    },
+    {
+      "rel": "B6.PVR",
+      "baseline_md5": "830bd9a1928ee25aa4a8594bc7896966",
+      "patched_md5": "c2f35be5d7a237f17f43df778ff525bb",
+      "size": 131104,
+      "patched_size": 131104
+    },
+    {
+      "rel": "B7.PVR",
+      "baseline_md5": "a5ee9feae3b02bd06fb095960e95e523",
+      "patched_md5": "f354e28df77403c8e84fe7d8a5754dd1",
+      "size": 131104,
+      "patched_size": 131104
+    },
+    {
+      "rel": "COMN.PVR",
+      "baseline_md5": "85bd5e9ae5580fa3c5ba9cad00a7c646",
+      "patched_md5": "860e8bebddd924bc5d530054308e9e30",
+      "size": 131104,
+      "patched_size": 131104
+    },
+    {
+      "rel": "PL08.BIN",
+      "baseline_md5": "115cd82b20fd84aeffd965df29925956",
+      "patched_md5": "e4d747273e8e2eb741f0c93696eb38b0",
+      "size": 18798696,
+      "patched_size": 18798696
+    },
+    {
+      "rel": "PL0C.BIN",
+      "baseline_md5": "7ab1b38276054e4fe60898219453da34",
+      "patched_md5": "03b39a84a7ec64a865494a4f770857e2",
+      "size": 25626436,
+      "patched_size": 25626436
+    },
+    {
+      "rel": "S24RM04.BIN",
+      "baseline_md5": "66bbc3ee802453707a3a1530f9778bba",
+      "patched_md5": "0954515b7bd42a4131cb9305db5792f4",
+      "size": 1249280,
+      "patched_size": 1249280
+    },
+    {
+      "rel": "DPETC/MESSAGE.INI",
+      "baseline_md5": "252c3e9bcdded1efc31795a7196ad596",
+      "patched_md5": "addf5ec3787a218aeb117b92c7999ccf",
+      "size": 71010,
+      "patched_size": 71010
+    },
+    {
+      "rel": "DPTEX/JYOUCYU0.PVR",
+      "baseline_md5": "5e570a4f2209f7cf63e8c6025f0e07b0",
+      "patched_md5": "5e3b6764cb5c3b6aa3ddc708195d90e0",
+      "size": 262176,
+      "patched_size": 262176
+    }
+  ],
+  "modified_count": 19,
+  "identical_count": 7,
+  "translations_count": 1379,
+  "dict_entries": 796,
+  "description": "Bundled baseline for Vampire Chronicle (Matching Service). EN translations are diff-derived from extracted/ vs patches/. Edit them in Tab 3 or revert per-row / per-file / all to stock JP."
+}

@@ -47,14 +47,24 @@ class Preset:
     # before they extract a disc.
     translations: list[dict] | None = None
 
+    slug: str = 'spawn'
+    detect_label: str = ''
+    deny_list: list[str] = field(default_factory=list)
+    scan_targets: list[str] = field(default_factory=list)
+
     @classmethod
-    def load_bundled(cls) -> 'Preset':
-        """Load the preset shipped in `spawntools/bundled/spawn_preset/`."""
-        root = Path(__file__).resolve().parent.parent / 'bundled' / 'spawn_preset'
+    def load_bundled(cls, slug: str = 'spawn') -> 'Preset':
+        """Load the bundled preset for the given game slug.
+
+        Looks under `spawntools/bundled/<slug>_preset/`. Defaults to 'spawn'
+        for backward compatibility with the original single-game flow.
+        """
+        bundled_root = Path(__file__).resolve().parent.parent / 'bundled'
+        root = bundled_root / f'{slug}_preset'
         if not root.is_dir():
             raise RuntimeError(
-                f'Bundled Spawn preset not found at {root}. Run\n'
-                f'  python -m spawntools.bundled.build_spawn_preset\n'
+                f"Bundled preset for '{slug}' not found at {root}. Run\n"
+                f'  python -m spawntools.bundled.build_preset {slug}\n'
                 f'to generate it.'
             )
         manifest = json.loads((root / 'preset.json').read_text(encoding='utf-8'))
@@ -75,7 +85,42 @@ class Preset:
             modified_files=manifest.get('modified_files', []),
             modified_count=manifest.get('modified_count', 0),
             translations=translations,
+            slug=manifest.get('slug', slug),
+            detect_label=manifest.get('detect_label', ''),
+            deny_list=manifest.get('deny_list', []),
+            scan_targets=manifest.get('scan_targets', []),
         )
+
+    @classmethod
+    def list_available(cls) -> list[dict]:
+        """Return the master index of bundled games."""
+        idx = Path(__file__).resolve().parent.parent / 'bundled' / 'games.json'
+        if not idx.is_file():
+            return [{'slug': 'spawn', 'display_name': 'Spawn (default)',
+                     'detect_label': 'SPAWN', 'preset_dir': 'spawn_preset'}]
+        return json.loads(idx.read_text(encoding='utf-8')).get('games', [])
+
+    @classmethod
+    def detect_for_disc(cls, disc) -> str | None:
+        """Best-effort fingerprint of a loaded disc → game slug, or None."""
+        # Strategy 1: ISO9660 volume label substring match.
+        # Spawn's GDI track03 has a PVD at sector 16; the volume identifier is
+        # at bytes 40..72 of the PVD. We read it via the disc's track03 path.
+        label = ''
+        try:
+            track03 = getattr(disc, 'track03_path', None)
+            if track03 and Path(track03).is_file():
+                with open(track03, 'rb') as fh:
+                    fh.seek(16 * 2048 + 40)  # PVD volume identifier
+                    label = fh.read(32).decode('ascii', errors='replace').strip()
+        except Exception:
+            label = ''
+        label_up = label.upper()
+        for g in cls.list_available():
+            needle = (g.get('detect_label') or '').upper()
+            if needle and needle in label_up:
+                return g['slug']
+        return None
 
 
 # ---------- baseline-vs-patches diff scanner ----------

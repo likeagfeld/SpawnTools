@@ -1,0 +1,220 @@
+{
+  "name": "Heavy Metal — Geomatrix (campaign baseline)",
+  "slug": "heavy_metal",
+  "display_name": "Heavy Metal — Geomatrix",
+  "tier": "done",
+  "detect_label": "HEAVY METAL",
+  "notes_kind": "std",
+  "deny_list": [
+    "2_DP.BIN",
+    "GAME.BIN",
+    "GGAM.BIN",
+    "MEMDEF.BIN"
+  ],
+  "scan_targets": [
+    "1ST_READ.BIN"
+  ],
+  "modified_files": [
+    {
+      "rel": "1ST_READ.BIN",
+      "baseline_md5": "82d1ed5f32e400d99b86f865bfa0090b",
+      "patched_md5": "e60becb13dd8367a8f1068041995965c",
+      "size": 1229313,
+      "patched_size": 1229313
+    },
+    {
+      "rel": "2_DP.BIN",
+      "baseline_md5": "9dbc5a725dd1b4624b86eb55a95c37bd",
+      "patched_md5": "662baf907dc78a564033f222d4a951a5",
+      "size": 3480282,
+      "patched_size": 3480282
+    },
+    {
+      "rel": "CHAOS_MODE.TEX",
+      "baseline_md5": "21efcb4c2998aff4b9f5362395646eed",
+      "patched_md5": "14a1daf624a217443929874eed98627a",
+      "size": 524336,
+      "patched_size": 524336
+    },
+    {
+      "rel": "DEMO.BIN",
+      "baseline_md5": "bfce5d13f7b133ef3ae395c36f26961c",
+      "patched_md5": "f8411860cf9c6e9b0d8c85650f081404",
+      "size": 42864,
+      "patched_size": 42864
+    },
+    {
+      "rel": "ENDCHR01.TEX",
+      "baseline_md5": "a3eb32e9bf925d59a150056a083111be",
+      "patched_md5": "2546ab90d05bb184279ebb56d463c452",
+      "size": 153680,
+      "patched_size": 153680
+    },
+    {
+      "rel": "ENDCHR02.TEX",
+      "baseline_md5": "55305e53819a178c8bb72235ae4e7ed8",
+      "patched_md5": "2e0ebaa433852162b84bbc03c80c572a",
+      "size": 153680,
+      "patched_size": 153680
+    },
+    {
+      "rel": "ENDCHR03.TEX",
+      "baseline_md5": "54d1cf6da7cb34e133ad8ed936c0db00",
+      "patched_md5": "23d84659d6d491adfa034a5ee672d898",
+      "size": 153680,
+      "patched_size": 153680
+    },
+    {
+      "rel": "ENDCHR04.TEX",
+      "baseline_md5": "f9f744c079f6460ec06262c34b29f5b9",
+      "patched_md5": "abaa0ca89799f9308f32b55bffbedcfb",
+      "size": 153680,
+      "patched_size": 153680
+    },
+    {
+      "rel": "ENDCHR05.TEX",
+      "baseline_md5": "0203367436ec1a794e516d00bc6f4554",
+      "patched_md5": "941e87bc03f01a282e5271abcce40a21",
+      "size": 153680,
+      "patched_size": 153680
+    },
+    {
+      "rel": "ENDCHR06.TEX",
+      "baseline_md5": "331eb474622e739d423ac8b24bc603ef",
+      "patched_md5": "80d303c7473e508109826078229a4c4c",
+      "size": 153680,
+      "patched_size": 153680
+    },
+    {
+      "rel": "ENDCHR07.TEX",
+      "baseline_md5": "3d63a75262b0d4441f8860a491b11275",
+      "patched_md5": "3d439d048912609799bdc7b700c434d9",
+      "size": 153680,
+      "patched_size": 153680
+    },
+    {
+      "rel": "ENDCHR08.TEX",
+      "baseline_md5": "9336889f1776beecc32723fbcf696764",
+      "patched_md5": "5fcec4a39454728a46d5b49be38988cf",
+      "size": 153680,
+      "patched_size": 153680
+    },
+    {
+      "rel": "ENDCHR09.TEX",
+      "baseline_md5": "2816ea5c5172ef0ce10e9690b1e605e1",
+      "patched_md5": "cb740643b71deacf2171d81a3cbcbbae",
+      "size": 153680,
+      "patched_size": 153680
+    },
+    {
+      "rel": "ENDCHR10.TEX",
+      "baseline_md5": "42459a4a232ceddb48ca066f5c7cadd0",
+      "patched_md5": "6f99aba0fe020bcc075d49df2be58648",
+      "size": 153680,
+      "patched_size": 153680
+    },
+    {
+      "rel": "ENDCHR11.TEX",
+      "baseline_md5": "d0890efa2687081f20577d3729a442ac",
+      "patched_md5": "9c5b3a97780fab9c2172a0e6baacc1b7",
+      "size": 153680,
+      "patched_size": 153680
+    },
+    {
+      "rel": "ENDCHR12.TEX",
+      "baseline_md5": "6a23f85667475692910ae6cf6eb651c0",
+      "patched_md5": "1b930945ae9b238f2ed3ed12bf3cb660",
+      "size": 153680,
+      "patched_size": 153680
+    },
+    {
+      "rel": "GAME.BIN",
+      "baseline_md5": "b2702417a5398b5cb68ef9b482d72ddc",
+      "patched_md5": "5c770e86cf38c8586b253c4cb992fcc6",
+      "size": 262403683,
+      "patched_size": 262403683
+    },
+    {
+      "rel": "HMCP_JP.TEX",
+      "baseline_md5": "3b5f84975191e769a4da5544b351b1d5",
+      "patched_md5": "bd322ed03b2f404ccfe9d0a571f5cb49",
+      "size": 36928,
+      "patched_size": 36928
+    },
+    {
+      "rel": "HM_TITLE_JP.TEX",
+      "baseline_md5": "1d73c916127983a623d078f1cc91c7c5",
+      "patched_md5": "21560d9d525556ecdc6f4ef138dca481",
+      "size": 524336,
+      "patched_size": 524336
+    },
+    {
+      "rel": "HM_TOPJP.TEX",
+      "baseline_md5": "19feefa223d14bcca6be37e186c7c949",
+      "patched_md5": "a7acc282d82eb40f80ec5b7466a85815",
+      "size": 237728,
+      "patched_size": 237728
+    },
+    {
+      "rel": "HM_TOPUS.TEX",
+      "baseline_md5": "a7acc282d82eb40f80ec5b7466a85815",
+      "patched_md5": "bbc0353b36cfcb43bd0241a44879a2ea",
+      "size": 237728,
+      "patched_size": 237728
+    },
+    {
+      "rel": "LOBBY37.TEX",
+      "baseline_md5": "34a2dd5255111c8f61f838839059c426",
+      "patched_md5": "5c72c1da01949973b088500c04adc375",
+      "size": 917648,
+      "patched_size": 917648
+    },
+    {
+      "rel": "LOBBY38.TEX",
+      "baseline_md5": "905ee9f3e6b47a8e0c43ce8d7021ea70",
+      "patched_md5": "3188a9fd098dde64cf652b141ab4fa85",
+      "size": 956672,
+      "patched_size": 956672
+    },
+    {
+      "rel": "LOBBY40.TEX",
+      "baseline_md5": "95fc6c9bfb1bbc3369e77f1f62ca3f96",
+      "patched_md5": "dad70b62f67fe33208dd08b99e5c2d7d",
+      "size": 524384,
+      "patched_size": 524384
+    },
+    {
+      "rel": "OPT_01.TEX",
+      "baseline_md5": "9c054fc83be8eb96b1b6b32b7ad1d5f4",
+      "patched_md5": "617c8755f8aed5952753225dbc85aa65",
+      "size": 727184,
+      "patched_size": 727184
+    },
+    {
+      "rel": "WARNING.TEX",
+      "baseline_md5": "edb957115ad8e1bd887799a4d27ead7f",
+      "patched_md5": "21bacf30fad02e9b2506658670879672",
+      "size": 524336,
+      "patched_size": 524336
+    },
+    {
+      "rel": "WP_ITEM.TEX",
+      "baseline_md5": "1a52c88abece718ea42fbe835e4f99b9",
+      "patched_md5": "4fa3c6b48e622a18bc43449ac7d1d57d",
+      "size": 93904,
+      "patched_size": 93904
+    },
+    {
+      "rel": "DPETC/MESSAGE.INI",
+      "baseline_md5": "b81491c2ffb6ab6ead2998e4476c3068",
+      "patched_md5": "21f1413a4caa293a3101d1230633cd0e",
+      "size": 71329,
+      "patched_size": 71329
+    }
+  ],
+  "modified_count": 28,
+  "identical_count": 0,
+  "translations_count": 290,
+  "dict_entries": 796,
+  "description": "Bundled baseline for Heavy Metal — Geomatrix. EN translations are diff-derived from extracted/ vs patches/. Edit them in Tab 3 or revert per-row / per-file / all to stock JP."
+}

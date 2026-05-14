@@ -1,0 +1,912 @@
+[
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1667392,
+    "byte_budget": 8,
+    "jp": "ランク：",
+    "en": "Rank:"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1667528,
+    "byte_budget": 14,
+    "jp": "ランクアップ！",
+    "en": "Rank up!"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1667544,
+    "byte_budget": 12,
+    "jp": "ランクダウン",
+    "en": "Rank down"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1667632,
+    "byte_budget": 14,
+    "jp": "ハンドルネーム",
+    "en": "Handle name"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1667648,
+    "byte_budget": 8,
+    "jp": "電話番号",
+    "en": "Phone nu"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1667660,
+    "byte_budget": 14,
+    "jp": "メールアドレス",
+    "en": "Email"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1667676,
+    "byte_budget": 20,
+    "jp": "は必ず入力して下さい",
+    "en": "*Required"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1667700,
+    "byte_budget": 16,
+    "jp": "情報を登録中です",
+    "en": "Registering info"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1667720,
+    "byte_budget": 20,
+    "jp": "しばらくお待ち下さい",
+    "en": "Please wait..."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1667744,
+    "byte_budget": 14,
+    "jp": "電源を切ったり",
+    "en": "Do not power o"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1667760,
+    "byte_budget": 36,
+    "jp": "ディスクドアを開けたりしないで下さい",
+    "en": "Do not open the disc lid."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1667800,
+    "byte_budget": 32,
+    "jp": "スタートボタンを１秒間以上押すと",
+    "en": "Hold START 1+ sec to"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1667836,
+    "byte_budget": 16,
+    "jp": "キャンセルします",
+    "en": "cancel."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1667856,
+    "byte_budget": 26,
+    "jp": "電話番号が正しくありません",
+    "en": "Phone number is incorrect."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1667884,
+    "byte_budget": 26,
+    "jp": "お使いの電話番号を確認して",
+    "en": "Check your phone number."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1667912,
+    "byte_budget": 22,
+    "jp": "もう一度入力して下さい",
+    "en": "Please enter again."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1667956,
+    "byte_budget": 30,
+    "jp": "設定された料金上限を超えました",
+    "en": "Exceeded set fee limit."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1667988,
+    "byte_budget": 28,
+    "jp": "ＯＰＴＩＯＮの「課金情報」で",
+    "en": "In OPTION > Billing Info,"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668020,
+    "byte_budget": 20,
+    "jp": "料金を確認して下さい",
+    "en": "Please check the fee"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668044,
+    "byte_budget": 18,
+    "jp": "使用している本体が",
+    "en": "Your console"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668064,
+    "byte_budget": 26,
+    "jp": "登録時のものではありません",
+    "en": "differs from the registere"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668092,
+    "byte_budget": 26,
+    "jp": "新たに登録しなおして下さい",
+    "en": "Please re-register."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668120,
+    "byte_budget": 18,
+    "jp": "接続に成功しました",
+    "en": "Connection success"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668140,
+    "byte_budget": 18,
+    "jp": "接続に失敗しました",
+    "en": "Connection failed."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668160,
+    "byte_budget": 24,
+    "jp": "ダイヤルできませんでした",
+    "en": "Could not dial."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668188,
+    "byte_budget": 20,
+    "jp": "モジュラーケーブルが",
+    "en": "Modular cable"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668212,
+    "byte_budget": 22,
+    "jp": "本体につながっているか",
+    "en": "Check console connecti"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668236,
+    "byte_budget": 22,
+    "jp": "モデムの設定が正しいか",
+    "en": "Check modem settings."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668276,
+    "byte_budget": 30,
+    "jp": "サーバーに接続できませんでした",
+    "en": "Could not connect to server."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668308,
+    "byte_budget": 18,
+    "jp": "パスワードが違うか",
+    "en": "Password is wrong "
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668328,
+    "byte_budget": 36,
+    "jp": "サーバーが混雑しているかもしれません",
+    "en": "Server may be busy."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668392,
+    "byte_budget": 28,
+    "jp": "「課金情報」を確認して下さい",
+    "en": "See [Billing Info]."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668436,
+    "byte_budget": 26,
+    "jp": "しばらく時間をおいて下さい",
+    "en": "Please wait a moment."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668464,
+    "byte_budget": 18,
+    "jp": "２人で参加する場合",
+    "en": "When 2 players joi"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668484,
+    "byte_budget": 20,
+    "jp": "２人目のプレイヤーは",
+    "en": "Player 2"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668508,
+    "byte_budget": 20,
+    "jp": "ランク計算されません",
+    "en": "Not counted in ranki"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668564,
+    "byte_budget": 28,
+    "jp": "カプコンＩＤが間違っています",
+    "en": "Capcom ID is incorrect"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668616,
+    "byte_budget": 36,
+    "jp": "適当な対戦相手が見つかりませんでした",
+    "en": "No suitable opponent found."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668656,
+    "byte_budget": 32,
+    "jp": "対戦ジャンルや選択方法を変えるか",
+    "en": "Try changing battle genre or met"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668692,
+    "byte_budget": 34,
+    "jp": "しばらくしてから再度ためして下さい",
+    "en": "Please try again later."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668728,
+    "byte_budget": 22,
+    "jp": "ＫＤＤ回線で接続中です",
+    "en": "Connected via KDD line"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668752,
+    "byte_budget": 36,
+    "jp": "対戦中は電源を切ったりしないで下さい",
+    "en": "Do not turn off power during battle."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668792,
+    "byte_budget": 32,
+    "jp": "回線が不安定なため切断されました",
+    "en": "Disconnected due to unstable lin"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668828,
+    "byte_budget": 22,
+    "jp": "Ａボタンを押して下さい",
+    "en": "Press the A button."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668852,
+    "byte_budget": 30,
+    "jp": "対戦相手に迷惑がかかりますので",
+    "en": "To avoid bothering your oppone"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668884,
+    "byte_budget": 30,
+    "jp": "対戦中にリセットしないで下さい",
+    "en": "Do not reset during battle."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668916,
+    "byte_budget": 22,
+    "jp": "対戦中にディスクドアを",
+    "en": "During battle, the dis"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668960,
+    "byte_budget": 20,
+    "jp": "再対戦は断られました",
+    "en": "Rematch was declined"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1668984,
+    "byte_budget": 14,
+    "jp": "カプコンＩＤ：",
+    "en": "Capcom ID:"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669024,
+    "byte_budget": 22,
+    "jp": "を登録できませんでした",
+    "en": "could not be registere"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669048,
+    "byte_budget": 28,
+    "jp": "これ以上ＩＤを登録できません",
+    "en": "Can't register more IDs"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669080,
+    "byte_budget": 28,
+    "jp": "ＩＤの編集をおこなって下さい",
+    "en": "Please edit the ID"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669132,
+    "byte_budget": 22,
+    "jp": "あなたのカプコンＩＤは",
+    "en": "Your Capcom ID is"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669208,
+    "byte_budget": 30,
+    "jp": "登録内容を変更していいですか？",
+    "en": "Edit registration info?"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669256,
+    "byte_budget": 26,
+    "jp": "は現在、通信対戦サーバーに",
+    "en": " is currently on the onlin"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669312,
+    "byte_budget": 28,
+    "jp": "ネットワークに接続しますか？",
+    "en": "Connect to network?"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669344,
+    "byte_budget": 28,
+    "jp": "接続中は通信料金がかかります",
+    "en": "Network fees apply during co"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669376,
+    "byte_budget": 22,
+    "jp": "参加人数を選んで下さい",
+    "en": "Select player count"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669420,
+    "byte_budget": 10,
+    "jp": "２人で参加",
+    "en": "2 Players"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669432,
+    "byte_budget": 30,
+    "jp": "メモリーカードをチェック中です",
+    "en": "Checking memory card..."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669464,
+    "byte_budget": 30,
+    "jp": "電源を切ったりメモリーカードを",
+    "en": "Do not turn off power, the mem"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669496,
+    "byte_budget": 22,
+    "jp": "抜いたりしないで下さい",
+    "en": "must not be opened."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669520,
+    "byte_budget": 28,
+    "jp": "正しくロードできませんでした",
+    "en": "Could not load correctly."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669552,
+    "byte_budget": 16,
+    "jp": "同じプレイヤーと",
+    "en": "Same player as b"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669572,
+    "byte_budget": 22,
+    "jp": "もう一度対戦しますか？",
+    "en": "Battle again?"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669596,
+    "byte_budget": 22,
+    "jp": "のＩＤを登録しますか？",
+    "en": "Register this ID?"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669640,
+    "byte_budget": 32,
+    "jp": "回線を切断してもよろしいですか？",
+    "en": "Disconnect the line?"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669676,
+    "byte_budget": 28,
+    "jp": "正しくセーブできませんでした",
+    "en": "Could not save correctly."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669708,
+    "byte_budget": 26,
+    "jp": "登録済みのメモリーカードを",
+    "en": "For a registered memory ca"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669736,
+    "byte_budget": 28,
+    "jp": "ポートＡ－１に接続して下さい",
+    "en": "Insert into port A-1."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669768,
+    "byte_budget": 24,
+    "jp": "通信対戦を終了しますか？",
+    "en": "Exit online battle?"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669796,
+    "byte_budget": 22,
+    "jp": "モデムが見つかりません",
+    "en": "Modem not found."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669820,
+    "byte_budget": 22,
+    "jp": "モデムが外れていないか",
+    "en": "Check if modem is disc"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669844,
+    "byte_budget": 28,
+    "jp": "次の電話番号に電話をかけます",
+    "en": "Calling the next number."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669876,
+    "byte_budget": 22,
+    "jp": "接続先を確認して下さい",
+    "en": "Please verify connecti"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669900,
+    "byte_budget": 20,
+    "jp": "接続先が正しいときは",
+    "en": "If the connection ta"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669924,
+    "byte_budget": 22,
+    "jp": "ＤＣサポートセンターに",
+    "en": "DC Support Center,"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1669968,
+    "byte_budget": 30,
+    "jp": "現在接続先が大変混み合っており",
+    "en": "Connection is very busy now,"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1670000,
+    "byte_budget": 18,
+    "jp": "電話がかかりません",
+    "en": "No phone connectio"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1670020,
+    "byte_budget": 30,
+    "jp": "モデムの設定が正しいか確認して",
+    "en": "Check that modem settings are "
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1670072,
+    "byte_budget": 26,
+    "jp": "もう一度おかけなおし下さい",
+    "en": "Please dial again."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1670100,
+    "byte_budget": 26,
+    "jp": "ログインＩＤ、パスワードが",
+    "en": "Login ID/password"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1670128,
+    "byte_budget": 22,
+    "jp": "正しいか確認して下さい",
+    "en": "Please verify correctn"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1670152,
+    "byte_budget": 26,
+    "jp": "サーバーがメンテナンス中の",
+    "en": "Server is under maintenanc"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1670200,
+    "byte_budget": 26,
+    "jp": "一定時間入力が無かったため",
+    "en": "No input for some time, so"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1670248,
+    "byte_budget": 22,
+    "jp": "相手の反応がありません",
+    "en": "No response from oppon"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1670272,
+    "byte_budget": 34,
+    "jp": "何らかの原因で回線を切断されました",
+    "en": "Line was cut for some reason."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1670308,
+    "byte_budget": 26,
+    "jp": "ＮＥＴファイルが登録された",
+    "en": "NET File registered"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1670372,
+    "byte_budget": 24,
+    "jp": "６ブロック以上空きがある",
+    "en": "must have 6+ blocks free"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1670400,
+    "byte_budget": 30,
+    "jp": "メモリーカードを接続して下さい",
+    "en": "Please insert memory card."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1670432,
+    "byte_budget": 34,
+    "jp": "登録内容を変更してよろしいですか？",
+    "en": "Edit registration info?"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1670468,
+    "byte_budget": 32,
+    "jp": "ＮＥＴファイルは対応するゲームで",
+    "en": "NET File works in compatible gam"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1670524,
+    "byte_budget": 32,
+    "jp": "電話回線を使って情報を登録します",
+    "en": "Register info via phone line."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1670560,
+    "byte_budget": 32,
+    "jp": "登録後、ネットワークに接続します",
+    "en": "After registering, connecting to"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1670616,
+    "byte_budget": 26,
+    "jp": "正しく登録できませんでした",
+    "en": "Could not register correct"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1670664,
+    "byte_budget": 20,
+    "jp": "設定を保存しています",
+    "en": "Saving settings..."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1670720,
+    "byte_budget": 26,
+    "jp": "このモードを終了しますか？",
+    "en": "Exit this mode?"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1670748,
+    "byte_budget": 22,
+    "jp": "対戦を申し込んでいます",
+    "en": "Sending battle request"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1670772,
+    "byte_budget": 18,
+    "jp": "接続を中断しました",
+    "en": "Connection was can"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1670792,
+    "byte_budget": 34,
+    "jp": "ログインパスワードを入力して下さい",
+    "en": "Please enter login password."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1670900,
+    "byte_budget": 26,
+    "jp": "「通信対戦」モード終了まで",
+    "en": "Until online mode ends,"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1670928,
+    "byte_budget": 22,
+    "jp": "メモリーカードを絶対に",
+    "en": "Never remove the memor"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1670972,
+    "byte_budget": 36,
+    "jp": "ログインパスワードが入力されてません",
+    "en": "Login password not entered."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1671012,
+    "byte_budget": 30,
+    "jp": "のＩＤを削除してもいいですか？",
+    "en": "Delete this ID?"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1671044,
+    "byte_budget": 36,
+    "jp": "あなたのカプコンＩＤや通信相手のＩＤ",
+    "en": "Your Capcom ID or your opponent ID"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1671084,
+    "byte_budget": 30,
+    "jp": "などメモリーカードの登録情報を",
+    "en": "memory card registration info"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1671116,
+    "byte_budget": 30,
+    "jp": "全て消去してもよろしいですか？",
+    "en": "Erase everything?"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1671148,
+    "byte_budget": 28,
+    "jp": "元のメモリーカードを接続して",
+    "en": "Insert the original memory c"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1671180,
+    "byte_budget": 24,
+    "jp": "正しくセーブされないので",
+    "en": "Save will not be correct"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1671224,
+    "byte_budget": 28,
+    "jp": "元のメモリーカードがないので",
+    "en": "Original memory card not pre"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1671312,
+    "byte_budget": 32,
+    "jp": "しばらくしてから再挑戦して下さい",
+    "en": "Please try again later."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1671348,
+    "byte_budget": 28,
+    "jp": "モデムからの応答がありません",
+    "en": "No response from modem."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1671380,
+    "byte_budget": 20,
+    "jp": "データをロードします",
+    "en": "Loading data..."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1671404,
+    "byte_budget": 30,
+    "jp": "メモリーカードを拡張ソケットに",
+    "en": "Insert memory card in expansio"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1671644,
+    "byte_budget": 28,
+    "jp": "スタートボタンを押して下さい",
+    "en": "Press the START button."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1671676,
+    "byte_budget": 22,
+    "jp": "データをロードしました",
+    "en": "Data loaded."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1671700,
+    "byte_budget": 24,
+    "jp": "のデータが設定されました",
+    "en": "data has been set."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1671728,
+    "byte_budget": 26,
+    "jp": "入室条件を満たしていません",
+    "en": "You do not meet entry requ"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1671756,
+    "byte_budget": 24,
+    "jp": "この対戦ルームは満員です",
+    "en": "This battle room is full"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1671784,
+    "byte_budget": 22,
+    "jp": "対戦者は切断されました",
+    "en": "Opponent was disconnec"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1671808,
+    "byte_budget": 20,
+    "jp": "接続できませんでした",
+    "en": "Connection failed."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1671832,
+    "byte_budget": 26,
+    "jp": "２人協力ｖｓＣＰＵ対戦では",
+    "en": "In 2-player co-op vs CPU,"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 1671880,
+    "byte_budget": 34,
+    "jp": "何らかの原因で接続できませんでした",
+    "en": "Could not connect for some reason."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 2081475,
+    "byte_budget": 20,
+    "jp": "大阪市中央区内平野町",
+    "en": "Osaka-shi, Chuo-ku, "
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 2081543,
+    "byte_budget": 36,
+    "jp": "「　　　　　　　　　　　」と書かれた",
+    "en": "labeled  \"             \"  "
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 2081580,
+    "byte_budget": 34,
+    "jp": "項目の中に未入力の項目があります。",
+    "en": "Some fields are empty."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 2081615,
+    "byte_budget": 36,
+    "jp": "「　　　　　　　　　　　」と書かれた",
+    "en": "labeled  \"             \"  "
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 2081652,
+    "byte_budget": 36,
+    "jp": "項目は全て入力してから「次のページ」",
+    "en": "After filling all fields, \"Next Page"
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 2081689,
+    "byte_budget": 20,
+    "jp": "を選択してください。",
+    "en": "Please select."
+  },
+  {
+    "source_file": "1ST_READ.BIN",
+    "byte_offset": 2081710,
+    "byte_budget": 22,
+    "jp": "※必ず入力してください",
+    "en": "*Required field"
+  }
+]

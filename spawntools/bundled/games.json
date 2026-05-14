@@ -1,0 +1,94 @@
+{
+  "games": [
+    {
+      "slug": "spawn",
+      "display_name": "Spawn — In the Demon's Hand",
+      "detect_label": "SPAWN",
+      "preset_dir": "spawn_preset"
+    },
+    {
+      "slug": "cvs_pro",
+      "display_name": "Capcom vs. SNK — Millennium Fight 2000 Pro",
+      "detect_label": "CAPCOM VS SNK",
+      "preset_dir": "cvs_pro_preset"
+    },
+    {
+      "slug": "heavy_metal",
+      "display_name": "Heavy Metal — Geomatrix",
+      "detect_label": "HEAVY METAL",
+      "preset_dir": "heavy_metal_preset"
+    },
+    {
+      "slug": "jojo",
+      "display_name": "JoJo's Bizarre Adventure",
+      "detect_label": "JOJO",
+      "preset_dir": "jojo_preset"
+    },
+    {
+      "slug": "marvel_vs_capcom_2",
+      "display_name": "Marvel vs. Capcom 2 — New Age of Heroes",
+      "detect_label": "MARVEL",
+      "preset_dir": "marvel_vs_capcom_2_preset"
+    },
+    {
+      "slug": "net_de_tennis",
+      "display_name": "Net de Tennis",
+      "detect_label": "NET DE TENNIS",
+      "preset_dir": "net_de_tennis_preset"
+    },
+    {
+      "slug": "power_stone_2",
+      "display_name": "Power Stone 2",
+      "detect_label": "POWER STONE",
+      "preset_dir": "power_stone_2_preset"
+    },
+    {
+      "slug": "project_justice",
+      "display_name": "Project Justice",
+      "detect_label": "PROJECT JUSTICE",
+      "preset_dir": "project_justice_preset"
+    },
+    {
+      "slug": "sf3_3rd_strike",
+      "display_name": "Street Fighter III 3rd Strike",
+      "detect_label": "3RD STRIKE",
+      "preset_dir": "sf3_3rd_strike_preset"
+    },
+    {
+      "slug": "sfz3_ms",
+      "display_name": "Street Fighter Zero 3 (Matching Service)",
+      "detect_label": "ZERO 3",
+      "preset_dir": "sfz3_ms_preset"
+    },
+    {
+      "slug": "spfii_ms",
+      "display_name": "Super Puzzle Fighter IIX (Matching Service)",
+      "detect_label": "PUZZLE FIGHTER",
+      "preset_dir": "spfii_ms_preset"
+    },
+    {
+      "slug": "ssfiix_ms",
+      "display_name": "Super Street Fighter IIX (Matching Service)",
+      "detect_label": "SUPER SF",
+      "preset_dir": "ssfiix_ms_preset"
+    },
+    {
+      "slug": "taisen_net_gimmick",
+      "display_name": "Taisen Net Gimmick — Capcom & Psikyo All Stars",
+      "detect_label": "NET GIMMICK",
+      "preset_dir": "taisen_net_gimmick_preset"
+    },
+    {
+      "slug": "tech_romancer_ms",
+      "display_name": "Tech Romancer (Matching Service)",
+      "detect_label": "TECH ROMANCER",
+      "preset_dir": "tech_romancer_ms_preset"
+    },
+    {
+      "slug": "vampire_chronicle_ms",
+      "display_name": "Vampire Chronicle (Matching Service)",
+      "detect_label": "VAMPIRE",
+      "preset_dir": "vampire_chronicle_ms_preset"
+    }
+  ]
+}

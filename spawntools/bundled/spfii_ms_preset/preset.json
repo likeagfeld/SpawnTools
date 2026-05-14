@@ -1,0 +1,158 @@
+{
+  "name": "Super Puzzle Fighter IIX (Matching Service) (campaign baseline)",
+  "slug": "spfii_ms",
+  "display_name": "Super Puzzle Fighter IIX (Matching Service)",
+  "tier": "done",
+  "detect_label": "PUZZLE FIGHTER",
+  "notes_kind": "dp3",
+  "deny_list": [
+    "2_DP.BIN",
+    "GAME.BIN",
+    "GGAM.BIN",
+    "MEMDEF.BIN"
+  ],
+  "scan_targets": [
+    "1ST_READ.BIN",
+    "DPETC/MESSAGE.INI"
+  ],
+  "modified_files": [
+    {
+      "rel": "1ST_READ.BIN",
+      "baseline_md5": "798993c5ef91b898984587d0c28bcde2",
+      "patched_md5": "1e191fc00d41179cd5eafeb55ac05c42",
+      "size": 4504084,
+      "patched_size": 4504084
+    },
+    {
+      "rel": "2_DP.BIN",
+      "baseline_md5": "9dbc5a725dd1b4624b86eb55a95c37bd",
+      "patched_md5": "662baf907dc78a564033f222d4a951a5",
+      "size": 3480282,
+      "patched_size": 3480282
+    },
+    {
+      "rel": "A1.PVR",
+      "baseline_md5": "9184783305b3e49e171d8de1248afda8",
+      "patched_md5": "e70307ff39a84fa3d9e469f04615f3fb",
+      "size": 131104,
+      "patched_size": 131104
+    },
+    {
+      "rel": "A2.PVR",
+      "baseline_md5": "9e38837b86f9b0a93949f8d187fe1a99",
+      "patched_md5": "dae1171179d997017fa6efd12477f767",
+      "size": 524320,
+      "patched_size": 524320
+    },
+    {
+      "rel": "A3.PVR",
+      "baseline_md5": "4799ad0df992396a2f2862447e6851bd",
+      "patched_md5": "8846232dc65061c09eb227d95b5d9000",
+      "size": 131104,
+      "patched_size": 131104
+    },
+    {
+      "rel": "A4.PVR",
+      "baseline_md5": "9b6931da01b2d9f80d454de947e0140a",
+      "patched_md5": "fea38116201df4c2efc9bc34d07b9147",
+      "size": 131104,
+      "patched_size": 131104
+    },
+    {
+      "rel": "B1.PVR",
+      "baseline_md5": "07868158bad9d2be16d8a2a0ac1f9f9b",
+      "patched_md5": "0f2a99182c9f3f8aced2cb29821da0cc",
+      "size": 131104,
+      "patched_size": 131104
+    },
+    {
+      "rel": "B2.PVR",
+      "baseline_md5": "594dca86f8057b2d78e877c509c79402",
+      "patched_md5": "a6e975f16947b1fbfd19cc6a27be60d0",
+      "size": 131104,
+      "patched_size": 131104
+    },
+    {
+      "rel": "B3.PVR",
+      "baseline_md5": "0968db89c3ed5217ec4adbccf8b5bba0",
+      "patched_md5": "c8f0fe6af28d4683c814cb8dd6f27ce6",
+      "size": 131104,
+      "patched_size": 131104
+    },
+    {
+      "rel": "B4.PVR",
+      "baseline_md5": "c418501ada01d3bd847d60a1a9f7d46c",
+      "patched_md5": "a7fa9f2acfcd94fc2aadf6f44a72cc52",
+      "size": 131104,
+      "patched_size": 131104
+    },
+    {
+      "rel": "B5.PVR",
+      "baseline_md5": "d0a2cc5006d8c16718e00f170bbb7519",
+      "patched_md5": "af3bdf7736ad13ab4c5a5aac1bd7dc21",
+      "size": 131104,
+      "patched_size": 131104
+    },
+    {
+      "rel": "B6.PVR",
+      "baseline_md5": "c6b185da5519faed12b2a17dbe9240e6",
+      "patched_md5": "2b35d1dcfba032b129796bbd894b7e85",
+      "size": 131104,
+      "patched_size": 131104
+    },
+    {
+      "rel": "B7.PVR",
+      "baseline_md5": "000aa6a82238b489ea994a49ac57f572",
+      "patched_md5": "712fdb15b054217775382a93fc4c56f7",
+      "size": 131104,
+      "patched_size": 131104
+    },
+    {
+      "rel": "B8.PVR",
+      "baseline_md5": "1b525e6e31bde8a8e5a1155a41950ed1",
+      "patched_md5": "72679c84de3202e70304f6a39f55c1ad",
+      "size": 131104,
+      "patched_size": 131104
+    },
+    {
+      "rel": "MEMO1.PVR",
+      "baseline_md5": "ca45c285fd99cc70f40a41cfe5ad63ad",
+      "patched_md5": "4230aa1a2114b22f89df072c9988e0af",
+      "size": 131104,
+      "patched_size": 131104
+    },
+    {
+      "rel": "PL00_MOR.OSB",
+      "baseline_md5": "91dd590d79a5b5088f7c6c7e59c6df69",
+      "patched_md5": "60d1c71d62d29d89be04cdbad987608a",
+      "size": 286496,
+      "patched_size": 286496
+    },
+    {
+      "rel": "PL06_FEL.OSB",
+      "baseline_md5": "5f6a6f66b42fc871533549d486afc2af",
+      "patched_md5": "0b4d9315d853cd80253f249ca7372df5",
+      "size": 315456,
+      "patched_size": 315456
+    },
+    {
+      "rel": "S24RM04.BIN",
+      "baseline_md5": "66bbc3ee802453707a3a1530f9778bba",
+      "patched_md5": "0954515b7bd42a4131cb9305db5792f4",
+      "size": 1249280,
+      "patched_size": 1249280
+    },
+    {
+      "rel": "DPETC/MESSAGE.INI",
+      "baseline_md5": "976786a7c9919f0a29eb11b3279aa999",
+      "patched_md5": "be46cf613d884835c0dbb3b99667e007",
+      "size": 71408,
+      "patched_size": 71408
+    }
+  ],
+  "modified_count": 19,
+  "identical_count": 0,
+  "translations_count": 1390,
+  "dict_entries": 796,
+  "description": "Bundled baseline for Super Puzzle Fighter IIX (Matching Service). EN translations are diff-derived from extracted/ vs patches/. Edit them in Tab 3 or revert per-row / per-file / all to stock JP."
+}

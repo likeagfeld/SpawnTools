@@ -1,11 +1,25 @@
 {
-  "name": "Spawn - In the Demon's Hand (campaign baseline)",
+  "name": "Spawn — In the Demon's Hand (campaign baseline)",
+  "slug": "spawn",
+  "display_name": "Spawn — In the Demon's Hand",
   "tier": "done",
+  "detect_label": "SPAWN",
+  "notes_kind": "dp3",
+  "deny_list": [
+    "2_DP.BIN",
+    "GAME.BIN",
+    "GGAM.BIN",
+    "MEMDEF.BIN"
+  ],
+  "scan_targets": [
+    "1ST_READ.BIN",
+    "DPETC/MESSAGE.INI"
+  ],
   "modified_files": [
     {
       "rel": "1ST_READ.BIN",
       "baseline_md5": "75a90aff53a5317ceac59cfb62b030f1",
-      "patched_md5": "1900a6ac717af8d6b243f50ad43da33f",
+      "patched_md5": "f5e6f48f4bf357d9be76760efba1a67e",
       "size": 1220196,
       "patched_size": 1220196
     },
@@ -19,7 +33,7 @@
     {
       "rel": "CFGJP.TEX",
       "baseline_md5": "04df1892ae17bc893d817824c14499bf",
-      "patched_md5": "d140196bb38e9676b6affb13b9c9320b",
+      "patched_md5": "735af573ced415429dacbc8634cd1908",
       "size": 1460352,
       "patched_size": 1460352
     },
@@ -194,12 +208,7 @@
   ],
   "modified_count": 27,
   "identical_count": 4,
+  "translations_count": 1575,
   "dict_entries": 796,
-  "texture_files_with_notes": 7,
-  "binary_files_with_notes": 3,
-  "description": "Built from the canonical Spawn translation campaign. Loads every existing English string + every redrawn texture as the baseline. You can revert any row / file / everything to stock JP - or continue from here with new edits.",
-  "expected_paths_hint": {
-    "spawn_dir": "D:\\Capcom Dreamcast  Games - Joe Patched\\RC2 Translated\\Spawn - In the Demon's Hand (JP)",
-    "shared_tools": "D:\\Capcom Dreamcast  Games - Joe Patched\\RC2 Translated\\_shared_tools"
-  }
+  "description": "Bundled baseline for Spawn — In the Demon's Hand. EN translations are diff-derived from extracted/ vs patches/. Edit them in Tab 3 or revert per-row / per-file / all to stock JP."
 }

@@ -1,0 +1,1026 @@
+{
+  "name": "Street Fighter Zero 3 (Matching Service) (campaign baseline)",
+  "slug": "sfz3_ms",
+  "display_name": "Street Fighter Zero 3 (Matching Service)",
+  "tier": "done",
+  "detect_label": "ZERO 3",
+  "notes_kind": "dp3",
+  "deny_list": [
+    "2_DP.BIN",
+    "GAME.BIN",
+    "GGAM.BIN",
+    "MEMDEF.BIN"
+  ],
+  "scan_targets": [
+    "1ST_READ.BIN",
+    "DPETC/MESSAGE.INI"
+  ],
+  "modified_files": [
+    {
+      "rel": "1ST_READ.BIN",
+      "baseline_md5": "b129e375532518282ed003c582157f5a",
+      "patched_md5": "fccd20b47ed12190ca04fdabe7f937aa",
+      "size": 1778144,
+      "patched_size": 1778144
+    },
+    {
+      "rel": "2_DP.BIN",
+      "baseline_md5": "acae11e413fef38425886b195681b8ce",
+      "patched_md5": "fa6ea954b0e6ff93f0e121ab66aa1cef",
+      "size": 3506362,
+      "patched_size": 3506362
+    },
+    {
+      "rel": "BD00.PAC",
+      "baseline_md5": "3162cedee869fb97b97b9da63c051043",
+      "patched_md5": "1545a097e5a0340b86f2bddcbde62ae2",
+      "size": 147456,
+      "patched_size": 147456
+    },
+    {
+      "rel": "BD01.PAC",
+      "baseline_md5": "e82a9866bc634765b71c93497eaf3630",
+      "patched_md5": "0efd57d09b2a04fe0088a076937b9483",
+      "size": 135168,
+      "patched_size": 135168
+    },
+    {
+      "rel": "BD02.PAC",
+      "baseline_md5": "4a36ac63bec04c417a51ca6022910dda",
+      "patched_md5": "5abb1489aa8cbbc54232cacef2fc3dc3",
+      "size": 135168,
+      "patched_size": 135168
+    },
+    {
+      "rel": "BD03.PAC",
+      "baseline_md5": "f6e9e47cf14e30b53877aad00afe8f5e",
+      "patched_md5": "b1c44049e80bc555fd2613e4b1cecb5a",
+      "size": 135168,
+      "patched_size": 135168
+    },
+    {
+      "rel": "BD04.PAC",
+      "baseline_md5": "0162c1ac0ca0dd57fe211b77d0fadf8b",
+      "patched_md5": "c44b988f9627fc7edd82d1a3aa86339f",
+      "size": 151552,
+      "patched_size": 151552
+    },
+    {
+      "rel": "BD05.PAC",
+      "baseline_md5": "29c03f10bf79908200c9462814d6e1f9",
+      "patched_md5": "848e9628a6d5a7772bccac9303c2470b",
+      "size": 135168,
+      "patched_size": 135168
+    },
+    {
+      "rel": "BD06.PAC",
+      "baseline_md5": "b9f144826d4e70bcc46b47e2b5b710ac",
+      "patched_md5": "485b74b095f03038805e39329b00085a",
+      "size": 135168,
+      "patched_size": 135168
+    },
+    {
+      "rel": "BD07.PAC",
+      "baseline_md5": "0a7f86429509e5d2002f49473247d368",
+      "patched_md5": "94b6d8b76b684e39504f9d54efa9de58",
+      "size": 135168,
+      "patched_size": 135168
+    },
+    {
+      "rel": "BD08.PAC",
+      "baseline_md5": "bff0227c3753273ce1da916f80bb96a8",
+      "patched_md5": "aec960af7f50e0ebed25a782f6407f1f",
+      "size": 151552,
+      "patched_size": 151552
+    },
+    {
+      "rel": "BD09.PAC",
+      "baseline_md5": "eb5cc09f0f4afbf6b43cd7e4003cdcc0",
+      "patched_md5": "f17365c60310c23d27ebd86804bed935",
+      "size": 151552,
+      "patched_size": 151552
+    },
+    {
+      "rel": "BD0A.PAC",
+      "baseline_md5": "e8dc7da5303d7c435206f0ea296768da",
+      "patched_md5": "3f62b047d1cf163783fe6d9c4180238a",
+      "size": 135168,
+      "patched_size": 135168
+    },
+    {
+      "rel": "BD0B.PAC",
+      "baseline_md5": "1b8ce1b5fb8a3de80b7479848f3cc328",
+      "patched_md5": "6c5948acb7be17f301a70098281ba672",
+      "size": 151552,
+      "patched_size": 151552
+    },
+    {
+      "rel": "BD0C.PAC",
+      "baseline_md5": "21d55a6e7ceb727efd246995734f0c65",
+      "patched_md5": "d86da75abb539d96848ad270a5d84047",
+      "size": 151552,
+      "patched_size": 151552
+    },
+    {
+      "rel": "BD0D.PAC",
+      "baseline_md5": "82ccf81ef4398521c461f196c456363a",
+      "patched_md5": "80afb3b85b7d5d9bb570a5255cdcb588",
+      "size": 151552,
+      "patched_size": 151552
+    },
+    {
+      "rel": "BD0E.PAC",
+      "baseline_md5": "1ff3556c15f5b319ba9eca11c80ff028",
+      "patched_md5": "8921c5b76148716d181e9f292a3c9a77",
+      "size": 151552,
+      "patched_size": 151552
+    },
+    {
+      "rel": "BD0F.PAC",
+      "baseline_md5": "25242c890351c0d6e886250e47aa0e57",
+      "patched_md5": "6300efc766b8418583f31cc6c15fb17b",
+      "size": 151552,
+      "patched_size": 151552
+    },
+    {
+      "rel": "BD10.PAC",
+      "baseline_md5": "5620bc76b4c588fdde9792ea505d3976",
+      "patched_md5": "d18190dc5f160a3c0024f38b392b8fbf",
+      "size": 135168,
+      "patched_size": 135168
+    },
+    {
+      "rel": "BD11.PAC",
+      "baseline_md5": "b66fa1929ce4b0dbfef25af6201f4452",
+      "patched_md5": "cb351af588ca2ca4a275094db8258ca6",
+      "size": 135168,
+      "patched_size": 135168
+    },
+    {
+      "rel": "BD15.PAC",
+      "baseline_md5": "eedd1dc92abe9e74379cce2ae0f46d6b",
+      "patched_md5": "6b081ad536205909b34d662552817ccb",
+      "size": 135168,
+      "patched_size": 135168
+    },
+    {
+      "rel": "BD16.PAC",
+      "baseline_md5": "6fbb36b24b7a2d7e9fc170841fc5bf17",
+      "patched_md5": "564c36ab442faea0a5b8b2bc6363bd0d",
+      "size": 151552,
+      "patched_size": 151552
+    },
+    {
+      "rel": "BD17.PAC",
+      "baseline_md5": "c20cea59d62d2dd3326aae9c771d6e95",
+      "patched_md5": "a72d32fbee3fe694cd93fa1b93b4958a",
+      "size": 135168,
+      "patched_size": 135168
+    },
+    {
+      "rel": "BD18.PAC",
+      "baseline_md5": "10aeb5837261d958339948746db7d847",
+      "patched_md5": "e560c7219c236ec56f3c26c0b4fee0ea",
+      "size": 135168,
+      "patched_size": 135168
+    },
+    {
+      "rel": "BD19.PAC",
+      "baseline_md5": "b1f67764b8259a5bb1fcaf69eaea7a73",
+      "patched_md5": "f3a59a8bb16448dd19dc521d2a68a4cb",
+      "size": 151552,
+      "patched_size": 151552
+    },
+    {
+      "rel": "BD1A.PAC",
+      "baseline_md5": "a57486753da771caed47c156078e6966",
+      "patched_md5": "7ed9a38ca914c28a8f322d2ae21d4dfe",
+      "size": 192512,
+      "patched_size": 192512
+    },
+    {
+      "rel": "BD1B.PAC",
+      "baseline_md5": "de583cf20ee74906f90659d99fefa29e",
+      "patched_md5": "2ecc53570bdf22964259bc95c8bae90c",
+      "size": 135168,
+      "patched_size": 135168
+    },
+    {
+      "rel": "BD1C.PAC",
+      "baseline_md5": "ab7acc9fa4d768c5584ca0b957c8edad",
+      "patched_md5": "876eb7814f944143e45cd04c2054e2a1",
+      "size": 135168,
+      "patched_size": 135168
+    },
+    {
+      "rel": "BD1D.PAC",
+      "baseline_md5": "65ca38815b11c5102b066eb10235fda9",
+      "patched_md5": "cd204439c49f198c7c45f880d3ad6b48",
+      "size": 178176,
+      "patched_size": 178176
+    },
+    {
+      "rel": "BD1E.PAC",
+      "baseline_md5": "e45298b46f92233ffb15bd8ba28dd14b",
+      "patched_md5": "9d8b398226fe57a01917a3542fd6622a",
+      "size": 135168,
+      "patched_size": 135168
+    },
+    {
+      "rel": "BD1F.PAC",
+      "baseline_md5": "e37526bb7c069adaefa9a5d5d364216b",
+      "patched_md5": "a9c4893420de0732d0d6d03170bf10b6",
+      "size": 135168,
+      "patched_size": 135168
+    },
+    {
+      "rel": "BD20.PAC",
+      "baseline_md5": "9edec556e709e033d58edfb071dd48e0",
+      "patched_md5": "2a48f385b93b43deb1a5263785974d5b",
+      "size": 135168,
+      "patched_size": 135168
+    },
+    {
+      "rel": "BD21.PAC",
+      "baseline_md5": "e54164f3a322644992f9c5ba70412dfd",
+      "patched_md5": "b7324b4e8760121a886b9118e16d9acf",
+      "size": 151552,
+      "patched_size": 151552
+    },
+    {
+      "rel": "BD22.PAC",
+      "baseline_md5": "07be513b15a84e07b1fe98341abc95be",
+      "patched_md5": "790dbdf7705391d66731f6da15be3377",
+      "size": 151552,
+      "patched_size": 151552
+    },
+    {
+      "rel": "BD23.PAC",
+      "baseline_md5": "8a56bc53ab3ec6f84f46edd79dd448ba",
+      "patched_md5": "25410f019ca0b8231b5fd3ee3c04663a",
+      "size": 135168,
+      "patched_size": 135168
+    },
+    {
+      "rel": "END04.PAC",
+      "baseline_md5": "f8558cc878279c560de27526bddda905",
+      "patched_md5": "bda32c1f3a09b98365c8c41bc149bba3",
+      "size": 2480128,
+      "patched_size": 2480128
+    },
+    {
+      "rel": "END0E.PAC",
+      "baseline_md5": "e6cd8cbb8c9842eb0e1b6a3d42a81b6c",
+      "patched_md5": "4da1c953e20e69dd86607f654c56578e",
+      "size": 2297856,
+      "patched_size": 2297856
+    },
+    {
+      "rel": "END18.PAC",
+      "baseline_md5": "ffd9dff99274600f6cd8d7dbfff4d919",
+      "patched_md5": "795d8f954d99b8fe69d4f49815391322",
+      "size": 2088960,
+      "patched_size": 2088960
+    },
+    {
+      "rel": "END1D.PAC",
+      "baseline_md5": "230ca4dd7f2332a6a5ab57286b76eecc",
+      "patched_md5": "299089c5297ff8443f5823b5a946dbd0",
+      "size": 2234368,
+      "patched_size": 2234368
+    },
+    {
+      "rel": "INIT.PAC",
+      "baseline_md5": "32f05894d3c4c8ea508d88b334078529",
+      "patched_md5": "f65f0567bbf9d2d9046a47c9c06652e3",
+      "size": 661504,
+      "patched_size": 661504
+    },
+    {
+      "rel": "NET.PAC",
+      "baseline_md5": "dabc7e4ac4c668901036994984b36ddb",
+      "patched_md5": "09301540a78857a3bd8d77980f16d52f",
+      "size": 141312,
+      "patched_size": 141312
+    },
+    {
+      "rel": "OP00.PAC",
+      "baseline_md5": "7bfb3fcf3cb4215130b3f4c9d6e1c914",
+      "patched_md5": "fd59c34b5aa287b956c12ea36ab7adc1",
+      "size": 163840,
+      "patched_size": 163840
+    },
+    {
+      "rel": "OP01.PAC",
+      "baseline_md5": "edafca8065d55aa17f9075c21de1079c",
+      "patched_md5": "75e2d1dad5ba89f6a8ae86831816a3a4",
+      "size": 163840,
+      "patched_size": 163840
+    },
+    {
+      "rel": "OP02.PAC",
+      "baseline_md5": "9be0d2d545bffdadbd0ac08015eea9c5",
+      "patched_md5": "bdaddd195d52a802ca621e7c0891e052",
+      "size": 163840,
+      "patched_size": 163840
+    },
+    {
+      "rel": "OP03.PAC",
+      "baseline_md5": "a911606e0b79f2f475ab9291aa5c5ad8",
+      "patched_md5": "2d1b3fbd24eb232cbce46049224c6c1a",
+      "size": 163840,
+      "patched_size": 163840
+    },
+    {
+      "rel": "OP04.PAC",
+      "baseline_md5": "15d6597645eea1127bef947d52c8a6f6",
+      "patched_md5": "a6730d07f2b6433811274b17c022c364",
+      "size": 161792,
+      "patched_size": 161792
+    },
+    {
+      "rel": "OP05.PAC",
+      "baseline_md5": "f362f8c53312c5b6515c6f8ab85d6074",
+      "patched_md5": "8b643039214b05c0b0d58c1493d307bf",
+      "size": 161792,
+      "patched_size": 161792
+    },
+    {
+      "rel": "OP06.PAC",
+      "baseline_md5": "d4ded70cac224b15bcbffb4641cb95f2",
+      "patched_md5": "73d0bbfc2e93c8fd3f245cb39d55adf6",
+      "size": 163840,
+      "patched_size": 163840
+    },
+    {
+      "rel": "OP07.PAC",
+      "baseline_md5": "1f6f935d0aa8d61cf1e203c5e5cfe9f4",
+      "patched_md5": "abfab7d8cca36f76a839133f6425c3bf",
+      "size": 165888,
+      "patched_size": 165888
+    },
+    {
+      "rel": "OP08.PAC",
+      "baseline_md5": "064473081f900484e152b793cf62b897",
+      "patched_md5": "90210559c3989431666a284472e26a7f",
+      "size": 167936,
+      "patched_size": 167936
+    },
+    {
+      "rel": "OP09.PAC",
+      "baseline_md5": "6bcf5a8baff3bd2c3fc83184589d111c",
+      "patched_md5": "c0e8ed5f58c4438c51c2c04897e74a80",
+      "size": 165888,
+      "patched_size": 165888
+    },
+    {
+      "rel": "OP0A.PAC",
+      "baseline_md5": "2be6d7909a6c47ea074d4ee6f0441ce1",
+      "patched_md5": "5d09a76737e2c954f1e581bbc14853a9",
+      "size": 159744,
+      "patched_size": 159744
+    },
+    {
+      "rel": "OP0B.PAC",
+      "baseline_md5": "bdf926e38813055f8a01513b048d827e",
+      "patched_md5": "5aebb401e46011cd8fb35998b10d5064",
+      "size": 159744,
+      "patched_size": 159744
+    },
+    {
+      "rel": "OP0C.PAC",
+      "baseline_md5": "f24899e4f8775113cec0dadbb04888a3",
+      "patched_md5": "243d844b3e532375bdc114d91ea0ee82",
+      "size": 169984,
+      "patched_size": 169984
+    },
+    {
+      "rel": "OP0D.PAC",
+      "baseline_md5": "756e6a43b97a7b331bbfc35a84b52fd3",
+      "patched_md5": "7484aaba8796651075423f59c1e01cb8",
+      "size": 163840,
+      "patched_size": 163840
+    },
+    {
+      "rel": "OP0E.PAC",
+      "baseline_md5": "bc7798e93a9b842c956238d54b040a8c",
+      "patched_md5": "2a9875afe810eee3376f0947397ee037",
+      "size": 167936,
+      "patched_size": 167936
+    },
+    {
+      "rel": "OP0F.PAC",
+      "baseline_md5": "e0a041db7fec696c98371d08d273cdd0",
+      "patched_md5": "de23b6de339fdd78765fc184c19e48a6",
+      "size": 159744,
+      "patched_size": 159744
+    },
+    {
+      "rel": "OP10.PAC",
+      "baseline_md5": "13dc0e1416a092af898b14896b704984",
+      "patched_md5": "3562a11fdbb3d81cb5e82604929fd76a",
+      "size": 159744,
+      "patched_size": 159744
+    },
+    {
+      "rel": "OP11.PAC",
+      "baseline_md5": "6a1715f04c66e0d1b4366c97cacef596",
+      "patched_md5": "530b0af5a8925abdb41a58c3617c7a4b",
+      "size": 157696,
+      "patched_size": 157696
+    },
+    {
+      "rel": "OP12.PAC",
+      "baseline_md5": "f128aa1de593cad90b1e54c70b6fe7f8",
+      "patched_md5": "a5830524ade9fe2cce55369b06a06ed0",
+      "size": 159744,
+      "patched_size": 159744
+    },
+    {
+      "rel": "OP14.PAC",
+      "baseline_md5": "9bb49513a3afb1c100a5e187d98dfc82",
+      "patched_md5": "40ffb9d8f0a06b55d3589acb33cdb4b7",
+      "size": 161792,
+      "patched_size": 161792
+    },
+    {
+      "rel": "OP15.PAC",
+      "baseline_md5": "1b581d01a4e922f2b538312bc6655a12",
+      "patched_md5": "9e6408080f6ba89c7bfad3ec70279f47",
+      "size": 167936,
+      "patched_size": 167936
+    },
+    {
+      "rel": "OP16.PAC",
+      "baseline_md5": "5feee0507f7548093ad1cf641a9fbf8b",
+      "patched_md5": "14fc28582851198dad6a7409f0bf0913",
+      "size": 163840,
+      "patched_size": 163840
+    },
+    {
+      "rel": "OP17.PAC",
+      "baseline_md5": "3f9986fd12fa63fa3d1ba70810184d5c",
+      "patched_md5": "da819402cabeaf4fee710c9c2637ffcf",
+      "size": 163840,
+      "patched_size": 163840
+    },
+    {
+      "rel": "OP18.PAC",
+      "baseline_md5": "efcf9718175fda91709478b71efd2bda",
+      "patched_md5": "9a0d03e8a4abef79ea53858600212c2f",
+      "size": 159744,
+      "patched_size": 159744
+    },
+    {
+      "rel": "OP19.PAC",
+      "baseline_md5": "a5ca10629a2d4822078c5aafb7cc79ce",
+      "patched_md5": "cbd2344259709e10f5ec9b18f7ec47a9",
+      "size": 167936,
+      "patched_size": 167936
+    },
+    {
+      "rel": "OP1A.PAC",
+      "baseline_md5": "d299de73c17efee2edffd66099e2b674",
+      "patched_md5": "e1c59147d01eb27ed3f510a8ba66bb98",
+      "size": 172032,
+      "patched_size": 172032
+    },
+    {
+      "rel": "OP1B.PAC",
+      "baseline_md5": "f2aa316df60eb42ff2ce67abb0b411aa",
+      "patched_md5": "afdeee6b47a31133e7cd8ac7f2c8634a",
+      "size": 161792,
+      "patched_size": 161792
+    },
+    {
+      "rel": "OP1C.PAC",
+      "baseline_md5": "b5ad1da0a0af4fb70392e0babd0c80e9",
+      "patched_md5": "fcf5e30385c37d74835620359a94edc8",
+      "size": 165888,
+      "patched_size": 165888
+    },
+    {
+      "rel": "OP1D.PAC",
+      "baseline_md5": "0d5eea137c82eb4a59a12630e619bc3d",
+      "patched_md5": "2a4b3d5be5c2b01bb2f4ef062b1fdea7",
+      "size": 161792,
+      "patched_size": 161792
+    },
+    {
+      "rel": "OP1E.PAC",
+      "baseline_md5": "22c54f92044fe5d55cbe660521e10b21",
+      "patched_md5": "c9c29cd2afe5fd6828fdbc54f029597b",
+      "size": 157696,
+      "patched_size": 157696
+    },
+    {
+      "rel": "OP1F.PAC",
+      "baseline_md5": "e275de1d764a7674e036b5db5c64372e",
+      "patched_md5": "ec48635e04eac4a197f06b30b3ae5fb0",
+      "size": 155648,
+      "patched_size": 155648
+    },
+    {
+      "rel": "OP20.PAC",
+      "baseline_md5": "27afe6bff820968c234d5f64a6d6582f",
+      "patched_md5": "a9faebbe3f6499fdab2eb2f02ec9004d",
+      "size": 161792,
+      "patched_size": 161792
+    },
+    {
+      "rel": "OP21.PAC",
+      "baseline_md5": "6ed20ce34f06de282a6e13389966258b",
+      "patched_md5": "5372188ef9ca4fea6bc8fd0b2f7cd34f",
+      "size": 155648,
+      "patched_size": 155648
+    },
+    {
+      "rel": "OP22.PAC",
+      "baseline_md5": "57a7a991b9761d75c9234ca3a32e5cfc",
+      "patched_md5": "2aceae7ce3315516f3335c9c5e4408e8",
+      "size": 161792,
+      "patched_size": 161792
+    },
+    {
+      "rel": "OP23.PAC",
+      "baseline_md5": "d0fcbbeddde6430ce96c7b83a94353f9",
+      "patched_md5": "2619bf210594300f425424501544c740",
+      "size": 165888,
+      "patched_size": 165888
+    },
+    {
+      "rel": "OP24.PAC",
+      "baseline_md5": "4ab71aa61f355960b02cf63d0d7d8fbb",
+      "patched_md5": "d564c37ef09eb48a5c2fe2d090861d25",
+      "size": 163840,
+      "patched_size": 163840
+    },
+    {
+      "rel": "OPEN.PAC",
+      "baseline_md5": "8439aaa763977730e630a74f45469dfb",
+      "patched_md5": "687467f004f10ed4d34739f00e9b8068",
+      "size": 3291136,
+      "patched_size": 3291136
+    },
+    {
+      "rel": "OPT.PAC",
+      "baseline_md5": "7b13005a80e94bdf9f11a5ab496fc73c",
+      "patched_md5": "abc736f6fc169ff5fcf59cd48f73e5c2",
+      "size": 270336,
+      "patched_size": 270336
+    },
+    {
+      "rel": "PIT.PAC",
+      "baseline_md5": "dbdff3857d847a9ce7012a121a120f33",
+      "patched_md5": "f22420e04ab5e38de3e5a2d374e4284c",
+      "size": 518144,
+      "patched_size": 518144
+    },
+    {
+      "rel": "PL04A.BIN",
+      "baseline_md5": "66892fefa0747144219f933a35ce6cd0",
+      "patched_md5": "20ccab070f695c0bdd5ad9b630ce762d",
+      "size": 63368,
+      "patched_size": 63368
+    },
+    {
+      "rel": "PL04B.BIN",
+      "baseline_md5": "cfd9e2a5a50f4f6d0dd2aabf166368c3",
+      "patched_md5": "8a0b9939dd4baacc213c50aece217a69",
+      "size": 63368,
+      "patched_size": 63368
+    },
+    {
+      "rel": "PL04C.BIN",
+      "baseline_md5": "c0deff1f6b2d0d9486876b2b34b4751b",
+      "patched_md5": "548583be980117e6e006c0856dc7f936",
+      "size": 63368,
+      "patched_size": 63368
+    },
+    {
+      "rel": "PL06.PAC",
+      "baseline_md5": "410010f9c38eeae3ea169a69d4d8fcd7",
+      "patched_md5": "cdf0c529825237950ad082cb74f61db0",
+      "size": 1030144,
+      "patched_size": 1030144
+    },
+    {
+      "rel": "PL09.PAC",
+      "baseline_md5": "a42a2100753b6698c939e1f6f3106e9a",
+      "patched_md5": "9b24a09140ee79db0330b6e23cba0625",
+      "size": 1220608,
+      "patched_size": 1220608
+    },
+    {
+      "rel": "PL0A.PAC",
+      "baseline_md5": "4c0c4e346b20f05c28e0295913398012",
+      "patched_md5": "44e9cb35637362332ddc5e103e7a056b",
+      "size": 1280000,
+      "patched_size": 1280000
+    },
+    {
+      "rel": "PL15.PAC",
+      "baseline_md5": "fa8c662bc2140576539d385f1c86c1cd",
+      "patched_md5": "9fcc36182e26cc3d90323c2ae9842f14",
+      "size": 782336,
+      "patched_size": 782336
+    },
+    {
+      "rel": "PL18.PAC",
+      "baseline_md5": "24dda18cf020340b22c5d0bc1a17595d",
+      "patched_md5": "561cee2eb0e7f068efc78f31fc2430a7",
+      "size": 1054720,
+      "patched_size": 1054720
+    },
+    {
+      "rel": "PL1C.PAC",
+      "baseline_md5": "543b64139633c3f6bdd31d609fbd2db5",
+      "patched_md5": "f1370ca51f7c235ce00bd024af28750a",
+      "size": 1253376,
+      "patched_size": 1253376
+    },
+    {
+      "rel": "PL20.PAC",
+      "baseline_md5": "373c8d8229a6c20443e84b8850dd6036",
+      "patched_md5": "8709444038002a75313e1efaa4abf320",
+      "size": 1103872,
+      "patched_size": 1103872
+    },
+    {
+      "rel": "PL23.PAC",
+      "baseline_md5": "efda91f6cb25c5966ee240115d625e13",
+      "patched_md5": "ff08330e07aaa9b8b0437040887a8fbc",
+      "size": 1280000,
+      "patched_size": 1280000
+    },
+    {
+      "rel": "PL25.PAC",
+      "baseline_md5": "d0949f4cd066385ecc64ed0ce80bdc04",
+      "patched_md5": "6a51606c817a91d1f3a0a2c92a643f80",
+      "size": 911360,
+      "patched_size": 911360
+    },
+    {
+      "rel": "RK11.PAC",
+      "baseline_md5": "658c0f0076270176668eadd96e69b868",
+      "patched_md5": "874d6d4055b6702fc115401e6053b9ff",
+      "size": 40960,
+      "patched_size": 40960
+    },
+    {
+      "rel": "RK20.PAC",
+      "baseline_md5": "afd789583264ae69f5a98573f51f19c0",
+      "patched_md5": "6b62496553e0eed681c180ea5002cf2f",
+      "size": 53248,
+      "patched_size": 53248
+    },
+    {
+      "rel": "S18RM04.BIN",
+      "baseline_md5": "8844219683e38bbd4ee319ed87659807",
+      "patched_md5": "9c6ea48eb2a08c4285c2fad922ed5609",
+      "size": 827648,
+      "patched_size": 827648
+    },
+    {
+      "rel": "S20RM04.BIN",
+      "baseline_md5": "f537f34c23255a3f0ea9f6ad2166c51e",
+      "patched_md5": "ee70a212eaf1a2c0a92d52f5f6b0c273",
+      "size": 905728,
+      "patched_size": 905728
+    },
+    {
+      "rel": "S24RM04.BIN",
+      "baseline_md5": "66bbc3ee802453707a3a1530f9778bba",
+      "patched_md5": "0954515b7bd42a4131cb9305db5792f4",
+      "size": 1249280,
+      "patched_size": 1249280
+    },
+    {
+      "rel": "S26RM04.BIN",
+      "baseline_md5": "3466c751fd2554cc26f3c2dd01793eba",
+      "patched_md5": "903eda1421ed242e8a00ffc75e6a24b8",
+      "size": 1545984,
+      "patched_size": 1545984
+    },
+    {
+      "rel": "SELECT.PAC",
+      "baseline_md5": "021e983eafcb2566b4bfa71b9fc47b0f",
+      "patched_md5": "41d36d21734f66d36c8acdcdd42b3f4e",
+      "size": 1146880,
+      "patched_size": 1146880
+    },
+    {
+      "rel": "ST0A.PAC",
+      "baseline_md5": "956679ead987158dbb3f46258d27a60c",
+      "patched_md5": "51f8a54b349c7c77cc7e225aeabc4c82",
+      "size": 1925120,
+      "patched_size": 1925120
+    },
+    {
+      "rel": "ST0E.PAC",
+      "baseline_md5": "4ee363bd6d6a7101133d34bed1a5897a",
+      "patched_md5": "3717d0a250482a3ee4ecd12a4ea4238c",
+      "size": 839680,
+      "patched_size": 839680
+    },
+    {
+      "rel": "ST20.PAC",
+      "baseline_md5": "302e5fd8e675a693152a2a7833db7331",
+      "patched_md5": "7cec4a8a3ceee338d94c53a54df66d75",
+      "size": 595968,
+      "patched_size": 595968
+    },
+    {
+      "rel": "VSNET01.PAC",
+      "baseline_md5": "bfc7e6067b99df43880ba3a5557150a4",
+      "patched_md5": "5ed84037feba123d043e3229937f0db9",
+      "size": 927744,
+      "patched_size": 927744
+    },
+    {
+      "rel": "VSNET02.PAC",
+      "baseline_md5": "3aaf63d862cb8d118665e53b01190fcc",
+      "patched_md5": "99bada27b0237a7e9620a6db5d039ade",
+      "size": 1067008,
+      "patched_size": 1067008
+    },
+    {
+      "rel": "WIN00.PAC",
+      "baseline_md5": "766fc34669c2539b7c65b609796ad39c",
+      "patched_md5": "c31594086c30cfab2d14eb20db2cf5d7",
+      "size": 520192,
+      "patched_size": 520192
+    },
+    {
+      "rel": "WIN01.PAC",
+      "baseline_md5": "91326d1010b4c8f9999a11ac49ea7a81",
+      "patched_md5": "0009f6f5abc66934003aa724fc6afb81",
+      "size": 526336,
+      "patched_size": 526336
+    },
+    {
+      "rel": "WIN02.PAC",
+      "baseline_md5": "c353397e0c1d4efa53acc7d71d7b9d09",
+      "patched_md5": "cafec6eb6dda6ae3bf436680f506207c",
+      "size": 518144,
+      "patched_size": 518144
+    },
+    {
+      "rel": "WIN03.PAC",
+      "baseline_md5": "20492df612b7ec217c054cd5739726c9",
+      "patched_md5": "9b4dcd1f5b38e121bd75482a259bb840",
+      "size": 649216,
+      "patched_size": 649216
+    },
+    {
+      "rel": "WIN04.PAC",
+      "baseline_md5": "128321ff868dc78403a9a7b428070fd1",
+      "patched_md5": "d77d5849d06926ad2723137996998616",
+      "size": 516096,
+      "patched_size": 516096
+    },
+    {
+      "rel": "WIN05.PAC",
+      "baseline_md5": "08fd471f4ca814efba6f2d6cbe45a75e",
+      "patched_md5": "b991c442ffe5130b9eb660c855113170",
+      "size": 518144,
+      "patched_size": 518144
+    },
+    {
+      "rel": "WIN06.PAC",
+      "baseline_md5": "164f048444ea34e144469dc345945135",
+      "patched_md5": "ed634d34f90625971988f73c5979e130",
+      "size": 520192,
+      "patched_size": 520192
+    },
+    {
+      "rel": "WIN07.PAC",
+      "baseline_md5": "db244ca94db17bed299e857c7f0f0504",
+      "patched_md5": "3cafd1c9e7af4213ec4c00d6216ab9fe",
+      "size": 647168,
+      "patched_size": 647168
+    },
+    {
+      "rel": "WIN08.PAC",
+      "baseline_md5": "1476045b4af7254da20a54bdfac002d7",
+      "patched_md5": "3f1d7d624c3bf987c7b6b412eb6fd4ee",
+      "size": 522240,
+      "patched_size": 522240
+    },
+    {
+      "rel": "WIN09.PAC",
+      "baseline_md5": "a3ae76553579cd2681f4687f2159b9f1",
+      "patched_md5": "13a09b85c83d2783e3b9b9758ff78c66",
+      "size": 520192,
+      "patched_size": 520192
+    },
+    {
+      "rel": "WIN0A.PAC",
+      "baseline_md5": "126ce389089d0439f123af777cefcfa5",
+      "patched_md5": "3b378596b4ec4914f5aef8fa71b043f3",
+      "size": 651264,
+      "patched_size": 651264
+    },
+    {
+      "rel": "WIN0B.PAC",
+      "baseline_md5": "c1a73dcb84806d9e863e19040350884b",
+      "patched_md5": "8e784bfdf8041d0275519b853ff99f43",
+      "size": 512000,
+      "patched_size": 512000
+    },
+    {
+      "rel": "WIN0C.PAC",
+      "baseline_md5": "0e0d4919dab1771bac7d21635af1b8e1",
+      "patched_md5": "8bf70014752f7c76cb1080f5104f5d1c",
+      "size": 516096,
+      "patched_size": 516096
+    },
+    {
+      "rel": "WIN0D.PAC",
+      "baseline_md5": "410abced9245b2938a9606105da83445",
+      "patched_md5": "7461f84f449c0a05681b224d0780345d",
+      "size": 518144,
+      "patched_size": 518144
+    },
+    {
+      "rel": "WIN0E.PAC",
+      "baseline_md5": "514113539b9eed656957a7359ec56c61",
+      "patched_md5": "2d8ad8b9bbf115157e96b0b41e519f14",
+      "size": 649216,
+      "patched_size": 649216
+    },
+    {
+      "rel": "WIN0F.PAC",
+      "baseline_md5": "e33e78e3dc9fca6f0455bf03913285f0",
+      "patched_md5": "3ae89aff44b81e5e0fe5a81fa01415cc",
+      "size": 520192,
+      "patched_size": 520192
+    },
+    {
+      "rel": "WIN10.PAC",
+      "baseline_md5": "bfe5cfec59ffd3d76fe79abacdf703e3",
+      "patched_md5": "02d6c54016b454844776d2e0ac1c78ef",
+      "size": 649216,
+      "patched_size": 649216
+    },
+    {
+      "rel": "WIN11.PAC",
+      "baseline_md5": "7181bea78d052080ac8d842df3346677",
+      "patched_md5": "9c6a640f9dd0d42a396b0c9fb66c9e42",
+      "size": 520192,
+      "patched_size": 520192
+    },
+    {
+      "rel": "WIN12.PAC",
+      "baseline_md5": "f2c60fe6d2a9f7556b8691662a3a22b6",
+      "patched_md5": "222ff8586f64af0f9a8d45751f0cb71d",
+      "size": 522240,
+      "patched_size": 522240
+    },
+    {
+      "rel": "WIN14.PAC",
+      "baseline_md5": "72d536cbe61f9f7bf9c96c4bb0aafe0d",
+      "patched_md5": "65cd543f6010a64e129c75940d547f98",
+      "size": 522240,
+      "patched_size": 522240
+    },
+    {
+      "rel": "WIN15.PAC",
+      "baseline_md5": "56c15d09f447000aab7e837682ed07d7",
+      "patched_md5": "14d11f75881320b83a571152036e9706",
+      "size": 520192,
+      "patched_size": 520192
+    },
+    {
+      "rel": "WIN16.PAC",
+      "baseline_md5": "4a4c04931114316dc7dd70ba298ee825",
+      "patched_md5": "b2bed382ee4424416f6a1974b13d6298",
+      "size": 653312,
+      "patched_size": 653312
+    },
+    {
+      "rel": "WIN17.PAC",
+      "baseline_md5": "5d8e6f1862e51b20c2aaf374e6989cf3",
+      "patched_md5": "d13b1bebc635948faa9e3545b24c5442",
+      "size": 516096,
+      "patched_size": 516096
+    },
+    {
+      "rel": "WIN18.PAC",
+      "baseline_md5": "4f7903082075aba6f19249b0c88859e4",
+      "patched_md5": "5555909bdda9cfde5a4fd863e07b4b8a",
+      "size": 516096,
+      "patched_size": 516096
+    },
+    {
+      "rel": "WIN19.PAC",
+      "baseline_md5": "260a6606b640b50732e6e4bd454d7354",
+      "patched_md5": "6146cc049edbc08cb0dc100817f2b05f",
+      "size": 514048,
+      "patched_size": 514048
+    },
+    {
+      "rel": "WIN1A.PAC",
+      "baseline_md5": "c971cbdbece44318657b426131afc4e3",
+      "patched_md5": "b6869da70f0db93a0266e79ce6035761",
+      "size": 520192,
+      "patched_size": 520192
+    },
+    {
+      "rel": "WIN1B.PAC",
+      "baseline_md5": "2d8b5e961ea9ef431914f43441c0fb76",
+      "patched_md5": "55df01bd8408335eafff6970d58d657d",
+      "size": 516096,
+      "patched_size": 516096
+    },
+    {
+      "rel": "WIN1C.PAC",
+      "baseline_md5": "1bae829a3eb5364f4c891fe2bc641242",
+      "patched_md5": "3a1ec11d32f65c7ae3d4988df2388c2e",
+      "size": 655360,
+      "patched_size": 655360
+    },
+    {
+      "rel": "WIN1D.PAC",
+      "baseline_md5": "9f0a080e5cb89446d1dea1adb2abb379",
+      "patched_md5": "740df9c28d2e6163c4fd68a857237113",
+      "size": 655360,
+      "patched_size": 655360
+    },
+    {
+      "rel": "WIN1E.PAC",
+      "baseline_md5": "8e4c7bd99c353b06db2ac8d9886718c6",
+      "patched_md5": "b5501a4e4d28fc093deda80241a453e6",
+      "size": 514048,
+      "patched_size": 514048
+    },
+    {
+      "rel": "WIN1F.PAC",
+      "baseline_md5": "b0d61cacbf4a89d30d6e5707085cde42",
+      "patched_md5": "e0f277f050affb73f6a163a623f171dd",
+      "size": 651264,
+      "patched_size": 651264
+    },
+    {
+      "rel": "WIN20.PAC",
+      "baseline_md5": "12f72ed87e147851fb86396f77643843",
+      "patched_md5": "a7d391c111e038edaa98189646628cbc",
+      "size": 649216,
+      "patched_size": 649216
+    },
+    {
+      "rel": "WIN21.PAC",
+      "baseline_md5": "5ef7d8877bb8f2e7d326403de790e88e",
+      "patched_md5": "3290de3a4bd8adba84c4211af4ed1bae",
+      "size": 509952,
+      "patched_size": 509952
+    },
+    {
+      "rel": "WIN22.PAC",
+      "baseline_md5": "02472eb481f02cd5acd67b7594fc6fa7",
+      "patched_md5": "63edb26f1e3b4e1b1ac8fd30ba51e335",
+      "size": 514048,
+      "patched_size": 514048
+    },
+    {
+      "rel": "WIN23.PAC",
+      "baseline_md5": "3615ec3b8757f0088db0930197623696",
+      "patched_md5": "22a42716a87362f432c67fe15373b79b",
+      "size": 518144,
+      "patched_size": 518144
+    },
+    {
+      "rel": "WIN24.PAC",
+      "baseline_md5": "40ebd72f1dac3f54182ba8b90c5d97a5",
+      "patched_md5": "17ae4536af624377f1efb7e34368b659",
+      "size": 518144,
+      "patched_size": 518144
+    },
+    {
+      "rel": "WIN25.PAC",
+      "baseline_md5": "640f70be8ac9f97c7c6ddf2a82d6ee5a",
+      "patched_md5": "3ce86376cc190e145e3e0c6d161a3185",
+      "size": 522240,
+      "patched_size": 522240
+    },
+    {
+      "rel": "WORLD.PAC",
+      "baseline_md5": "9ad08f3f0536443887dae8ef50a8829a",
+      "patched_md5": "e68337abd8cd23d57fcbd56c4358ac12",
+      "size": 219136,
+      "patched_size": 219136
+    },
+    {
+      "rel": "DPETC/MESSAGE.INI",
+      "baseline_md5": "976786a7c9919f0a29eb11b3279aa999",
+      "patched_md5": "be46cf613d884835c0dbb3b99667e007",
+      "size": 71408,
+      "patched_size": 71408
+    }
+  ],
+  "modified_count": 143,
+  "identical_count": 0,
+  "translations_count": 1386,
+  "dict_entries": 796,
+  "description": "Bundled baseline for Street Fighter Zero 3 (Matching Service). EN translations are diff-derived from extracted/ vs patches/. Edit them in Tab 3 or revert per-row / per-file / all to stock JP."
+}

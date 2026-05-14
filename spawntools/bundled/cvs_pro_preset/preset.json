@@ -1,0 +1,256 @@
+{
+  "name": "Capcom vs. SNK — Millennium Fight 2000 Pro (campaign baseline)",
+  "slug": "cvs_pro",
+  "display_name": "Capcom vs. SNK — Millennium Fight 2000 Pro",
+  "tier": "done",
+  "detect_label": "CAPCOM VS SNK",
+  "notes_kind": "dp3",
+  "deny_list": [
+    "2_DP.BIN",
+    "GAME.BIN",
+    "GGAM.BIN",
+    "MEMDEF.BIN"
+  ],
+  "scan_targets": [
+    "1ST_READ.BIN",
+    "DPETC/MESSAGE.INI"
+  ],
+  "modified_files": [
+    {
+      "rel": "1ST_READ.BIN",
+      "baseline_md5": "6c17bf8fc14a75048cf0db067e4e2e38",
+      "patched_md5": "2e62ad8edfbe65f62c1fc67b94fa6941",
+      "size": 2359937,
+      "patched_size": 2359937
+    },
+    {
+      "rel": "2_DP.BIN",
+      "baseline_md5": "9dbc5a725dd1b4624b86eb55a95c37bd",
+      "patched_md5": "662baf907dc78a564033f222d4a951a5",
+      "size": 3480282,
+      "patched_size": 3480282
+    },
+    {
+      "rel": "ADX_0210.BIN",
+      "baseline_md5": "9f73184ad8291116d4365ba645e1ec5e",
+      "patched_md5": "34b7c39e8ea175e38590aa5f195a6f29",
+      "size": 3960832,
+      "patched_size": 3960832
+    },
+    {
+      "rel": "ADX_0401.BIN",
+      "baseline_md5": "2ded0a8abab0731a9775860deb38d508",
+      "patched_md5": "0e6fdd8f42c61e00e6ef209c9b2dd025",
+      "size": 6010880,
+      "patched_size": 6010880
+    },
+    {
+      "rel": "ADX_0600.BIN",
+      "baseline_md5": "7803ce78eb0bbec40b37dd8b455c053d",
+      "patched_md5": "18379121e2db34b34fbdcbbcbd80d5da",
+      "size": 3575808,
+      "patched_size": 3575808
+    },
+    {
+      "rel": "ADX_0601.BIN",
+      "baseline_md5": "4ce550853b1581b8f61519a61d032592",
+      "patched_md5": "bb870435520607ef9611ff4f32c50db0",
+      "size": 4757504,
+      "patched_size": 4757504
+    },
+    {
+      "rel": "ADX_0800.BIN",
+      "baseline_md5": "3776c9f8b0b2f2a591e4d44d71f1e03a",
+      "patched_md5": "1e2c6fff07c5b5aa52121cca5d4dbc11",
+      "size": 4538368,
+      "patched_size": 4538368
+    },
+    {
+      "rel": "ADX_0901.BIN",
+      "baseline_md5": "bf8e90ffd74eebb03c7381ba36b85411",
+      "patched_md5": "c3ccff00842a51669b69d0de6ac04da2",
+      "size": 6582272,
+      "patched_size": 6582272
+    },
+    {
+      "rel": "ADX_1200.BIN",
+      "baseline_md5": "bf4875a88aff186356181861e72774c6",
+      "patched_md5": "40016f37d990fde74293d31c3bcedb71",
+      "size": 3477504,
+      "patched_size": 3477504
+    },
+    {
+      "rel": "ADX_1500.BIN",
+      "baseline_md5": "33ea172d27d85396e3f2ba10aa8082bc",
+      "patched_md5": "82a68640949b327d238944704bfc2070",
+      "size": 2000896,
+      "patched_size": 2000896
+    },
+    {
+      "rel": "ADX_1F00.BIN",
+      "baseline_md5": "ed14c3c88dad9b6bb3fccad83193b519",
+      "patched_md5": "6019bcd19bf2b13211c6b853b1c86b7b",
+      "size": 5521408,
+      "patched_size": 5521408
+    },
+    {
+      "rel": "COMPOT.BIN",
+      "baseline_md5": "55aac92e6e16e2962d905c24582a4e0e",
+      "patched_md5": "f79aa4e56bbc0b1acde26c041662b0a7",
+      "size": 104857600,
+      "patched_size": 104857600
+    },
+    {
+      "rel": "DC15POL.BIN",
+      "baseline_md5": "774846da47ebf1776fda399904154247",
+      "patched_md5": "04700fc1caeaf3b4fd2dbbb8bc5bd28c",
+      "size": 262144000,
+      "patched_size": 262144000
+    },
+    {
+      "rel": "DC15TEX.BIN",
+      "baseline_md5": "e270e0bed6a8d568652b01a2ea71dcd0",
+      "patched_md5": "38a13f8a483b3c88064f426950174cbf",
+      "size": 262144000,
+      "patched_size": 262144000
+    },
+    {
+      "rel": "EST07TEX.BIN",
+      "baseline_md5": "625ef2bdcab103a58f5ab368f8dccc1e",
+      "patched_md5": "c06c51a8fa04a56ddae06306b4a93027",
+      "size": 617880,
+      "patched_size": 617880
+    },
+    {
+      "rel": "EST0ATEX.BIN",
+      "baseline_md5": "fc7f70561abb6a790bb07e0adbb65210",
+      "patched_md5": "c417b6db49dff47cb0eb73bdbba2df20",
+      "size": 652322,
+      "patched_size": 652322
+    },
+    {
+      "rel": "PL00PAK.BIN",
+      "baseline_md5": "c84a61d90f692119e42914eb7da917f4",
+      "patched_md5": "ef65a598e665c38a3f65df3b2bc9bc29",
+      "size": 674496,
+      "patched_size": 674496
+    },
+    {
+      "rel": "PL01PAK.BIN",
+      "baseline_md5": "a99151edecce5b254352f164aac24cde",
+      "patched_md5": "9d385e3ea71ed2846cdfd1081c207382",
+      "size": 738208,
+      "patched_size": 738208
+    },
+    {
+      "rel": "PL06_TBL.BIN",
+      "baseline_md5": "da0e52e1d3b279209e14c28938aaf4a3",
+      "patched_md5": "569f0a06ee44f5866853cd6195f89037",
+      "size": 22488,
+      "patched_size": 22488
+    },
+    {
+      "rel": "PL0DPAK.BIN",
+      "baseline_md5": "fb154f1419f670fa51a84cd1ded6215f",
+      "patched_md5": "d5cdb9e117f9b85b708bd186fd4b53f6",
+      "size": 747264,
+      "patched_size": 747264
+    },
+    {
+      "rel": "PL0FPAK.BIN",
+      "baseline_md5": "eb050829230a99caec31d0c6162f4aa7",
+      "patched_md5": "e835c53e38d677a3524747dacbc8c452",
+      "size": 702368,
+      "patched_size": 702368
+    },
+    {
+      "rel": "PL10PAK.BIN",
+      "baseline_md5": "3cf51c0c52c98740d2d7cc6b7bb734d8",
+      "patched_md5": "49363bd7ae6b5e3732d92359e083b045",
+      "size": 1324288,
+      "patched_size": 1324288
+    },
+    {
+      "rel": "PL1D_TBL.BIN",
+      "baseline_md5": "938436150ca4ab8168cc82b431c13b0f",
+      "patched_md5": "bf2d7a143a5fe48c8fc2e5370d7e27df",
+      "size": 27832,
+      "patched_size": 27832
+    },
+    {
+      "rel": "PL1EPAK.BIN",
+      "baseline_md5": "5b549da41d09ce83af1dbfd5fa9b80d6",
+      "patched_md5": "708555d0c3c89ea498c10bdb6e9a9323",
+      "size": 724544,
+      "patched_size": 724544
+    },
+    {
+      "rel": "S18RM04.BIN",
+      "baseline_md5": "8844219683e38bbd4ee319ed87659807",
+      "patched_md5": "9c6ea48eb2a08c4285c2fad922ed5609",
+      "size": 827648,
+      "patched_size": 827648
+    },
+    {
+      "rel": "S20RM04.BIN",
+      "baseline_md5": "f537f34c23255a3f0ea9f6ad2166c51e",
+      "patched_md5": "ee70a212eaf1a2c0a92d52f5f6b0c273",
+      "size": 905728,
+      "patched_size": 905728
+    },
+    {
+      "rel": "S24RM04.BIN",
+      "baseline_md5": "66bbc3ee802453707a3a1530f9778bba",
+      "patched_md5": "0954515b7bd42a4131cb9305db5792f4",
+      "size": 1249280,
+      "patched_size": 1249280
+    },
+    {
+      "rel": "S26RM04.BIN",
+      "baseline_md5": "3466c751fd2554cc26f3c2dd01793eba",
+      "patched_md5": "903eda1421ed242e8a00ffc75e6a24b8",
+      "size": 1545984,
+      "patched_size": 1545984
+    },
+    {
+      "rel": "SND_PL06.BIN",
+      "baseline_md5": "f8298a808a535b482aa72ab1f22597d1",
+      "patched_md5": "9149f2a4677c42ef48f6f815329b94ee",
+      "size": 443600,
+      "patched_size": 443600
+    },
+    {
+      "rel": "SND_PL09.BIN",
+      "baseline_md5": "bdf3a725420d77a5d5d8646725935f09",
+      "patched_md5": "f69f16fdfcf82e25f17c516576fb851b",
+      "size": 426400,
+      "patched_size": 426400
+    },
+    {
+      "rel": "ST07TEX.BIN",
+      "baseline_md5": "12db0f3fcb3decbff41bf773d6f0f352",
+      "patched_md5": "44a8752541ceb04132ad612e7a715aaf",
+      "size": 619862,
+      "patched_size": 619862
+    },
+    {
+      "rel": "ST0ATEX.BIN",
+      "baseline_md5": "159c0c9f570985faa4d56eed9b40bd18",
+      "patched_md5": "69b5abe8a75672751666feedd00dd0fb",
+      "size": 657166,
+      "patched_size": 657166
+    },
+    {
+      "rel": "DPETC/MESSAGE.INI",
+      "baseline_md5": "c6603bc568955a9dd5b7590bcc231d27",
+      "patched_md5": "24fcc8d14598937f2b5e4a79225f55cf",
+      "size": 71413,
+      "patched_size": 71413
+    }
+  ],
+  "modified_count": 33,
+  "identical_count": 0,
+  "translations_count": 1391,
+  "dict_entries": 796,
+  "description": "Bundled baseline for Capcom vs. SNK — Millennium Fight 2000 Pro. EN translations are diff-derived from extracted/ vs patches/. Edit them in Tab 3 or revert per-row / per-file / all to stock JP."
+}
