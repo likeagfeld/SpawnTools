@@ -160,11 +160,31 @@ class WorkspaceTab(ttk.Frame):
                         'Fresh project — patches/ matches extracted/ (no edits yet).',
                         tag='dim')
                 self.log.append('open: OK', tag='ok')
+                # Auto-detect the game via IP.BIN product code and pre-select
+                # its preset. The combobox becomes an override, not the gate.
+                from ..core import preset as preset_core
+                detected_slug = preset_core.Preset.detect_for_disc(dctx)
+                if detected_slug:
+                    for i, g in enumerate(self._preset_options):
+                        if g['slug'] == detected_slug:
+                            self.preset_combo.current(i)
+                            self.preset_slug_var.set(detected_slug)
+                            self.log.append(
+                                f'auto-detected game: {g["display_name"]}  '
+                                f'(IP.BIN code {g.get("product_code","?")})',
+                                tag='ok')
+                            break
+                else:
+                    self.log.append(
+                        'No IP.BIN match — pick a preset manually or leave on the '
+                        'default if this is a fresh game not in the registry.',
+                        tag='warn')
                 self.status_var.set(
                     f'Disc: {Path(gdi).name}   '
                     f'Track03: {dctx.track03_path.name}   '
                     f'(sectors: {"BIN 2352" if dctx.is_bin_sectors else "ISO 2048"})   '
                     f'mods detected: {n_modified}'
+                    + (f'   detected: {detected_slug}' if detected_slug else '')
                 )
                 # Trigger re-population of other tabs
                 self.app.notify_disc_opened()

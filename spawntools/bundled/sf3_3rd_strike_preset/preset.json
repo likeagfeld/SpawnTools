@@ -3,8 +3,9 @@
   "slug": "sf3_3rd_strike",
   "display_name": "Street Fighter III 3rd Strike",
   "tier": "done",
-  "detect_label": "3RD STRIKE",
-  "notes_kind": "std",
+  "product_code": "T1209M",
+  "detect_label": "STREET FIGHTER 3 3RD STRIKE",
+  "notes_kind": "dp3",
   "deny_list": [
     "2_DP.BIN",
     "GAME.BIN",
@@ -12,7 +13,17 @@
     "MEMDEF.BIN"
   ],
   "scan_targets": [
-    "1ST_READ.BIN"
+    "1ST_READ.BIN",
+    "DPETC/MESSAGE.INI",
+    "PLAYER/PL00.BIN",
+    "PLAYER/PL02.BIN",
+    "PLAYER/PL09.BIN",
+    "PLAYER/PL11.BIN",
+    "PLAYER/PL17.BIN",
+    "PLAYER/PL18.BIN",
+    "PLAYER/PL19.BIN",
+    "PLAYER/PL20.BIN",
+    "OPENING/BG20.BIN"
   ],
   "modified_files": [
     {
@@ -20,152 +31,221 @@
       "baseline_md5": "13551bed48a166f56a523e22dd6236a2",
       "patched_md5": "4e72266237a549eed1d65bdea99546e1",
       "size": 14297664,
-      "patched_size": 14297664
+      "patched_size": 14297664,
+      "kind": "code",
+      "jp_runs": 5666,
+      "pvrt_count": 9
     },
     {
       "rel": "2_DP.BIN",
       "baseline_md5": "8a11f296da7ed3d0fdec00ca340e06b9",
       "patched_md5": "885ef281e01dede249cde5140b915cf8",
       "size": 3623364,
-      "patched_size": 3623364
+      "patched_size": 3623364,
+      "kind": "code",
+      "jp_runs": 10020,
+      "pvrt_count": 10
     },
     {
       "rel": "DPETC/MESSAGE.INI",
       "baseline_md5": "0c2479afbcea185ca62fe648c0e0a33a",
       "patched_md5": "f9a839702b96b33991491e7b0143d093",
       "size": 39631,
-      "patched_size": 39631
+      "patched_size": 39631,
+      "kind": "text",
+      "jp_runs": 1033,
+      "pvrt_count": 0
     },
     {
       "rel": "DPTEX/OPTION02.PVR",
       "baseline_md5": "943c564d53c942813c0d185910161f0c",
       "patched_md5": "773885529984fd2b9afb5e019145a72e",
       "size": 67616,
-      "patched_size": 67616
+      "patched_size": 67616,
+      "kind": "texture",
+      "jp_runs": 78,
+      "pvrt_count": 2
     },
     {
       "rel": "DPTEX/TAG_SU.PVR",
       "baseline_md5": "8ae08fd1d463cf06b16209150530bd3a",
       "patched_md5": "8dd3d951a3be33ec26d1fe199ebd40fc",
       "size": 67616,
-      "patched_size": 67616
+      "patched_size": 67616,
+      "kind": "texture",
+      "jp_runs": 71,
+      "pvrt_count": 2
     },
     {
       "rel": "ENDING/BG39.BIN",
       "baseline_md5": "5bc8e95e053390d7b41ec35d1e9c2320",
       "patched_md5": "c48664ee417f5c422bb679fe560e6589",
       "size": 61920,
-      "patched_size": 61920
+      "patched_size": 61920,
+      "kind": "code",
+      "jp_runs": 64,
+      "pvrt_count": 0
     },
     {
       "rel": "ENDING/ENDING01.PZZ",
       "baseline_md5": "8d4e98247e3cce651960bf1189351352",
       "patched_md5": "a95f05e0fe424db68afcf83f3bb14459",
       "size": 171958,
-      "patched_size": 171958
+      "patched_size": 171958,
+      "kind": "archive",
+      "jp_runs": 249,
+      "pvrt_count": 42
     },
     {
       "rel": "OPENING/BG20.BIN",
       "baseline_md5": "0aeebde63109fc09a70efbe6fe4f9758",
       "patched_md5": "a76a62b92f6fe004f863233f714a12b8",
       "size": 1024980,
-      "patched_size": 1024980
+      "patched_size": 1024980,
+      "kind": "text",
+      "jp_runs": 1434,
+      "pvrt_count": 0
     },
     {
       "rel": "OPENING/TITLEDC.PZZ",
       "baseline_md5": "7303e8d80409f6a1288657cd12ee56d3",
       "patched_md5": "15543a0decd8586b4d6f9477c0bc0c8b",
       "size": 44174,
-      "patched_size": 44174
+      "patched_size": 44174,
+      "kind": "archive",
+      "jp_runs": 71,
+      "pvrt_count": 1
     },
     {
       "rel": "OPENING/WARNING.PZZ",
       "baseline_md5": "28dfdf2190e8e74d30399f101aaa458f",
       "patched_md5": "4026f48f7bc0bbe3efa080baa6823137",
       "size": 163334,
-      "patched_size": 163334
+      "patched_size": 163334,
+      "kind": "archive",
+      "jp_runs": 58,
+      "pvrt_count": 2
     },
     {
       "rel": "PLAYER/PL02.BIN",
       "baseline_md5": "9c1a64420134750adf48331676d63e5f",
       "patched_md5": "ba9dd0c91e708326706e6643e5f689f8",
       "size": 1630652,
-      "patched_size": 1630652
+      "patched_size": 1630652,
+      "kind": "code",
+      "jp_runs": 2340,
+      "pvrt_count": 0
     },
     {
       "rel": "PLAYER/PL09.BIN",
       "baseline_md5": "12859bca80bdbef9267bacb832d66355",
       "patched_md5": "1fcf385b1c493d415cdb63c30a1b340c",
       "size": 2241340,
-      "patched_size": 2241340
+      "patched_size": 2241340,
+      "kind": "text",
+      "jp_runs": 3659,
+      "pvrt_count": 0
     },
     {
       "rel": "PLAYER/PL11.BIN",
       "baseline_md5": "efdd08ec1df0f75dab24d9e3ba039b22",
       "patched_md5": "91508c59f3778b572295d5de6fffec7e",
       "size": 1649368,
-      "patched_size": 1649368
+      "patched_size": 1649368,
+      "kind": "text",
+      "jp_runs": 2410,
+      "pvrt_count": 0
     },
     {
       "rel": "PLAYER/PL17.BIN",
       "baseline_md5": "2b64c74cb53672892b036bacb35395b1",
       "patched_md5": "55a555ee08e67b5af3b9d9dc3b26a3eb",
       "size": 2770372,
-      "patched_size": 2770372
+      "patched_size": 2770372,
+      "kind": "text",
+      "jp_runs": 3662,
+      "pvrt_count": 0
     },
     {
       "rel": "PLAYER/PL18.BIN",
       "baseline_md5": "3cd149f9075441a8357b8fd3c2c98b5a",
       "patched_md5": "60f855cbd9ad6174013635afa4d8798c",
       "size": 3792908,
-      "patched_size": 3792908
+      "patched_size": 3792908,
+      "kind": "text",
+      "jp_runs": 6148,
+      "pvrt_count": 0
     },
     {
       "rel": "PLAYER/PL19.BIN",
       "baseline_md5": "7b0f9f62f3822f83c2c4dec98c867f0a",
       "patched_md5": "20212bd59115e1b764a60e1400f50714",
       "size": 2345792,
-      "patched_size": 2345792
+      "patched_size": 2345792,
+      "kind": "text",
+      "jp_runs": 3541,
+      "pvrt_count": 0
     },
     {
       "rel": "PLAYER/PL20.BIN",
       "baseline_md5": "726e379d1f6721697e4f778321a30323",
       "patched_md5": "10875a6a1d66d2a0b8de816bc283b01c",
       "size": 1830216,
-      "patched_size": 1830216
+      "patched_size": 1830216,
+      "kind": "text",
+      "jp_runs": 4012,
+      "pvrt_count": 0
     },
     {
       "rel": "SELECT/NET.PZZ",
       "baseline_md5": "ab5cf39d6469db3463e014c3e66e224a",
       "patched_md5": "8c147ddc6ee874917723fce3e4c98ab1",
       "size": 919030,
-      "patched_size": 919030
+      "patched_size": 919030,
+      "kind": "archive",
+      "jp_runs": 1759,
+      "pvrt_count": 6
     },
     {
       "rel": "STAGE/BG00.BIN",
       "baseline_md5": "43de0eb72c666bfd1569ed6a0ba2746b",
       "patched_md5": "a99e65dc999af60ec9fd8385a8df49ac",
       "size": 47836,
-      "patched_size": 47836
+      "patched_size": 47836,
+      "kind": "code",
+      "jp_runs": 85,
+      "pvrt_count": 0
     },
     {
       "rel": "STAGE/BG11.BIN",
       "baseline_md5": "69a51e981db780695e0b3454778706c0",
       "patched_md5": "6f30e020314b67f50e5e5d75d5ef9f67",
       "size": 62416,
-      "patched_size": 62416
+      "patched_size": 62416,
+      "kind": "code",
+      "jp_runs": 87,
+      "pvrt_count": 0
     },
     {
       "rel": "STAGE/BG19.BIN",
       "baseline_md5": "2cadfe6ced29d340e66f37ddd03b6697",
       "patched_md5": "5437addcfd3f7703aecf0d64c8bf95d6",
       "size": 47004,
-      "patched_size": 47004
+      "patched_size": 47004,
+      "kind": "code",
+      "jp_runs": 40,
+      "pvrt_count": 0
     }
   ],
   "modified_count": 21,
+  "modified_by_kind": {
+    "code": 7,
+    "text": 8,
+    "texture": 2,
+    "archive": 4
+  },
   "identical_count": 0,
-  "translations_count": 148,
+  "translations_count": 867,
   "dict_entries": 796,
   "description": "Bundled baseline for Street Fighter III 3rd Strike. EN translations are diff-derived from extracted/ vs patches/. Edit them in Tab 3 or revert per-row / per-file / all to stock JP."
 }

@@ -18,6 +18,7 @@ import hashlib
 from pathlib import Path
 
 from .game_registry import GAMES, GameConfig, by_slug
+from ..core.file_classifier import classify as classify_file
 
 SHARED_TOOLS = Path(r"D:/Capcom Dreamcast  Games - Joe Patched/RC2 Translated/_shared_tools")
 BUNDLE_ROOT = Path(__file__).resolve().parent
@@ -84,17 +85,19 @@ def derive_translations(game: GameConfig) -> list[dict]:
 
 
 def inventory_modified(game: GameConfig) -> tuple[list[dict], int]:
-    """Walk patches/, compare each file vs extracted/, return list of modified files + count of identical files."""
+    """Walk patches/, compare each file vs extracted/, classify each modified
+    file by content, and SKIP audio/video files from the surfaced inventory.
+    """
     ext_dir = game.rc2_dir / 'extracted'
     pat_dir = game.rc2_dir / 'patches'
     modified: list[dict] = []
     identical = 0
+    skipped_audio_video = 0
     if not (ext_dir.is_dir() and pat_dir.is_dir()):
         return modified, identical
     for p in pat_dir.rglob('*'):
         if not p.is_file(): continue
         rel = p.relative_to(pat_dir).as_posix()
-        # Skip our safety backups
         if p.name.endswith('.pre_twinstick_revert'): continue
         if p.suffix.lower() == '.bak': continue
         b = ext_dir / rel
@@ -103,14 +106,23 @@ def inventory_modified(game: GameConfig) -> tuple[list[dict], int]:
         b_bytes = b.read_bytes()
         if p_bytes == b_bytes:
             identical += 1
-        else:
-            modified.append({
-                'rel': rel,
-                'baseline_md5': hashlib.md5(b_bytes).hexdigest(),
-                'patched_md5': hashlib.md5(p_bytes).hexdigest(),
-                'size': len(b_bytes),
-                'patched_size': len(p_bytes),
-            })
+            continue
+        # Classify by BASELINE bytes (patches/ may have been overwritten with
+        # English content that no longer looks like the original).
+        cls = classify_file(b, b_bytes)
+        if cls['kind'] in ('audio', 'video'):
+            skipped_audio_video += 1
+            continue
+        modified.append({
+            'rel': rel,
+            'baseline_md5': hashlib.md5(b_bytes).hexdigest(),
+            'patched_md5': hashlib.md5(p_bytes).hexdigest(),
+            'size': len(b_bytes),
+            'patched_size': len(p_bytes),
+            'kind': cls['kind'],
+            'jp_runs': cls['jp_runs'],
+            'pvrt_count': cls['pvrt_count'],
+        })
     return modified, identical
 
 
@@ -143,17 +155,25 @@ def build_one(game: GameConfig, shared_dict: dict) -> dict:
     if not bin_notes_path.exists():
         bin_notes_path.write_text('{}', encoding='utf-8')
 
+    # Per-kind counts so the GUI can show e.g. "8 textures, 3 text files,
+    # 1 archive" without re-scanning at runtime.
+    kind_counts: dict[str, int] = {}
+    for m in modified:
+        kind_counts[m['kind']] = kind_counts.get(m['kind'], 0) + 1
+
     manifest = {
         'name': f'{game.display_name} (campaign baseline)',
         'slug': game.slug,
         'display_name': game.display_name,
         'tier': 'done',
+        'product_code': game.product_code,
         'detect_label': game.detect_label,
         'notes_kind': game.notes_kind,
         'deny_list': game.deny_list,
         'scan_targets': game.scan_targets,
         'modified_files': modified,
         'modified_count': len(modified),
+        'modified_by_kind': kind_counts,
         'identical_count': identical,
         'translations_count': len(translations),
         'dict_entries': len(shared_dict),
@@ -193,12 +213,13 @@ def main(only_slug: str | None = None):
         print(f"{game.slug:24s}  {result['translations']:>5} translations  "
               f"{result['modified']:>4} modified  {result['identical']:>5} identical")
 
-    # Master games index for the GUI's preset-picker
+    # Master games index for the GUI's preset-picker + detect_for_disc
     index = {
         'games': [
             {
                 'slug': g.slug,
                 'display_name': g.display_name,
+                'product_code': g.product_code,
                 'detect_label': g.detect_label,
                 'preset_dir': f'{g.slug}_preset',
             }

@@ -12,6 +12,7 @@ from PIL import Image, ImageTk
 from typing import Optional
 
 from ..core import textures as tex_core
+from ..core import archives as arch_core
 
 
 class TexturesTab(ttk.Frame):
@@ -22,6 +23,7 @@ class TexturesTab(ttk.Frame):
         self._photo_new: Optional[ImageTk.PhotoImage] = None
         self._current_records: list[tex_core.TextureRecord] = []
         self._current_file: Optional[Path] = None
+        self._current_member = None    # archives.ArchiveMember when viewing an archive entry
         self.preset = None       # populated by workspace tab's _on_load_preset
         self._modified_cache: dict[str, bool] = {}    # rel_path -> True if patches/ != extracted/
         self._build()
@@ -189,9 +191,10 @@ class TexturesTab(ttk.Frame):
         filt = self.filter_var.get().strip().lower()
         status_want = self.status_filter.get()      # 'All' / 'Modified' / 'Stock'
 
-        # Collect all .TEX / .PVR files under patches/
+        # Collect all .TEX / .PVR files under patches/ + archive containers
+        # whose members carry textures (AFS/PAC/PVS/PZZ/SLW/PVZ).
         files = []
-        for ext in ('TEX', 'PVR'):
+        for ext in ('TEX', 'PVR', 'AFS', 'PAC', 'PVS', 'PZZ', 'SLW', 'PVZ'):
             files.extend(self.app.disc.patches_dir.rglob(f'*.{ext}'))
             files.extend(self.app.disc.patches_dir.rglob(f'*.{ext.lower()}'))
         # Deduplicate (case mismatch on Windows)
@@ -213,20 +216,43 @@ class TexturesTab(ttk.Frame):
             if protected: n_protected += 1
             rows.append((p, rel, modified, protected))
 
-        # Pass 2: insert with the right tags
+        # Pass 2: flat insert. Archives are surfaced as one row per member
+        # (no nesting — keeps the list visually identical to the Spawn-era
+        # loose-file experience). The archive itself isn't shown as a row
+        # since you can only edit its members, not the container directly.
         for p, rel, modified, protected in rows:
-            # Build tag tuple — order matters; first tag's foreground wins.
             tags = []
             if modified:  tags.append('modified')
             else:         tags.append('stock')
             if protected: tags.append('protected')
             status_glyph = '●' if modified else '○'
-            label = rel + ('   🔒' if protected else '')
-            self.file_tree.insert(
-                '', 'end', iid=str(p), text=label,
-                values=(status_glyph, f'{p.stat().st_size:,}'),
-                tags=tuple(tags),
-            )
+
+            if arch_core.is_archive(p):
+                kind, members = arch_core.list_members(p)
+                if not members:
+                    # Archive failed to decode — still show the file so the user
+                    # knows it's there. Avoids silent gaps.
+                    self.file_tree.insert(
+                        '', 'end', iid=str(p),
+                        text=f'{rel}   [archive: {kind or "unknown"} – no members]',
+                        values=(status_glyph, f'{p.stat().st_size:,}'),
+                        tags=tuple(tags),
+                    )
+                    continue
+                for m in members:
+                    self.file_tree.insert(
+                        '', 'end', iid=f'{p}#{m.member_id}',
+                        text=f'{rel}  ▸ {m.label} ({m.archive_kind})',
+                        values=(status_glyph, f'{m.raw_size:,}'),
+                        tags=tuple(tags),
+                    )
+            else:
+                label = rel + ('   🔒' if protected else '')
+                self.file_tree.insert(
+                    '', 'end', iid=str(p), text=label,
+                    values=(status_glyph, f'{p.stat().st_size:,}'),
+                    tags=tuple(tags),
+                )
 
         # Summary
         self.list_summary_var.set(
@@ -238,7 +264,13 @@ class TexturesTab(ttk.Frame):
     def _on_pick_file(self, _evt=None):
         sel = self.file_tree.selection()
         if not sel: return
-        path = Path(sel[0])
+        iid = sel[0]
+        # Archive-member iids encode as '<archive_path>#<member_id>'.
+        if '#' in iid and iid.rsplit('#', 1)[1].isdigit():
+            archive_path_str, member_id_str = iid.rsplit('#', 1)
+            self._load_archive_member(Path(archive_path_str), int(member_id_str))
+            return
+        path = Path(iid)
         if tex_core.is_protected(path):
             self.status_var.set(
                 'Protected: runtime glyph atlas. Editing FONT/SOFTKEY/MOJI/MINCHO '
@@ -248,6 +280,7 @@ class TexturesTab(ttk.Frame):
 
     def _load_file(self, path: Path):
         self._current_file = path
+        self._current_member = None
         self.subtex_list.delete(0, 'end')
         try:
             self._current_records = tex_core.load(path)
@@ -263,6 +296,47 @@ class TexturesTab(ttk.Frame):
         if self._current_records:
             self.subtex_list.selection_set(0)
             self._on_pick_subtex()
+
+    def _load_archive_member(self, archive_path: Path, member_id: int):
+        """Decode one member of an archive and present it as if it were a
+        single-PVR file in the sub-tex list."""
+        self._current_file = archive_path
+        self._current_member = None
+        self.subtex_list.delete(0, 'end')
+        kind, members = arch_core.list_members(archive_path)
+        member = next((m for m in members if m.member_id == member_id), None)
+        if member is None:
+            messagebox.showerror(
+                'Member missing',
+                f'Could not find member #{member_id} inside {archive_path.name}.',
+                parent=self.app)
+            return
+        self._current_member = member
+        recs = tex_core.load_archive_member(member)
+        self._current_records = recs
+        if not recs:
+            # SLW raw blob or undecodable — present a placeholder row so the
+            # info pane still shows the size + offset info
+            self.subtex_list.insert('end',
+                f'{member.label}  ({member.archive_kind} blob, no PVR header)')
+            self.info_lbl.config(text='\n'.join([
+                f'Archive: {archive_path.name}',
+                f'Member: {member.label}  ({member.archive_kind})',
+                f'Raw size: {member.raw_size:,} bytes',
+                f'Offset in archive: 0x{member.raw_offset:x}',
+                'No PVR header — raw-VRAM blob, not editable as a PVR.',
+            ]))
+            self._show_on(self.canvas_new, None, attr='_photo_new')
+            self._show_on(self.canvas_orig, None, attr='_photo_orig')
+            return
+        for r in recs:
+            self.subtex_list.insert(
+                'end',
+                f'{member.label}  {r.width}x{r.height}  '
+                f'pf=0x{r.pixfmt:02x} df=0x{r.datafmt:02x}'
+            )
+        self.subtex_list.selection_set(0)
+        self._on_pick_subtex()
 
     def _on_pick_subtex(self, _evt=None):
         sel = self.subtex_list.curselection()
@@ -470,21 +544,37 @@ class TexturesTab(ttk.Frame):
             from ..core import disc as disc_core
             rel = str(rec.file_path.relative_to(self.app.disc.patches_dir))
             disc_core.make_backup(self.app.disc, rel)
-            # Replace
-            result = tex_core.import_png_replace(rec, Path(png))
-            messagebox.showinfo(
-                'Imported',
-                f"Wrote sub_{rec.sub_index} into {rec.file_path.name}\n"
-                f"size: {result['new_size']:,} bytes (unchanged)\n"
-                f"pixfmt: 0x{result['pixfmt']:02x}  datafmt: 0x{result['datafmt']:02x}\n"
-                f"{'resized to match sub-tex dimensions' if result['resized'] else ''}",
-                parent=self.app,
-            )
+            # Archive-member path? Route through replace_member (size-preserving repack).
+            if self._current_member is not None:
+                result = tex_core.import_png_replace_member(self._current_member, Path(png))
+                kind = self._current_member.archive_kind
+                messagebox.showinfo(
+                    'Imported',
+                    f"Wrote {self._current_member.label} into {rec.file_path.name} "
+                    f"[{kind}]\n"
+                    f"PVR size: {result['new_size']:,} bytes (slot budget preserved)\n"
+                    f"pixfmt: 0x{result['pixfmt']:02x}  datafmt: 0x{result['datafmt']:02x}\n"
+                    f"{'resized to match member dimensions' if result['resized'] else ''}",
+                    parent=self.app,
+                )
+            else:
+                result = tex_core.import_png_replace(rec, Path(png))
+                messagebox.showinfo(
+                    'Imported',
+                    f"Wrote sub_{rec.sub_index} into {rec.file_path.name}\n"
+                    f"size: {result['new_size']:,} bytes (unchanged)\n"
+                    f"pixfmt: 0x{result['pixfmt']:02x}  datafmt: 0x{result['datafmt']:02x}\n"
+                    f"{'resized to match sub-tex dimensions' if result['resized'] else ''}",
+                    parent=self.app,
+                )
             # Bust the modified-cache for this file and re-populate list
-            rel = rec.file_path.relative_to(self.app.disc.patches_dir).as_posix()
-            self._modified_cache.pop(rel, None)
+            rel_post = rec.file_path.relative_to(self.app.disc.patches_dir).as_posix()
+            self._modified_cache.pop(rel_post, None)
             self._populate_files()
-            self._load_file(rec.file_path)
+            if self._current_member is not None:
+                self._load_archive_member(rec.file_path, self._current_member.member_id)
+            else:
+                self._load_file(rec.file_path)
         except Exception as e:
             messagebox.showerror('Import error', str(e), parent=self.app)
 

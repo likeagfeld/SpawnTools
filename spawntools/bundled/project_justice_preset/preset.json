@@ -3,7 +3,8 @@
   "slug": "project_justice",
   "display_name": "Project Justice",
   "tier": "done",
-  "detect_label": "PROJECT JUSTICE",
+  "product_code": "T1221M",
+  "detect_label": "MOERO JUSTICE GAKUEN",
   "notes_kind": "dp3",
   "deny_list": [
     "2_DP.BIN",
@@ -21,115 +22,169 @@
       "baseline_md5": "884304111a1c1f04b6685c191f5d9e1c",
       "patched_md5": "f8fe9696a0487e06cf9b6bd5506251a4",
       "size": 3946129,
-      "patched_size": 3946129
+      "patched_size": 3946129,
+      "kind": "code",
+      "jp_runs": 4599,
+      "pvrt_count": 0
     },
     {
       "rel": "2_DP.BIN",
       "baseline_md5": "9dbc5a725dd1b4624b86eb55a95c37bd",
       "patched_md5": "662baf907dc78a564033f222d4a951a5",
       "size": 3480282,
-      "patched_size": 3480282
+      "patched_size": 3480282,
+      "kind": "code",
+      "jp_runs": 8825,
+      "pvrt_count": 10
     },
     {
       "rel": "MGDATA.AFS",
       "baseline_md5": "56c27c924ff241ff4072e59b218f336f",
       "patched_md5": "0f0627ade31f202fa8d521aafd4216f6",
       "size": 12181504,
-      "patched_size": 12181504
+      "patched_size": 12181504,
+      "kind": "archive",
+      "jp_runs": 83108,
+      "pvrt_count": 0
     },
     {
       "rel": "ODEMO.AFS",
       "baseline_md5": "429a850dd54c2183b8dd2eb022d4ae15",
       "patched_md5": "74c41e53a6f5e0038d84ba2b63365aa7",
       "size": 6576128,
-      "patched_size": 6576128
+      "patched_size": 6576128,
+      "kind": "archive",
+      "jp_runs": 7394,
+      "pvrt_count": 0
     },
     {
       "rel": "SDEMO.AFS",
       "baseline_md5": "8750904e512c8bf343d05c33cd50ec4c",
       "patched_md5": "9a06fd3bdf7815d2239199f69ff0a89c",
       "size": 9969664,
-      "patched_size": 9969664
+      "patched_size": 9969664,
+      "kind": "archive",
+      "jp_runs": 14290,
+      "pvrt_count": 0
     },
     {
       "rel": "UDCSDM.AFS",
       "baseline_md5": "43c5a95b25061db4a0fc100c31fbfc56",
       "patched_md5": "c1cd8582c79fde68a29fb29fc8ba546f",
       "size": 471859200,
-      "patched_size": 471859200
+      "patched_size": 471859200,
+      "kind": "archive",
+      "jp_runs": 761550,
+      "pvrt_count": 0
     },
     {
       "rel": "VSDEMO.AFS",
       "baseline_md5": "312100a64f69bae47d5e8ddfdc9e52e6",
       "patched_md5": "9c35c67be8086dc1290cbf2f86df9fd9",
       "size": 2367488,
-      "patched_size": 2367488
+      "patched_size": 2367488,
+      "kind": "archive",
+      "jp_runs": 8347,
+      "pvrt_count": 0
     },
     {
       "rel": "WGAME.AFS",
       "baseline_md5": "c7a0ccad82a9454c3cb684cc824e8bd5",
       "patched_md5": "08e2c24bc5e46dd6619243951a76db23",
       "size": 12064768,
-      "patched_size": 12064768
+      "patched_size": 12064768,
+      "kind": "archive",
+      "jp_runs": 46971,
+      "pvrt_count": 0
     },
     {
       "rel": "WMENU.AFS",
       "baseline_md5": "f9dcb808f17200886246ab0a8e687abe",
       "patched_md5": "970e237544ba4bca460eb651b90dd978",
       "size": 6287360,
-      "patched_size": 6287360
+      "patched_size": 6287360,
+      "kind": "archive",
+      "jp_runs": 11531,
+      "pvrt_count": 0
     },
     {
       "rel": "WPLMOT.AFS",
       "baseline_md5": "436300144bcd4c3dee90bf244ef13e24",
       "patched_md5": "ab90a3266510f4a85331a4f37110e797",
       "size": 12365824,
-      "patched_size": 12365824
+      "patched_size": 12365824,
+      "kind": "archive",
+      "jp_runs": 0,
+      "pvrt_count": 0
     },
     {
       "rel": "XPLTEX.AFS",
       "baseline_md5": "6ac614fd37a2c56ccf531dc7594909d6",
       "patched_md5": "f9d9d1edba003b50474eea04586146dd",
       "size": 27254784,
-      "patched_size": 27254784
+      "patched_size": 27254784,
+      "kind": "archive",
+      "jp_runs": 129817,
+      "pvrt_count": 0
     },
     {
       "rel": "YPLPACK.AFS",
       "baseline_md5": "20e40ea4bf389eb516d8bf93f3881054",
       "patched_md5": "61ff0d27075a60ba3b0fa7bc29779c06",
       "size": 21731328,
-      "patched_size": 21731328
+      "patched_size": 21731328,
+      "kind": "archive",
+      "jp_runs": 6067,
+      "pvrt_count": 0
     },
     {
       "rel": "ZADX0.AFS",
       "baseline_md5": "964a47158fec41c8a8e5b520f80aea43",
       "patched_md5": "bcbaf0fe7d2088fa5e1b49834a759e91",
       "size": 111026176,
-      "patched_size": 111026176
+      "patched_size": 111026176,
+      "kind": "archive",
+      "jp_runs": 5794,
+      "pvrt_count": 0
     },
     {
       "rel": "ZADX1.AFS",
       "baseline_md5": "12dc8b46cfda7c1f13661ca614a7add5",
       "patched_md5": "49c6e406793c62cf47d41ff69072c80e",
       "size": 7725056,
-      "patched_size": 7725056
+      "patched_size": 7725056,
+      "kind": "archive",
+      "jp_runs": 434,
+      "pvrt_count": 0
     },
     {
       "rel": "DPETC/MESSAGE.INI",
       "baseline_md5": "bbda5c000b05150f8bf409cf6d22c86a",
       "patched_md5": "4a97e6f38175169cd2ef4c16b2b2c966",
       "size": 71111,
-      "patched_size": 71111
+      "patched_size": 71111,
+      "kind": "text",
+      "jp_runs": 1853,
+      "pvrt_count": 0
     },
     {
       "rel": "DPTEX/JYOUCYU0.PVR",
       "baseline_md5": "5e570a4f2209f7cf63e8c6025f0e07b0",
       "patched_md5": "5e3b6764cb5c3b6aa3ddc708195d90e0",
       "size": 262176,
-      "patched_size": 262176
+      "patched_size": 262176,
+      "kind": "texture",
+      "jp_runs": 181,
+      "pvrt_count": 2
     }
   ],
   "modified_count": 16,
+  "modified_by_kind": {
+    "code": 2,
+    "archive": 12,
+    "text": 1,
+    "texture": 1
+  },
   "identical_count": 6,
   "translations_count": 1388,
   "dict_entries": 796,

@@ -3,6 +3,7 @@
   "slug": "net_de_tennis",
   "display_name": "Net de Tennis",
   "tier": "done",
+  "product_code": "T1234M",
   "detect_label": "NET DE TENNIS",
   "notes_kind": "dp3",
   "deny_list": [
@@ -21,101 +22,149 @@
       "baseline_md5": "be0bdc320597a5242c36fd10a3f9d0cb",
       "patched_md5": "8afa01052789899ac6a4c5610d1f3091",
       "size": 1717937,
-      "patched_size": 1717937
+      "patched_size": 1717937,
+      "kind": "code",
+      "jp_runs": 2790,
+      "pvrt_count": 0
     },
     {
       "rel": "2_DP.BIN",
       "baseline_md5": "eb7e591e56bda10228d82575b001fbfa",
       "patched_md5": "ee4d92db3d4807744ff2d340c0c806ab",
       "size": 3508634,
-      "patched_size": 3508634
+      "patched_size": 3508634,
+      "kind": "code",
+      "jp_runs": 8635,
+      "pvrt_count": 10
     },
     {
       "rel": "ADX.AFS",
       "baseline_md5": "a7f1ba3672bf9e8b6d69bd1c4706ab5b",
       "patched_md5": "10f1a612299259cf6512e2861724eff4",
       "size": 43192320,
-      "patched_size": 43192320
+      "patched_size": 43192320,
+      "kind": "archive",
+      "jp_runs": 3209,
+      "pvrt_count": 0
     },
     {
       "rel": "LICENSE.SLW",
       "baseline_md5": "9de87a3589a9e324d6836740c281d87e",
       "patched_md5": "ec6c61cf5134061a294b162d4d3384a6",
       "size": 12298,
-      "patched_size": 12298
+      "patched_size": 12298,
+      "kind": "archive",
+      "jp_runs": 21,
+      "pvrt_count": 0
     },
     {
       "rel": "NETWK_0.SLW",
       "baseline_md5": "5249ddd34410cbebfbf7b5c51b2356c2",
       "patched_md5": "5819157048505cc439eb9c69b6fc9b1c",
       "size": 29122,
-      "patched_size": 29122
+      "patched_size": 29122,
+      "kind": "archive",
+      "jp_runs": 10,
+      "pvrt_count": 0
     },
     {
       "rel": "NETWK_A.SLW",
       "baseline_md5": "bfa724a04aa2046229e1b5c8b92f20f3",
       "patched_md5": "2e33d426e6feae6064db7ad580bb206d",
       "size": 158300,
-      "patched_size": 158300
+      "patched_size": 158300,
+      "kind": "archive",
+      "jp_runs": 60,
+      "pvrt_count": 0
     },
     {
       "rel": "NETWK_B.SLW",
       "baseline_md5": "fbeaf7fe1f9d13642019f1759bfaa3b3",
       "patched_md5": "bcf80e4d888074d3ed6b0f87c248403e",
       "size": 213748,
-      "patched_size": 213748
+      "patched_size": 213748,
+      "kind": "archive",
+      "jp_runs": 153,
+      "pvrt_count": 0
     },
     {
       "rel": "OPTION1.SLW",
       "baseline_md5": "a994ca62cc61e85037b82d802aec431d",
       "patched_md5": "1694b12d8c23a73d0ce0d0b9705770a9",
       "size": 50888,
-      "patched_size": 50888
+      "patched_size": 50888,
+      "kind": "archive",
+      "jp_runs": 5,
+      "pvrt_count": 0
     },
     {
       "rel": "OPTION2.SLW",
       "baseline_md5": "74d2b4751f2ed1ed441d51ef2022a2f5",
       "patched_md5": "a4c116432d27ace44038032c90a40549",
       "size": 49146,
-      "patched_size": 49146
+      "patched_size": 49146,
+      "kind": "archive",
+      "jp_runs": 14,
+      "pvrt_count": 0
     },
     {
       "rel": "SELECT.SLW",
       "baseline_md5": "4ad3d25c292826f579d4a906cdc5519c",
       "patched_md5": "5b1df2b437e2f21e7aabb641efe926c6",
       "size": 148518,
-      "patched_size": 148518
+      "patched_size": 148518,
+      "kind": "archive",
+      "jp_runs": 51,
+      "pvrt_count": 0
     },
     {
       "rel": "SOFTKEY.SLW",
       "baseline_md5": "64994724f8c7891839d0636ab7ab825a",
       "patched_md5": "828ac69c2cbdd71a62e1e8e6c1235d36",
       "size": 81968,
-      "patched_size": 81968
+      "patched_size": 81968,
+      "kind": "archive",
+      "jp_runs": 147,
+      "pvrt_count": 0
     },
     {
       "rel": "TITLE.SLW",
       "baseline_md5": "8a3af36a670e75f419f0d803d60f3c8e",
       "patched_md5": "3ffc96cf03200513ceb66bdf1a04d0ac",
       "size": 96934,
-      "patched_size": 96934
+      "patched_size": 96934,
+      "kind": "archive",
+      "jp_runs": 544,
+      "pvrt_count": 0
     },
     {
       "rel": "DPETC/MESSAGE.INI",
       "baseline_md5": "c8a66ca131294350258f23d500630885",
       "patched_md5": "d66c502fa58846cb86d4233a9e0a57b3",
       "size": 71040,
-      "patched_size": 71040
+      "patched_size": 71040,
+      "kind": "text",
+      "jp_runs": 1850,
+      "pvrt_count": 0
     },
     {
       "rel": "DPTEX/JYOUCYU0.PVR",
       "baseline_md5": "5e570a4f2209f7cf63e8c6025f0e07b0",
       "patched_md5": "5e3b6764cb5c3b6aa3ddc708195d90e0",
       "size": 262176,
-      "patched_size": 262176
+      "patched_size": 262176,
+      "kind": "texture",
+      "jp_runs": 181,
+      "pvrt_count": 2
     }
   ],
   "modified_count": 14,
+  "modified_by_kind": {
+    "code": 2,
+    "archive": 10,
+    "text": 1,
+    "texture": 1
+  },
   "identical_count": 6,
   "translations_count": 1322,
   "dict_entries": 796,

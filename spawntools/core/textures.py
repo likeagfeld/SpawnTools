@@ -104,6 +104,79 @@ def load(path: Path) -> list[TextureRecord]:
     return out
 
 
+def load_archive_member(member) -> list[TextureRecord]:
+    """Decode the PVR bytes inside an archive member into TextureRecords.
+
+    `member` is an `archives.ArchiveMember` instance. SLW raw-VRAM blobs are
+    not standard PVRs and are skipped (returned empty) since their dimensions
+    live in game code, not the file.
+    """
+    if member.archive_kind == 'SLW':
+        return []  # raw VRAM blob — no usable PVR header
+    pvr_bytes = member.pvr_bytes
+    if pvr_bytes[:4] not in (b'PVRT', b'GBIX'):
+        return []
+    # Write to a temp file because the vendored pvr_codec is file-path-driven.
+    import tempfile, pvr_codec
+    with tempfile.NamedTemporaryFile(suffix='.pvr', delete=False) as tf:
+        tf.write(pvr_bytes)
+        tmp_path = Path(tf.name)
+    try:
+        img, info = pvr_codec.decode_pvr(str(tmp_path))
+    finally:
+        try: tmp_path.unlink()
+        except OSError: pass
+    if not info:
+        return []
+    return [TextureRecord(
+        file_path=member.archive_path, sub_index=member.member_id,
+        width=info.get('width', 0), height=info.get('height', 0),
+        pixfmt=info.get('pixfmt', 0), datafmt=info.get('datafmt', 0),
+        image=img,
+    )]
+
+
+def import_png_replace_member(member, png_path: Path) -> dict:
+    """Re-encode the PNG into a PVR using the member's original pixfmt/datafmt,
+    then write back via `archives.replace_member` which preserves archive byte
+    size."""
+    from . import archives
+    import tempfile, pvr_codec
+    new = Image.open(png_path).convert('RGBA')
+
+    # Write the original PVR to disk so we can reuse encode_pvr_inplace
+    with tempfile.NamedTemporaryFile(suffix='.pvr', delete=False) as tf:
+        tf.write(member.pvr_bytes)
+        tmp_path = Path(tf.name)
+    try:
+        info = pvr_codec.parse_pvr(str(tmp_path))
+        if not info:
+            raise RuntimeError('parse_pvr returned None for archive member.')
+        w = info.get('width', 0)
+        h = info.get('height', 0)
+        resized = False
+        if (w, h) != new.size:
+            new = new.resize((w, h), Image.LANCZOS)
+            resized = True
+        ok = pvr_codec.encode_pvr_inplace(str(tmp_path), new, info)
+        if ok is False:
+            raise RuntimeError('encode_pvr_inplace failed for archive member.')
+        new_pvr_bytes = tmp_path.read_bytes()
+    finally:
+        try: tmp_path.unlink()
+        except OSError: pass
+
+    result = archives.replace_member(member, new_pvr_bytes)
+    if not result.get('ok'):
+        raise RuntimeError(result.get('reason', 'replace_member failed'))
+    return {
+        'orig_size': len(member.pvr_bytes), 'new_size': result['new_size'],
+        'pixfmt': info.get('pixfmt', 0), 'datafmt': info.get('datafmt', 0),
+        'paletted': False, 'is_vq': info.get('datafmt', 0) in (0x03, 0x04),
+        'resized': resized, 'archive_size': result.get('archive_size'),
+    }
+
+
 def export_png(rec: TextureRecord, out_path: Path) -> None:
     """Save the decoded RGBA image to disk for external editing."""
     if rec.image is None:

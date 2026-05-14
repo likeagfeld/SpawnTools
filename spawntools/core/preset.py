@@ -102,23 +102,38 @@ class Preset:
 
     @classmethod
     def detect_for_disc(cls, disc) -> str | None:
-        """Best-effort fingerprint of a loaded disc → game slug, or None."""
-        # Strategy 1: ISO9660 volume label substring match.
-        # Spawn's GDI track03 has a PVD at sector 16; the volume identifier is
-        # at bytes 40..72 of the PVD. We read it via the disc's track03 path.
-        label = ''
+        """Fingerprint a disc → game slug. Uses the Dreamcast IP.BIN product
+        code (e.g. T1216M for Spawn) which sits at byte 0x40 of track03's
+        first sector. Every commercial Capcom DC title has a unique code.
+
+        Falls back to the IP.BIN game title and (last resort) the ISO9660
+        PVD volume label for partial dumps or homebrew."""
+        track03_path = getattr(disc, 'track03_path', None)
+        if not track03_path or not Path(track03_path).is_file():
+            return None
+        is_bin = getattr(disc, 'is_bin_sectors', False) or str(track03_path).lower().endswith('.bin')
+        data_off = 16 if is_bin else 0
         try:
-            track03 = getattr(disc, 'track03_path', None)
-            if track03 and Path(track03).is_file():
-                with open(track03, 'rb') as fh:
-                    fh.seek(16 * 2048 + 40)  # PVD volume identifier
-                    label = fh.read(32).decode('ascii', errors='replace').strip()
-        except Exception:
-            label = ''
-        label_up = label.upper()
-        for g in cls.list_available():
-            needle = (g.get('detect_label') or '').upper()
-            if needle and needle in label_up:
+            with open(track03_path, 'rb') as fh:
+                head = fh.read(0x200)
+        except OSError:
+            return None
+        ip = head[data_off:data_off + 0x100]
+        # IP.BIN's first 16 bytes are "SEGA SEGAKATANA "
+        if b'SEGA' not in ip[:0x10]:
+            return None
+        product_code = ip[0x40:0x4A].decode('ascii', errors='replace').strip()
+        title        = ip[0x80:0xE0].decode('ascii', errors='replace').strip().upper()
+
+        games = cls.list_available()
+        # Primary: exact product code match
+        for g in games:
+            if g.get('product_code') and g['product_code'] == product_code:
+                return g['slug']
+        # Secondary: title substring match
+        for g in games:
+            label = (g.get('detect_label') or '').upper()
+            if label and label in title:
                 return g['slug']
         return None
 

@@ -1034,5 +1034,5038 @@
     "byte_budget": 22,
     "jp": "※必ず入力してください",
     "en": "*Required field"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 34,
+    "byte_budget": 20,
+    "jp": "ホストに接続中．．．",
+    "en": "Connecting to host. "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 60,
+    "byte_budget": 28,
+    "jp": "ホストに接続中．．．接続ＯＫ",
+    "en": "Connecting to host..        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 94,
+    "byte_budget": 12,
+    "jp": "ページ読込中",
+    "en": "Loading page"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 112,
+    "byte_budget": 14,
+    "jp": "イメージ読込中",
+    "en": "Loading image "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 178,
+    "byte_budget": 10,
+    "jp": "バイト済み",
+    "en": "B read    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 194,
+    "byte_budget": 32,
+    "jp": "ログインＩＤが設定されていません",
+    "en": "Login ID not set                "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 233,
+    "byte_budget": 28,
+    "jp": "電話番号が設定されていません",
+    "en": "Phone number not set        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 268,
+    "byte_budget": 30,
+    "jp": "プロバイダーＡＰに接続中．．．",
+    "en": "Connecting to ISP AP...<br>Cal"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 304,
+    "byte_budget": 20,
+    "jp": "に電話をかけています",
+    "en": "s                   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 331,
+    "byte_budget": 30,
+    "jp": "プロバイダーＡＰに接続中．．．",
+    "en": "Connecting to ISP AP...<br>Sen"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 365,
+    "byte_budget": 30,
+    "jp": "ユーザー名とパスワードを送信中",
+    "en": " username and password        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 402,
+    "byte_budget": 20,
+    "jp": "パスワードが違います",
+    "en": "Incorrect password  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 429,
+    "byte_budget": 10,
+    "jp": "話し中です",
+    "en": "Line is bu"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 443,
+    "byte_budget": 28,
+    "jp": "しばらく時間をおいてください",
+    "en": "br>Please wait a moment.<br>"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 479,
+    "byte_budget": 20,
+    "jp": "リダイヤルしますか？",
+    "en": "al?                 "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 506,
+    "byte_budget": 24,
+    "jp": "ダイヤルできませんでした",
+    "en": "<font color=\"#CC0000\">Co"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 538,
+    "byte_budget": 32,
+    "jp": "電話線がモデムにつながっているか",
+    "en": "dial ISP.</font><br>Please make "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 574,
+    "byte_budget": 38,
+    "jp": "モデムの設定が正しいか確認してください",
+    "en": " the modem cable is<br>connected to   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 661,
+    "byte_budget": 28,
+    "jp": "ページを表示できませんでした",
+    "en": "The page could not be       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 696,
+    "byte_budget": 32,
+    "jp": "ホストに接続中．．．失敗しました",
+    "en": "Connecting to host...failed     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 735,
+    "byte_budget": 22,
+    "jp": "ホストが見つかりません",
+    "en": "Host not found<br><br>"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 765,
+    "byte_budget": 26,
+    "jp": "ネットワークで問題があるか",
+    "en": "problem or<br>URL incorrec"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 795,
+    "byte_budget": 24,
+    "jp": "ＵＲＬがまちがっています",
+    "en": "                        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 826,
+    "byte_budget": 24,
+    "jp": "ＵＲＬがまちがっています",
+    "en": "URL is incorrect        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 857,
+    "byte_budget": 28,
+    "jp": "ネットワークに接続しますか？",
+    "en": "Connect to the network?     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 893,
+    "byte_budget": 24,
+    "jp": "イメージを保存しますか？",
+    "en": "Save image?             "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 937,
+    "byte_budget": 26,
+    "jp": "フォームを再送信しますか？",
+    "en": "Resubmit form?<br>[Title] "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 968,
+    "byte_budget": 8,
+    "jp": "タイトル",
+    "en": ">[URL] %"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 1000,
+    "byte_budget": 12,
+    "jp": "タイトル無し",
+    "en": "No title    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 1020,
+    "byte_budget": 36,
+    "jp": "ユーザー情報のページに接続しますか？",
+    "en": "Connect to the user info page       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 1064,
+    "byte_budget": 28,
+    "jp": "課金情報のページに接続します",
+    "en": "You will be directed to a pa"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 1096,
+    "byte_budget": 40,
+    "jp": "現在の接続を切断します　よろしいですか？",
+    "en": "ith connection fee information.<br>Your "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 1144,
+    "byte_budget": 32,
+    "jp": "課金情報のページに接続しますか？",
+    "en": "Go to the connection            "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 1184,
+    "byte_budget": 16,
+    "jp": "ゲームに戻ります",
+    "en": "Return to the ga"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 1204,
+    "byte_budget": 16,
+    "jp": "よろしいですか？",
+    "en": "r>Are you sure? "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 1228,
+    "byte_budget": 8,
+    "jp": "サーバー",
+    "en": "Server<b"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 1254,
+    "byte_budget": 38,
+    "jp": "より送信されたクッキーを受信しますか？",
+    "en": "ou want to<br>receive cookies?        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 1300,
+    "byte_budget": 14,
+    "jp": "フリーダイヤル",
+    "en": "Toll Free     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 1322,
+    "byte_budget": 18,
+    "jp": "接続に成功しました",
+    "en": "Connection        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 1348,
+    "byte_budget": 18,
+    "jp": "接続に失敗しました",
+    "en": "Connection failed "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 1374,
+    "byte_budget": 10,
+    "jp": "話し中です",
+    "en": "Line is bu"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 1388,
+    "byte_budget": 24,
+    "jp": "次の番号に電話をかけます",
+    "en": "r>Calling next number   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 1420,
+    "byte_budget": 20,
+    "jp": "回線が切断されました",
+    "en": "The line has been   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 1448,
+    "byte_budget": 16,
+    "jp": "自動切断しました",
+    "en": "Automatic       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 1484,
+    "byte_budget": 8,
+    "jp": "ＵＲＬ：",
+    "en": "URL:    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 1574,
+    "byte_budget": 24,
+    "jp": "をダウンロードしています",
+    "en": "nloading %s...          "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 1622,
+    "byte_budget": 14,
+    "jp": "２を終了します",
+    "en": "#6E9959\">Exit "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 1640,
+    "byte_budget": 16,
+    "jp": "よろしいですか？",
+    "en": "m Passport      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 1688,
+    "byte_budget": 32,
+    "jp": "大きすぎてダウンロードできません",
+    "en": "Too large to download           "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 1750,
+    "byte_budget": 20,
+    "jp": "表示できませんでした",
+    "en": "Could not display</f"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 1781,
+    "byte_budget": 34,
+    "jp": "データが壊れているか　大きすぎます",
+    "en": "a is corrupted or too large       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 1845,
+    "byte_budget": 20,
+    "jp": "再生できませんでした",
+    "en": "Could not play</font"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 1876,
+    "byte_budget": 34,
+    "jp": "データが壊れているか　大きすぎます",
+    "en": "s corrupted or too large          "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 1929,
+    "byte_budget": 10,
+    "jp": "プロンプト",
+    "en": "prompt:   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 2019,
+    "byte_budget": 10,
+    "jp": "ようこそ『",
+    "en": "Welcome to"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 2051,
+    "byte_budget": 20,
+    "jp": "ドリームパスポート２",
+    "en": "br><br><font color=\""
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 2112,
+    "byte_budget": 18,
+    "jp": "Ｄｒｅａｍｃａｓｔ",
+    "en": "o connect Dreamcas"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 2137,
+    "byte_budget": 36,
+    "jp": "をネットワークにつなぐ準備を始めます",
+    "en": "e network.<br>                      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 2211,
+    "byte_budget": 22,
+    "jp": "モデムの設定を始めます",
+    "en": "Starting modem setup<b"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 2269,
+    "byte_budget": 30,
+    "jp": "ご使用の電話の種類を設定します",
+    "en": "Set the type of phone you are "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 2337,
+    "byte_budget": 32,
+    "jp": "電話の種類をトーン式に設定します",
+    "en": "Set the phone type to tone diali"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 2399,
+    "byte_budget": 48,
+    "jp": "ダイヤル時に「ピポパ」という音がする電話機の場合",
+    "en": "00\">If your phone has a \"beep beep\" sound<br>whe"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 2451,
+    "byte_budget": 22,
+    "jp": "こちらを選んでください",
+    "en": "u dial, select this</f"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 2528,
+    "byte_budget": 32,
+    "jp": "電話の種類をパルス式に設定します",
+    "en": "Set the phone type to pulse type"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 2590,
+    "byte_budget": 46,
+    "jp": "ダイヤル時に「カタカタ」と音がする電話機の場合",
+    "en": "\">If your phone makes a \"click\" sound when you"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 2640,
+    "byte_budget": 22,
+    "jp": "こちらを選んでください",
+    "en": "l,<br>select this</fon"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 2717,
+    "byte_budget": 24,
+    "jp": "外線発信番号を設定します",
+    "en": "Set the number to dial a"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 2779,
+    "byte_budget": 34,
+    "jp": "外線発信番号を「なし」に設定します",
+    "en": "Set the dial-out number to 'None'<"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 2861,
+    "byte_budget": 34,
+    "jp": "外線発信番号を「あり」に設定します",
+    "en": "Set the outside line.<br><br>Press"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 2903,
+    "byte_budget": 36,
+    "jp": "Ａボタンを押すと番号の入力になります",
+    "en": "utton to enter the number.<br>      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 2987,
+    "byte_budget": 26,
+    "jp": "市内外割引番号を設定します",
+    "en": "Set the local/internationa"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 3053,
+    "byte_budget": 36,
+    "jp": "市内外割引番号を「なし」に設定します",
+    "en": "Set local/international discount num"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 3139,
+    "byte_budget": 36,
+    "jp": "市内外割引番号を「あり」に設定します",
+    "en": "Set the discount number to \"Yes\".<br"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 3201,
+    "byte_budget": 48,
+    "jp": "【注意】ＡＰの場所により割高になる場合もあります",
+    "en": "ution] Depending on the location of the AP,<br>t"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 3260,
+    "byte_budget": 36,
+    "jp": "Ａボタンを押すと番号の入力になります",
+    "en": " be higher.</font><br>Press the A   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 3346,
+    "byte_budget": 26,
+    "jp": "「むずかしい設定」をします",
+    "en": "Set up \"Advanced Settings\""
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 3402,
+    "byte_budget": 36,
+    "jp": "特別な時以外、設定の必要はありません",
+    "en": ">[No need to set this unless        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 3485,
+    "byte_budget": 26,
+    "jp": "「むずかしい設定」をします",
+    "en": "I would like to set up \"Ad"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 3519,
+    "byte_budget": 16,
+    "jp": "よろしいですか？",
+    "en": "ettings\".       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 3603,
+    "byte_budget": 44,
+    "jp": "「モデムの設定」を終了して次の画面へ移ります",
+    "en": "Exit \"Modem Settings\" and move to the next  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 3727,
+    "byte_budget": 26,
+    "jp": "「むずかしい設定」をします",
+    "en": "Set up \"Advanced Settings\""
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 3783,
+    "byte_budget": 44,
+    "jp": "【注意】特別な時以外、設定の必要はありません",
+    "en": ">[Note]There is no need to set this unless n"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 3878,
+    "byte_budget": 46,
+    "jp": "設定を中止して「モデムの設定」画面にもどります",
+    "en": "Cancel the setting and return to the<br>\"Modem"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 3980,
+    "byte_budget": 44,
+    "jp": "設定を行って「モデムの設定」画面にもどります",
+    "en": "The settings will be applied and you        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 4080,
+    "byte_budget": 30,
+    "jp": "「ＡＴコマンド」の設定をします",
+    "en": "Set up the \"AT command\". <br><"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 4140,
+    "byte_budget": 44,
+    "jp": "【注意】特別な時以外、設定の必要はありません",
+    "en": "]Only set this if necessary.</font><br>     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 4229,
+    "byte_budget": 38,
+    "jp": "「ＡＴコマンド」を「あり」に設定します",
+    "en": "Set \"AT Command\" to \"Yes\".<br><br>Pres"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 4275,
+    "byte_budget": 40,
+    "jp": "Ａボタンを押すとコマンドの入力になります",
+    "en": "button to go to the<br>AT command input "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 4363,
+    "byte_budget": 38,
+    "jp": "「ＡＴコマンド」を「なし」に設定します",
+    "en": "Set \"AT Command\" to \"None\"<br>        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 4449,
+    "byte_budget": 38,
+    "jp": "本体のネットワーク情報をすべて消します",
+    "en": "Delete all network information from th"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 4517,
+    "byte_budget": 48,
+    "jp": "【注意】本体を「売ったり」「ゆずったり」する場合",
+    "en": "#CC0000\">[Caution] If you are selling/giving awa"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 4569,
+    "byte_budget": 22,
+    "jp": "かならず消してください",
+    "en": "e device,<br>be sure t"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 4664,
+    "byte_budget": 32,
+    "jp": "ネットワーク情報をすべて消します",
+    "en": "All network information will be "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 4711,
+    "byte_budget": 28,
+    "jp": "本当に消してよろしいですか？",
+    "en": "br><br>Are you sure you want"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 4809,
+    "byte_budget": 28,
+    "jp": "次の情報を必ずメモして下さい",
+    "en": "Please make sure to note dow"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 4841,
+    "byte_budget": 14,
+    "jp": "ログインＩＤ：",
+    "en": "e following in"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 4861,
+    "byte_budget": 20,
+    "jp": "ログインパスワード：",
+    "en": "ion:<br>Login ID: %s"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 4887,
+    "byte_budget": 18,
+    "jp": "メモできましたか？",
+    "en": "gin password:     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 4991,
+    "byte_budget": 42,
+    "jp": "本体のネットワーク情報をすべて消しています",
+    "en": "All network info on the console is being e"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 5048,
+    "byte_budget": 28,
+    "jp": "しばらくお待ちください・・・",
+    "en": "r><br>Please wait...        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 5136,
+    "byte_budget": 40,
+    "jp": "本体のネットワーク情報をすべて消しました",
+    "en": "All network info on the console has been"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 5213,
+    "byte_budget": 18,
+    "jp": "Ｄｒｅａｍｃａｓｔ",
+    "en": "00\">Please power o"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 5238,
+    "byte_budget": 22,
+    "jp": "の電源を切ってください",
+    "en": "Dreamcast.</font>     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 5322,
+    "byte_budget": 44,
+    "jp": "本体のネットワーク情報を消すことができません",
+    "en": "Cannot erase network info from the console.<"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 5381,
+    "byte_budget": 26,
+    "jp": "もう一度やり直してください",
+    "en": "lease try again           "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 5469,
+    "byte_budget": 32,
+    "jp": "サービスのご利用にあたって・・・",
+    "en": "When using the service...</font>"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 5536,
+    "byte_budget": 18,
+    "jp": "Ｄｒｅａｍｃａｓｔ",
+    "en": "\"#EE3000\">Dreamcas"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 5561,
+    "byte_budget": 36,
+    "jp": "ネットワーク規約』を確認していただき",
+    "en": "> Network ToS'.<br>Please follow the"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 5611,
+    "byte_budget": 36,
+    "jp": "画面の案内にあわせてご確認ください。",
+    "en": "on the screen.<br>These 'Terms of Se"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 5651,
+    "byte_budget": 54,
+    "jp": "この「利用規約」は「取扱説明書」に記さいされていますが",
+    "en": "e' are written in the manual,<br>but may be updated.<b"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 5709,
+    "byte_budget": 30,
+    "jp": "更新されている場合があります。",
+    "en": "ｻPlease note updates are under"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 5747,
+    "byte_budget": 50,
+    "jp": "※この更新内容も規約の一部をなすものとなりますので",
+    "en": ".                                                 "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 5801,
+    "byte_budget": 16,
+    "jp": "　ご注意下さい。",
+    "en": "                "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 5875,
+    "byte_budget": 18,
+    "jp": "Ｄｒｅａｍｃａｓｔ",
+    "en": " the <font color=\""
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 5900,
+    "byte_budget": 34,
+    "jp": "ネットワーク規約』を確認する方法を",
+    "en": "\">Dreamcast</font> Network ToS.<br"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 5938,
+    "byte_budget": 14,
+    "jp": "選んでください",
+    "en": "              "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 6022,
+    "byte_budget": 18,
+    "jp": "Ｄｒｅａｍｃａｓｔ",
+    "en": "k ToS' online.<br>"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 6047,
+    "byte_budget": 30,
+    "jp": "ネットワーク利用規約』をネット",
+    "en": "olor=\"#CC0000\">[Recommended!]<"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 6081,
+    "byte_budget": 40,
+    "jp": "ワークにつないで調べる　　　　　　　　　",
+    "en": "t>                                      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 6143,
+    "byte_budget": 14,
+    "jp": "【おすすめ！】",
+    "en": "              "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 6230,
+    "byte_budget": 56,
+    "jp": "取扱説明書の『利用規約』のページをひらいて内容を読みます",
+    "en": "Open the 'ToS' page in the manual.                      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 6344,
+    "byte_budget": 56,
+    "jp": "ネットワークにつないで最新の『利用規約』の内容を調べます",
+    "en": "Connect to the network and check the latest ToS.        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 6462,
+    "byte_budget": 36,
+    "jp": "『利用規約』のページはありましたか？",
+    "en": "Is there a 'ToS' page?<br><br>Please"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 6506,
+    "byte_budget": 32,
+    "jp": "よく読んで内容を確認してください",
+    "en": " carefully.                     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 6596,
+    "byte_budget": 44,
+    "jp": "最新の『利用規約』を表示する準備をしています",
+    "en": "Preparing to display the latest ToS.<br><br>"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 6648,
+    "byte_budget": 28,
+    "jp": "しばらくお待ちください・・・",
+    "en": "ait a moment...<br>         "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 6722,
+    "byte_budget": 40,
+    "jp": "最新の『利用規約』の内容を表示しています",
+    "en": "The latest version of the ToS is display"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 6792,
+    "byte_budget": 48,
+    "jp": "アナログキーで画面スクロールして確認してください",
+    "en": "00\">[Please scroll down to check]</font><br>    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 6921,
+    "byte_budget": 18,
+    "jp": "Ｄｒｅａｍｃａｓｔ",
+    "en": "ont color=\"#EE3000"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 6946,
+    "byte_budget": 36,
+    "jp": "ネットワーク利用規約』を確認できまし",
+    "en": "cast</font> Network ToS'?<br><br>Do "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 7000,
+    "byte_budget": 32,
+    "jp": "この『利用規約』に同意しますか？",
+    "en": "oS? <br>                        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 7074,
+    "byte_budget": 46,
+    "jp": "『（更新分を含む）利用規約』の内容に同意します",
+    "en": "Agreeing to the ToS (including updates)<br><br"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 7150,
+    "byte_budget": 30,
+    "jp": "【登録申込の受付を開始します】",
+    "en": " now accepting registration   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 7235,
+    "byte_budget": 48,
+    "jp": "『（更新分を含む）利用規約』の内容に同意しません",
+    "en": "Declining the ToSe (including updates).<br><br><"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 7313,
+    "byte_budget": 34,
+    "jp": "【登録申込の受付は中止となります】",
+    "en": "ce of registration will be        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 7404,
+    "byte_budget": 48,
+    "jp": "『（更新分を含む）利用規約』に同意いただけるまで",
+    "en": "Until you agree to the ToS,<br>you will not be a"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 7478,
+    "byte_budget": 18,
+    "jp": "Ｄｒｅａｍｃａｓｔ",
+    "en": "t color=\"#EE3000\">"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 7503,
+    "byte_budget": 34,
+    "jp": "でのインターネット接続機能はご使用",
+    "en": "st</font> online.<br>Are you sure?"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 7541,
+    "byte_budget": 28,
+    "jp": "できません　よろしいですか？",
+    "en": "                            "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 7625,
+    "byte_budget": 18,
+    "jp": "Ｄｒｅａｍｃａｓｔ",
+    "en": "Dreamcast</font><f"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 7672,
+    "byte_budget": 38,
+    "jp": "インターネット接続機能の設定を中止しま",
+    "en": "tup has been canceled.<br></font><br>W"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 7733,
+    "byte_budget": 40,
+    "jp": "次にお会いできることを楽しみにしています",
+    "en": "g you next time.                        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 7797,
+    "byte_budget": 28,
+    "jp": "登録に必要な情報を入力します",
+    "en": "Enter the information requir"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 7855,
+    "byte_budget": 46,
+    "jp": "【誤りや入力もれが無いように注意してください】",
+    "en": "ont color=\"#CC0000\">[Please avoid making error"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 7944,
+    "byte_budget": 56,
+    "jp": "登録する方の「お名前」を漢字で「姓」「名」の順に入力して",
+    "en": "Please enter your name,<br>in the order of 'family name'"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 8004,
+    "byte_budget": 8,
+    "jp": "ください",
+    "en": ">then   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 8052,
+    "byte_budget": 24,
+    "jp": "「姓」を漢字で入力します",
+    "en": "Enter your last name in "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 8124,
+    "byte_budget": 24,
+    "jp": "「名」を漢字で入力します",
+    "en": "Enter your name in Kanji"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 8196,
+    "byte_budget": 56,
+    "jp": "「お名前」のフリガナをカタカナで「姓」「名」の順に入力し",
+    "en": "Please enter your name in the order of<br>'family name' "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 8256,
+    "byte_budget": 10,
+    "jp": "てください",
+    "en": "owed by   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 8310,
+    "byte_budget": 28,
+    "jp": "「姓」をカタカナで入力します",
+    "en": "Enter your last name in     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 8390,
+    "byte_budget": 28,
+    "jp": "「名」をカタカナで入力します",
+    "en": "Enter your name in katakana."
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 8470,
+    "byte_budget": 56,
+    "jp": "７ケタの「郵便番号」をカーソルで選んでＡボタンで決定して",
+    "en": "Select the 7-digit 'zip code' with the<br>cursor and pre"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 8530,
+    "byte_budget": 8,
+    "jp": "ください",
+    "en": "he A but"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 8566,
+    "byte_budget": 54,
+    "jp": "「ご住所」のくわしい町名・番地を漢字と数字で入力します",
+    "en": "Enter your street address.                            "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 8654,
+    "byte_budget": 54,
+    "jp": "「ご住所」のアパート・マンションの棟・部屋番号を漢字と",
+    "en": "Enter the apartment/suite number.<br><br><font color=\""
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 8712,
+    "byte_budget": 16,
+    "jp": "数字で入力します",
+    "en": "000\">[Enter only"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 8758,
+    "byte_budget": 32,
+    "jp": "【必要な場合だけ入力して下さい】",
+    "en": "                                "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 8827,
+    "byte_budget": 34,
+    "jp": "ご自宅の電話番号を入力してください",
+    "en": "Please enter your home phone numbe"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 8891,
+    "byte_budget": 48,
+    "jp": "【携帯電話やＰＨＳの番号は入力しないでください】",
+    "en": "\">[Please do not enter a mobile phone number]</f"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 8978,
+    "byte_budget": 38,
+    "jp": "電話番号の「市外局番」部分を入力します",
+    "en": "Enter the area code of your phone numb"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 9046,
+    "byte_budget": 48,
+    "jp": "【携帯電話やＰＨＳの番号は入力しないでください】",
+    "en": "0\">[Please do not enter a mobile phone number]</"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 9139,
+    "byte_budget": 38,
+    "jp": "電話番号の「市内局番」部分を入力します",
+    "en": "Enter the 'city code' part of the phon"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 9207,
+    "byte_budget": 48,
+    "jp": "【携帯電話やＰＨＳの番号は入力しないでください】",
+    "en": "\"#CC0000\">[Please do not enter a mobile phone   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 9322,
+    "byte_budget": 32,
+    "jp": "携帯電話やＰＨＳの番号ではＡＰを",
+    "en": "You cannot register the AP corre"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 9358,
+    "byte_budget": 20,
+    "jp": "正しく登録できません",
+    "en": " using a mobile phon"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 9467,
+    "byte_budget": 52,
+    "jp": "「性別」をカーソルで選んでＡボタンで決定してください",
+    "en": "Select \"Gender\" with the cursor and press the A butt"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 9547,
+    "byte_budget": 56,
+    "jp": "「生年月日」をカーソルで選んでＡボタンで決定してください",
+    "en": "Select \"Date of Birth\" with the cursor and press the A  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 9635,
+    "byte_budget": 30,
+    "jp": "入力されていない項目があります",
+    "en": "Some fields are missing.<br>Pl"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 9669,
+    "byte_budget": 26,
+    "jp": "もう一度、確認してください",
+    "en": " check again.<br>         "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 9747,
+    "byte_budget": 56,
+    "jp": "セガ・プロバイダーに登録を希望するアカウント名（ログイン",
+    "en": "Enter up to three alphanumeric characters for the accoun"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 9807,
+    "byte_budget": 46,
+    "jp": "ＩＤ）を英数半角文字で３つまで入力してください",
+    "en": "me (login ID) you wish to register with your S"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 9879,
+    "byte_budget": 44,
+    "jp": "【６文字～８文字の間で先頭は数字以外の文字】",
+    "en": " an account is registered, it cannot be chan"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 9982,
+    "byte_budget": 32,
+    "jp": "希望アカウント名（ログインＩＤ）",
+    "en": "Please enter your desired accoun"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 10018,
+    "byte_budget": 32,
+    "jp": "は６文字から８文字までの間で入力",
+    "en": "me (login ID)<br>between 6 and 8"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 10054,
+    "byte_budget": 12,
+    "jp": "してください",
+    "en": "racters.<br>"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 10130,
+    "byte_budget": 32,
+    "jp": "希望アカウント名（ログインＩＤ）",
+    "en": "Your desired account name (login"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 10166,
+    "byte_budget": 32,
+    "jp": "の先頭の文字には数字を使うことは",
+    "en": "<br>cannot start with a number  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 10202,
+    "byte_budget": 10,
+    "jp": "できません",
+    "en": "          "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 10272,
+    "byte_budget": 28,
+    "jp": "入力された「ユーザー情報」を",
+    "en": "The entered 'user info' will"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 10304,
+    "byte_budget": 20,
+    "jp": "サーバーに登録します",
+    "en": "sent to<br>the serve"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 10328,
+    "byte_budget": 16,
+    "jp": "よろしいですか？",
+    "en": "d registered.   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 10406,
+    "byte_budget": 48,
+    "jp": "ご希望のアカウント名（ログインＩＤ）は登録済です",
+    "en": "The account name has already been registered.<br"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 10480,
+    "byte_budget": 30,
+    "jp": "【別のユーザーが登録・利用中】",
+    "en": "other user has registered and "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 10525,
+    "byte_budget": 42,
+    "jp": "別の希望アカウント名を入力し直してください",
+    "en": "ccount]</font><br><br>Please re-enter the "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 10631,
+    "byte_budget": 18,
+    "jp": "Ｄｒｅａｍｃａｓｔ",
+    "en": ">Dreamcast</font> "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 10680,
+    "byte_budget": 22,
+    "jp": "すでに登録されています",
+    "en": ">You can't go online i"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 10713,
+    "byte_budget": 46,
+    "jp": "このままではインターネット接続機能が使えません",
+    "en": "e.<br>Please contact the Network Support for a"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 10794,
+    "byte_budget": 18,
+    "jp": "Ｄｒｅａｍｃａｓｔ",
+    "en": "                  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 10819,
+    "byte_budget": 34,
+    "jp": "サポートセンター』にご連絡・ご相談",
+    "en": "                                  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 10857,
+    "byte_budget": 8,
+    "jp": "ください",
+    "en": "        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 10897,
+    "byte_budget": 48,
+    "jp": "入力された「ユーザー情報」を登録できませんでした",
+    "en": "The entered \"user info\" could not be registered."
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 10975,
+    "byte_budget": 42,
+    "jp": "エラーの内容を確認して入力し直してください",
+    "en": "Please check the error and re-enter</font>"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 11065,
+    "byte_budget": 30,
+    "jp": "サーバーに正しく登録できました",
+    "en": "Please check your SEGA ISP's A"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 11103,
+    "byte_budget": 54,
+    "jp": "セガ・プロバイダーのアクセスポイント番号は次の通りです",
+    "en": ".<br>When you first sign up, these are the choices    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 11211,
+    "byte_budget": 30,
+    "jp": "サーバーに正しく登録できました",
+    "en": "Server registration successful"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 11249,
+    "byte_budget": 50,
+    "jp": "セガ・プロバイダーのネットワーク情報は次の通りです",
+    "en": "A ISP network information is as follows.<br><br><f"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 11325,
+    "byte_budget": 38,
+    "jp": "【必ずメモして大切に保存してください】",
+    "en": "e make a note of this and keep it     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 11426,
+    "byte_budget": 48,
+    "jp": "ネットワークにつなぐための情報を本体に記録します",
+    "en": "The connection info will be recorded<br>to the  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 11516,
+    "byte_budget": 48,
+    "jp": "ネットワークにつなぐための情報を本体に記録します",
+    "en": "The connection info will be recorded<br>to the c"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 11594,
+    "byte_budget": 32,
+    "jp": "【パスワードは手入力となります】",
+    "en": "0\">[Password will be entered    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 11697,
+    "byte_budget": 48,
+    "jp": "ネットワークにつなぐための情報を本体に記録します",
+    "en": "The connection info will be recorded<br>to the c"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 11775,
+    "byte_budget": 34,
+    "jp": "【パスワードは自動入力となります】",
+    "en": "0\">[Password will be automatically"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 11878,
+    "byte_budget": 26,
+    "jp": "本体に情報を記録しています",
+    "en": "Recording information to t"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 11908,
+    "byte_budget": 28,
+    "jp": "しばらくおまちください・・・",
+    "en": "evice.<br>Please wait...<br>"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 11972,
+    "byte_budget": 50,
+    "jp": "ネットワークにつなぐための情報を本体に記録しました",
+    "en": "The connection info has been recorded<br>to the co"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 12052,
+    "byte_budget": 38,
+    "jp": "【パスワードもいっしょに記録しました】",
+    "en": "\">[The password has also been         "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 12153,
+    "byte_budget": 50,
+    "jp": "ネットワークにつなぐための情報を本体に記録しました",
+    "en": "The connection info has been recorded<br>to the co"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 12233,
+    "byte_budget": 34,
+    "jp": "【パスワードは記録しませんでした】",
+    "en": "\">[Password not recorded]</font>  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 12330,
+    "byte_budget": 32,
+    "jp": "情報を本体に記録できませんでした",
+    "en": "Could not record information to "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 12370,
+    "byte_budget": 26,
+    "jp": "もう一度やり直してください",
+    "en": "<br><br>Please try again.<"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 12446,
+    "byte_budget": 24,
+    "jp": "本体への記録を中止します",
+    "en": "Recording to the console"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 12496,
+    "byte_budget": 12,
+    "jp": "【設定中止】",
+    "en": "            "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 12567,
+    "byte_budget": 26,
+    "jp": "本体への記録を中止しました",
+    "en": "Recording to console has b"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 12637,
+    "byte_budget": 36,
+    "jp": "使用するプロバイダーを選んでください",
+    "en": "Please select the ISP you want to us"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 12703,
+    "byte_budget": 46,
+    "jp": "【通常は『セガ・プロバイダー』ままでＯＫです】",
+    "en": "\">[Usually you can leave it as 'Sega']</font> "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 12798,
+    "byte_budget": 52,
+    "jp": "セガ・プロバイダーを使ってネットワークにつなぐ設定に",
+    "en": "Set up to connect using the SEGA ISP<br><font color="
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 12854,
+    "byte_budget": 42,
+    "jp": "します　　　　　　　　　　　　　　　　　　",
+    "en": "0000\">[Recommended]</font>                "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 12918,
+    "byte_budget": 12,
+    "jp": "【おすすめ】",
+    "en": "            "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 12989,
+    "byte_budget": 54,
+    "jp": "ユーザー指定のプロバイダーを使ってネットワークにつなぐ",
+    "en": "Set up to connect using your own ISP.<br>             "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 13047,
+    "byte_budget": 12,
+    "jp": "設定にします",
+    "en": "            "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 13119,
+    "byte_budget": 54,
+    "jp": "セガ・プロバイダーを使ってネットワークにつなぐ設定にし",
+    "en": "Using the SEGA ISP.                                   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 13236,
+    "byte_budget": 42,
+    "jp": "ユーザー指定のプロバイダーの設定を始めます",
+    "en": "Using your own ISP.                       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 13335,
+    "byte_budget": 54,
+    "jp": "プロバイダーのアクセスポイント番号（電話番号）を入力し",
+    "en": "Enter your ISP's access point (phone number).         "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 13460,
+    "byte_budget": 28,
+    "jp": "「ログインＩＤ」を入力します",
+    "en": "Enter your login ID.<br>    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 13551,
+    "byte_budget": 34,
+    "jp": "「ログインパスワード」を入力します",
+    "en": "Enter your login password.<br>    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 13654,
+    "byte_budget": 32,
+    "jp": "「プライマリＤＮＳ」を入力します",
+    "en": "Enter 'Primary DNS'.<br>>If your"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 13694,
+    "byte_budget": 32,
+    "jp": "プロバイダーに設定がない場合は（",
+    "en": "r does not have this setting,<br"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 13733,
+    "byte_budget": 12,
+    "jp": "）を入力して",
+    "en": "0.0.0.0).<br"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 13749,
+    "byte_budget": 8,
+    "jp": "ください",
+    "en": "is will "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 13820,
+    "byte_budget": 32,
+    "jp": "「セカンダリＤＮＳ」を入力します",
+    "en": "Enter 'Secondary DNS'.<br>If you"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 13860,
+    "byte_budget": 32,
+    "jp": "プロバイダーに設定がない場合は（",
+    "en": "er does not have this setting,<b"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 13899,
+    "byte_budget": 12,
+    "jp": "）を入力して",
+    "en": " (0.0.0.0).<"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 13915,
+    "byte_budget": 8,
+    "jp": "ください",
+    "en": "This    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 13993,
+    "byte_budget": 48,
+    "jp": "サーバー」を入力します　【サーバー：ポート番号】",
+    "en": "he 'Proxy Server' [Server: Port Number] <br> (Ex"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 14045,
+    "byte_budget": 10,
+    "jp": "（入力例：",
+    "en": "e: proxy.d"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 14104,
+    "byte_budget": 54,
+    "jp": "プロバイダーに設定がない場合は入力する必要はありません",
+    "en": " to enter this if your ISP<br>does not have it set.</f"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 14230,
+    "byte_budget": 30,
+    "jp": "「メールアドレス」を入力します",
+    "en": "Enter your email address<br>  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 14325,
+    "byte_budget": 32,
+    "jp": "「メールアカウント」を入力します",
+    "en": "Enter your email account<br>    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 14424,
+    "byte_budget": 32,
+    "jp": "「メールパスワード」を入力します",
+    "en": "Enter your email password.<br>  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 14523,
+    "byte_budget": 50,
+    "jp": "「メールサーバー（ＳＭＴＰサーバー）」を入力します",
+    "en": "Enter \"Mail Server (SMTP Server)\" <br><br><font co"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 14603,
+    "byte_budget": 54,
+    "jp": "プロバイダーに設定がない場合は入力する必要はありません",
+    "en": " if your ISP<br>does not have it set.</font><br>      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 14741,
+    "byte_budget": 32,
+    "jp": "「ＰＯＰ３サーバー」を入力します",
+    "en": "Enter \"POP3 Server\" <br><br><fon"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 14803,
+    "byte_budget": 54,
+    "jp": "プロバイダーに設定がない場合は入力する必要はありません",
+    "en": "nter if your ISP<br>does not have it set.</font>      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 14954,
+    "byte_budget": 28,
+    "jp": "『ホーム』の画面に移動します",
+    "en": "Go to the 'Home' screen     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 15021,
+    "byte_budget": 28,
+    "jp": "『しおり』の画面に移動します",
+    "en": "Move to the Bookmarks       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 15088,
+    "byte_budget": 28,
+    "jp": "『メール』の画面に移動します",
+    "en": "Move to the 'Mail' screen.  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 15155,
+    "byte_budget": 30,
+    "jp": "『ジャンプ』の画面に移動します",
+    "en": "Move to the 'Go To' screen.   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 15226,
+    "byte_budget": 30,
+    "jp": "『チャット』の画面に移動します",
+    "en": "Move to the 'Chat' screen     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 15297,
+    "byte_budget": 32,
+    "jp": "ネットワークへの接続をはじめます",
+    "en": "Starting network connection<br>["
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 15333,
+    "byte_budget": 18,
+    "jp": "【電話をかけます】",
+    "en": "ing a call]<br>   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 15394,
+    "byte_budget": 32,
+    "jp": "ネットワークへの接続を終了します",
+    "en": "Terminating network connection<b"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 15430,
+    "byte_budget": 18,
+    "jp": "【電話を切ります】",
+    "en": "ang up]<br>       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 15502,
+    "byte_budget": 14,
+    "jp": "２を終了します",
+    "en": "Passport 3<br>"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 15581,
+    "byte_budget": 40,
+    "jp": "接続するチャットサーバーを選んでください",
+    "en": "Choose a chat server to connect to      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 15664,
+    "byte_budget": 42,
+    "jp": "Ｄｒｉｃａｓのチャットサーバーに接続します",
+    "en": "Connect to DRICAS chat server             "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 15765,
+    "byte_budget": 40,
+    "jp": "一般のＩＲＣチャットサーバーに接続します",
+    "en": "Connect to a public IRC chat server     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 15864,
+    "byte_budget": 58,
+    "jp": "チャットサーバーのファイルをメモリーカードからロードします",
+    "en": "Load chat server files from memory card                   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 15965,
+    "byte_budget": 56,
+    "jp": "チャットサーバーのファイルをメモリーカードにセーブします",
+    "en": "Save chat server files to memory card                   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 16064,
+    "byte_budget": 58,
+    "jp": "メモリーカードにセーブするチャットサーバーを選んでください",
+    "en": "Choose the chat server to save to your memory card        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 16175,
+    "byte_budget": 38,
+    "jp": "サーバー名とコメントを入力してください",
+    "en": "Please enter the server name and      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 16244,
+    "byte_budget": 52,
+    "jp": "接続する【ＩＲＣサーバー名：ポート番号】を入力します",
+    "en": "Enter the IRC server name: port number to connect to"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 16304,
+    "byte_budget": 10,
+    "jp": "（入力例：",
+    "en": "r> (Exampl"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 16370,
+    "byte_budget": 30,
+    "jp": "サーバーのコメントを入力します",
+    "en": "Enter a comment for your      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 16441,
+    "byte_budget": 40,
+    "jp": "ニックネームと入室キーを入力してください",
+    "en": "Please enter your nickname and entry key"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 16518,
+    "byte_budget": 38,
+    "jp": "チャットに使うニックネームを入力します",
+    "en": "Enter a nickname to use in chat<br>   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 16597,
+    "byte_budget": 48,
+    "jp": "ニックネームのあたま１文字目は半角数字以外の文字",
+    "en": "Please enter a character other than a number as "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 16649,
+    "byte_budget": 18,
+    "jp": "を入力してください",
+    "en": "first character   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 16720,
+    "byte_budget": 30,
+    "jp": "会議室への入室キーを入力します",
+    "en": "Enter the entry key to the con"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 16780,
+    "byte_budget": 38,
+    "jp": "【注意】必要な場合だけ入力してください",
+    "en": "lor=\"#CC0000\">[Caution]Enter only if  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 16860,
+    "byte_budget": 32,
+    "jp": "サーバーリストを取得中です・・・",
+    "en": "Retrieving server list...<br>Ple"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 16896,
+    "byte_budget": 22,
+    "jp": "しばらくお待ちください",
+    "en": "wait                  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 16975,
+    "byte_budget": 40,
+    "jp": "接続先のチャットサーバーを選んでください",
+    "en": "Choose a chat server to connect to      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 17068,
+    "byte_budget": 30,
+    "jp": "サーバーに接続しています・・・",
+    "en": "Connecting to server...<br>Ple"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 17102,
+    "byte_budget": 22,
+    "jp": "しばらくお待ちください",
+    "en": "wait                  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 17157,
+    "byte_budget": 32,
+    "jp": "入室するための情報を送信中・・・",
+    "en": "Sending entry information...<br>"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 17193,
+    "byte_budget": 22,
+    "jp": "しばらくお待ちください",
+    "en": "se wait               "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 17248,
+    "byte_budget": 30,
+    "jp": "サーバーに接続できませんでした",
+    "en": "Could not connect to server<br"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 17282,
+    "byte_budget": 20,
+    "jp": "自動再接続しますか？",
+    "en": "o-reconnect?        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 17367,
+    "byte_budget": 30,
+    "jp": "サーバーが見つかりませんでした",
+    "en": "Server not found<br>          "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 17448,
+    "byte_budget": 34,
+    "jp": "入室する会議室名を入力してください",
+    "en": "Please enter the name of the      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 17517,
+    "byte_budget": 28,
+    "jp": "この会議室名は使用できません",
+    "en": "This conference room name is"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 17549,
+    "byte_budget": 20,
+    "jp": "入力し直してください",
+    "en": " available. Please  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 17616,
+    "byte_budget": 12,
+    "jp": "会議室名に「",
+    "en": "Conference r"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 17629,
+    "byte_budget": 28,
+    "jp": "（カンマ）」は使用できません",
+    "en": "om name cannot contain a com"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 17661,
+    "byte_budget": 20,
+    "jp": "入力し直してください",
+    "en": ",). Please re-enter."
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 17728,
+    "byte_budget": 32,
+    "jp": "サーバーや回線の状態でリストを取",
+    "en": "Depending on the server or line "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 17764,
+    "byte_budget": 30,
+    "jp": "得中に切断されることがあります",
+    "en": "itions, you may be disconnecte"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 17855,
+    "byte_budget": 26,
+    "jp": "会議室リストを取得中・・・",
+    "en": "Retrieving room list...<br"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 17885,
+    "byte_budget": 22,
+    "jp": "しばらくお待ちください",
+    "en": "ase wait              "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 17962,
+    "byte_budget": 14,
+    "jp": "会議室リストを",
+    "en": "Could not retr"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 17980,
+    "byte_budget": 20,
+    "jp": "取得できませんでした",
+    "en": " conference room    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 18051,
+    "byte_budget": 14,
+    "jp": "会議室リストの",
+    "en": "Fetching confe"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 18069,
+    "byte_budget": 18,
+    "jp": "取得を中止しました",
+    "en": "e room            "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 18138,
+    "byte_budget": 30,
+    "jp": "入室する会議室を選んでください",
+    "en": "Please select the conference  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 18215,
+    "byte_budget": 22,
+    "jp": "会議室に入室しています",
+    "en": "Entering the conferenc"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 18241,
+    "byte_budget": 28,
+    "jp": "しばらくおまちください・・・",
+    "en": "om. Please wait a moment... "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 18316,
+    "byte_budget": 32,
+    "jp": "ニックネームが同じメンバーが入室",
+    "en": "A member with the same nickname "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 18352,
+    "byte_budget": 10,
+    "jp": "しています",
+    "en": "n the room"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 18366,
+    "byte_budget": 32,
+    "jp": "ほかのニックネームに変えて入室し",
+    "en": "ease change your nickname and tr"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 18402,
+    "byte_budget": 14,
+    "jp": "直してください",
+    "en": "ain.          "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 18459,
+    "byte_budget": 20,
+    "jp": "入室キーがちがいます",
+    "en": "The entry key is inc"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 18483,
+    "byte_budget": 22,
+    "jp": "正しい入室キーで入室し",
+    "en": "ct. Please enter the c"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 18509,
+    "byte_budget": 14,
+    "jp": "直してください",
+    "en": "ct entry key  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 18566,
+    "byte_budget": 28,
+    "jp": "会議室に入室できませんでした",
+    "en": "Failed to enter the conferen"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 18598,
+    "byte_budget": 18,
+    "jp": "やり直してください",
+    "en": "oom. Please try   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 18659,
+    "byte_budget": 46,
+    "jp": "会議室に入室しているメンバーの情報を取得します",
+    "en": "Get information about members in the conferenc"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 18760,
+    "byte_budget": 30,
+    "jp": "入室メンバーのチェック中・・・",
+    "en": "Checking for new members...<br"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 18794,
+    "byte_budget": 22,
+    "jp": "しばらくお待ちください",
+    "en": "ase wait a moment     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 18869,
+    "byte_budget": 24,
+    "jp": "入室中のメンバーの情報を",
+    "en": "Could not get informatio"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 18897,
+    "byte_budget": 20,
+    "jp": "取得できませんでした",
+    "en": "out current members<"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 18984,
+    "byte_budget": 38,
+    "jp": "入室中のメンバーの一覧を表示しています",
+    "en": "Displaying a list of currently active "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 19052,
+    "byte_budget": 48,
+    "jp": "【Ｒメニューの「ＯＫ」またはＢボタンで戻ります】",
+    "en": "CC0000\">[Press \"OK\" on the R menu or the B butto"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 19142,
+    "byte_budget": 28,
+    "jp": "ＩＲＣサーバー名を入力します",
+    "en": "Enter the IRC server name   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 19178,
+    "byte_budget": 26,
+    "jp": "ＩＲＣサーバーを選択します",
+    "en": "Select an IRC server      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 19212,
+    "byte_budget": 26,
+    "jp": "ＩＲＣサーバーを追加します",
+    "en": "Add an IRC server         "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 19246,
+    "byte_budget": 32,
+    "jp": "「サーバーの一覧」画面に戻ります",
+    "en": "Return to the Server List screen"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 19286,
+    "byte_budget": 24,
+    "jp": "入室する会議室を選びます",
+    "en": "Select the conference   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 19320,
+    "byte_budget": 28,
+    "jp": "会議室名の入力画面に移ります",
+    "en": "Proceed to the conference   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 19356,
+    "byte_budget": 24,
+    "jp": "会議室の一覧を更新します",
+    "en": "Update the room list    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 19388,
+    "byte_budget": 20,
+    "jp": "会議室名を入力します",
+    "en": "Enter the           "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 19416,
+    "byte_budget": 20,
+    "jp": "会議室から退室します",
+    "en": "Leaving the         "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 19444,
+    "byte_budget": 18,
+    "jp": "チャットを始めます",
+    "en": "Start chatting    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 19472,
+    "byte_budget": 30,
+    "jp": "サーバーへの接続を中止しました",
+    "en": "Connection to server has been "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 19510,
+    "byte_budget": 34,
+    "jp": "サーバーリストの取得を中止しました",
+    "en": "Server list retrieval stopped     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 19552,
+    "byte_budget": 36,
+    "jp": "サーバーリストが取得できませんでした",
+    "en": "Could not get server list           "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 19596,
+    "byte_budget": 28,
+    "jp": "会議室への入室を中止しました",
+    "en": "Entry to the conference     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 19632,
+    "byte_budget": 34,
+    "jp": "メンバーリストの取得を中止しました",
+    "en": "Member list retrieval stopped     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 19674,
+    "byte_budget": 34,
+    "jp": "ＩＲＣサーバーからは接続できません",
+    "en": "Cannot connect from IRC server    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 19716,
+    "byte_budget": 26,
+    "jp": "ＩＲＣサーバーに接続します",
+    "en": "Connect to IRC server     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 19750,
+    "byte_budget": 36,
+    "jp": "チャットサーバーの選択画面に戻ります",
+    "en": "Return to chat server selection     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 19794,
+    "byte_budget": 34,
+    "jp": "会議室の一覧を取得できませんでした",
+    "en": "Failed to retrieve room list      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 19906,
+    "byte_budget": 24,
+    "jp": "オーディオの設定をします",
+    "en": "Configure audio settings"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 19940,
+    "byte_budget": 36,
+    "jp": "オーディオを「モノラル」に設定します",
+    "en": "Set audio to 'Mono'                 "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 19986,
+    "byte_budget": 38,
+    "jp": "オーディオを「モノラル」に設定しました",
+    "en": "Audio set to 'Mono'                   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 20034,
+    "byte_budget": 36,
+    "jp": "オーディオを「ステレオ」に設定します",
+    "en": "Set audio to 'Stereo'               "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 20080,
+    "byte_budget": 38,
+    "jp": "オーディオを「ステレオ」に設定しました",
+    "en": "Audio set to 'Stereo'                 "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 20128,
+    "byte_budget": 30,
+    "jp": "キー操作の設定画面にうつります",
+    "en": "Configure settings for input  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 20168,
+    "byte_budget": 32,
+    "jp": "ブラウザーの設定画面にうつります",
+    "en": "Configure how the web browser   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 20210,
+    "byte_budget": 48,
+    "jp": "一定時間操作がなかった場合のネットワーク自動切断",
+    "en": "Set the automatic network disconnection after<br"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 20262,
+    "byte_budget": 12,
+    "jp": "を設定します",
+    "en": "ertain      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 20284,
+    "byte_budget": 30,
+    "jp": "自動切断を「あり」に設定します",
+    "en": "Set automatic disconnection   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 20324,
+    "byte_budget": 38,
+    "jp": "カーソルの上下で自動切断する「時間」を",
+    "en": "Set the auto-disconnect time.<br>Press"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 20366,
+    "byte_budget": 16,
+    "jp": "設定してください",
+    "en": " A button and th"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 20408,
+    "byte_budget": 46,
+    "jp": "【Ａボタンで決定、Ｂボタンでキャンセルします】",
+    "en": "keys to select the time.                      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 20471,
+    "byte_budget": 22,
+    "jp": "自動切断を設定しません",
+    "en": "Do not set auto       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 20503,
+    "byte_budget": 32,
+    "jp": "自動切断を「なし」に設定しました",
+    "en": "Auto disconnect has been set to "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 20545,
+    "byte_budget": 22,
+    "jp": "クッキーの設定をします",
+    "en": "Cookie settings.      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 20577,
+    "byte_budget": 36,
+    "jp": "クッキーを受信した場合「警告」します",
+    "en": "Warn when a cookie is received.     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 20623,
+    "byte_budget": 26,
+    "jp": "「警告する」に設定しました",
+    "en": "Set to 'Warn'.            "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 20659,
+    "byte_budget": 24,
+    "jp": "クッキーの受信をしません",
+    "en": "All cookies will be     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 20693,
+    "byte_budget": 28,
+    "jp": "「受信しない」に設定しました",
+    "en": "Cookies will be rejected.   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 20731,
+    "byte_budget": 26,
+    "jp": "クッキーをすべて受信します",
+    "en": "Receive all cookies.      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 20767,
+    "byte_budget": 26,
+    "jp": "すべて受信」に設定しました",
+    "en": "All cookies will be       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 20803,
+    "byte_budget": 48,
+    "jp": "ネットワーク接続に使用する「プロバイダー」を設定",
+    "en": "Set the provider to use for network connection. "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 20871,
+    "byte_budget": 48,
+    "jp": "「接続プロバイダー」を「セガ・プロバイダー」にし",
+    "en": "Set 'SEGA' as the ISP to use for connection.    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 20937,
+    "byte_budget": 48,
+    "jp": "「接続プロバイダー」を「セガ・プロバイダー」にし",
+    "en": "'SEGA' has been set as the ISP for connections. "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 20989,
+    "byte_budget": 42,
+    "jp": "ました　現在のサーバー設定を確認しますか？",
+    "en": "                                          "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 21035,
+    "byte_budget": 48,
+    "jp": "なお、設定変更は「ユーザー情報」で行ってください",
+    "en": "                                                "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 21093,
+    "byte_budget": 48,
+    "jp": "「接続プロバイダー」を「ユーザー・プロバイダー」",
+    "en": "Set your own ISP for connections.               "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 21145,
+    "byte_budget": 8,
+    "jp": "にします",
+    "en": "        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 21163,
+    "byte_budget": 56,
+    "jp": "「接続プロバイダー」をユーザー・プロバイダー」にしました",
+    "en": "User's ISP will be used for connection.                 "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 21223,
+    "byte_budget": 42,
+    "jp": "現在のサーバー設定を確認・変更をしますか？",
+    "en": "                                          "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 21275,
+    "byte_budget": 28,
+    "jp": "モデムの設定画面にうつります",
+    "en": "Configure modem settings.   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 21313,
+    "byte_budget": 48,
+    "jp": "使用するソフトウェアキーボードの種類を設定します",
+    "en": "Set the type of software keyboard to use.       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 21371,
+    "byte_budget": 26,
+    "jp": "ソフトウェアキーボードを「",
+    "en": "Set the software keyboard "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 21410,
+    "byte_budget": 14,
+    "jp": "１」配列に設定",
+    "en": "port 1\"<br>lay"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 21444,
+    "byte_budget": 26,
+    "jp": "ソフトウェアキーボードを「",
+    "en": "Software keyboard has been"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 21483,
+    "byte_budget": 14,
+    "jp": "１」配列に設定",
+    "en": "reamPassport 1"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 21501,
+    "byte_budget": 8,
+    "jp": "しました",
+    "en": "yout    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 21519,
+    "byte_budget": 26,
+    "jp": "ソフトウェアキーボードを「",
+    "en": "Set the software keyboard "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 21558,
+    "byte_budget": 14,
+    "jp": "２」配列に設定",
+    "en": "port 2\"<br>lay"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 21592,
+    "byte_budget": 26,
+    "jp": "ソフトウェアキーボードを「",
+    "en": "Software keyboard has been"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 21631,
+    "byte_budget": 14,
+    "jp": "２」配列に設定",
+    "en": "reamPassport 2"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 21649,
+    "byte_budget": 8,
+    "jp": "しました",
+    "en": "yout    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 21667,
+    "byte_budget": 50,
+    "jp": "ソフトウェアキーボードを「ＪＩＳ」配列に設定します",
+    "en": "Set the software keyboard to \"JIS\" layout.        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 21727,
+    "byte_budget": 52,
+    "jp": "ソフトウェアキーボードを「ＪＩＳ」配列に設定しました",
+    "en": "The software keyboard has been set<br>to \"JIS\"      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 21789,
+    "byte_budget": 44,
+    "jp": "ファンクションキーの文字登録画面にうつります",
+    "en": "Set the function key characters             "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 21843,
+    "byte_budget": 24,
+    "jp": "カーソル操作を設定します",
+    "en": "Set page scrolling      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 21877,
+    "byte_budget": 38,
+    "jp": "カーソル操作を「十字キー」に設定します",
+    "en": "Scrolling will be set to \"Analog      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 21925,
+    "byte_budget": 40,
+    "jp": "カーソル操作を「十字キー」に設定しました",
+    "en": "Scrolling has been set to \"Analog       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 21975,
+    "byte_budget": 42,
+    "jp": "カーソル操作を「アナログキー」に設定します",
+    "en": "Scrolling will be set to \"D-pad\"          "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 22027,
+    "byte_budget": 44,
+    "jp": "カーソル操作を「アナログキー」に設定しました",
+    "en": "Scrolling has been set to \"D-pad\"           "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 22081,
+    "byte_budget": 44,
+    "jp": "設定を中止して「オプション」の画面に戻ります",
+    "en": "Cancel settings and return to the Options   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 22135,
+    "byte_budget": 44,
+    "jp": "設定を実行して「オプション」の画面に戻ります",
+    "en": "Apply the settings and return to the        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 22189,
+    "byte_budget": 34,
+    "jp": "ページ読込中の表示方法を設定します",
+    "en": "Sets the page loading display     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 22233,
+    "byte_budget": 24,
+    "jp": "ゲージで読込表示をします",
+    "en": "Displays loading status "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 22267,
+    "byte_budget": 30,
+    "jp": "読込表示をゲージに設定しました",
+    "en": "Loading status display has    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 22307,
+    "byte_budget": 26,
+    "jp": "アイコンで読込表示をします",
+    "en": "Show loading status with  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 22343,
+    "byte_budget": 32,
+    "jp": "読込表示をアイコンに設定しました",
+    "en": "Loading status display has been "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 22385,
+    "byte_budget": 38,
+    "jp": "ブラウザーの表示画面サイズを設定します",
+    "en": "Set the display size of the web page  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 22433,
+    "byte_budget": 32,
+    "jp": "表示サイズを「ミニ」に設定します",
+    "en": "Set the web page display size   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 22475,
+    "byte_budget": 34,
+    "jp": "表示サイズを「ミニ」に設定しました",
+    "en": "Web page display size has been    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 22519,
+    "byte_budget": 34,
+    "jp": "表示サイズを「ミドル」に設定します",
+    "en": "Set the web page screen display   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 22563,
+    "byte_budget": 36,
+    "jp": "表示サイズを「ミドル」に設定しました",
+    "en": "Web page screen size has been set   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 22609,
+    "byte_budget": 32,
+    "jp": "表示サイズを「フル」に設定します",
+    "en": "Set the web page screen size to "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 22651,
+    "byte_budget": 34,
+    "jp": "表示サイズを「フル」に設定しました",
+    "en": "Web page screen size has been set "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 22695,
+    "byte_budget": 32,
+    "jp": "文字フォントの大きさを設定します",
+    "en": "Set the text font size          "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 22737,
+    "byte_budget": 44,
+    "jp": "文字フォントの大きさを「大きい」に設定します",
+    "en": "Set the text font size to 'Large'           "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 22791,
+    "byte_budget": 46,
+    "jp": "文字フォントの大きさを「大きい」に設定しました",
+    "en": "The font size has been set to 'Large'.        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 22847,
+    "byte_budget": 44,
+    "jp": "文字フォントの大きさを「小さい」に設定します",
+    "en": "Set the text font size to 'Small'           "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 22901,
+    "byte_budget": 46,
+    "jp": "文字フォントの大きさを「小さい」に設定しました",
+    "en": "The font size has been set to 'Small'         "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 22957,
+    "byte_budget": 22,
+    "jp": "音声ナビの設定をします",
+    "en": "Set up voice          "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 22989,
+    "byte_budget": 30,
+    "jp": "音声ナビを「あり」に設定します",
+    "en": "Set voice navigation to \"ON\"  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 23029,
+    "byte_budget": 32,
+    "jp": "音声ナビを「あり」に設定しました",
+    "en": "Voice navigation has been set   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 23071,
+    "byte_budget": 30,
+    "jp": "音声ナビを「なし」に設定します",
+    "en": "Set voice navigation to \"OFF\" "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 23111,
+    "byte_budget": 32,
+    "jp": "音声ナビを「なし」に設定しました",
+    "en": "Voice navigation has been set   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 23163,
+    "byte_budget": 14,
+    "jp": "の設定をします",
+    "en": "JavaScript.   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 23197,
+    "byte_budget": 22,
+    "jp": "を「あり」に設定します",
+    "en": "ript to 'ON'.         "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 23239,
+    "byte_budget": 24,
+    "jp": "を「あり」に設定しました",
+    "en": " is enabled             "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 23283,
+    "byte_budget": 22,
+    "jp": "を「なし」に設定します",
+    "en": "ript to 'OFF'         "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 23325,
+    "byte_budget": 24,
+    "jp": "を「なし」に設定しました",
+    "en": " set to 'OFF'           "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 23359,
+    "byte_budget": 44,
+    "jp": "設定を中止して「オプション」の画面に戻ります",
+    "en": "Cancel settings and return to the Options   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 23413,
+    "byte_budget": 44,
+    "jp": "設定を実行して「オプション」の画面に戻ります",
+    "en": "Apply the settings and return to the        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 23467,
+    "byte_budget": 30,
+    "jp": "オプションを設定して終了します",
+    "en": "Save to the memory card       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 23507,
+    "byte_budget": 28,
+    "jp": "オプションの設定を中止します",
+    "en": "Option settings will be     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 23545,
+    "byte_budget": 48,
+    "jp": "本体に記録されているネットワーク情報をすべて消去",
+    "en": "All network info on the console will be erased.<"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 23597,
+    "byte_budget": 48,
+    "jp": "します　セガ・プロバイダーのログインＩＤとパスワ",
+    "en": "ave you written down your SEGA ISP ID and passwo"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 23649,
+    "byte_budget": 48,
+    "jp": "ードはメモしましたか？　「こまったとき」に必要に",
+    "en": "br>You may need them for troubleshooting.       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 23701,
+    "byte_budget": 32,
+    "jp": "なりますので必ずメモしてください",
+    "en": "                                "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 23743,
+    "byte_budget": 30,
+    "jp": "ネットワーク情報を消去しました",
+    "en": "Network information has been  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 23803,
+    "byte_budget": 30,
+    "jp": "メールが届いているか確認します",
+    "en": "Let me check if you received t"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 23837,
+    "byte_budget": 16,
+    "jp": "よろしいですか？",
+    "en": "mail.<br>Are    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 23923,
+    "byte_budget": 28,
+    "jp": "メールサーバーを確認中・・・",
+    "en": "Checking mail server...<br>P"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 23955,
+    "byte_budget": 22,
+    "jp": "しばらくお待ちください",
+    "en": "e wait<br>            "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 24038,
+    "byte_budget": 14,
+    "jp": "「ユーザー名」",
+    "en": "<font color=\"#"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 24056,
+    "byte_budget": 32,
+    "jp": "または「パスワード」が違います！",
+    "en": "00\">Your \"username\"<br>or       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 24157,
+    "byte_budget": 30,
+    "jp": "メールの一覧を読み込み中・・・",
+    "en": "Loading email list...<br>Pleas"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 24191,
+    "byte_budget": 22,
+    "jp": "しばらくお待ちください",
+    "en": "it<br>                "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 24272,
+    "byte_budget": 24,
+    "jp": "メールの設定がありません",
+    "en": "No email settings.<br>Pl"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 24300,
+    "byte_budget": 32,
+    "jp": "オプションで設定してからやり直し",
+    "en": " set it in Options and try again"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 24336,
+    "byte_budget": 10,
+    "jp": "てください",
+    "en": "          "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 24399,
+    "byte_budget": 36,
+    "jp": "メールサーバーが見つかりませんでした",
+    "en": "<font color=\"#CC0000\">Mail server no"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 24494,
+    "byte_budget": 40,
+    "jp": "メールサーバーから応答がありませんでした",
+    "en": "<font color=\"#CC0000\">No response from m"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 24595,
+    "byte_budget": 28,
+    "jp": "メール本文を読み込み中・・・",
+    "en": "Loading email body...<br>Ple"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 24627,
+    "byte_budget": 22,
+    "jp": "しばらくお待ちください",
+    "en": "wait<br>              "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 24706,
+    "byte_budget": 22,
+    "jp": "メール本文の読み込みを",
+    "en": "Reading email body<br>"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 24732,
+    "byte_budget": 12,
+    "jp": "中止しました",
+    "en": "stopped     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 24812,
+    "byte_budget": 8,
+    "jp": "メールが",
+    "en": "You have"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 24824,
+    "byte_budget": 14,
+    "jp": "通届いています",
+    "en": "emails        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 24901,
+    "byte_budget": 34,
+    "jp": "サーバーにメールはありませんでした",
+    "en": "There was no mail on the server   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 24998,
+    "byte_budget": 38,
+    "jp": "選択したメールをサーバーから削除します",
+    "en": "The selected emails will be deleted fr"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 25040,
+    "byte_budget": 16,
+    "jp": "よろしいですか？",
+    "en": "he server       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 25117,
+    "byte_budget": 30,
+    "jp": "削除を中止して読み込みますか？",
+    "en": "Abort deletion and load?      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 25224,
+    "byte_budget": 32,
+    "jp": "メモリーカードから読込んだメール",
+    "en": "These are emails read from the m"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 25260,
+    "byte_budget": 40,
+    "jp": "です　『ファイル』画面で削除してください",
+    "en": "y card. Please delete them from the 'Fil"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 25395,
+    "byte_budget": 32,
+    "jp": "メールをサーバーから削除中・・・",
+    "en": "Deleting email from server...<br"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 25431,
+    "byte_budget": 22,
+    "jp": "しばらくお待ちください",
+    "en": "ase wait<br>          "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 25510,
+    "byte_budget": 26,
+    "jp": "メールの削除を中止しました",
+    "en": "Deletion of email canceled"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 25607,
+    "byte_budget": 32,
+    "jp": "このメールにファイルを添付します",
+    "en": "I will attach a file to this ema"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 25643,
+    "byte_budget": 16,
+    "jp": "よろしいですか？",
+    "en": "<br>Are you sure"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 25685,
+    "byte_budget": 28,
+    "jp": "【１メール＝１添付ファイル】",
+    "en": "\">[1 email = 1 attachment]</"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 25807,
+    "byte_budget": 26,
+    "jp": "ファイルの添付を中止します",
+    "en": "Are you sure you want to s"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 25837,
+    "byte_budget": 16,
+    "jp": "よろしいですか？",
+    "en": "attaching the   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 25916,
+    "byte_budget": 24,
+    "jp": "このメールにはファイルが",
+    "en": "This email contains a fi"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 25944,
+    "byte_budget": 16,
+    "jp": "添付されています",
+    "en": "r>attached<br>th"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 25964,
+    "byte_budget": 28,
+    "jp": "メモリーカードにセーブします",
+    "en": "ill be saved to your memory "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 25996,
+    "byte_budget": 16,
+    "jp": "よろしいですか？",
+    "en": "<br>Are you     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 26089,
+    "byte_budget": 36,
+    "jp": "このメールに添付されていたファイルは",
+    "en": "<font color=\"#CC0000\">The file attac"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 26129,
+    "byte_budget": 14,
+    "jp": "壊れていました",
+    "en": "to this email "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 26214,
+    "byte_budget": 14,
+    "jp": "このファイルは",
+    "en": "This file cann"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 26250,
+    "byte_budget": 18,
+    "jp": "Ｄｒｅａｍｃａｓｔ",
+    "en": "color=\"#EE3000\">Dr"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 26281,
+    "byte_budget": 30,
+    "jp": "ソフトウェアでは利用できません",
+    "en": "> <br> software. <br><br>Do yo"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 26319,
+    "byte_budget": 42,
+    "jp": "メモリーカードにセーブしてよろしいですか？",
+    "en": "o save it to your memory card?            "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 26444,
+    "byte_budget": 40,
+    "jp": "このメールをメモリーカードにセーブします",
+    "en": "Save this email to your memory card.<br>"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 26488,
+    "byte_budget": 16,
+    "jp": "よろしいですか？",
+    "en": "you sure?<br>   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 26577,
+    "byte_budget": 34,
+    "jp": "このメールはサイズが大きすぎるので",
+    "en": "<font color=\"#CC0000\">This email i"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 26615,
+    "byte_budget": 34,
+    "jp": "メモリーカードにはセーブできません",
+    "en": "o large to be saved to the memory "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 26734,
+    "byte_budget": 22,
+    "jp": "このメールは長すぎます",
+    "en": "<font color=\"#CC0000\">"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 26760,
+    "byte_budget": 32,
+    "jp": "ドリームパスポート２では読み込む",
+    "en": " email is too long<br>Dream Pass"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 26796,
+    "byte_budget": 16,
+    "jp": "ことができません",
+    "en": " 3 cannot read  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 26901,
+    "byte_budget": 26,
+    "jp": "書きかけのメールを捨てます",
+    "en": "<font color=\"#CC0000\">Disc"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 26931,
+    "byte_budget": 16,
+    "jp": "よろしいですか？",
+    "en": "the unfinished  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 27038,
+    "byte_budget": 20,
+    "jp": "メールを送信中・・・",
+    "en": "Sending email...<br>"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 27062,
+    "byte_budget": 22,
+    "jp": "しばらくお待ちください",
+    "en": "se wait               "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 27133,
+    "byte_budget": 26,
+    "jp": "メールの送信を中止しました",
+    "en": "Email sending has been    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 27230,
+    "byte_budget": 32,
+    "jp": "メールのあて先を指定してください",
+    "en": "Please specify the email        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 27317,
+    "byte_budget": 20,
+    "jp": "メールを送信しました",
+    "en": "Email sent<br>Return"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 27341,
+    "byte_budget": 24,
+    "jp": "メールの一覧にもどります",
+    "en": "email list<br>Are you su"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 27369,
+    "byte_budget": 16,
+    "jp": "よろしいですか？",
+    "en": "                "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 27446,
+    "byte_budget": 26,
+    "jp": "メールの送信に失敗しました",
+    "en": "<font color=\"#CC0000\">Fail"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 27476,
+    "byte_budget": 20,
+    "jp": "やりなおしてください",
+    "en": "o send              "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 27565,
+    "byte_budget": 22,
+    "jp": "メールの絵を表示します",
+    "en": "s from your Dream Flye"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 27591,
+    "byte_budget": 16,
+    "jp": "よろしいですか？",
+    "en": "ails<br>Are you "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 27648,
+    "byte_budget": 18,
+    "jp": "メールを終了します",
+    "en": "Ending email<br>Ar"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 27670,
+    "byte_budget": 16,
+    "jp": "よろしいですか？",
+    "en": "u sure?         "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 27723,
+    "byte_budget": 20,
+    "jp": "メールが多すぎます。",
+    "en": "Too many emails! <br"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 27758,
+    "byte_budget": 26,
+    "jp": "通までしか受信できません。",
+    "en": "CC0000\">[Cannot receive   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 27807,
+    "byte_budget": 8,
+    "jp": "正常です",
+    "en": "Normal  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 27823,
+    "byte_budget": 26,
+    "jp": "メモリーカードの処理中です",
+    "en": "Processing memory card    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 27857,
+    "byte_budget": 28,
+    "jp": "おかしなパラメータがあります",
+    "en": "Bad parameter               "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 27893,
+    "byte_budget": 34,
+    "jp": "このメモリーカードは使用できません",
+    "en": "This memory card cannot be used   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 27935,
+    "byte_budget": 30,
+    "jp": "メモリーカードを抜き差しすると",
+    "en": "If you remove or insert the me"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 27969,
+    "byte_budget": 22,
+    "jp": "正しい作業ができません",
+    "en": " card, the operation  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 27999,
+    "byte_budget": 26,
+    "jp": "空きブロック数が足りません",
+    "en": "Not enough free blocks<br>"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 28032,
+    "byte_budget": 16,
+    "jp": "ブロック必要です",
+    "en": "cks needed      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 28056,
+    "byte_budget": 24,
+    "jp": "ファイルがみつかりません",
+    "en": "File not found          "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 28088,
+    "byte_budget": 20,
+    "jp": "ファイルが存在します",
+    "en": "File exists         "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 28116,
+    "byte_budget": 20,
+    "jp": "ファイルが開けません",
+    "en": "Cannot open file    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 28144,
+    "byte_budget": 20,
+    "jp": "ファイルが作れません",
+    "en": "Unable to create    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 28172,
+    "byte_budget": 26,
+    "jp": "ゲームファイルが存在します",
+    "en": "A VM-specific executable  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 28206,
+    "byte_budget": 24,
+    "jp": "ファイルが削除できません",
+    "en": "Unable to delete file   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 28238,
+    "byte_budget": 32,
+    "jp": "ファイルの書き込みに失敗しました",
+    "en": "Failed to write file            "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 28278,
+    "byte_budget": 22,
+    "jp": "ファイルが壊れています",
+    "en": "The file is corrupted "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 28308,
+    "byte_budget": 28,
+    "jp": "原因不明の問題が発生しました",
+    "en": "An unknown problem has      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 28344,
+    "byte_budget": 28,
+    "jp": "ファイルをセーブ中です・・・",
+    "en": "Saving files... <br><font co"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 28398,
+    "byte_budget": 32,
+    "jp": "メモリーカードを抜かないで下さい",
+    "en": "e memory card</font>            "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 28445,
+    "byte_budget": 28,
+    "jp": "ファイルをロード中です・・・",
+    "en": "Loading files... <br><font c"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 28499,
+    "byte_budget": 32,
+    "jp": "メモリーカードを抜かないで下さい",
+    "en": "ve memory card</font>           "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 28546,
+    "byte_budget": 28,
+    "jp": "ファイルをコピー中です・・・",
+    "en": "Copying files... <br><font c"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 28600,
+    "byte_budget": 32,
+    "jp": "メモリーカードを抜かないで下さい",
+    "en": "ve memory card</font>           "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 28647,
+    "byte_budget": 26,
+    "jp": "ファイルを削除中です・・・",
+    "en": "Deleting files... <br><fon"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 28699,
+    "byte_budget": 32,
+    "jp": "メモリーカードを抜かないで下さい",
+    "en": "emove memory card</font>        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 28746,
+    "byte_budget": 34,
+    "jp": "すべてのファイルをコピーしますか？",
+    "en": "Copy all files?                   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 28788,
+    "byte_budget": 22,
+    "jp": "すべてをコピーするには",
+    "en": "Not enough free blocks"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 28814,
+    "byte_budget": 30,
+    "jp": "空きブロック数が不足しています",
+    "en": "to copy everything<br>Copy as "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 28848,
+    "byte_budget": 32,
+    "jp": "できるところまでコピーしますか？",
+    "en": " as you can?                    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 28888,
+    "byte_budget": 36,
+    "jp": "コピー不可ファイルはコピーできません",
+    "en": "Cannot copy non-copyable files      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 28932,
+    "byte_budget": 32,
+    "jp": "すべてのファイルをコピーしました",
+    "en": "All files copied                "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 28994,
+    "byte_budget": 24,
+    "jp": "すべてのファイルをコピー",
+    "en": "Could not <br>copy all f"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 29022,
+    "byte_budget": 16,
+    "jp": "できませんでした",
+    "en": "</font>         "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 29053,
+    "byte_budget": 20,
+    "jp": "コピーが完了しました",
+    "en": "Copy complete       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 29103,
+    "byte_budget": 26,
+    "jp": "空きブロック数が足りません",
+    "en": "Not enough free blocks</fo"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 29144,
+    "byte_budget": 32,
+    "jp": "すべてのファイルを削除しますか？",
+    "en": "Delete all files?               "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 29184,
+    "byte_budget": 30,
+    "jp": "すべてのファイルを削除しました",
+    "en": "All files deleted             "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 29244,
+    "byte_budget": 38,
+    "jp": "すべてのファイルを削除できませんでした",
+    "en": "Could not delete all files</font>     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 29297,
+    "byte_budget": 12,
+    "jp": "削除しました",
+    "en": "Deleted     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 29317,
+    "byte_budget": 20,
+    "jp": "削除できませんでした",
+    "en": "Deletion failed     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 29345,
+    "byte_budget": 24,
+    "jp": "空きブロックがありません",
+    "en": "No free blocks          "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 29377,
+    "byte_budget": 34,
+    "jp": "すべてのファイルをロードしますか？",
+    "en": "Load all files?                   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 29419,
+    "byte_budget": 28,
+    "jp": "これ以上ファイルが作れません",
+    "en": "No more files can be created"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 29455,
+    "byte_budget": 30,
+    "jp": "セーブし直してよろしいですか？",
+    "en": "Would you like to save again? "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 29493,
+    "byte_budget": 26,
+    "jp": "新たに番号をつけなおします",
+    "en": "We'll renumber you.<br>Are"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 29523,
+    "byte_budget": 16,
+    "jp": "よろしいですか？",
+    "en": " sure?          "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 29547,
+    "byte_budget": 30,
+    "jp": "ゲームファイルがすでにあります",
+    "en": "Game files already exist<br>Wo"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 29581,
+    "byte_budget": 16,
+    "jp": "入れ替えますか？",
+    "en": "you like to     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 29627,
+    "byte_budget": 28,
+    "jp": "メモリーカードが壊れています",
+    "en": "Memory card is corrupted<br>"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 29659,
+    "byte_budget": 24,
+    "jp": "入れ替えられませんでした",
+    "en": "d not be replaced</font>"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 29698,
+    "byte_budget": 24,
+    "jp": "入れ替えできませんでした",
+    "en": "Could not replace       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 29752,
+    "byte_budget": 38,
+    "jp": "メモリーカードの整理ができませんでした",
+    "en": "Memory card could not be organized</fo"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 29805,
+    "byte_budget": 36,
+    "jp": "メモリーカードのセーブが完了しました",
+    "en": "Memory card saving completed        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 29849,
+    "byte_budget": 36,
+    "jp": "メモリーカードのセーブを中止しました",
+    "en": "Memory card save canceled           "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 29893,
+    "byte_budget": 26,
+    "jp": "メモリーカードのアイコンを",
+    "en": "Would you like to change t"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 29923,
+    "byte_budget": 28,
+    "jp": "ドリームパスポート２のものに",
+    "en": "emory card icon to that of D"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 29955,
+    "byte_budget": 26,
+    "jp": "書き換えてよろしいですか？",
+    "en": " Passport 3?              "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 29989,
+    "byte_budget": 36,
+    "jp": "メモリーカードのロードが完了しました",
+    "en": "Memory card loading completed       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30033,
+    "byte_budget": 40,
+    "jp": "メモリーカードのアイコンを新しくしました",
+    "en": "New memory card icon                    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30081,
+    "byte_budget": 28,
+    "jp": "すべてのファイルを削除します",
+    "en": "Are you sure you want to del"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30113,
+    "byte_budget": 22,
+    "jp": "本当によろしいですか？",
+    "en": "all your files? <br>Al"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30161,
+    "byte_budget": 34,
+    "jp": "ドリームパスポート以外のファイルも",
+    "en": "assport will also be deleted.</fon"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30199,
+    "byte_budget": 16,
+    "jp": "消えてしまいます",
+    "en": "                "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30230,
+    "byte_budget": 26,
+    "jp": "ファイルをロードしますか？",
+    "en": "Load file?                "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30264,
+    "byte_budget": 26,
+    "jp": "ファイルをコピーしますか？",
+    "en": "Copy file?                "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30298,
+    "byte_budget": 30,
+    "jp": "本当に削除してよろしいですか？",
+    "en": "Are you sure you want to delet"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30340,
+    "byte_budget": 32,
+    "jp": "続けてファイルをセーブしますか？",
+    "en": "Do you want to continue saving  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30380,
+    "byte_budget": 32,
+    "jp": "続けてファイルをロードしますか？",
+    "en": "Do you want to load more files? "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30420,
+    "byte_budget": 18,
+    "jp": "作業を続けますか？",
+    "en": "Do you want to    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30446,
+    "byte_budget": 22,
+    "jp": "本当によろしいですか？",
+    "en": "Are you sure?         "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30476,
+    "byte_budget": 18,
+    "jp": "ファイルをロードを",
+    "en": "File loading<br>in"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30498,
+    "byte_budget": 12,
+    "jp": "中断しました",
+    "en": "upted       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30518,
+    "byte_budget": 30,
+    "jp": "ファイルのロードを中止しました",
+    "en": "File loading stopped          "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30578,
+    "byte_budget": 32,
+    "jp": "セーブ先に別のドリームキャストで",
+    "en": "The save destination contains a "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30614,
+    "byte_budget": 28,
+    "jp": "セーブしたファイルがあります",
+    "en": " saved on another Dreamcast."
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30646,
+    "byte_budget": 30,
+    "jp": "セーブしなおすことはできません",
+    "en": "You cannot save again.</font> "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30713,
+    "byte_budget": 28,
+    "jp": "これは別のドリームキャストで",
+    "en": "This is a save file from ano"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30745,
+    "byte_budget": 22,
+    "jp": "セーブしたファイルです",
+    "en": " Dreamcast<br>and cann"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30771,
+    "byte_budget": 26,
+    "jp": "ロードすることはできません",
+    "en": "e loaded</font>           "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30812,
+    "byte_budget": 26,
+    "jp": "しばらくお待ち下さい・・・",
+    "en": "Please wait a moment...   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30846,
+    "byte_budget": 32,
+    "jp": "メモリーカードの操作を終わります",
+    "en": "Memory card operation completed "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30886,
+    "byte_budget": 30,
+    "jp": "コピー先メモリーカードの選択を",
+    "en": "Cancel destination memory card"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30920,
+    "byte_budget": 10,
+    "jp": "中止します",
+    "en": "ection<br>"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30938,
+    "byte_budget": 26,
+    "jp": "ファイルの選択を中止します",
+    "en": "Abort file selection      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 30972,
+    "byte_budget": 28,
+    "jp": "すべてのファイルを選択します",
+    "en": "Select all files            "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31008,
+    "byte_budget": 26,
+    "jp": "ファイルを選択してください",
+    "en": "Please select a file      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31050,
+    "byte_budget": 22,
+    "jp": "ファイルを削除してます",
+    "en": "Deleting files        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31080,
+    "byte_budget": 26,
+    "jp": "ファイルをコピーしています",
+    "en": "Copying files             "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31114,
+    "byte_budget": 24,
+    "jp": "ファイルを処理しています",
+    "en": "Processing file         "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31146,
+    "byte_budget": 30,
+    "jp": "ＶＭアイコンをセーブしています",
+    "en": "Saving VM Icon                "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31184,
+    "byte_budget": 30,
+    "jp": "続けて作業をすることができます",
+    "en": "You can continue working.     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31222,
+    "byte_budget": 30,
+    "jp": "メモリーカードを選んでください",
+    "en": "Select a memory card          "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31260,
+    "byte_budget": 26,
+    "jp": "コピー先のメモリーカードを",
+    "en": "Select the destination mem"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31290,
+    "byte_budget": 14,
+    "jp": "選んでください",
+    "en": "card<br>      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31312,
+    "byte_budget": 22,
+    "jp": "オプション設定のセーブ",
+    "en": "Save options settings "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31342,
+    "byte_budget": 22,
+    "jp": "メール【受信】のセーブ",
+    "en": "Save received mail    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31372,
+    "byte_budget": 22,
+    "jp": "メール【送信】のセーブ",
+    "en": "Save Email [Sent]     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31402,
+    "byte_budget": 22,
+    "jp": "メールアドレスのセーブ",
+    "en": "Save email address    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31432,
+    "byte_budget": 14,
+    "jp": "しおりのセーブ",
+    "en": "Save Bookmark "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31454,
+    "byte_budget": 24,
+    "jp": "チャットサーバーのセーブ",
+    "en": "Save chat server        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31490,
+    "byte_budget": 16,
+    "jp": "ファイルのセーブ",
+    "en": " HTML file      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31514,
+    "byte_budget": 20,
+    "jp": "画像ファイルのセーブ",
+    "en": "Save image file     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31542,
+    "byte_budget": 20,
+    "jp": "音声ファイルのセーブ",
+    "en": "Save audio file     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31570,
+    "byte_budget": 20,
+    "jp": "不明ファイルのセーブ",
+    "en": "Save missing files  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31598,
+    "byte_budget": 30,
+    "jp": "オプション設定ファイルのロード",
+    "en": "Load Option Setting File      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31636,
+    "byte_budget": 30,
+    "jp": "メールファイル【受信】のロード",
+    "en": "Load mail file [Received]     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31674,
+    "byte_budget": 30,
+    "jp": "メールファイル【送信】のロード",
+    "en": "Load mail file [Send]         "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31712,
+    "byte_budget": 30,
+    "jp": "メールアドレスファイルのロード",
+    "en": "Load email address file       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31750,
+    "byte_budget": 22,
+    "jp": "しおりファイルのロード",
+    "en": "Load bookmark file    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31780,
+    "byte_budget": 24,
+    "jp": "チャットサーバーのロード",
+    "en": "Loading chat server     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31816,
+    "byte_budget": 16,
+    "jp": "ファイルのロード",
+    "en": " HTML file      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31840,
+    "byte_budget": 20,
+    "jp": "画像ファイルのロード",
+    "en": "Load image file     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31868,
+    "byte_budget": 20,
+    "jp": "音声ファイルのロード",
+    "en": "Load audio file     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31896,
+    "byte_budget": 20,
+    "jp": "不明ファイルのロード",
+    "en": "Load missing file   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31924,
+    "byte_budget": 16,
+    "jp": "ファイルのセーブ",
+    "en": "Save file       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31948,
+    "byte_budget": 16,
+    "jp": "ファイルのロード",
+    "en": "Load file       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 31972,
+    "byte_budget": 20,
+    "jp": "添付ファイルのロード",
+    "en": "Load attachments    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 32000,
+    "byte_budget": 8,
+    "jp": "ファイル",
+    "en": "File Uti"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 32009,
+    "byte_budget": 14,
+    "jp": "ユーティリティ",
+    "en": "ities         "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 32031,
+    "byte_budget": 28,
+    "jp": "アップロードファイルのロード",
+    "en": "Load uploaded file          "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 32069,
+    "byte_budget": 30,
+    "jp": "おうちの人によんでもらってね！",
+    "en": "Be sure to view with a parent "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 32178,
+    "byte_budget": 40,
+    "jp": "最新の『利用規約』の内容を表示しています",
+    "en": "The latest version of the Terms of Use i"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 32248,
+    "byte_budget": 52,
+    "jp": "十字キーの上下で画面スクロールさせて確認してください",
+    "en": "or=\"#CC0000\">Please scroll the screen with the up an"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 32358,
+    "byte_budget": 18,
+    "jp": "次の画面に移ります",
+    "en": "Go to next screen "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 32407,
+    "byte_budget": 18,
+    "jp": "前の画面に移ります",
+    "en": "Go to previous    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 32456,
+    "byte_budget": 18,
+    "jp": "おつかれさまでした",
+    "en": "Thank you for your"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 32502,
+    "byte_budget": 20,
+    "jp": "ドリームパスポート２",
+    "en": "your internet journe"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 32529,
+    "byte_budget": 34,
+    "jp": "』でインターネットの旅をおたのしみ",
+    "en": "\"Dream Passport 3\"<br>            "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 32567,
+    "byte_budget": 8,
+    "jp": "ください",
+    "en": "        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 32672,
+    "byte_budget": 44,
+    "jp": "おつかれさまでした　今日はこれでおしまいです",
+    "en": "Did you have fun, munyu?<br>That's it for to"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 32720,
+    "byte_budget": 20,
+    "jp": "おやすみなさい・・・",
+    "en": " munyu<br>Goodnight,"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 32766,
+    "byte_budget": 44,
+    "jp": "　　　　　　　　　　【電源を切ってください】",
+    "en": "olor=\"#CC0000\"> [Please turn off the power]<"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 32862,
+    "byte_budget": 30,
+    "jp": "サーバーに接続できませんでした",
+    "en": "The server may be busy or down"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 32903,
+    "byte_budget": 30,
+    "jp": "サーバーが混雑またはダウンして",
+    "en": ">If you are using a SEGA ISP, "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 32937,
+    "byte_budget": 18,
+    "jp": "いるかもしれません",
+    "en": "se check your conn"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 32959,
+    "byte_budget": 38,
+    "jp": "セガプロバイダーの場合、『課金情報』を",
+    "en": "on plan in \"Connection Fee Information"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 33001,
+    "byte_budget": 20,
+    "jp": "確認してみてください",
+    "en": "                    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 33078,
+    "byte_budget": 28,
+    "jp": "ブラウザーの画面に移動します",
+    "en": "Go to your browser          "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 33147,
+    "byte_budget": 42,
+    "jp": "表示中のページのＵＲＬをしおりに追加します",
+    "en": "Add the URL of the current page to your   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 33238,
+    "byte_budget": 28,
+    "jp": "オプションの画面に移動します",
+    "en": "Go to options screen        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 33307,
+    "byte_budget": 38,
+    "jp": "ブラウズしたページを１ページ分戻ります",
+    "en": "Return to the page you were browsing  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 33390,
+    "byte_budget": 38,
+    "jp": "ブラウズしたページを１ページ分進みます",
+    "en": "Continue browsing page                "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 33473,
+    "byte_budget": 32,
+    "jp": "表示中のページを読み込み直します",
+    "en": "Reload the current page         "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 33554,
+    "byte_budget": 28,
+    "jp": "ページの読み込みを中止します",
+    "en": "Abort page loading          "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 33627,
+    "byte_budget": 36,
+    "jp": "表示中のページをズームして表示します",
+    "en": "Zoom the currently displayed page   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 33710,
+    "byte_budget": 32,
+    "jp": "メモリーカードの画面に移動します",
+    "en": "Go to the memory card screen    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 33791,
+    "byte_budget": 38,
+    "jp": "ブラウザーのスクロール単位を設定します",
+    "en": "Sets the browser scroll unit          "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 33878,
+    "byte_budget": 32,
+    "jp": "ＩＲＣサーバーの内容を編集します",
+    "en": "Edit the contents of the IRC    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 33955,
+    "byte_budget": 36,
+    "jp": "ＩＲＣサーバーの編集内容を決定します",
+    "en": "Determine the edit content for the  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 34040,
+    "byte_budget": 32,
+    "jp": "ＩＲＣサーバーの編集を中止します",
+    "en": "Stop editing IRC server         "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 34117,
+    "byte_budget": 28,
+    "jp": "サーバーのリストを取得します",
+    "en": "Get a list of servers       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 34196,
+    "byte_budget": 26,
+    "jp": "会議室のリストを取得します",
+    "en": "Get a list of conference  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 34269,
+    "byte_budget": 34,
+    "jp": "会議室メンバーのリストを取得します",
+    "en": "Get list of conference room       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 34358,
+    "byte_budget": 30,
+    "jp": "ニックネームの入力を中止します",
+    "en": "Stop entering nickname        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 34425,
+    "byte_budget": 26,
+    "jp": "入室キーの入力を中止します",
+    "en": "Cancel entering the entry "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 34486,
+    "byte_budget": 22,
+    "jp": "会議室名の入力をします",
+    "en": "Enter the conference  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 34533,
+    "byte_budget": 28,
+    "jp": "サーバーにメールを確認します",
+    "en": "Check the server for email  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 34604,
+    "byte_budget": 16,
+    "jp": "メールを読みます",
+    "en": "Read email      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 34663,
+    "byte_budget": 30,
+    "jp": "このメールをほかの人に送ります",
+    "en": "Send this email to someone    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 34732,
+    "byte_budget": 26,
+    "jp": "このメールの返事を書きます",
+    "en": "Write a reply to this     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 34797,
+    "byte_budget": 22,
+    "jp": "新しくメールを書きます",
+    "en": "Write a new email     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 34862,
+    "byte_budget": 30,
+    "jp": "メールをサーバーから削除します",
+    "en": "Delete the email from the     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 34933,
+    "byte_budget": 38,
+    "jp": "メールをメモリーカードからロードします",
+    "en": "Load email from memory card           "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 35045,
+    "byte_budget": 18,
+    "jp": "メールを送信します",
+    "en": "Send email        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 35102,
+    "byte_budget": 26,
+    "jp": "メールにあて先を追加します",
+    "en": "Add recipient to email    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 35171,
+    "byte_budget": 46,
+    "jp": "書きかけのメールをメモリーカードにセーブします",
+    "en": "Save the unfinished message to the memory     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 35292,
+    "byte_budget": 48,
+    "jp": "書きかけのメールをメモリーカードからロードします",
+    "en": "Loading the unfinished email from the memory    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 35415,
+    "byte_budget": 30,
+    "jp": "アドレス帳にあて先を追加します",
+    "en": "Add this address to your      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 35492,
+    "byte_budget": 28,
+    "jp": "メールにファイルを添付します",
+    "en": "Attach a file to the email  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 35563,
+    "byte_budget": 36,
+    "jp": "メールに添付したファイルを削除します",
+    "en": "Stop attaching files to emails      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 35652,
+    "byte_budget": 36,
+    "jp": "選択したアドレスをメールに追加します",
+    "en": "Add selected address to email       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 35735,
+    "byte_budget": 30,
+    "jp": "新しくアドレスを編集追加します",
+    "en": "Edit and add a new address    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 35814,
+    "byte_budget": 26,
+    "jp": "アドレスの内容を編集します",
+    "en": "Edit the contents of the  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 35889,
+    "byte_budget": 28,
+    "jp": "アドレスの順番を並べ替えます",
+    "en": "Sort the order of addresses "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 35966,
+    "byte_budget": 38,
+    "jp": "アドレスをメモリーカードにセーブします",
+    "en": "Save address to memory card           "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 36055,
+    "byte_budget": 40,
+    "jp": "アドレスをメモリーカードからロードします",
+    "en": "Load address from memory card           "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 36146,
+    "byte_budget": 22,
+    "jp": "アドレス帳を終了します",
+    "en": "Exit Address Book     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 36213,
+    "byte_budget": 30,
+    "jp": "アドレスの編集内容を決定します",
+    "en": "Determine the address edit    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 36296,
+    "byte_budget": 26,
+    "jp": "アドレスの編集を中止します",
+    "en": "Abort editing address     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 36375,
+    "byte_budget": 34,
+    "jp": "しおり指定のＵＲＬにジャンプします",
+    "en": "Jump to the URL specified in the  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 36454,
+    "byte_budget": 28,
+    "jp": "新しいしおりを編集追加します",
+    "en": "Edit and add a new bookmark "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 36527,
+    "byte_budget": 24,
+    "jp": "しおりの内容を編集します",
+    "en": "Edit bookmark contents  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 36596,
+    "byte_budget": 26,
+    "jp": "しおりの順番を並べ替えます",
+    "en": "Reorder bookmarks         "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 36667,
+    "byte_budget": 36,
+    "jp": "しおりをメモリーカードにセーブします",
+    "en": "Save bookmarks to memory card       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 36750,
+    "byte_budget": 16,
+    "jp": "設定を中止します",
+    "en": "Abort setup     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 36791,
+    "byte_budget": 10,
+    "jp": "中止します",
+    "en": "Cancel    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 36844,
+    "byte_budget": 16,
+    "jp": "設定を決定します",
+    "en": "Settings        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 36885,
+    "byte_budget": 10,
+    "jp": "決定します",
+    "en": "Confirmed "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 36938,
+    "byte_budget": 40,
+    "jp": "メモリーカードからファイルをロードします",
+    "en": "Load a file from the memory card        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 37027,
+    "byte_budget": 38,
+    "jp": "メモリーカードにファイルをセーブします",
+    "en": "Save file to memory card              "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 37114,
+    "byte_budget": 42,
+    "jp": "Ｄｒｉｃａｓのチャットサーバーに接続します",
+    "en": "Connecting to DRICAS chat server <br><br><"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 37186,
+    "byte_budget": 32,
+    "jp": "～マナーを守ってお使いください～",
+    "en": "e mindful of etiquette*</font>  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 37299,
+    "byte_budget": 40,
+    "jp": "一般のＩＲＣチャットサーバーに接続します",
+    "en": "Connecting to a general IRC chat server."
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 37369,
+    "byte_budget": 32,
+    "jp": "～マナーを守ってお使いください～",
+    "en": ">*Please be considerate when    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 37480,
+    "byte_budget": 38,
+    "jp": "しおりをメモリーカードからロードします",
+    "en": "Load bookmarks from memory card       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 37565,
+    "byte_budget": 18,
+    "jp": "しおりを終了します",
+    "en": "Exit Bookmark     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 37624,
+    "byte_budget": 28,
+    "jp": "しおりの編集内容を決定します",
+    "en": "Decide the bookmark edits   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 37697,
+    "byte_budget": 22,
+    "jp": "しおり編集を中止します",
+    "en": "Cancel bookmark       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 37764,
+    "byte_budget": 54,
+    "jp": "セガ・プロバイダーのアクセスポイント番号は次の通りです",
+    "en": "You can change the connection plan.<br>When you first "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 37889,
+    "byte_budget": 50,
+    "jp": "セガ・プロバイダーのネットワーク情報は次の通りです",
+    "en": "The network information for the SEGA ISP is as fol"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 37965,
+    "byte_budget": 38,
+    "jp": "【必ずメモして大切に保存してください】",
+    "en": "0000\">[Please make a note of it and ke"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 38081,
+    "byte_budget": 42,
+    "jp": "Ｆ１からＦ６までのキーの文字列を登録します",
+    "en": "Register the key strings F1 to F6.        "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 38168,
+    "byte_budget": 44,
+    "jp": "Ｆ７からＦ１２までのキーの文字列を登録します",
+    "en": "Register the key strings from F7 to F12.    "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 38257,
+    "byte_budget": 32,
+    "jp": "チャットに使用するニックネームは",
+    "en": "Please enter your chat nickname "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 38293,
+    "byte_budget": 26,
+    "jp": "半角文字で入力してください",
+    "en": "alf-width characters.     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 38352,
+    "byte_budget": 14,
+    "jp": "同じアドレスが",
+    "en": "Same address a"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 38370,
+    "byte_budget": 14,
+    "jp": "すでにあります",
+    "en": "dy exists     "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 38423,
+    "byte_budget": 12,
+    "jp": "同じＵＲＬが",
+    "en": "The same URL"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 38439,
+    "byte_budget": 14,
+    "jp": "すでにあります",
+    "en": "eady exists   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 38488,
+    "byte_budget": 24,
+    "jp": "同じチャットサーバー名が",
+    "en": "A chat server with the s"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 38516,
+    "byte_budget": 14,
+    "jp": "すでにあります",
+    "en": "name already  "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 38567,
+    "byte_budget": 20,
+    "jp": "リストから削除します",
+    "en": "Remove from list<br>"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 38591,
+    "byte_budget": 16,
+    "jp": "よろしいですか？",
+    "en": "you sure?       "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 38684,
+    "byte_budget": 20,
+    "jp": "サーバーより強制的に",
+    "en": "You have been forcib"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 38708,
+    "byte_budget": 14,
+    "jp": "切断されました",
+    "en": "isconnected   "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 38789,
+    "byte_budget": 26,
+    "jp": "ニックネームに使用できない",
+    "en": "Your nickname contains inv"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 38819,
+    "byte_budget": 14,
+    "jp": "記号があります",
+    "en": " symbols. Plea"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 38837,
+    "byte_budget": 20,
+    "jp": "入力し直してください",
+    "en": "ry again.           "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 38918,
+    "byte_budget": 18,
+    "jp": "チャットサーバーに",
+    "en": "Could not connect "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 38940,
+    "byte_budget": 20,
+    "jp": "接続できませんでした",
+    "en": "hat server<br>      "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 39009,
+    "byte_budget": 12,
+    "jp": "会議室に入室",
+    "en": "Could not en"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 39025,
+    "byte_budget": 16,
+    "jp": "できませんでした",
+    "en": "conference room "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 39132,
+    "byte_budget": 12,
+    "jp": "メールの絵を",
+    "en": "display pict"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 39148,
+    "byte_budget": 20,
+    "jp": "表示できませんでした",
+    "en": "in DreamFlyer email "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 39179,
+    "byte_budget": 32,
+    "jp": "データが正しくないか大きすぎます",
+    "en": "<br>Data is invalid or too large"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 39272,
+    "byte_budget": 30,
+    "jp": "これ以上リストに追加できません",
+    "en": "You can't add any more to the "
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 39313,
+    "byte_budget": 42,
+    "jp": "【Ｘ＋Ａボタンでリストを整理してください】",
+    "en": "<br>[Please use X+A to organize the list]<"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 39410,
+    "byte_budget": 30,
+    "jp": "サーバーに接続できませんでした",
+    "en": "<font color=#CC0000>Your passw"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 39451,
+    "byte_budget": 44,
+    "jp": "パスワードが違うかサーバーが混雑またはダウン",
+    "en": "incorrect or the server may be busy or down."
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 39499,
+    "byte_budget": 22,
+    "jp": "しているかもしれません",
+    "en": "If you are using a SEG"
+  },
+  {
+    "source_file": "DPETC/MESSAGE.INI",
+    "byte_offset": 39525,
+    "byte_budget": 56,
+    "jp": "セガプロバイダーの場合『課金情報』を確認してみてください",
+    "en": "P, please check your connection plan in the \"Connection "
   }
 ]

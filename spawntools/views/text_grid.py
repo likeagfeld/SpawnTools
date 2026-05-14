@@ -21,7 +21,7 @@ from ..core import encoding as enc_core
 from ..core import pointers as ptr_core
 
 
-SAFE_SCAN_FILES = ('1ST_READ.BIN',)
+SAFE_SCAN_FILES = ('1ST_READ.BIN',)   # legacy fallback when no preset is loaded
 
 
 class TextGridTab(ttk.Frame):
@@ -36,7 +36,8 @@ class TextGridTab(ttk.Frame):
     def _build(self):
         # ---------- top bar ----------
         top = ttk.Frame(self); top.pack(fill='x', pady=(0, 6))
-        ttk.Button(top, text='Scan 1ST_READ.BIN', command=self._on_scan).pack(side='left', padx=2)
+        self.scan_btn = ttk.Button(top, text='Scan for JP', command=self._on_scan)
+        self.scan_btn.pack(side='left', padx=2)
         ttk.Button(top, text='Apply ALL done → patches/', command=self._on_commit,
                    style='Accent.TButton').pack(side='left', padx=2)
         ttk.Separator(top, orient='vertical').pack(side='left', fill='y', padx=8)
@@ -127,13 +128,28 @@ class TextGridTab(ttk.Frame):
         if not self.db or not self.app.disc:
             messagebox.showinfo('Open disc first', 'Open a disc in tab 1 first.', parent=self.app)
             return
-        # Run on a thread; the scan is fast but file I/O can vary
+        # Use the loaded preset's scan_targets if any; else fall back to the
+        # legacy SAFE_SCAN_FILES tuple. This is what makes the same tool work
+        # for SF III's PLAYER/PL*.BIN, Taisen's RESOURCE.BIN, etc.
+        scan_files = SAFE_SCAN_FILES
+        preset = getattr(self.app.tab_textures, 'preset', None)
+        if preset is not None and getattr(preset, 'scan_targets', None):
+            scan_files = tuple(preset.scan_targets)
+            self.app.log_workspace(
+                f'using preset scan_targets ({preset.slug}): {", ".join(scan_files)}'
+            )
+
         def runner():
             n_total = 0
-            for fname in SAFE_SCAN_FILES:
+            for fname in scan_files:
                 p = self.app.disc.patches_dir / fname
-                if not p.is_file(): continue
-                if fname in strings_core.DENY_LIST: continue
+                if not p.is_file():
+                    self.app.log_workspace(f'  {fname}: SKIP (not present in patches/)', tag='warn')
+                    continue
+                # Per-game deny list (e.g. 2_DP.BIN IME dict)
+                base = Path(fname).name.upper()
+                deny = (getattr(preset, 'deny_list', None) or strings_core.DENY_LIST)
+                if base in deny: continue
                 self.app.log_workspace(f'scanning {fname}…')
                 n = self.db.scan_file(p, fname)
                 self.app.log_workspace(f'  {fname}: {n} new strings')

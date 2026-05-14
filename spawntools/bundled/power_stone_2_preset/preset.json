@@ -3,7 +3,8 @@
   "slug": "power_stone_2",
   "display_name": "Power Stone 2",
   "tier": "done",
-  "detect_label": "POWER STONE",
+  "product_code": "T1218M",
+  "detect_label": "POWER STONE 2",
   "notes_kind": "std",
   "deny_list": [
     "2_DP.BIN",
@@ -12,7 +13,8 @@
     "MEMDEF.BIN"
   ],
   "scan_targets": [
-    "1ST_READ.BIN"
+    "1ST_READ.BIN",
+    "DM04_CONNECT.BIN"
   ],
   "modified_files": [
     {
@@ -20,192 +22,279 @@
       "baseline_md5": "06904884d86747af7a75a326ab731855",
       "patched_md5": "f4fc1f140202d8ba4b391b2bd970cfe7",
       "size": 2971385,
-      "patched_size": 2971385
+      "patched_size": 2971385,
+      "kind": "code",
+      "jp_runs": 4582,
+      "pvrt_count": 0
     },
     {
       "rel": "2_DP.BIN",
       "baseline_md5": "8a11f296da7ed3d0fdec00ca340e06b9",
       "patched_md5": "fbf6029e6b9a26578eaf820561f7e9c1",
       "size": 3623364,
-      "patched_size": 3623364
+      "patched_size": 3623364,
+      "kind": "code",
+      "jp_runs": 10020,
+      "pvrt_count": 10
     },
     {
       "rel": "CMN_MODEL_VQ_BIN.PAC",
       "baseline_md5": "1fd2c9d69acee2f490aeb37e7282d225",
       "patched_md5": "5dd3047e9b5f267aad4587135447bbe7",
       "size": 359064,
-      "patched_size": 359064
+      "patched_size": 359064,
+      "kind": "archive",
+      "jp_runs": 1756,
+      "pvrt_count": 0
     },
     {
       "rel": "CMN_MOT.BIN",
       "baseline_md5": "7801db4785c71fc7809034cb8fb3120a",
       "patched_md5": "5b56d6fc7028c0f9ae2011e7bb26596a",
       "size": 866192,
-      "patched_size": 866192
+      "patched_size": 866192,
+      "kind": "code",
+      "jp_runs": 334,
+      "pvrt_count": 0
     },
     {
       "rel": "DM04_CONNECT.BIN",
       "baseline_md5": "cb4524fe488c921527d75bf3e8793e4a",
       "patched_md5": "a4abea3a0f0d8660190fd609cc8f565f",
       "size": 1998784,
-      "patched_size": 1998784
+      "patched_size": 1998784,
+      "kind": "code",
+      "jp_runs": 8391,
+      "pvrt_count": 0
     },
     {
       "rel": "WANG_1P.BIN",
       "baseline_md5": "a4e3613ec5581635aa7267ebe61701f1",
       "patched_md5": "92486f6ca68c312feb7fc4849d3e5eb7",
       "size": 178060,
-      "patched_size": 178060
+      "patched_size": 178060,
+      "kind": "text",
+      "jp_runs": 54,
+      "pvrt_count": 0
     },
     {
       "rel": "WANG_1PB.BIN",
       "baseline_md5": "3e6836a06129153a0a234245ecfccd77",
       "patched_md5": "63b651a647ccee45b16786c9deec8adb",
       "size": 178664,
-      "patched_size": 178664
+      "patched_size": 178664,
+      "kind": "text",
+      "jp_runs": 57,
+      "pvrt_count": 0
     },
     {
       "rel": "WANG_2P.BIN",
       "baseline_md5": "b25801b05c11b7b115b496ecedd18807",
       "patched_md5": "4a3b2b72746d0d9d57e9d6c7d9c7ead6",
       "size": 180048,
-      "patched_size": 180048
+      "patched_size": 180048,
+      "kind": "text",
+      "jp_runs": 55,
+      "pvrt_count": 0
     },
     {
       "rel": "WANG_2PB.BIN",
       "baseline_md5": "22fceb818228fb4e20bc107778ea7f03",
       "patched_md5": "c42cbb3fe75f7c6ac88d356d729199e3",
       "size": 179420,
-      "patched_size": 179420
+      "patched_size": 179420,
+      "kind": "text",
+      "jp_runs": 56,
+      "pvrt_count": 0
     },
     {
       "rel": "WANG_3P.BIN",
       "baseline_md5": "95f93712e47dd9174ac27c9f7b578a50",
       "patched_md5": "b410593e03c0b7e94709ced07f489039",
       "size": 179704,
-      "patched_size": 179704
+      "patched_size": 179704,
+      "kind": "text",
+      "jp_runs": 54,
+      "pvrt_count": 0
     },
     {
       "rel": "WANG_3PB.BIN",
       "baseline_md5": "3bd6f65facbcb49979fa4194f69da547",
       "patched_md5": "f8486e7a8ddef08dd288a40b88c72963",
       "size": 179056,
-      "patched_size": 179056
+      "patched_size": 179056,
+      "kind": "text",
+      "jp_runs": 54,
+      "pvrt_count": 0
     },
     {
       "rel": "WANG_4P.BIN",
       "baseline_md5": "470ace7c2d2920a2ccf5ac78d761e4d9",
       "patched_md5": "6a4b6168c7327f225992d308f077b5c4",
       "size": 179920,
-      "patched_size": 179920
+      "patched_size": 179920,
+      "kind": "text",
+      "jp_runs": 55,
+      "pvrt_count": 0
     },
     {
       "rel": "WANG_4PB.BIN",
       "baseline_md5": "9145895241f93dbe1e0548ab72e427c6",
       "patched_md5": "2d7b40c348b37b2ad9fe0929ddd03082",
       "size": 176940,
-      "patched_size": 176940
+      "patched_size": 176940,
+      "kind": "text",
+      "jp_runs": 53,
+      "pvrt_count": 0
     },
     {
       "rel": "WANG_MP.BIN",
       "baseline_md5": "d83d3d2f6ae9f088f35769bc17987ec0",
       "patched_md5": "2240f5c9df87eb7b6f3cd93ce8accaca",
       "size": 240208,
-      "patched_size": 240208
+      "patched_size": 240208,
+      "kind": "text",
+      "jp_runs": 76,
+      "pvrt_count": 0
     },
     {
       "rel": "DPETC/MESSAGE.INI",
       "baseline_md5": "0c2479afbcea185ca62fe648c0e0a33a",
       "patched_md5": "f9a839702b96b33991491e7b0143d093",
       "size": 39631,
-      "patched_size": 39631
+      "patched_size": 39631,
+      "kind": "text",
+      "jp_runs": 1033,
+      "pvrt_count": 0
     },
     {
       "rel": "DPTEX/C_M_S.PVR",
       "baseline_md5": "da5286d7590560563031dfd829f104f5",
       "patched_md5": "37b0bc064ab928d8d9fb82787bf4d55f",
       "size": 524320,
-      "patched_size": 524320
+      "patched_size": 524320,
+      "kind": "texture",
+      "jp_runs": 245,
+      "pvrt_count": 2
     },
     {
       "rel": "DPTEX/JYOUCYU0.PVR",
       "baseline_md5": "7407300991dd8a370429ebb0eb97baeb",
       "patched_md5": "759c480017044c6819e29bd5b0951a77",
       "size": 524320,
-      "patched_size": 524320
+      "patched_size": 524320,
+      "kind": "texture",
+      "jp_runs": 2784,
+      "pvrt_count": 2
     },
     {
       "rel": "DPTEX/OPTION01.PVR",
       "baseline_md5": "1075349fd747ed07e55e8e81a27a5479",
       "patched_md5": "204447323c050bd5370c785bde5c4a3d",
       "size": 67616,
-      "patched_size": 67616
+      "patched_size": 67616,
+      "kind": "texture",
+      "jp_runs": 45,
+      "pvrt_count": 2
     },
     {
       "rel": "DPTEX/OPTION02.PVR",
       "baseline_md5": "943c564d53c942813c0d185910161f0c",
       "patched_md5": "a6b747fab9908f71801fe7452cacc173",
       "size": 67616,
-      "patched_size": 67616
+      "patched_size": 67616,
+      "kind": "texture",
+      "jp_runs": 78,
+      "pvrt_count": 2
     },
     {
       "rel": "DPTEX/SU_ICO2.PVR",
       "baseline_md5": "48f423092f40b49dbe3365a4a2787d87",
       "patched_md5": "325956e2216f7c107abb746f55ec1473",
       "size": 524320,
-      "patched_size": 524320
+      "patched_size": 524320,
+      "kind": "texture",
+      "jp_runs": 1216,
+      "pvrt_count": 2
     },
     {
       "rel": "DPTEX/SU_ICON.PVR",
       "baseline_md5": "5f0bc5ccf083f1618c2a1dcae792dadd",
       "patched_md5": "cfd9e79523fdda5a6f68d20a669608dc",
       "size": 524320,
-      "patched_size": 524320
+      "patched_size": 524320,
+      "kind": "texture",
+      "jp_runs": 6090,
+      "pvrt_count": 2
     },
     {
       "rel": "DPTEX/TAG_SU.PVR",
       "baseline_md5": "8ae08fd1d463cf06b16209150530bd3a",
       "patched_md5": "a0a26474af28c20f6c681ac298604a8d",
       "size": 67616,
-      "patched_size": 67616
+      "patched_size": 67616,
+      "kind": "texture",
+      "jp_runs": 71,
+      "pvrt_count": 2
     },
     {
       "rel": "DPTEX/VMSPART2.PVR",
       "baseline_md5": "c2220a9e6f14c22b72f4dd5a5b84502f",
       "patched_md5": "e89262629bd86c410ec6dae92f3ccd50",
       "size": 524320,
-      "patched_size": 524320
+      "patched_size": 524320,
+      "kind": "texture",
+      "jp_runs": 2156,
+      "pvrt_count": 2
     },
     {
       "rel": "DPTEX/VMSPARTS.PVR",
       "baseline_md5": "21b8db52cebff7917bf4a4cfb4f3740b",
       "patched_md5": "45d6f4ac24001ce16fbbacffdd9d1977",
       "size": 524320,
-      "patched_size": 524320
+      "patched_size": 524320,
+      "kind": "texture",
+      "jp_runs": 3191,
+      "pvrt_count": 2
     },
     {
       "rel": "DPTEX/WARNING0.PVR",
       "baseline_md5": "cacb01fca108e8d871395e2bdd8907c1",
       "patched_md5": "4125955b5645884ad6a86d6295ec8abf",
       "size": 524320,
-      "patched_size": 524320
+      "patched_size": 524320,
+      "kind": "texture",
+      "jp_runs": 2649,
+      "pvrt_count": 2
     },
     {
       "rel": "DPTEX/WARNING1.PVR",
       "baseline_md5": "c7d9aa9314afca2e29ba3c15ac64d0fe",
       "patched_md5": "3b7fc6f018038b21821a635bf318c8f8",
       "size": 131104,
-      "patched_size": 131104
+      "patched_size": 131104,
+      "kind": "texture",
+      "jp_runs": 77,
+      "pvrt_count": 2
     },
     {
       "rel": "DPTEX/WARNING2.PVR",
       "baseline_md5": "bfb720721a75417851d1a2a30119bbe7",
       "patched_md5": "ad8a1f032ae1893722457503bfc29d7d",
       "size": 131104,
-      "patched_size": 131104
+      "patched_size": 131104,
+      "kind": "texture",
+      "jp_runs": 27,
+      "pvrt_count": 2
     }
   ],
   "modified_count": 27,
+  "modified_by_kind": {
+    "code": 4,
+    "archive": 1,
+    "text": 10,
+    "texture": 12
+  },
   "identical_count": 0,
   "translations_count": 130,
   "dict_entries": 796,

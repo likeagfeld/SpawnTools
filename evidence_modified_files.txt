@@ -1,0 +1,269 @@
+
+=== Capcom vs. SNK - Millennium Fight 2000 Pro (JP) ===
+  Modified files with JP in baseline (8):
+     8825 runs    3,480,282  2_DP.BIN
+     3689 runs      619,862  ST07TEX.BIN
+     3629 runs      617,880  EST07TEX.BIN
+     3553 runs      657,166  ST0ATEX.BIN
+     3464 runs      652,322  EST0ATEX.BIN
+     3139 runs    2,359,937  1ST_READ.BIN
+     1855 runs       71,413  DPETC/MESSAGE.INI
+     1081 runs      724,544  PL1EPAK.BIN
+  Modified files with NO JP (texture/binary work) (25):
+        0 runs    3,960,832  ADX_0210.BIN
+        0 runs    6,010,880  ADX_0401.BIN
+        0 runs    3,575,808  ADX_0600.BIN
+        0 runs    4,757,504  ADX_0601.BIN
+        0 runs    4,538,368  ADX_0800.BIN
+        0 runs    6,582,272  ADX_0901.BIN
+        0 runs    3,477,504  ADX_1200.BIN
+        0 runs    2,000,896  ADX_1500.BIN
+
+=== Heavy Metal - Geomatrix (JP) ===
+  Modified files with JP in baseline (7):
+     8825 runs    3,480,282  2_DP.BIN
+     2504 runs      917,648  LOBBY37.TEX
+     2471 runs      727,184  OPT_01.TEX
+     2389 runs      956,672  LOBBY38.TEX
+     1933 runs    1,229,313  1ST_READ.BIN
+     1854 runs       71,329  DPETC/MESSAGE.INI
+     1372 runs      524,384  LOBBY40.TEX
+  Modified files with NO JP (texture/binary work) (21):
+        0 runs      524,336  CHAOS_MODE.TEX
+        0 runs       42,864  DEMO.BIN
+        0 runs      153,680  ENDCHR01.TEX
+        0 runs      153,680  ENDCHR02.TEX
+        0 runs      153,680  ENDCHR03.TEX
+        0 runs      153,680  ENDCHR04.TEX
+        0 runs      153,680  ENDCHR05.TEX
+        0 runs      153,680  ENDCHR06.TEX
+
+=== JoJo_s Bizarre Adventure[ (JP) ===
+  Modified files with JP in baseline (3):
+    15697 runs    6,076,784  97_DASH.BIN
+     8635 runs    3,508,634  2_DP.BIN
+     7377 runs    4,067,432  95_JOJO.BIN
+  Modified files with NO JP (texture/binary work) (20):
+        0 runs       51,500  91_MENU.BIN
+        0 runs      935,468  93_LOBBY.BIN
+        0 runs       65,568  DASH/ALLESSY.PVR
+        0 runs       65,568  DASH/FUKIDASHI.PVR
+        0 runs       32,800  DASH/MINI_LOGO.PVR
+        0 runs      675,977  DASH/PL0F_TRN.BIN
+        0 runs    1,044,610  DASH/PL10_TRN.BIN
+        0 runs      534,317  DASH/PL16_TRN.BIN
+
+=== Marvel vs. Capcom 2 - New Age of Heroes (JP) ===
+  Modified files with JP in baseline (10):
+    10020 runs    3,623,364  2_DP.BIN
+     6090 runs      524,320  DPTEX/SU_ICON.PVR
+     3191 runs      524,320  DPTEX/VMSPARTS.PVR
+     2784 runs      524,320  DPTEX/JYOUCYU0.PVR
+     2649 runs      524,320  DPTEX/WARNING0.PVR
+     2330 runs    1,969,977  1ST_READ.BIN
+     1927 runs    1,178,688  PL31_DAT.BIN
+     1791 runs    1,196,800  PL04_DAT.BIN
+     1510 runs      374,784  EFKYTEX.BIN
+     1288 runs    1,139,360  PL17_DAT.BIN
+  Modified files with NO JP (texture/binary work) (37):
+        0 runs    1,736,514  ADX_OPEN.BIN
+        0 runs    3,041,280  ADX_S000.BIN
+        0 runs    4,558,848  ADX_S010.BIN
+        0 runs    3,606,528  ADX_S030.BIN
+        0 runs    1,288,192  ADX_S080.BIN
+        0 runs    4,890,624  ADX_S0B0.BIN
+        0 runs      557,408  PL00_DAT.BIN
+        0 runs      926,400  PL01_DAT.BIN
+
+=== Net de Tennis (JP) ===
+  Modified files with JP in baseline (7):
+     8635 runs    3,508,634  2_DP.BIN
+     2790 runs    1,717,937  1ST_READ.BIN
+     1850 runs       71,040  DPETC/MESSAGE.INI
+      544 runs       96,934  TITLE.SLW
+      181 runs      262,176  DPTEX/JYOUCYU0.PVR
+      153 runs      213,748  NETWK_B.SLW
+      147 runs       81,968  SOFTKEY.SLW
+  Modified files with NO JP (texture/binary work) (7):
+        0 runs   43,192,320  ADX.AFS
+        0 runs       12,298  LICENSE.SLW
+        0 runs       29,122  NETWK_0.SLW
+        0 runs      158,300  NETWK_A.SLW
+        0 runs       50,888  OPTION1.SLW
+        0 runs       49,146  OPTION2.SLW
+        0 runs      148,518  SELECT.SLW
+
+=== Power Stone 2 (JP) ===
+  Modified files with JP in baseline (10):
+    10020 runs    3,623,364  2_DP.BIN
+     8391 runs    1,998,784  DM04_CONNECT.BIN
+     6090 runs      524,320  DPTEX/SU_ICON.PVR
+     4582 runs    2,971,385  1ST_READ.BIN
+     3191 runs      524,320  DPTEX/VMSPARTS.PVR
+     2784 runs      524,320  DPTEX/JYOUCYU0.PVR
+     2649 runs      524,320  DPTEX/WARNING0.PVR
+     2156 runs      524,320  DPTEX/VMSPART2.PVR
+     1756 runs      359,064  CMN_MODEL_VQ_BIN.PAC
+     1216 runs      524,320  DPTEX/SU_ICO2.PVR
+  Modified files with NO JP (texture/binary work) (17):
+        0 runs      866,192  CMN_MOT.BIN
+        0 runs      178,060  WANG_1P.BIN
+        0 runs      178,664  WANG_1PB.BIN
+        0 runs      180,048  WANG_2P.BIN
+        0 runs      179,420  WANG_2PB.BIN
+        0 runs      179,704  WANG_3P.BIN
+        0 runs      179,056  WANG_3PB.BIN
+        0 runs      179,920  WANG_4P.BIN
+
+=== Project Justice (JP) ===
+  Modified files with JP in baseline (4):
+     8825 runs    3,480,282  2_DP.BIN
+     4599 runs    3,946,129  1ST_READ.BIN
+     1853 runs       71,111  DPETC/MESSAGE.INI
+      181 runs      262,176  DPTEX/JYOUCYU0.PVR
+  Modified files with NO JP (texture/binary work) (12):
+        0 runs   12,181,504  MGDATA.AFS
+        0 runs    6,576,128  ODEMO.AFS
+        0 runs    9,969,664  SDEMO.AFS
+        0 runs  471,859,200  UDCSDM.AFS
+        0 runs    2,367,488  VSDEMO.AFS
+        0 runs   12,064,768  WGAME.AFS
+        0 runs    6,287,360  WMENU.AFS
+        0 runs   12,365,824  WPLMOT.AFS
+
+=== Spawn - In the Demon's Hand (JP) ===
+  Modified files with JP in baseline (2):
+    10431 runs    3,382,544  MEMDEF.BIN
+     8635 runs    3,508,634  2_DP.BIN
+  Modified files with NO JP (texture/binary work) (25):
+        0 runs    1,220,196  1ST_READ.BIN
+        0 runs    1,460,352  CFGJP.TEX
+        0 runs    1,460,352  CFGUS.TEX
+        0 runs      135,376  COCKPITJP.TEX
+        0 runs   93,710,472  GAME.BIN
+        0 runs      662,992  GGAM.BIN
+        0 runs      917,648  LOBBY37.TEX
+        0 runs      956,672  LOBBY38.TEX
+
+=== Street Fighter III 3rd Strike - Fight for the Future (JP) ===
+  Modified files with JP in baseline (12):
+    10020 runs    3,623,364  2_DP.BIN
+     6148 runs    3,792,908  PLAYER/PL18.BIN
+     5666 runs   14,297,664  1ST_READ.BIN
+     4012 runs    1,830,216  PLAYER/PL20.BIN
+     3662 runs    2,770,372  PLAYER/PL17.BIN
+     3659 runs    2,241,340  PLAYER/PL09.BIN
+     3541 runs    2,345,792  PLAYER/PL19.BIN
+     2410 runs    1,649,368  PLAYER/PL11.BIN
+     2340 runs    1,630,652  PLAYER/PL02.BIN
+     1759 runs      919,030  SELECT/NET.PZZ
+     1434 runs    1,024,980  OPENING/BG20.BIN
+     1033 runs       39,631  DPETC/MESSAGE.INI
+  Modified files with NO JP (texture/binary work) (9):
+        0 runs       67,616  DPTEX/OPTION02.PVR
+        0 runs       67,616  DPTEX/TAG_SU.PVR
+        0 runs       61,920  ENDING/BG39.BIN
+        0 runs      171,958  ENDING/ENDING01.PZZ
+        0 runs       44,174  OPENING/TITLEDC.PZZ
+        0 runs      163,334  OPENING/WARNING.PZZ
+        0 runs       47,836  STAGE/BG00.BIN
+        0 runs       62,416  STAGE/BG11.BIN
+
+=== Street Fighter Zero 3  for Matching Service (JP) ===
+  Modified files with JP in baseline (0):
+  Modified files with NO JP (texture/binary work) (143):
+        0 runs    1,778,144  1ST_READ.BIN
+        0 runs    3,506,362  2_DP.BIN
+        0 runs      147,456  BD00.PAC
+        0 runs      135,168  BD01.PAC
+        0 runs      135,168  BD02.PAC
+        0 runs      135,168  BD03.PAC
+        0 runs      151,552  BD04.PAC
+        0 runs      135,168  BD05.PAC
+
+=== Super Puzzle Fighter IIX for Matching Service (JP) ===
+  Modified files with JP in baseline (3):
+     8825 runs    3,480,282  2_DP.BIN
+     2033 runs    4,504,084  1ST_READ.BIN
+     1855 runs       71,408  DPETC/MESSAGE.INI
+  Modified files with NO JP (texture/binary work) (16):
+        0 runs      131,104  A1.PVR
+        0 runs      524,320  A2.PVR
+        0 runs      131,104  A3.PVR
+        0 runs      131,104  A4.PVR
+        0 runs      131,104  B1.PVR
+        0 runs      131,104  B2.PVR
+        0 runs      131,104  B3.PVR
+        0 runs      131,104  B4.PVR
+
+=== Super Street Fighter IIX for Matching Service - Grand Master Challenge (JP) ===
+  Modified files with JP in baseline (12):
+     8620 runs    3,506,362  2_DP.BIN
+     4522 runs    5,184,244  1ST_READ.BIN
+     1855 runs       71,408  DPETC/MESSAGE.INI
+      599 runs      131,104  B1.PVR
+      525 runs      524,320  A2.PVR
+      389 runs      131,104  B8.PVR
+      369 runs      131,104  COMN.PVR
+      283 runs      131,104  A1.PVR
+      259 runs      131,104  B3.PVR
+      167 runs      131,104  B6.PVR
+      116 runs      131,104  B5.PVR
+       95 runs      131,104  A3.PVR
+  Modified files with NO JP (texture/binary work) (3):
+        0 runs      131,104  A4.PVR
+        0 runs      131,104  B2.PVR
+        0 runs    1,249,280  S24RM04.BIN
+
+=== Taisen Net Gimmick - Capcom & Psikyo All Stars (JP) ===
+  Modified files with JP in baseline (2):
+    15903 runs    8,933,376  RESOURCE.BIN
+     8551 runs    3,601,882  2_DP.BIN
+  Modified files with NO JP (texture/binary work) (33):
+        0 runs    1,689,416  1ST_READ.BIN
+        0 runs  218,075,136  ADX_BGM.AFS
+        0 runs      435,200  ASK.BIN
+        0 runs    2,662,400  GP01.CMP
+        0 runs      524,304  KOUZA01.PVR
+        0 runs      524,304  KOUZA02.PVR
+        0 runs      524,304  KOUZA03.PVR
+        0 runs      524,304  KOUZA04.PVR
+
+=== Tech Romancer for Matching Service (JP) ===
+  Modified files with JP in baseline (4):
+    26091 runs    5,305,196  DEMO/OP_DEMO.PZZ
+    10056 runs    6,729,728  DEMO/TTD_ILL_O.PZZ
+     9997 runs    3,797,604  1ST_READ.BIN
+     8634 runs    3,506,074  2_DP.BIN
+  Modified files with NO JP (texture/binary work) (42):
+        0 runs        9,918  DEMO/HC_TIT00.PVZ
+        0 runs        9,260  DEMO/HC_TIT01.PVZ
+        0 runs        8,662  DEMO/HC_TIT02.PVZ
+        0 runs        8,780  DEMO/HC_TIT03.PVZ
+        0 runs        9,052  DEMO/HC_TIT04.PVZ
+        0 runs        8,944  DEMO/HC_TIT05.PVZ
+        0 runs        8,952  DEMO/HC_TIT06.PVZ
+        0 runs        8,960  DEMO/HC_TIT07.PVZ
+
+=== Vampire Chronicle for Matching Service (JP) ===
+  Modified files with JP in baseline (12):
+     8635 runs    3,508,634  2_DP.BIN
+     8316 runs    5,692,088  1ST_READ.BIN
+     2556 runs   25,626,436  PL0C.BIN
+     1910 runs   18,798,696  PL08.BIN
+     1849 runs       71,010  DPETC/MESSAGE.INI
+      530 runs      131,104  B7.PVR
+      528 runs      524,320  A2.PVR
+      392 runs      131,104  B4.PVR
+      369 runs      131,104  COMN.PVR
+      323 runs      131,104  B1.PVR
+      283 runs      131,104  A1.PVR
+      265 runs      131,104  B3.PVR
+  Modified files with NO JP (texture/binary work) (7):
+        0 runs      131,104  A3.PVR
+        0 runs      131,104  A4.PVR
+        0 runs      131,104  B2.PVR
+        0 runs      131,104  B5.PVR
+        0 runs      131,104  B6.PVR
+        0 runs    1,249,280  S24RM04.BIN
+        0 runs      262,176  DPTEX/JYOUCYU0.PVR

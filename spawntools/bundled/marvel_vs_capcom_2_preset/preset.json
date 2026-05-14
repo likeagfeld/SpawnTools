@@ -3,7 +3,8 @@
   "slug": "marvel_vs_capcom_2",
   "display_name": "Marvel vs. Capcom 2 — New Age of Heroes",
   "tier": "done",
-  "detect_label": "MARVEL",
+  "product_code": "T1215M",
+  "detect_label": "MARVEL VS. CAPCOM 2",
   "notes_kind": "std",
   "deny_list": [
     "2_DP.BIN",
@@ -12,7 +13,11 @@
     "MEMDEF.BIN"
   ],
   "scan_targets": [
-    "1ST_READ.BIN"
+    "1ST_READ.BIN",
+    "PL31_DAT.BIN",
+    "PL04_DAT.BIN",
+    "PL17_DAT.BIN",
+    "EFKYTEX.BIN"
   ],
   "modified_files": [
     {
@@ -20,332 +25,419 @@
       "baseline_md5": "d21c217a048de3f955e13d8eef647a65",
       "patched_md5": "d148ffd4820f9955502717b1e58e36a7",
       "size": 1969977,
-      "patched_size": 1969977
+      "patched_size": 1969977,
+      "kind": "code",
+      "jp_runs": 2330,
+      "pvrt_count": 0
     },
     {
       "rel": "2_DP.BIN",
       "baseline_md5": "8a11f296da7ed3d0fdec00ca340e06b9",
       "patched_md5": "fbf6029e6b9a26578eaf820561f7e9c1",
       "size": 3623364,
-      "patched_size": 3623364
-    },
-    {
-      "rel": "ADX_OPEN.BIN",
-      "baseline_md5": "37e7ebff3dea919171028e84468a5f71",
-      "patched_md5": "95f2595bd504f1f16c018dd57a79d92e",
-      "size": 1736514,
-      "patched_size": 1736514
-    },
-    {
-      "rel": "ADX_S000.BIN",
-      "baseline_md5": "579e94f231e09755d11db51a42a62c61",
-      "patched_md5": "ec00866408da464d4a13341efb141c2e",
-      "size": 3041280,
-      "patched_size": 3041280
-    },
-    {
-      "rel": "ADX_S010.BIN",
-      "baseline_md5": "8e76837ddfabf10d32ba081b0b38e79f",
-      "patched_md5": "b82c6488dfb5bf8af5f8ec3a1decc246",
-      "size": 4558848,
-      "patched_size": 4558848
-    },
-    {
-      "rel": "ADX_S030.BIN",
-      "baseline_md5": "0f02d3f92f8115b2056e0dadd0c02f14",
-      "patched_md5": "4012489fc01f93e2be18746fcb39a88d",
-      "size": 3606528,
-      "patched_size": 3606528
-    },
-    {
-      "rel": "ADX_S080.BIN",
-      "baseline_md5": "b54fd6f8dc29e8205292b9ab20991c52",
-      "patched_md5": "03e423b014d32caabec085b806954e9a",
-      "size": 1288192,
-      "patched_size": 1288192
-    },
-    {
-      "rel": "ADX_S0B0.BIN",
-      "baseline_md5": "6771b098053f6abf40cdb5999195a2c6",
-      "patched_md5": "b7b5e424de0a23c7e4c8b99bcdfc659b",
-      "size": 4890624,
-      "patched_size": 4890624
+      "patched_size": 3623364,
+      "kind": "code",
+      "jp_runs": 10020,
+      "pvrt_count": 10
     },
     {
       "rel": "EFKYTEX.BIN",
       "baseline_md5": "21079f0d57ccdb0edd6b18ac51e4bbfb",
       "patched_md5": "6a7bd8fc1673882f17b088b8ab508c4e",
       "size": 374784,
-      "patched_size": 374784
+      "patched_size": 374784,
+      "kind": "text",
+      "jp_runs": 1510,
+      "pvrt_count": 0
     },
     {
       "rel": "PL00_DAT.BIN",
       "baseline_md5": "12b0cd1e65d9b38584c0f377eacd7f06",
       "patched_md5": "ffc827073cd2cc0343036d24ef248380",
       "size": 557408,
-      "patched_size": 557408
+      "patched_size": 557408,
+      "kind": "text",
+      "jp_runs": 196,
+      "pvrt_count": 0
     },
     {
       "rel": "PL01_DAT.BIN",
       "baseline_md5": "10d174646b6475f7172b1ec0b9334a2f",
       "patched_md5": "f68720b5d84b450a405e77340cd5adeb",
       "size": 926400,
-      "patched_size": 926400
+      "patched_size": 926400,
+      "kind": "text",
+      "jp_runs": 468,
+      "pvrt_count": 0
     },
     {
       "rel": "PL03_DAT.BIN",
       "baseline_md5": "3f9cfb78bb329b3ffb93d5ebacee72c6",
       "patched_md5": "8ee99caeda02806d82fca2e4ea0b899c",
       "size": 857952,
-      "patched_size": 857952
+      "patched_size": 857952,
+      "kind": "text",
+      "jp_runs": 230,
+      "pvrt_count": 0
     },
     {
       "rel": "PL04_DAT.BIN",
       "baseline_md5": "af61495eef6ccbd858281a37a1e5f7d1",
       "patched_md5": "d67d83270a412667f83add0bfdd02e2e",
       "size": 1196800,
-      "patched_size": 1196800
+      "patched_size": 1196800,
+      "kind": "text",
+      "jp_runs": 1791,
+      "pvrt_count": 0
     },
     {
       "rel": "PL09_DAT.BIN",
       "baseline_md5": "508deb1dbf9cbb3d04cc860951bdec48",
       "patched_md5": "4fa0c2e387fdc37cdd743e8bf87182d6",
       "size": 1007904,
-      "patched_size": 1007904
+      "patched_size": 1007904,
+      "kind": "text",
+      "jp_runs": 213,
+      "pvrt_count": 0
     },
     {
       "rel": "PL0B_DAT.BIN",
       "baseline_md5": "c2fd082cf9ee83d9500f3f6a54ef73ab",
       "patched_md5": "1b473fac6708d6b1a64c8ffc7be86644",
       "size": 1041248,
-      "patched_size": 1041248
+      "patched_size": 1041248,
+      "kind": "text",
+      "jp_runs": 1098,
+      "pvrt_count": 0
     },
     {
       "rel": "PL0E_DAT.BIN",
       "baseline_md5": "ccaa6b7c1460fed8c99c9832b0c4aef1",
       "patched_md5": "90b93441931cda340e0994336ae7fe15",
       "size": 1241600,
-      "patched_size": 1241600
+      "patched_size": 1241600,
+      "kind": "text",
+      "jp_runs": 418,
+      "pvrt_count": 0
     },
     {
       "rel": "PL0F_VOI.BIN",
       "baseline_md5": "3963ac2be65f592ad50208f9493302ed",
       "patched_md5": "006239d5e96a76ae39ca8304da3d67ad",
       "size": 147896,
-      "patched_size": 147896
+      "patched_size": 147896,
+      "kind": "code",
+      "jp_runs": 87,
+      "pvrt_count": 0
     },
     {
       "rel": "PL12_DAT.BIN",
       "baseline_md5": "7e803f8e338168f287c1b1b00959bf90",
       "patched_md5": "42a70a72f31b1a5eb41a7667e7ac69bf",
       "size": 1085344,
-      "patched_size": 1085344
+      "patched_size": 1085344,
+      "kind": "text",
+      "jp_runs": 785,
+      "pvrt_count": 0
     },
     {
       "rel": "PL17_DAT.BIN",
       "baseline_md5": "a04383d1e8a48d5cf8a5f759ba47b04e",
       "patched_md5": "74f55df2d18e821ace7f259ff44e1b67",
       "size": 1139360,
-      "patched_size": 1139360
+      "patched_size": 1139360,
+      "kind": "text",
+      "jp_runs": 1288,
+      "pvrt_count": 0
     },
     {
       "rel": "PL19_DAT.BIN",
       "baseline_md5": "b8285c78554d83ecf8aa5a64eb34a962",
       "patched_md5": "a776e5b52f06ba73b50ac16d44ba6153",
       "size": 601376,
-      "patched_size": 601376
+      "patched_size": 601376,
+      "kind": "code",
+      "jp_runs": 146,
+      "pvrt_count": 0
     },
     {
       "rel": "PL1A_DAT.BIN",
       "baseline_md5": "adf273347ac1335e6f82dceb1f168c01",
       "patched_md5": "fc48e24c88790dcadd0e527c367e4d88",
       "size": 923712,
-      "patched_size": 923712
+      "patched_size": 923712,
+      "kind": "text",
+      "jp_runs": 80,
+      "pvrt_count": 0
     },
     {
       "rel": "PL1C_DAT.BIN",
       "baseline_md5": "9e9736464722eaef2ae7d92de7f1a70a",
       "patched_md5": "ead241be162971eca106d44e80b7c32d",
       "size": 667648,
-      "patched_size": 667648
+      "patched_size": 667648,
+      "kind": "text",
+      "jp_runs": 340,
+      "pvrt_count": 0
     },
     {
       "rel": "PL1D_DAT.BIN",
       "baseline_md5": "c0dac692a52ae1b43d493c1e7df657e1",
       "patched_md5": "90f1d0c5ed46a3d5ab95ab3739f2bae1",
       "size": 523552,
-      "patched_size": 523552
+      "patched_size": 523552,
+      "kind": "text",
+      "jp_runs": 383,
+      "pvrt_count": 0
     },
     {
       "rel": "PL20_DAT.BIN",
       "baseline_md5": "7476c43f846cd7fce9d5d11abd76c822",
       "patched_md5": "577ac7ee2c051fd5c5131a747946c2e5",
       "size": 1250752,
-      "patched_size": 1250752
+      "patched_size": 1250752,
+      "kind": "text",
+      "jp_runs": 802,
+      "pvrt_count": 0
     },
     {
       "rel": "PL22_DAT.BIN",
       "baseline_md5": "a190257dd85c953f5a1ec46a6232cfdf",
       "patched_md5": "96246fc527dae0006d2b57a1c15f01e8",
       "size": 864480,
-      "patched_size": 864480
+      "patched_size": 864480,
+      "kind": "text",
+      "jp_runs": 321,
+      "pvrt_count": 0
     },
     {
       "rel": "PL2D_DAT.BIN",
       "baseline_md5": "4e5173a7dd8e931a2dc5b82fbd30df35",
       "patched_md5": "b60195d9eddff720e14ad14ca37b5120",
       "size": 1001888,
-      "patched_size": 1001888
+      "patched_size": 1001888,
+      "kind": "text",
+      "jp_runs": 308,
+      "pvrt_count": 0
     },
     {
       "rel": "PL31_DAT.BIN",
       "baseline_md5": "635b4bbb793ce52c48fa959fc069b699",
       "patched_md5": "f84b907bf2c646680be457de4633855b",
       "size": 1178688,
-      "patched_size": 1178688
+      "patched_size": 1178688,
+      "kind": "text",
+      "jp_runs": 1927,
+      "pvrt_count": 0
     },
     {
       "rel": "PL33_DAT.BIN",
       "baseline_md5": "bf1fe304d2188ee491b1eb63466c509b",
       "patched_md5": "4e6752919b340776366fe9b3f85c3108",
       "size": 1107104,
-      "patched_size": 1107104
+      "patched_size": 1107104,
+      "kind": "text",
+      "jp_runs": 424,
+      "pvrt_count": 0
     },
     {
       "rel": "PL38_DAT.BIN",
       "baseline_md5": "06f2abc0d6df1cd405ca3bc2618fd820",
       "patched_md5": "11d68ba6005cf48225d240fa908204dd",
       "size": 1025152,
-      "patched_size": 1025152
+      "patched_size": 1025152,
+      "kind": "text",
+      "jp_runs": 569,
+      "pvrt_count": 0
     },
     {
       "rel": "PL39_DAT.BIN",
       "baseline_md5": "40dd9988c71759ab1a7047056bfa15bf",
       "patched_md5": "86e3315a734b1cf54b9fe2ead9af47ef",
       "size": 1091648,
-      "patched_size": 1091648
+      "patched_size": 1091648,
+      "kind": "text",
+      "jp_runs": 740,
+      "pvrt_count": 0
     },
     {
       "rel": "PL3A_DAT.BIN",
       "baseline_md5": "c2b6e2c3055b5be090efabbac0e8cf73",
       "patched_md5": "559e7d8878293ec5edef198c61829224",
       "size": 464448,
-      "patched_size": 464448
+      "patched_size": 464448,
+      "kind": "text",
+      "jp_runs": 298,
+      "pvrt_count": 0
     },
     {
       "rel": "S18RM04.BIN",
       "baseline_md5": "8844219683e38bbd4ee319ed87659807",
       "patched_md5": "9c6ea48eb2a08c4285c2fad922ed5609",
       "size": 827648,
-      "patched_size": 827648
+      "patched_size": 827648,
+      "kind": "text",
+      "jp_runs": 10,
+      "pvrt_count": 0
     },
     {
       "rel": "S20RM04.BIN",
       "baseline_md5": "f537f34c23255a3f0ea9f6ad2166c51e",
       "patched_md5": "ee70a212eaf1a2c0a92d52f5f6b0c273",
       "size": 905728,
-      "patched_size": 905728
+      "patched_size": 905728,
+      "kind": "text",
+      "jp_runs": 16,
+      "pvrt_count": 0
     },
     {
       "rel": "S24RM04.BIN",
       "baseline_md5": "66bbc3ee802453707a3a1530f9778bba",
       "patched_md5": "0954515b7bd42a4131cb9305db5792f4",
       "size": 1249280,
-      "patched_size": 1249280
+      "patched_size": 1249280,
+      "kind": "text",
+      "jp_runs": 15,
+      "pvrt_count": 0
     },
     {
       "rel": "S26RM04.BIN",
       "baseline_md5": "3466c751fd2554cc26f3c2dd01793eba",
       "patched_md5": "903eda1421ed242e8a00ffc75e6a24b8",
       "size": 1545984,
-      "patched_size": 1545984
+      "patched_size": 1545984,
+      "kind": "data",
+      "jp_runs": 0,
+      "pvrt_count": 0
     },
     {
       "rel": "DPETC/MESSAGE.INI",
       "baseline_md5": "0c2479afbcea185ca62fe648c0e0a33a",
       "patched_md5": "f9a839702b96b33991491e7b0143d093",
       "size": 39631,
-      "patched_size": 39631
+      "patched_size": 39631,
+      "kind": "text",
+      "jp_runs": 1033,
+      "pvrt_count": 0
     },
     {
       "rel": "DPTEX/C_M_S.PVR",
       "baseline_md5": "da5286d7590560563031dfd829f104f5",
       "patched_md5": "a21c7aaf8f48ca4de182e8de1d1e3997",
       "size": 524320,
-      "patched_size": 524320
+      "patched_size": 524320,
+      "kind": "texture",
+      "jp_runs": 245,
+      "pvrt_count": 2
     },
     {
       "rel": "DPTEX/JYOUCYU0.PVR",
       "baseline_md5": "7407300991dd8a370429ebb0eb97baeb",
       "patched_md5": "ee0150854be1dd07c0f7b6f21b646dca",
       "size": 524320,
-      "patched_size": 524320
+      "patched_size": 524320,
+      "kind": "texture",
+      "jp_runs": 2784,
+      "pvrt_count": 2
     },
     {
       "rel": "DPTEX/OPTION01.PVR",
       "baseline_md5": "1075349fd747ed07e55e8e81a27a5479",
       "patched_md5": "8bc435cb2a49a8b338e52d27fd7980f3",
       "size": 67616,
-      "patched_size": 67616
+      "patched_size": 67616,
+      "kind": "texture",
+      "jp_runs": 45,
+      "pvrt_count": 2
     },
     {
       "rel": "DPTEX/OPTION02.PVR",
       "baseline_md5": "943c564d53c942813c0d185910161f0c",
       "patched_md5": "6e94ca76379909f14f320ea41279478c",
       "size": 67616,
-      "patched_size": 67616
+      "patched_size": 67616,
+      "kind": "texture",
+      "jp_runs": 78,
+      "pvrt_count": 2
     },
     {
       "rel": "DPTEX/SU_ICO2.PVR",
       "baseline_md5": "48f423092f40b49dbe3365a4a2787d87",
       "patched_md5": "01a45dd3de30f1646dd6f93922b12733",
       "size": 524320,
-      "patched_size": 524320
+      "patched_size": 524320,
+      "kind": "texture",
+      "jp_runs": 1216,
+      "pvrt_count": 2
     },
     {
       "rel": "DPTEX/SU_ICON.PVR",
       "baseline_md5": "5f0bc5ccf083f1618c2a1dcae792dadd",
       "patched_md5": "b92c684af5ebd828e32a026766dd396e",
       "size": 524320,
-      "patched_size": 524320
+      "patched_size": 524320,
+      "kind": "texture",
+      "jp_runs": 6090,
+      "pvrt_count": 2
     },
     {
       "rel": "DPTEX/TAG_SU.PVR",
       "baseline_md5": "8ae08fd1d463cf06b16209150530bd3a",
       "patched_md5": "988dd910fc9ee0fadaa22515e40cf222",
       "size": 67616,
-      "patched_size": 67616
+      "patched_size": 67616,
+      "kind": "texture",
+      "jp_runs": 71,
+      "pvrt_count": 2
     },
     {
       "rel": "DPTEX/VMSPARTS.PVR",
       "baseline_md5": "21b8db52cebff7917bf4a4cfb4f3740b",
       "patched_md5": "c42f70a597471f0eb82420fd279c7d03",
       "size": 524320,
-      "patched_size": 524320
+      "patched_size": 524320,
+      "kind": "texture",
+      "jp_runs": 3191,
+      "pvrt_count": 2
     },
     {
       "rel": "DPTEX/WARNING0.PVR",
       "baseline_md5": "cacb01fca108e8d871395e2bdd8907c1",
       "patched_md5": "b68637a46017c69f4f5e23c9e0ae2fbb",
       "size": 524320,
-      "patched_size": 524320
+      "patched_size": 524320,
+      "kind": "texture",
+      "jp_runs": 2649,
+      "pvrt_count": 2
     },
     {
       "rel": "DPTEX/WARNING1.PVR",
       "baseline_md5": "c7d9aa9314afca2e29ba3c15ac64d0fe",
       "patched_md5": "9451300eb4007e9d2b55a4d7b8092d18",
       "size": 131104,
-      "patched_size": 131104
+      "patched_size": 131104,
+      "kind": "texture",
+      "jp_runs": 77,
+      "pvrt_count": 2
     },
     {
       "rel": "DPTEX/WARNING2.PVR",
       "baseline_md5": "bfb720721a75417851d1a2a30119bbe7",
       "patched_md5": "a992afd8ddf81d0f1d4f72aa807823bf",
       "size": 131104,
-      "patched_size": 131104
+      "patched_size": 131104,
+      "kind": "texture",
+      "jp_runs": 27,
+      "pvrt_count": 2
     }
   ],
-  "modified_count": 47,
+  "modified_count": 41,
+  "modified_by_kind": {
+    "code": 4,
+    "text": 25,
+    "data": 1,
+    "texture": 11
+  },
   "identical_count": 1,
   "translations_count": 1,
   "dict_entries": 796,

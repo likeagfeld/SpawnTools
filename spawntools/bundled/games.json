@@ -3,91 +3,106 @@
     {
       "slug": "spawn",
       "display_name": "Spawn — In the Demon's Hand",
+      "product_code": "T1216M",
       "detect_label": "SPAWN",
       "preset_dir": "spawn_preset"
     },
     {
       "slug": "cvs_pro",
       "display_name": "Capcom vs. SNK — Millennium Fight 2000 Pro",
+      "product_code": "T1247M",
       "detect_label": "CAPCOM VS SNK",
       "preset_dir": "cvs_pro_preset"
     },
     {
       "slug": "heavy_metal",
       "display_name": "Heavy Metal — Geomatrix",
+      "product_code": "T1246M",
       "detect_label": "HEAVY METAL",
       "preset_dir": "heavy_metal_preset"
     },
     {
       "slug": "jojo",
       "display_name": "JoJo's Bizarre Adventure",
+      "product_code": "T1231M",
       "detect_label": "JOJO",
       "preset_dir": "jojo_preset"
     },
     {
       "slug": "marvel_vs_capcom_2",
       "display_name": "Marvel vs. Capcom 2 — New Age of Heroes",
-      "detect_label": "MARVEL",
+      "product_code": "T1215M",
+      "detect_label": "MARVEL VS. CAPCOM 2",
       "preset_dir": "marvel_vs_capcom_2_preset"
     },
     {
       "slug": "net_de_tennis",
       "display_name": "Net de Tennis",
+      "product_code": "T1234M",
       "detect_label": "NET DE TENNIS",
       "preset_dir": "net_de_tennis_preset"
     },
     {
       "slug": "power_stone_2",
       "display_name": "Power Stone 2",
-      "detect_label": "POWER STONE",
+      "product_code": "T1218M",
+      "detect_label": "POWER STONE 2",
       "preset_dir": "power_stone_2_preset"
     },
     {
       "slug": "project_justice",
       "display_name": "Project Justice",
-      "detect_label": "PROJECT JUSTICE",
+      "product_code": "T1221M",
+      "detect_label": "MOERO JUSTICE GAKUEN",
       "preset_dir": "project_justice_preset"
     },
     {
       "slug": "sf3_3rd_strike",
       "display_name": "Street Fighter III 3rd Strike",
-      "detect_label": "3RD STRIKE",
+      "product_code": "T1209M",
+      "detect_label": "STREET FIGHTER 3 3RD STRIKE",
       "preset_dir": "sf3_3rd_strike_preset"
     },
     {
       "slug": "sfz3_ms",
       "display_name": "Street Fighter Zero 3 (Matching Service)",
-      "detect_label": "ZERO 3",
+      "product_code": "T1230M",
+      "detect_label": "STREET FIGHTER ZERO3",
       "preset_dir": "sfz3_ms_preset"
     },
     {
       "slug": "spfii_ms",
       "display_name": "Super Puzzle Fighter IIX (Matching Service)",
-      "detect_label": "PUZZLE FIGHTER",
+      "product_code": "T1250M",
+      "detect_label": "SUPER PUZZLE FIGHTER2X",
       "preset_dir": "spfii_ms_preset"
     },
     {
       "slug": "ssfiix_ms",
       "display_name": "Super Street Fighter IIX (Matching Service)",
-      "detect_label": "SUPER SF",
+      "product_code": "T1236M",
+      "detect_label": "SUPER STREET FIGHTER 2X",
       "preset_dir": "ssfiix_ms_preset"
     },
     {
       "slug": "taisen_net_gimmick",
       "display_name": "Taisen Net Gimmick — Capcom & Psikyo All Stars",
+      "product_code": "T1248M",
       "detect_label": "NET GIMMICK",
       "preset_dir": "taisen_net_gimmick_preset"
     },
     {
       "slug": "tech_romancer_ms",
       "display_name": "Tech Romancer (Matching Service)",
-      "detect_label": "TECH ROMANCER",
+      "product_code": "T1232M",
+      "detect_label": "KIKAIOH",
       "preset_dir": "tech_romancer_ms_preset"
     },
     {
       "slug": "vampire_chronicle_ms",
       "display_name": "Vampire Chronicle (Matching Service)",
-      "detect_label": "VAMPIRE",
+      "product_code": "T1235M",
+      "detect_label": "VAMPIRE CHRONICLE",
       "preset_dir": "vampire_chronicle_ms_preset"
     }
   ]
