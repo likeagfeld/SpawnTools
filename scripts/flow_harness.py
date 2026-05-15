@@ -91,36 +91,35 @@ def f3_scan_targets_exist(game: reg.GameConfig):
 
 
 def f4_translation_roundtrip(slug, game: reg.GameConfig):
+    """Verify the bundle's JP-side offset+jp_text matches what's actually at
+    that offset in extracted/ (JP baseline). This is the round-trip
+    primitive — the bundle must be able to FIND the JP string before it
+    can replace it with EN. We compare against extracted/ (not patches/)
+    so the test doesn't depend on whether the user has applied the EN
+    translations to their working patches/ dir yet."""
     p = preset_core.Preset.load_bundled(slug)
     if not p.translations:
         return None, 'no translations to verify'
-    pat_dir = game.rc2_dir / 'patches'
-    if not pat_dir.is_dir():
-        return None, 'patches/ missing'
+    ext_dir = game.rc2_dir / 'extracted'
+    if not ext_dir.is_dir():
+        return None, 'extracted/ missing'
     bad = 0
-    sampled = p.translations[:200]   # spot-check first 200
+    sampled = p.translations[:200]
     for t in sampled:
-        target = pat_dir / t['source_file']
+        target = ext_dir / t['source_file']
         if not target.is_file():
             bad += 1; continue
         data = target.read_bytes()
         actual = data[t['byte_offset']:t['byte_offset'] + t['byte_budget']]
-        # Compare against the EN bytes we'd reconstruct
         try:
-            expected = t['en'].encode('ascii').ljust(t['byte_budget'], b'\x00')
+            jp_bytes = t['jp'].encode('cp932', errors='strict')
         except UnicodeEncodeError:
-            try:
-                expected = t['en'].encode('cp932').ljust(t['byte_budget'], b'\x00')
-            except UnicodeEncodeError:
-                # Can't reconstruct — skip
-                continue
-        if actual.rstrip(b'\x00') != expected.rstrip(b'\x00'):
-            # Some 'en' fields are '<binary diff>'; skip those
-            if t['en'].startswith('<binary'): continue
+            continue   # can't reconstruct JP cleanly — skip
+        if not actual.startswith(jp_bytes):
             bad += 1
     if bad:
-        return False, f'{bad}/{len(sampled)} translation roundtrips disagree with patches/ bytes'
-    return True, f'first {len(sampled)} translations all round-trip OK'
+        return False, f'{bad}/{len(sampled)} JP bytes not found at recorded offset in extracted/'
+    return True, f'first {len(sampled)} JP-offset round-trips OK against extracted/'
 
 
 def f5_archive_surface(game: reg.GameConfig):

@@ -251,8 +251,34 @@ class WorkspaceTab(ttk.Frame):
                     f'oversize={counts.get("oversize", 0):,}',
                     tag='ok',
                 )
+                # Auto-commit bundled translations into patches/ so Tab 2
+                # immediately reflects "modified" status for the BIN/INI
+                # files the campaign translated. Without this, a freshly
+                # extracted disc shows patches == extracted and Tab 2 looks
+                # empty. Only commits 'done' rows; idempotent — safe to
+                # re-run; sanity-checks JP bytes are at the offset before
+                # writing.
+                from ..core import strings as strings_core
+                if counts.get('done', 0) > 0:
+                    self.log.append(
+                        f'committing {counts["done"]:,} bundled EN translations '
+                        f'into patches/ ...', tag='ok')
+                    commit_result = strings_core.commit_all_done(
+                        self.app.tab_text_grid.db,
+                        self.app.disc.patches_dir,
+                        progress=lambda m: self.log.append(m, tag='dim'),
+                    )
+                    self.log.append(
+                        f'  applied {commit_result.get("strings_applied", 0):,} '
+                        f'translations to {commit_result.get("files_modified", 0)} '
+                        f'file(s); skipped {commit_result.get("skipped", 0)}.',
+                        tag='ok')
                 # Push texture notes to Tab 2
                 self.app.tab_textures.preset = preset
+                # Bust the modified-file md5 cache so Tab 2's ●/○ markers
+                # reflect the bytes we just wrote.
+                if hasattr(self.app.tab_textures, '_modified_cache'):
+                    self.app.tab_textures._modified_cache.clear()
                 self.after(0, self.app.tab_textures.reload)
                 self.after(0, self.app.tab_text_grid._refresh)
                 self.after(0, lambda: self.app.nb.select(2))   # jump to Text Grid
