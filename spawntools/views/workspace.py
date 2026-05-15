@@ -273,6 +273,44 @@ class WorkspaceTab(ttk.Frame):
                         f'translations to {commit_result.get("files_modified", 0)} '
                         f'file(s); skipped {commit_result.get("skipped", 0)}.',
                         tag='ok')
+
+                # ALSO copy bundled modified files (TEX/PVR/etc.) into the
+                # user's patches/. These are pre-built campaign outputs we
+                # ship per-game in <slug>_preset/modified_files/. Without
+                # this Tab 2's ●/○ markers stay all-○ on a fresh extract
+                # because patches/ == extracted/ for textures.
+                import shutil
+                from pathlib import Path
+                bundled_root = (Path(__file__).resolve().parent.parent
+                                / 'bundled' / f'{slug}_preset' / 'modified_files')
+                if bundled_root.is_dir():
+                    n_copied = 0
+                    n_skipped = 0
+                    for src in bundled_root.rglob('*'):
+                        if not src.is_file(): continue
+                        rel = src.relative_to(bundled_root)
+                        target = self.app.disc.patches_dir / rel
+                        # Only overwrite if it's currently identical to the
+                        # extracted baseline (don't clobber user's WIP).
+                        baseline = self.app.disc.extracted_dir / rel
+                        if target.is_file() and baseline.is_file():
+                            try:
+                                if target.read_bytes() != baseline.read_bytes():
+                                    n_skipped += 1
+                                    continue
+                            except OSError:
+                                pass
+                        target.parent.mkdir(parents=True, exist_ok=True)
+                        shutil.copy(src, target)
+                        n_copied += 1
+                    self.log.append(
+                        f'copied {n_copied} bundled modified file(s) into '
+                        f'patches/ (skipped {n_skipped} with user edits)',
+                        tag='ok')
+                else:
+                    self.log.append(
+                        f'no bundled modified_files/ for {slug} '
+                        f'(text only)', tag='dim')
                 # Push texture notes to Tab 2
                 self.app.tab_textures.preset = preset
                 # Bust the modified-file md5 cache so Tab 2's ●/○ markers
