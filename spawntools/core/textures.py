@@ -280,6 +280,101 @@ def import_png_replace(rec: TextureRecord, png_path: Path) -> dict:
 
 def restore_original(rec: TextureRecord, baseline_path: Path) -> None:
     """Copy the baseline (extracted/) copy over the patches/ copy of the
-    file. Used by the Texture tab's 'Restore Original' button."""
+    file. Used by the Texture tab's 'Restore WHOLE file' button. NOTE:
+    this throws away ALL sub-tex edits in a multi-sub-tex container. For
+    per-sub-tex revert use restore_subtex_from_baseline()."""
     import shutil
     shutil.copy(baseline_path, rec.file_path)
+
+
+def restore_subtex_from_baseline(rec: TextureRecord, baseline_path: Path) -> dict:
+    """Restore ONE sub-texture inside a .TEX container back to its
+    extracted/ baseline pixels, keeping every other sub-texture's
+    modifications intact.
+
+    For .PVR files (single-image, no sub-textures) this falls through to
+    a whole-file restore.
+
+    Returns: {'kind': 'tex'|'pvr', 'sub_index': N, 'size_unchanged': bool}.
+    """
+    suffix = rec.file_path.suffix.upper()
+    orig_size = rec.file_path.stat().st_size
+
+    if suffix == '.PVR':
+        import shutil
+        shutil.copy(baseline_path, rec.file_path)
+        new_size = rec.file_path.stat().st_size
+        return {'kind': 'pvr', 'sub_index': rec.sub_index,
+                'size_unchanged': new_size == orig_size}
+
+    if suffix == '.TEX':
+        # Byte-slice approach: TXB0 containers have identical record-table
+        # layout between extracted/ and patches/ (since the campaign honours
+        # shrink-or-equal). For sub_N we look up its pixel-data offset+size
+        # in the baseline TXB0 header and copy those exact bytes over the
+        # patches/ copy at the same offset. This sidesteps the bundled
+        # decoder's RECTANGLE_TWIDDLED weak path (sub-textures with
+        # non-square dims + datafmt 0x0d decode to None but their pixel
+        # bytes are perfectly valid on disc).
+        import struct
+        baseline_bytes = baseline_path.read_bytes()
+        patches_bytes  = rec.file_path.read_bytes()
+        if baseline_bytes[:4] != b'TXB0' or patches_bytes[:4] != b'TXB0':
+            raise RuntimeError(f'{rec.file_path.name}: not a TXB0 container')
+        if len(baseline_bytes) != len(patches_bytes):
+            raise RuntimeError(
+                f'Size mismatch: baseline={len(baseline_bytes)} vs '
+                f'patches={len(patches_bytes)}. Cannot byte-revert.'
+            )
+        n_records  = struct.unpack('<I', baseline_bytes[4:8])[0]
+        data_start = struct.unpack('<I', baseline_bytes[8:12])[0]
+        # Each record is 16 bytes starting at offset 16: u16 w, u16 h,
+        # u8 pixfmt, u8 datafmt, u16 pad, u32 offset, u32 pad
+        REC_BASE = 16
+        REC_SIZE = 16
+        # Find this sub_index's pixel region (offset + size). Size = next
+        # record's offset minus this one's, or (file_end - this_offset)
+        # for the last non-sentinel record.
+        my_offset = my_end = None
+        last_real_offset = None
+        # Build a sorted list of (sub_index, file_offset) of real records.
+        real = []
+        for i in range(n_records):
+            base = REC_BASE + i * REC_SIZE
+            w  = struct.unpack('<H', baseline_bytes[base:base+2])[0]
+            h  = struct.unpack('<H', baseline_bytes[base+2:base+4])[0]
+            pf = baseline_bytes[base+4]
+            df = baseline_bytes[base+5]
+            off_rel = struct.unpack('<I', baseline_bytes[base+8:base+12])[0]
+            if pf == 0xFF and df == 0xFF: continue   # sentinel
+            real.append((i, data_start + off_rel))
+        real.sort(key=lambda x: x[1])
+        # Where does this sub_index live?
+        for j, (idx, off) in enumerate(real):
+            if idx == rec.sub_index:
+                my_offset = off
+                # End is the next real record's offset, or end of file.
+                if j + 1 < len(real):
+                    my_end = real[j + 1][1]
+                else:
+                    my_end = len(baseline_bytes)
+                break
+        if my_offset is None:
+            raise RuntimeError(
+                f'Sub_{rec.sub_index} not found in baseline {baseline_path.name}'
+            )
+        # Slice the pixel bytes from baseline and overwrite patches.
+        block = baseline_bytes[my_offset:my_end]
+        new_patches = (patches_bytes[:my_offset] + block +
+                       patches_bytes[my_end:])
+        if len(new_patches) != orig_size:
+            raise RuntimeError(
+                f'Byte-slice replace would change file size '
+                f'({orig_size} -> {len(new_patches)})'
+            )
+        rec.file_path.write_bytes(new_patches)
+        return {'kind': 'tex', 'sub_index': rec.sub_index,
+                'size_unchanged': True,
+                'bytes_slice': f'0x{my_offset:x}..0x{my_end:x}'}
+
+    raise RuntimeError(f'Unsupported file kind for sub-tex revert: {suffix}')

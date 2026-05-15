@@ -155,9 +155,12 @@ class TexturesTab(ttk.Frame):
                    command=lambda: self._on_export_png(source='modified')
                    ).pack(fill='x', padx=6, pady=2)
         ttk.Separator(right).pack(fill='x', pady=4)
-        ttk.Button(right, text='Import & Auto-Convert…', command=self._on_import_png,
+        ttk.Button(right, text='Import & Auto-Convert (this sub-tex)…',
+                   command=self._on_import_png,
                    style='Accent.TButton').pack(fill='x', padx=6, pady=2)
-        ttk.Button(right, text='Restore Original', command=self._on_restore).pack(fill='x', padx=6, pady=2)
+        ttk.Button(right, text='Revert this sub-tex → JP baseline',
+                   command=self._on_revert_subtex
+                   ).pack(fill='x', padx=6, pady=2)
 
         ttk.Separator(right).pack(fill='x', pady=4)
         # Modified-vs-baseline marker
@@ -176,7 +179,11 @@ class TexturesTab(ttk.Frame):
         self.notes_text.config(state='disabled')
 
         ttk.Separator(right).pack(fill='x', pady=4)
-        ttk.Button(right, text='Revert this file → JP baseline',
+        ttk.Label(right, text='Whole-file actions:', foreground='#888',
+                  font=('TkDefaultFont', 8)).pack(anchor='w', padx=6)
+        ttk.Button(right, text='Restore WHOLE file → baseline',
+                   command=self._on_restore).pack(fill='x', padx=6, pady=2)
+        ttk.Button(right, text='Revert WHOLE file → JP baseline',
                    command=self._on_revert_file).pack(fill='x', padx=6, pady=2)
 
         ttk.Separator(right).pack(fill='x', pady=4)
@@ -650,6 +657,62 @@ class TexturesTab(ttk.Frame):
                 self._load_file(rec.file_path)
         except Exception as e:
             messagebox.showerror('Import error', str(e), parent=self.app)
+
+    def _on_revert_subtex(self):
+        """Restore ONE sub-texture to its JP baseline, keeping every other
+        sub-tex's modifications intact in the same .TEX container."""
+        rec = self._selected_rec()
+        if not rec: return
+        # Archive-member revert needs the archive code path
+        if self._current_member is not None:
+            messagebox.showinfo(
+                'Use whole-file revert',
+                'This sub-tex lives inside an archive. Use "Revert WHOLE '
+                'file → JP baseline" to revert the archive container.',
+                parent=self.app)
+            return
+        try:
+            rel = rec.file_path.relative_to(self.app.disc.patches_dir)
+        except ValueError:
+            messagebox.showerror('Not in patches/',
+                f'{rec.file_path} is not inside patches/.', parent=self.app)
+            return
+        baseline = self.app.disc.extracted_dir / rel
+        if not baseline.exists():
+            messagebox.showerror('No baseline',
+                f'No baseline copy at\n{baseline}', parent=self.app)
+            return
+        if not messagebox.askyesno(
+            'Revert this sub-tex?',
+            f'Revert sub_{rec.sub_index} of {rec.file_path.name} to the '
+            f'JP baseline?\n\nOther sub-textures in this file keep their '
+            f'current modifications.',
+            parent=self.app):
+            return
+        try:
+            result = tex_core.restore_subtex_from_baseline(rec, baseline)
+        except Exception as e:
+            messagebox.showerror('Revert failed', str(e), parent=self.app)
+            return
+        self.app.log_workspace(
+            f'reverted sub_{result["sub_index"]} of {rel} to baseline',
+            tag='warn')
+        # Bust modified-cache + refresh
+        rel_str = str(rel).replace('\\', '/')
+        self._modified_cache.pop(rel_str, None)
+        self._populate_files()
+        self._load_file(rec.file_path)
+        # Re-select the same sub-tex
+        try:
+            self.subtex_list.selection_set(rec.sub_index)
+            self._on_pick_subtex()
+        except Exception:
+            pass
+        messagebox.showinfo(
+            'Sub-tex reverted',
+            f'sub_{rec.sub_index} restored from baseline. '
+            f'File size unchanged: {result.get("size_unchanged")}.',
+            parent=self.app)
 
     def _on_revert_file(self):
         rec = self._selected_rec()
