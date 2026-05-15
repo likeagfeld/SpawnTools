@@ -283,8 +283,12 @@ def apply_preset(disc, db: strings_core.StringDB, preset: Preset,
             summary[key] += result[key]
 
     # === Step 2: bundled-translations fallback ===
-    # If the diff found nothing (or very little) AND the bundle has translations,
-    # seed those. Users without the .dcp applied see the campaign translations anyway.
+    # If the diff found nothing (or very little) AND the bundle has
+    # translations, fill the campaign's EN into the rows the diff scan
+    # already created. Important: diff scan inserts a 'todo' row for every
+    # JP run it finds, so the bundle's INSERT will hit a UNIQUE constraint
+    # and the EN would be lost. Use UPSERT — if a row exists at this
+    # (source_file, byte_offset), overwrite en_text + flip status to 'done'.
     if preset.translations and summary['pre_filled'] < len(preset.translations) // 2:
         log(f'  diff found {summary["pre_filled"]:,} translations; '
             f'seeding {len(preset.translations):,} more from bundled translations.json')
@@ -292,6 +296,8 @@ def apply_preset(disc, db: strings_core.StringDB, preset: Preset,
         now = int(time.time())
         for entry in preset.translations:
             try:
+                # Try INSERT first; if conflict, UPDATE the existing row
+                # to set en_text/status from the bundle.
                 db._conn.execute(
                     """INSERT INTO strings
                        (source_file, byte_offset, byte_budget, jp_text, en_text,
@@ -302,8 +308,17 @@ def apply_preset(disc, db: strings_core.StringDB, preset: Preset,
                 )
                 summary['from_bundle'] += 1
             except sqlite3.IntegrityError:
-                # Row already filled by diff scan — don't override
-                pass
+                # Row exists from diff scan — update its EN to the bundled value
+                cur = db._conn.execute(
+                    """UPDATE strings
+                       SET en_text = ?, status = 'done',
+                           notes = 'from bundled translations.json',
+                           updated_at = ?
+                       WHERE source_file = ? AND byte_offset = ?""",
+                    (entry['en'], now, entry['source_file'], entry['byte_offset'])
+                )
+                if cur.rowcount > 0:
+                    summary['from_bundle'] += 1
         db._conn.commit()
 
     log(f'preset apply complete: {summary["pre_filled"]:,} from diff + '
