@@ -1,0 +1,80 @@
+Scanning 15 games
+
+  scanning Capcom vs. SNK - Millennium Fight 2000 Pro (JP)...
+    .. 0/849
+    .. 200/849
+    .. 400/849
+    .. 600/849
+    .. 800/849
+  scanning Heavy Metal - Geomatrix (JP)...
+    .. 0/598
+    .. 200/598
+    .. 400/598
+  scanning JoJo_s Bizarre Adventure[ (JP)...
+    .. 0/678
+    .. 200/678
+    .. 400/678
+    .. 600/678
+  scanning Marvel vs. Capcom 2 - New Age of Heroes (JP)...
+    .. 0/765
+    .. 200/765
+    .. 400/765
+    .. 600/765
+  scanning Net de Tennis (JP)...
+    .. 0/557
+    .. 200/557
+    .. 400/557
+  scanning Power Stone 2 (JP)...
+    .. 0/503
+    .. 200/503
+    .. 400/503
+  scanning Project Justice (JP)...
+    .. 0/104
+  scanning Spawn - In the Demon's Hand (JP)...
+    .. 0/817
+    .. 200/817
+    .. 400/817
+    .. 600/817
+    .. 800/817
+  scanning Street Fighter III 3rd Strike - Fight for the Futu...
+    .. 0/498
+    .. 200/498
+    .. 400/498
+  scanning Street Fighter Zero 3  for Matching Service (JP)...
+    .. 0/595
+    .. 200/595
+    .. 400/595
+  scanning Super Puzzle Fighter IIX for Matching Service (JP)...
+    .. 0/219
+    .. 200/219
+  scanning Super Street Fighter IIX for Matching Service - Gr...
+    .. 0/573
+    .. 200/573
+    .. 400/573
+  scanning Taisen Net Gimmick - Capcom & Psikyo All Stars (JP...
+    .. 0/1188
+    .. 200/1188
+    .. 400/1188
+    .. 600/1188
+    .. 800/1188
+    .. 1000/1188
+  scanning Tech Romancer for Matching Service (JP)...
+    .. 0/2039
+    .. 200/2039
+    .. 400/2039
+    .. 600/2039
+    .. 800/2039
+    .. 1000/2039
+    .. 1200/2039
+    .. 1400/2039
+    .. 1600/2039
+    .. 1800/2039
+    .. 2000/2039
+  scanning Vampire Chronicle for Matching Service (JP)...
+    .. 0/652
+    .. 200/652
+    .. 400/652
+    .. 600/652
+
+wrote D:\DC_CapcomTranslationTools\exhaustive_jp_audit.json
+wrote D:\DC_CapcomTranslationTools\exhaustive_jp_audit.txt
