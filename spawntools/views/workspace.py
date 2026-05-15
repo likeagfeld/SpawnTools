@@ -49,6 +49,14 @@ class WorkspaceTab(ttk.Frame):
         ttk.Button(btn, text='Reset Patches → Stock JP',
                    command=self._on_reset_patches).pack(side='right', padx=2)
 
+        # --- .dcp apply row ---
+        dcp_row = ttk.Frame(self); dcp_row.pack(fill='x', pady=2)
+        ttk.Label(dcp_row, text='.dcp patch:', width=14).pack(side='left')
+        ttk.Button(dcp_row, text='Fetch latest from GitHub',
+                   command=self._on_fetch_dcp).pack(side='left', padx=2)
+        ttk.Button(dcp_row, text='Browse local .dcp…',
+                   command=self._on_browse_dcp).pack(side='left', padx=2)
+
         # Auto-detected game label (populated on Open/Extract).
         # No manual preset picker — the IP.BIN product code is authoritative.
         detect_row = ttk.Frame(self); detect_row.pack(fill='x', pady=2)
@@ -323,6 +331,63 @@ class WorkspaceTab(ttk.Frame):
             except Exception as e:
                 import traceback
                 self.log.append('FAILED:\n' + traceback.format_exc(), tag='error')
+        threading.Thread(target=runner, daemon=True).start()
+
+    def _on_fetch_dcp(self):
+        if not self.app.disc:
+            messagebox.showinfo('Open disc first',
+                'Open a disc before fetching a .dcp.', parent=self.app)
+            return
+        slug = self.preset_slug_var.get() or 'spawn'
+        from ..core import dcp as dcp_core
+        def runner():
+            try:
+                result = dcp_core.fetch_and_apply_latest(
+                    slug, self.app.disc.extracted_dir, self.app.disc.patches_dir,
+                    log=lambda m: self.log.append(m),
+                )
+                self.log.append(
+                    f'.dcp applied: {result["applied"]} files, '
+                    f'{result["total_bytes"]:,} bytes; '
+                    f'{len(result["skipped"])} skipped', tag='ok')
+                if hasattr(self.app.tab_textures, '_modified_cache'):
+                    self.app.tab_textures._modified_cache.clear()
+                self.after(0, self.app.tab_textures.reload)
+            except Exception as e:
+                self.log.append(f'fetch/apply FAILED: {e}', tag='error')
+                self.after(0, lambda: messagebox.showerror(
+                    'Fetch failed', str(e), parent=self.app))
+        threading.Thread(target=runner, daemon=True).start()
+
+    def _on_browse_dcp(self):
+        if not self.app.disc:
+            messagebox.showinfo('Open disc first',
+                'Open a disc before applying a .dcp.', parent=self.app)
+            return
+        from ..core import dcp as dcp_core
+        path = filedialog.askopenfilename(
+            title='Pick a .dcp patch file',
+            filetypes=[('Dreamcast patch', '*.dcp'), ('Zip', '*.zip'), ('All', '*.*')],
+            parent=self.app,
+        )
+        if not path: return
+        def runner():
+            try:
+                result = dcp_core.apply_dcp_from_file(
+                    Path(path), self.app.disc.extracted_dir, self.app.disc.patches_dir,
+                    log=lambda m: self.log.append(m),
+                )
+                self.log.append(
+                    f'.dcp applied: {result["applied"]} files, '
+                    f'{result["total_bytes"]:,} bytes; '
+                    f'{len(result["skipped"])} skipped', tag='ok')
+                if hasattr(self.app.tab_textures, '_modified_cache'):
+                    self.app.tab_textures._modified_cache.clear()
+                self.after(0, self.app.tab_textures.reload)
+            except Exception as e:
+                self.log.append(f'apply FAILED: {e}', tag='error')
+                self.after(0, lambda: messagebox.showerror(
+                    'Apply failed', str(e), parent=self.app))
         threading.Thread(target=runner, daemon=True).start()
 
     def _on_reset_patches(self):
