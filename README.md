@@ -1,4 +1,4 @@
-# SpawnTools — v1.1.0
+# SpawnTools — v1.2.0
 
 **GUI for translating all 15 Capcom Dreamcast titles, built on the codec library used to ship the existing Spawn EN patch.**
 
