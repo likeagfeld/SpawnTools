@@ -352,7 +352,10 @@ class WorkspaceTab(ttk.Frame):
                     f'{len(result["skipped"])} skipped', tag='ok')
                 if hasattr(self.app.tab_textures, '_modified_cache'):
                     self.app.tab_textures._modified_cache.clear()
-                self.after(0, self.app.tab_textures.reload)
+                # Auto-chain Load Baseline so Tab 3 sees the EN strings the
+                # .dcp just wrote into patches/ as 'done' rows.
+                self.log.append('chaining → Load Baseline', tag='dim')
+                self.after(0, self._on_load_preset)
             except Exception as e:
                 self.log.append(f'fetch/apply FAILED: {e}', tag='error')
                 self.after(0, lambda: messagebox.showerror(
@@ -383,7 +386,8 @@ class WorkspaceTab(ttk.Frame):
                     f'{len(result["skipped"])} skipped', tag='ok')
                 if hasattr(self.app.tab_textures, '_modified_cache'):
                     self.app.tab_textures._modified_cache.clear()
-                self.after(0, self.app.tab_textures.reload)
+                self.log.append('chaining → Load Baseline', tag='dim')
+                self.after(0, self._on_load_preset)
             except Exception as e:
                 self.log.append(f'apply FAILED: {e}', tag='error')
                 self.after(0, lambda: messagebox.showerror(
