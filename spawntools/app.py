@@ -26,10 +26,29 @@ from .views.master_build import MasterBuildTab
 class App(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title('SpawnTools — Spawn translation suite')
+        self.title('SpawnTools — Capcom Dreamcast translation suite')
         self.cfg = Config.load()
         self.geometry(self.cfg.window_geometry)
         self.minsize(1100, 700)
+
+        # Window/taskbar icon
+        from pathlib import Path as _P
+        icon_root = _P(__file__).resolve().parent.parent / 'assets' / 'icons'
+        try:
+            ico = icon_root / 'spawn.ico'
+            if ico.is_file():
+                self.iconbitmap(default=str(ico))
+        except Exception:
+            pass
+        # PhotoImage fallback (Linux/macOS dock + Tk built-in icon path)
+        try:
+            from tkinter import PhotoImage
+            png = icon_root / 'spawn-256.png'
+            if png.is_file():
+                self._app_icon_img = PhotoImage(file=str(png))
+                self.iconphoto(True, self._app_icon_img)
+        except Exception:
+            pass
 
         self.disc: DiscContext | None = None
 
